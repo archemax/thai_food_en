@@ -6,4 +6,5 @@ import androidx.compose.runtime.Composable
 @Composable
 fun OneRecipeScreen() {
 Text(text = "One recipe Screen")
+Text(text = "One recipe Screen")
 }
