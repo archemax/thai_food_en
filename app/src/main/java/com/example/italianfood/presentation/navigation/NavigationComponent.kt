@@ -1,6 +1,7 @@
 package com.example.italianfood.presentation.navigation
 
 
+import android.content.res.Configuration
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.navigation.NavType
@@ -23,22 +24,27 @@ fun NavigationComponent() {
         navController = navController,
         startDestination = Screen.MAIN_USER_SCREEN.name,
     ) {
+
+        //MAIN SCREEN//////////////////////////////////////////////////////////////////////////////
         composable(
             route = Screen.MAIN_USER_SCREEN.name
         ) {
             MainScreen(
-                //configuration= Configuration(),
-                //toOneRecipeScreen = toOneRecipeScreen
+                configuration = Configuration(),
+                toOneRecipeScreen = toOneRecipeScreen,
             )
         }
         /////////////////////////////////////////////////////////////////////////////////
         composable(
             route = "${Screen.ONE_RECIPE_SCREEN}/{id}",
-            arguments = listOf(navArgument("id"){type = NavType.StringType})
+            arguments = listOf(navArgument("id") { type = NavType.StringType })
         ) {
-            //val id = it.arguments?.getString("id").orEmpty()
+            val routeId = it.arguments?.getString("id").orEmpty()
+
             OneRecipeScreen(
-                //navController = navController
+                navController = navController,
+                routeId = routeId
+
             )
         }
     }

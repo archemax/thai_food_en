@@ -60,7 +60,7 @@ object Repository {
             ),
             instructions = listOf(
                 "Cooking Process:\n" +
-                        " 1. Bread: Place the slices of bread on a plate.\n" +
+                        "1. Bread: Place the slices of bread on a plate.\n" +
                         "2. Toast: Toast the slices of bread for approx. 10 minutes in the upper part of the oven, preheated to 220°C. Remove and let cool. Rub the bread slices with garlic.\n" +
                         "3. Burrata: chop the burrata put it in a salad bowl. Mix vinegar and oil, season, and pour over the burrata. Garnish with lemon and basil, sprinkle with fleur de sel. Serve the burrata with toasted bread."
             )
