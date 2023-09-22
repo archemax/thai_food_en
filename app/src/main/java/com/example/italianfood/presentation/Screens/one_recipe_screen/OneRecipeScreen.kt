@@ -80,7 +80,7 @@ fun OneRecipeScreen(
                 if (recipe != null)
                     Text(
                         text = "${recipe.dishTitle}",
-                        maxLines = 1,
+                        maxLines = 2,
                         fontSize = 24.sp,
                         fontWeight = FontWeight.Bold
                     )

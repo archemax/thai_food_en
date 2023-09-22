@@ -12,7 +12,7 @@ object Repository {
             id = 84,
             category = "Antipasti",
             dishTitle = "Burrata with stewed tomatoes",
-            imageResId = R.drawable.burrata_with_tomatoes,
+            imageResId = R.drawable.burrata_84,
             description = "Burrata with stewed tomatoes is a delectable Italian appetizer. It features creamy burrata cheese, known for its delicate texture, served alongside slow-cooked, aromatic stewed tomatoes. The creamy richness of the burrata perfectly complements the savory sweetness of the tomatoes, creating a harmonious and indulgent flavor combination.",
             ingredients = listOf(
                 "Ingredients:\n" +
@@ -72,7 +72,7 @@ object Repository {
             id = 11,
             category = "Pasta",
             dishTitle = "Spaghetti Carbonara",
-            imageResId = R.drawable.burrata_with_lemons,
+            imageResId = R.drawable.carbonara_new11,
             description = "Spaghetti Carbonara is a classic Italian pasta dish. It's not suitable for vegetarians as it contains eggs, cheese, and pancetta. The dish is creamy, savory, and rich, with approximately 400450 calories per serving.",
             ingredients = listOf(
                 "Ingredients (for 4 servings):\n" +
@@ -103,7 +103,7 @@ object Repository {
             id = 12,
             category = "Pasta",
             dishTitle = "Fettuccine Alfredo",
-            imageResId = R.drawable.pasta_fetucci_alfredo,
+            imageResId = R.drawable.fetticine_alfredo_12,
             description = "Fettuccine Alfredo is a classic Italian pasta dish known for its creamy, indulgent sauce. Traditional Fettuccine Alfredo is unsuitable for a vegan or dairy free diet due to its rich butter and cream based sauce. It is a creamy pasta dish featuring fettuccine noodles, butter, heavy cream, and Parmesan cheese",
 
             ingredients = listOf(
@@ -161,6 +161,111 @@ object Repository {
             )
         ),
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 13,
+            category = "Pasta",
+            dishTitle = "Lasagna",
+            imageResId = R.drawable.lasagna_13,
+            description = "Lasagna is a beloved Italian dish known for its layers of pasta, rich sauce, and melted cheese.  Lasagna typically contains meat, dairy (cheese and béchamel sauce), and wheat based pasta, making it unsuitable for vegetarians and those with lactose or gluten intolerance. It's a layered pasta dish consisting of sheets of lasagna noodles, meat sauce, ricotta or béchamel sauce, mozzarella, and Parmesan cheese.",
+
+
+            ingredients = listOf(
+                "Ingredients (quantities vary by recipe):\n" +
+                        "Lasagna noodles\n" +
+                        "Ground meat (usually beef, pork, or a combination)\n" +
+                        "Tomato sauce\n" +
+                        "Ricotta or béchamel sauce\n" +
+                        "Mozzarella cheese\n" +
+                        "Parmesan cheese\n" +
+                        "Onion, garlic, and herbs (for flavor)\n" +
+                        "Olive oil\n" +
+                        "Salt and pepper"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Cook lasagna noodles according to package instructions.\n" +
+                        "Brown ground meat with onions and garlic, add tomato sauce and season.\n" +
+                        "Layer noodles, meat sauce, ricotta or béchamel, and cheeses in a baking dish.\n" +
+                        "Repeat layers, ending with cheese on top.\n" +
+                        "Bake until bubbly and golden.\n" +
+                        "Let it rest before serving.\n" +
+                        "For visual reference, you can view images of this dish on the provided recipe websites."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 14,
+            category = "Pasta",
+            dishTitle = "Ravioli",
+            imageResId = R.drawable.ravioli_14,
+            description = "Ravioli is a classic Italian pasta dish consisting of stuffed pasta pockets. Ravioli recipes can vary widely. Typical fillings include cheese, meat, or vegetables, so dietary restrictions depend on the recipe. Ravioli is a pasta dish made of small squares or circles of pasta dough, stuffed with various fillings, and typically served with sauce.",
+
+
+            ingredients = listOf(
+                "Ingredients (quantities may vary):\n" +
+                        "2 cups all purpose flour\n" +
+                        "2 large eggs\n" +
+                        "1/2 teaspoon salt\n" +
+                        "1/3 cup water\n" +
+                        "Filling: ricotta cheese, mozzarella cheese, Parmesan cheese, provolone cheese\n" +
+                        "Sauce: tomato sauce, butter, garlic, basil, salt, and pepper"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Make pasta dough by mixing flour, eggs, salt, and water. Knead, then roll out thinly.\n" +
+                        "Mix ricotta, mozzarella, Parmesan, and provolone cheeses to prepare the cheese filling.\n" +
+                        "Place spoonfuls of filling on the pasta sheet, leaving space between.\n" +
+                        "Fold the pasta over to cover the filling, press to seal, and cut into individual ravioli.\n" +
+                        "Cook the ravioli in boiling water until they float to the surface.\n" +
+                        "Meanwhile, prepare a sauce by heating butter, garlic, basil, salt, and pepper with tomato sauce.\n" +
+                        "Serve the cooked ravioli with the tomato sauce.\n" +
+                        "For a visual reference, you can find images of ravioli dishes on various recipe websites, such as the one provided by Allrecipes."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 97,
+            category = "Pasta",
+            dishTitle = "Pasta with seafood (Scialatielli allo Scoglio)",
+            imageResId = R.drawable.pastawithseafood_scialatiellialloscoglio_97,
+            description = "Pasta with seafood, known as Scialatielli allo Scoglio, is an exquisite Italian coastal dish that showcases the bounties of the sea. This flavorful pasta typically features a medley of fresh seafood like mussels, clams, shrimp, and sometimes calamari, all cooked to perfection. The seafood is combined with a fragrant tomato-based sauce infused with garlic, chili flakes, and fresh herbs like parsley. This vibrant sauce envelops the al dente pasta, creating a harmonious blend of textures and flavors. The dish offers a delightful contrast between the sweetness of the seafood and the tanginess of the tomato sauce, making it a favorite in Italian cuisine. Scialatielli allo Scoglio captures the essence of coastal living, bringing the taste of the Mediterranean to your plate.",
+
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "300 g of white flour\n" +
+                        "½ teaspoon of salt\n" +
+                        "1 dl of milk\n" +
+                        "1½ tablespoons of olive oil \n" +
+                        "1 egg\n" +
+                        "50 g of finely grated pecorino cheese\n" +
+                        "½ bunch of chopped basil\n" +
+                        "a little white flour\n" +
+                        "2 tablespoons of olive oil \n" +
+                        "2 cloves of garlic, finely chopped\n" +
+                        "1 red pepper, chopped\n" +
+                        "300 g of cherry tomatoes, cut in half\n" +
+                        "1 dl of white wine\n" +
+                        "3/4 teaspoon of salt\n" +
+                        "400 g of frozen seafood mixture, thawed \n" +
+                        "1 coarsely chopped bunch of parsley\n" +
+                        "½ bunch of flat-leaf parsley, coarsely chopped"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "1. Make the noodle dough: mix the flour and salt in a bowl flour and salt in a bowl. Add the milk, oil and egg, mix and knead for for about 10 minutes to make a soft and smooth dough. Add the cheese and basil, knead and shape into a ball. Cover the dough with a bowl of with hot water and cover with parsley. Keep at room temperature for approx. 30 minutes.\n" +
+                        "2. Scialatiellis: cut the dough into four pieces of dough. On a well-floured floured work surface, roll out roll them out to about 2 mm thick (approx. 12×60 cm), regularly removing the dough from the work surface. roll out the dough regularly. Roll out the pieces of dough lengthwise loosely, cut into strips about 4 mm wide, place them on a kitchen towel. \n" +
+                        "3. Sauce: Heat the oil in a large in a large saucepan. Fry the garlic and chilli briefly. the garlic and chili. Add the tomatoes and wine, simmer for about 5 minutes, add salt. Add the seafood, cover with a cover and simmer for 2 minutes. Add parsley and stir. \n" +
+                        "4. Pasta: dip the cialiatellis in boiling salted water and cook al dente for 3 minutes. Take them out with a slotted spoon and dry them, add to the sauce and mix. Arrange the pasta and sprinkle with cheese.\n" +
+                        "\n"
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
