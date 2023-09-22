@@ -5,6 +5,7 @@ import android.content.res.Configuration
 import android.util.Log
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.gestures.scrollable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -15,6 +16,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
@@ -55,11 +57,7 @@ fun MainScreen(
     val state = viewModel.state
     val queryState = remember { mutableStateOf("") }
     val filteredRecipes = viewModel.getFilteredRecipes(queryState.value)
-    val filterChipsList = listOf(
-        mutableStateOf(FilterChipState(text = "Pasta")),
-        mutableStateOf(FilterChipState(text = "Antipasti")),
-        mutableStateOf(FilterChipState(text = "Macaroni")),
-    )
+
 
     Scaffold(
         modifier = Modifier
@@ -98,13 +96,127 @@ fun MainScreen(
 
                 ) {}
 
-
+/////////FILTERS/////////////////////////////////////////////////////////////////////////////////////////////////////
             Text("filters row")
-            MyFilterChips(
-                filterChips = filterChipsList,
-            ) { filterChip, index ->
-                filterChipsList[index].value.isSelected = !filterChip.isSelected
+            Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
+                //PASTA CHIP///////////////////////////////////////////////////////////////////////
+                val chipSelectedPasta = remember { mutableStateOf(false) }
+                FilterChip(
+                    selected = chipSelectedPasta.value,
+                    onClick = { chipSelectedPasta.value = !chipSelectedPasta.value },
+                    label = { Text(text = "Pasta")},
+                    leadingIcon = {
+                        if (chipSelectedPasta.value){
+                            Icon(
+                                imageVector = Icons.Default.Done,
+                                contentDescription = null,
+                            )
+                        }else{}
+
+                    }
+                )
+                Spacer(modifier = Modifier.padding(end = 4.dp))
+
+                //PIZZA CHIP///////////////////////////////////////////////////////////////////////
+                val chipSelectedPizza = remember { mutableStateOf(false) }
+                FilterChip(
+                    selected = chipSelectedPizza.value,
+                    onClick = { chipSelectedPizza.value = !chipSelectedPizza.value },
+                    label = { Text(text = "Pizza")},
+                    leadingIcon = {
+                        if (chipSelectedPizza.value){
+                            Icon(
+                                imageVector = Icons.Default.Done,
+                                contentDescription = null,
+                            )
+                        }else{}
+
+                    }
+                )
+                Spacer(modifier = Modifier.padding(end = 4.dp))
+
+                //Antipasti///////////////////////////////////////////////////////////////////////
+                val chipSelectedAntipasti = remember { mutableStateOf(false) }
+                FilterChip(
+                    selected = chipSelectedAntipasti.value,
+                    onClick = { chipSelectedAntipasti.value = !chipSelectedAntipasti.value },
+                    label = { Text(text = "Antipasti")},
+                    leadingIcon = {
+                        if (chipSelectedAntipasti.value){
+                            Icon(
+                                imageVector = Icons.Default.Done,
+                                contentDescription = null,
+                            )
+                        }else{}
+
+                    }
+                )
+                Spacer(modifier = Modifier.padding(end = 4.dp))
+
+                //Desserts CHIP///////////////////////////////////////////////////////////////////////
+                val chipSelectedDesserts = remember { mutableStateOf(false) }
+                FilterChip(
+                    selected = chipSelectedDesserts.value,
+                    onClick = { chipSelectedDesserts.value = !chipSelectedDesserts.value },
+                    label = { Text(text = "Desserts")},
+                    leadingIcon = {
+                        if (chipSelectedDesserts.value){
+                            Icon(
+                                imageVector = Icons.Default.Done,
+                                contentDescription = null,
+                            )
+                        }else{}
+
+                    }
+                )
+                Spacer(modifier = Modifier.padding(end = 4.dp))
+
+                //Breads CHIP///////////////////////////////////////////////////////////////////////
+                val chipSelectedBreads = remember { mutableStateOf(false) }
+                FilterChip(
+                    selected = chipSelectedBreads.value,
+                    onClick = { chipSelectedBreads.value = !chipSelectedBreads.value },
+                    label = { Text(text = "Breads")},
+                    leadingIcon = {
+                        if (chipSelectedBreads.value){
+                            Icon(
+                                imageVector = Icons.Default.Done,
+                                contentDescription = null,
+                            )
+                        }else{}
+
+                    }
+                )
+                Spacer(modifier = Modifier.padding(end = 4.dp))
+
+                //Cocktail CHIP///////////////////////////////////////////////////////////////////////
+                val chipSelectedCocktail = remember { mutableStateOf(false) }
+                FilterChip(
+                    selected = chipSelectedCocktail.value,
+                    onClick = { chipSelectedCocktail.value = !chipSelectedCocktail.value },
+                    label = { Text(text = "Cocktail")},
+                    leadingIcon = {
+                        if (chipSelectedCocktail.value){
+                            Icon(
+                                imageVector = Icons.Default.Done,
+                                contentDescription = null,
+                            )
+                        }else{}
+
+                    }
+                )
+                Spacer(modifier = Modifier.padding(end = 4.dp))
+
+
+
+
+
+
             }
+
+
+
+
 
 
 
@@ -140,38 +252,7 @@ fun MainScreen(
 }
 
 
-data class FilterChipState(
-    val text: String,
-    var isSelected: Boolean = false
-)
 
-@OptIn(ExperimentalMaterial3Api::class)
-@Composable
-fun MyFilterChips(
-    filterChips: List<MutableState<FilterChipState>>,
-    onFilterChipClicked: (FilterChipState, Int) -> Unit
-) {
-    Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
-        filterChips.forEachIndexed { index, filterChipState ->
-            FilterChip(
-                selected = filterChipState.value.isSelected,
-                onClick = {
-                    onFilterChipClicked(filterChipState.value, index)
-                },
-                label = { Text(text = filterChipState.value.text) },
-                leadingIcon = {
-                    if (filterChipState.value.isSelected) {
-                        Icon(
-                            imageVector = Icons.Filled.Done,
-                            contentDescription = null,
-                            modifier = Modifier.size(18.dp)
-                        )
-                    }
-                }
-            )
-        }
-    }
-}
 
 @Composable
 fun OneRecipeItem(
