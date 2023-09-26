@@ -24,15 +24,39 @@ class MainScreenViewModel @Inject constructor() : ViewModel() {
         _state.value = repository.recipes
     }
 
-    fun getFilteredRecipes(query: String) :List<RecipeDataClass> {
+    fun getFilteredRecipes(query: String): List<RecipeDataClass> {
         // 2) here i will filter recipes based on search query and selected categories
         val filteredList = _state.value.filter { oneRecipe ->
+
             oneRecipe.dishTitle.contains(query, ignoreCase = true)
                     || oneRecipe.description.contains(query, ignoreCase = true)
         }
         return filteredList
 
     }
+
+    fun getRecipesByCategory(myCategories: List<String>): List<RecipeDataClass> {
+
+        val fitleredByCategory = _state.value.filter { oneRecipe ->
+            // find if there is an element in myCategories than matches to oneRecipe.categoty
+            myCategories.any{ selectedCat ->
+                oneRecipe.category.equals(selectedCat, ignoreCase = true)
+
+            }
+        }
+        return fitleredByCategory
+    }
+
+    //extention function
+    fun String.containsAnyCategory(
+        strings: List<String>,
+        ignoreCase: Boolean = false
+    ): Boolean {
+        return strings.any {
+            this.contains(it, ignoreCase)
+        }
+    }
+
 
     // get selected recipes from Main screen
     fun toggleCategorySelection(category: String): List<String> {
