@@ -1922,6 +1922,455 @@ object Repository {
         ),
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeDataClass(
+            id = 94,
+            category = "Cocktail",
+            dishTitle = "Limoncello spritz",
+            imageResId = R.drawable.limoncello_spritz_94,
+            description = "Limoncello Spritz is a delightful and refreshing Italian cocktail that captures the essence of the Amalfi Coast. This invigorating drink is made by combining Limoncello liqueur, known for its bright lemon flavor, with sparkling water and sometimes a splash of prosecco. It's typically served over ice and garnished with lemon slices and fresh mint leaves for added aroma and aesthetics.",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "Lemon liqueur 20 ml.\n" +
+                        "Prosecco 150 ml.\n" +
+                        "Carbonated mineral water  50 ml.\n" +
+                        "Slices of lemons 2 pcs.\n" +
+                        "Sprig of rosemary  1 pc.\n" +
+                        "Ice 3-4 cubes."
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "1. Put the ice cubes in a glass. Add the lemon liqueur, water and prosecco and stir lightly.\n" +
+                        "2. Garnish with lemon and rosemary wedges."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 95,
+            category = "Cocktail",
+            dishTitle = "Magenta",
+            imageResId = R.drawable.magenta_95,
+            description = "Magenta",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "3 tablespoons of ginger syrup\n" +
+                        "4 dl almond drink\n" +
+                        "1 dl of beet juice"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Mix the three ingredients vigorously the three ingredients. Garnish with with almond drink mousse and fresh mint."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 66,
+            category = "Dessert",
+            dishTitle = "Affogato",
+            imageResId = R.drawable.affogato_66,
+            description = "Affogato is a classic Italian dessert that consists of a scoop of vanilla ice cream or gelato \"drowned\" in a shot of hot espresso. There are no specific dietary restrictions for this dessert. Dessert. Approximately 100150 calories per 1 serving. Affogato is a simple yet indulgent dessert where the hot espresso melts the cold, creamy ice cream, creating a delightful blend of flavors and temperatures. It's a quick and easy dessert to satisfy your sweet cravings. The recipe is typically for one serving but can be multiplied for more",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "1 scoop of vanilla ice cream or gelato\n" +
+                        "1 shot of hot espresso\n" +
+                        "Optional: chocolate shavings, chopped nuts, or a drizzle of liqueur like Amaretto (for variations)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Place a scoop of vanilla ice cream or gelato in a serving glass or cup.\n" +
+                        "Brew a shot of hot espresso using an espresso machine or a Moka pot.\n" +
+                        "Pour the hot espresso over the ice cream.\n" +
+                        "Optionally, garnish with chocolate shavings, chopped nuts, or a drizzle of liqueur like Amaretto.\n" +
+                        "Serve immediately, and enjoy while the ice cream melts into the coffee."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 75,
+            category = "Dessert",
+            dishTitle = "Flambéed tart with apricots",
+            imageResId = R.drawable.flambeed_tart_with_apricots_75,
+            description = "A flambéed tart with apricots is a delightful dessert that combines the sweetness of ripe apricots with the rich and slightly caramelized flavors of a flambéed glaze. The base of this tart typically consists of a buttery and flaky pastry crust. It's then filled with a luscious mixture of fresh apricots and almond cream, known as frangipane. The unique element of flambéing involves igniting a liqueur (often apricot brandy or similar) over the tart just before serving. This process not only adds a dramatic flair but also imparts a warm, boozy aroma and flavor to the dessert. The result is a beautifully browned, fragrant tart with tender apricots that have absorbed the delightful essence of the flambéed liqueur. It's a wonderful combination of textures and flavors that's sure to impress dessert enthusiasts.",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "300 g of white flour\n" +
+                        "1 teaspoon of salt\n" +
+                        "diced yeast (approx. 10 g), crushed\n" +
+                        "1½ dl of water\n" +
+                        "½ dl olive oil\n" +
+                        "1 tbsp of honey\n" +
+                        "100 g of sour cream\n" +
+                        "100 g of cheese with blue veins (e.g. Gorgonzola), cut into pieces\n" +
+                        "200 g of chopped apricots a bunch of peeled thyme\n" +
+                        "50 g of arugula\n" +
+                        "½ tablespoon of liquid honey\n" +
+                        "14 teaspoons of fleur de sel\n" +
+                        "little pepper"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Dough: Mix the flour, salt and yeast. Add water, oil and honey, mix with a small spatula until a soft dough is formed. soft dough, \n" +
+                        "knead briefly, cover cover and leave for approx. 10 minutes.\n" +
+                        "Forming: cutting the dough into into 4 pieces. On a small amount of flour, roll out the pieces of of dough to approx. 2 mm thick to form oval shapes and place them on two baking sheets lined with paper for baking.\n" +
+                        "Tarte flambée: brush the the pasta with sour cream with the sour cream. Garnish with gorgonzola, apricots and thyme.\n" +
+                        "Cooking time: cook for approx. 20 minutes in a preheated preheated to 220°C in an oven (with a fan). Remove them out of the oven, put the arugula on the arugula, drizzle with honey, and season.\n" +
+                        "Option: use gorgonzola instead of gorgonzola, use mascarpone or cream cheese instead."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        RecipeDataClass(
+            id = 73,
+            category = "Dessert",
+            dishTitle = "Lemon Cake (Torta Al Limone)",
+            imageResId = R.drawable.lemon_cacke_torla_al_limone_73,
+            description = "Lemon Cake, known as Torta al Limone in Italian, is a delectable dessert that showcases the bright and zesty flavors of lemons. This cake is characterized by its moist and tender crumb, infused with the refreshing citrusy aroma and tangy taste of lemons. Typically, it is made by incorporating lemon zest and juice into the batter, creating a delightful balance between sweetness and tartness.",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "200 g of white flour\n" +
+                        "50 g of sugar\n" +
+                        "4 teaspoons of salt\n" +
+                        "80 g of cold butter cut into small pieces\n" +
+                        "3 dl of water\n" +
+                        "80 g of butter\n" +
+                        "3 tablespoons of corn starch\n" +
+                        "3 tablespoons of cold water\n" +
+                        "120 g of sugar\n" +
+                        "4 fresh egg yolks\n" +
+                        "3 organic lemons, a little grated zest and all the juice 1 organic lemon, " +
+                        "cut into slices For a pie pan approx. 28 cm in in diameter, with the bottom lined with baking paper greased edges"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "1. Dough: mix the flour, sugar and salt. Add the butter, rub everything with your hands until you get a homogeneous crumbly mass. Add the water and \n" +
+                        "quickly mix everything together, to get a soft dough without overmixing. Flatten the dough, cover and chill for about 30 minutes.\n" +
+                        "2. For the base: roll out the dough between two sheets of baking paper  (approx. 32 cm in diameter) and place it on the baking sheet, keeping the bottom sheet on. Prick the bottom with a fork.\n" +
+                        "3. Cooking: Cook for approx. 20 minutes in the in the lower part of a preheated 200°C oven. Remove the pie plate from the oven, let it cool, then place it \n" +
+                        "cool, then place it on a wire rack and allow to cool.\n" +
+                        "4. For the filling: in a saucepan, bring the water and butter in a saucepan until it comes to a boil. Dissolve the corn flour dissolve in water, add sugar and egg yolks, mix. Add \n" +
+                        "this mixture to the boiling liquid, stirring with a whisk. While stirring, bring to a boil, set aside. Add lemon zest and juice (approx. 2 dl). Pour the still hot mixture into the the bottom of the pie and let it cool. Cover the the pie and put it in the refrigerator for at least 3 hours.\n" +
+                        "5. Garnish: decorate the tart with lemon slices."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 58,
+            category = "Dessert",
+            dishTitle = "Tiramisu",
+            imageResId = R.drawable.tiramisu_58,
+            description = "Tiramisu is a classic Italian dessert known for its creamy and coffee infused layers. It typically contains caffeine from coffee and raw eggs, so it's not suitable for those with dietary restrictions related to caffeine or raw eggs. A single serving of Tiramisu contains approximately 300 calories",
+
+            ingredients = listOf(
+                "Ingredients (for 6 servings):\n" +
+                        "6 egg yolks\n" +
+                        "3/4 cup granulated sugar\n" +
+                        "1 cup mascarpone cheese\n" +
+                        "1 1/2 cups heavy cream\n" +
+                        "2 cups brewed espresso, cooled\n" +
+                        "1/4 cup coffee liqueur (optional)\n" +
+                        "1 package of ladyfingers (about 24)\n" +
+                        "Cocoa powder for dusting\n" +
+                        "Dark chocolate shavings for garnish"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a heatproof bowl, whisk together egg yolks and 1/2 cup of sugar over a double boiler until pale and creamy.\n" +
+                        "Remove from heat and add mascarpone cheese, mixing until well combined.\n" +
+                        "In a separate bowl, whip the heavy cream until stiff peaks form.\n" +
+                        "Gently fold the whipped cream into the mascarpone mixture.\n" +
+                        "Combine brewed espresso and coffee liqueur in a shallow dish.\n" +
+                        "Quickly dip each ladyfinger into the espresso mixture, ensuring they are soaked but not soggy.\n" +
+                        "Arrange a layer of dipped ladyfingers in a serving dish.\n" +
+                        "Spread half of the mascarpone mixture over the ladyfingers.\n" +
+                        "Repeat with another layer of dipped ladyfingers and the remaining mascarpone mixture.\n" +
+                        "Refrigerate for at least 4 hours or overnight.\n" +
+                        "Before serving, dust the top with cocoa powder and garnish with dark chocolate shavings.\n" +
+                        "Serve chilled and enjoy the luscious Tiramisu!"
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 59,
+            category = "Dessert",
+            dishTitle = "Cannoli",
+            imageResId = R.drawable.cannoli_59,
+            description = "Cannoli is a delightful Italian dessert known for its crispy pastry shells and creamy ricotta filling. It's a rich and indulgent treat, so it may not be suitable for those with dietary restrictions on dairy or sugar. A typical Cannoli contains about 100150 calories per serving",
+
+            ingredients = listOf(
+                "Ingredients (for 12 Cannoli):\n" +
+                        "2 cups ricotta cheese\n" +
+                        "1/2 cup powdered sugar\n" +
+                        "1/2 teaspoon vanilla extract\n" +
+                        "1/4 cup mini chocolate chips\n" +
+                        "12 Cannoli shells (store bought or homemade)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a bowl, mix ricotta cheese, powdered sugar, and vanilla extract until well combined.\n" +
+                        "Gently fold in the mini chocolate chips.\n" +
+                        "Fill each Cannoli shell with the ricotta mixture using a piping bag or spoon.\n" +
+                        "Dust the ends with powdered sugar or dip them in chopped pistachios or chocolate chips for added flavor and texture.\n" +
+                        "Serve Cannoli immediately to enjoy the perfect blend of crispy and creamy textures."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 60,
+            category = "Dessert",
+            dishTitle = "Panna Cotta",
+            imageResId = R.drawable.panna_cotta_60,
+            description = "Panna Cotta is a classic Italian dessert known for its creamy, custard like texture. It's generally not suitable for those with dietary restrictions on dairy. A typical serving of vanilla Panna Cotta contains about 250300 calories. It's a simple yet elegant dessert.",
+
+            ingredients = listOf(
+                "Ingredients (for 4 servings):\n" +
+                        "2 cups heavy cream\n" +
+                        "1/2 cup granulated sugar\n" +
+                        "1 vanilla bean or 2 teaspoons of vanilla extract\n" +
+                        "2 1/4 teaspoons of gelatin\n" +
+                        "3 tablespoons cold water"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a saucepan, mix heavy cream and sugar. If using a vanilla bean, scrape the seeds into the mixture; otherwise, add vanilla extract.\n" +
+                        "Sprinkle gelatin over cold water in a separate bowl and let it bloom for a few minutes.\n" +
+                        "Heat the cream mixture over medium heat until it's hot but not boiling.\n" +
+                        "Remove from heat and stir in the gelatin mixture until it's dissolved.\n" +
+                        "Pour the mixture into serving glasses or ramekins.\n" +
+                        "Refrigerate for at least 4 hours or until set.\n" +
+                        "Serve Panna Cotta chilled, garnished with fresh berries or a drizzle of caramel sauce."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 61,
+            category = "Dessert",
+            dishTitle = "Gelato",
+            imageResId = R.drawable.gelato_61,
+            description = "Gelato is a delightful Italian frozen dessert, similar to ice cream but creamier and denser. It's typically not suitable for those with dairy restrictions. A serving of gelato contains about 100130 calories, depending on the flavor.",
+
+            ingredients = listOf(
+                "Ingredients (for 4 servings):\n" +
+                        "2 cups whole milk\n" +
+                        "1 cup heavy cream\n" +
+                        "3/4 cup granulated sugar\n" +
+                        "1 vanilla bean or 1 teaspoon of vanilla extract\n" +
+                        "Flavoring ingredients like fruit, chocolate, or nuts (as desired)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Combine milk and cream in a saucepan. If using a vanilla bean, split it and scrape the seeds into the mixture; otherwise, add vanilla extract.\n" +
+                        "Heat the mixture over medium heat until it's hot but not boiling.\n" +
+                        "Remove from heat and let it cool slightly.\n" +
+                        "In a separate bowl, whisk sugar until it's dissolved.\n" +
+                        "Gradually whisk the sugar into the milk mixture until well combined.\n" +
+                        "Transfer the mixture to an ice cream maker and churn according to the manufacturer's instructions.\n" +
+                        "During the last few minutes of churning, add your chosen flavoring ingredients.\n" +
+                        "Once done, transfer the gelato to an airtight container and freeze for a few hours until firm.\n" +
+                        "Serve the gelato in bowls or cones, garnished with fresh fruit or nuts."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 62,
+            category = "Dessert",
+            dishTitle = "Zeppole",
+            imageResId = R.drawable.zeppole_62,
+            description = "Zeppole are traditional Italian pastries, particularly popular on St. Joseph's Day. They are deep fried dough balls, similar to donuts but with a unique texture. Zeppole is not suitable for those on strict dietary restrictions due to their frying process. Dessert. Approximately 150 calories per serving Zeppole are light, airy, and slightly crispy on the outside. They are typically served with powdered sugar and sometimes a cherry on top, making them a sweet delight.",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "1 cup water\n" +
+                        "1/2 cup unsalted butter\n" +
+                        "1 cup all purpose flour\n" +
+                        "A pinch of salt\n" +
+                        "4 large eggs\n" +
+                        "Vegetable oil for frying\n" +
+                        "Powdered sugar for dusting\n" +
+                        "Maraschino cherries (optional)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a saucepan, combine water and butter. Bring to a boil.\n" +
+                        "Add flour and a pinch of salt all at once. Stir vigorously until the mixture forms a ball.\n" +
+                        "Remove from heat and let it cool for a few minutes.\n" +
+                        "Beat in eggs one at a time until the dough is smooth.\n" +
+                        "Heat oil in a deep fryer or heavy pot to 375°F (190°C).\n" +
+                        "Drop spoonfuls of dough into the hot oil. Fry until golden brown, about 4 minutes.\n" +
+                        "Remove with a slotted spoon and drain on paper towels.\n" +
+                        "Dust with powdered sugar and top with maraschino cherries if desired.\n" +
+                        "Enjoy your homemade Zeppole, a delightful Italian treat!"
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 63,
+            category = "Dessert",
+            dishTitle = "Biscotti",
+            imageResId = R.drawable.biscotti_63,
+            description = "Biscotti are traditional Italian almond cookies. They're not suitable for those with nut allergies due to the almonds. Biscotti are a twice baked cookie, resulting in a crunchy texture, perfect for dipping in coffee or wine. They have around 110 calories per serving. Dessert. Approximately 110 calories per serving, Biscotti are oblong shaped cookies with a delightful crunch. They are often flavored with almonds and have a subtle sweetness. Biscotti are typically served with coffee or dessert wine and can be dipped to soften their texture. The recipe is designed to yield about 20 biscotti",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "2 cups all purpose flour\n" +
+                        "1 1/2 teaspoons baking powder\n" +
+                        "1/4 teaspoon salt\n" +
+                        "1/2 cup unsalted butter, at room temperature\n" +
+                        "1 cup granulated sugar\n" +
+                        "2 large eggs\n" +
+                        "1 teaspoon vanilla extract\n" +
+                        "1 cup whole almonds"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Preheat your oven to 350°F (175°C).\n" +
+                        "In a bowl, whisk together the flour, baking powder, and salt.\n" +
+                        "In a separate bowl, cream together the butter and sugar until light and fluffy.\n" +
+                        "Beat in the eggs one at a time, then stir in the vanilla.\n" +
+                        "Gradually blend in the dry ingredients and fold in the almonds.\n" +
+                        "Divide the dough in half and shape each half into a log about 12 inches long and 2 inches wide.\n" +
+                        "Place the logs on a baking sheet and bake for 2530 minutes, or until they are light brown.\n" +
+                        "Remove from the oven and let cool for a few minutes. Then, slice the logs into 1/2 inch slices.\n" +
+                        "Lay the slices on their sides on the baking sheet and bake for an additional 610 minutes, or until they are golden brown and crisp.\n" +
+                        "Allow them to cool before serving. Enjoy your homemade biscotti!"
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 64,
+            category = "Dessert",
+            dishTitle = "Zabaione",
+            imageResId = R.drawable.zabaione_64,
+            description = "Zabaione, also known as Zabaglione, is an Italian custard dessert with a creamy, frothy texture. It's made from egg yolks, sugar, and a sweet wine, often Marsala. There are no specific dietary restrictions unless you have concerns about consuming raw eggs. Dessert. Approximately 220 calories per serving, Zabaione is a luscious Italian dessert known for its rich, velvety texture and sweet, wine infused flavor. It's often served as a standalone dessert or over fresh berries or cake. The recipe typically serves 4.",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "4 large egg yolks\n" +
+                        "1/4 cup granulated sugar\n" +
+                        "1/2 cup sweet Marsala wine\n" +
+                        "Fresh berries or other toppings (optional)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a heatproof bowl, whisk together the egg yolks and sugar until well combined.\n" +
+                        "Place the bowl over a pot of simmering water (double boiler) and add the Marsala wine.\n" +
+                        "Whisk continuously for about 810 minutes until the mixture becomes thick, frothy, and triples in volume. It should be heated but not boiling.\n" +
+                        "Remove from heat and continue whisking for a minute as it cools slightly.\n" +
+                        "Serve warm in dessert glasses, garnished with fresh berries or any desired toppings if you like. Enjoy your homemade Zabaione!"
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeDataClass(
+            id = 65,
+            category = "Dessert",
+            dishTitle = "Amaretto Semifreddo",
+            imageResId = R.drawable.amaretto_semifreddo_65,
+            description = "Amaretto Semifreddo is a delightful Italian frozen dessert with amaretto liqueur and almond flavors. It's rich and creamy, similar to ice cream, but lighter in texture. There are no specific dietary restrictions for this dessert. Dessert. The calorie count may vary depending on the recipe, but it's approximately 250300 calories per serving. Amaretto Semifreddo is a semi frozen dessert that combines amaretto nutty taste with amaretti cookies' sweetness. It's a delightful treat with a creamy texture, perfect for a sweet ending to an Italian meal. The recipe typically serves 6.",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "3 large egg yolks\n" +
+                        "1/2 cup granulated sugar\n" +
+                        "2 tablespoons amaretto liqueur\n" +
+                        "1 1/4 cups heavy cream\n" +
+                        "1/2 cup crushed amaretti cookies\n" +
+                        "Sliced almonds and additional cookies for garnish (optional)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a heatproof bowl, whisk together egg yolks and sugar. Place the bowl over a pot of simmering water (double boiler) and whisk until the mixture thickens.\n" +
+                        "Remove from heat and stir in amaretto liqueur. Let it cool to room temperature.\n" +
+                        "Whip the heavy cream until stiff peaks form.\n" +
+                        "Gently fold the egg mixture into the whipped cream.\n" +
+                        "Fold in the crushed amaretti cookies.\n" +
+                        "Pour the mixture into a loaf pan lined with plastic wrap.\n" +
+                        "Freeze for at least 4 hours or until set.\n" +
+                        "Serve slices of semifreddo garnished with sliced almonds and additional amaretti cookies, if desired."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+        RecipeDataClass(
+            id = 83,
+            category = "Cocktail",
+            dishTitle = "Red cabbage cream",
+            imageResId = R.drawable.red_cabbage_cream_83,
+            description = "Red cabbage cream is a vibrant and flavorful dish that showcases the earthy and slightly sweet taste of red cabbage. This recipe typically involves finely shredding red cabbage and cooking it until tender. The cabbage is then combined with various ingredients to create a creamy and rich texture. While the exact recipe can vary, it often includes ingredients like cream, butter, onions, and seasonings such as nutmeg. The result is a velvety, purplish-red cream with a unique taste profile that balances the cabbage's natural sweetness with the richness of the cream. Red cabbage cream is a delightful side dish that complements a wide range of main courses, adding both color and flavor to the plate",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "600 g of red cabbage\n" +
+                        "1 tbsp of melted butter\n" +
+                        "2 chopped onions\n" +
+                        "3 floury potatoes, cut into cubes\n" +
+                        "½ dl red wine vinegar\n" +
+                        "11 vegetable broth\n" +
+                        "1 dl of apple juice"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "Cut the red cabbage into into strips, fry in butter together with onions and potatoes and brush with vinegar. \n" +
+                        "Pour in the broth and simmer over low heat for about 30 minutes. \n" +
+                        "Add the apple juice and whisk. \n" +
+                        "Serve and garnish with radishes."
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        RecipeDataClass(
+            id = 67,
+            category = "Breads",
+            dishTitle = "Focaccia Bread",
+            imageResId = R.drawable.focaccia_bread_67,
+            description = "Focaccia Bread is an Italian classic known for its soft, chewy texture and delightful olive oil flavor. It is versatile and perfect for various occasions. Generally, there are no specific dietary restrictions, but you can adapt the toppings to your preference. Focaccia is a flat oven baked Italian bread. A typical serving of Focaccia has around 150200 calories. Focaccia is a savory, herbed bread, often topped with rosemary, olives, or cherry tomatoes, making it a flavorful and aromatic treat. This recipe typically serves 68 people",
+
+            ingredients = listOf(
+                "Ingredients:\n" +
+                        "4 cups all purpose flour\n" +
+                        "1 packet (2 1/4 tsp) active dry yeast\n" +
+                        "1 1/2 cups warm water\n" +
+                        "2 tsp salt\n" +
+                        "1/4 cup olive oil\n" +
+                        "Toppings of your choice (rosemary, olives, cherry tomatoes, etc.)"
+            ),
+            instructions = listOf(
+                "Cooking Process:\n" +
+                        "In a bowl, dissolve yeast in warm water. Let it sit for 510 minutes until frothy.\n" +
+                        "In a large mixing bowl, combine flour and salt. Pour in the yeast mixture and olive oil. Mix until a dough forms.\n" +
+                        "Knead the dough for 57 minutes until smooth and elastic.\n" +
+                        "Place the dough in an oiled bowl, cover with a damp cloth, and let it rise for about 1 hour.\n" +
+                        "Preheat your oven to 475°F (245°C).\n" +
+                        "Roll out the dough into a rectangle, transfer it to a baking sheet, and let it rest for 15 minutes.\n" +
+                        "Create dimples in the dough with your fingers, drizzle with olive oil, and add your chosen toppings.\n" +
+                        "Bake for 1520 minutes until golden brown.\n" +
+                        "Let it cool slightly, then slice and serve.\n" +
+                        "\n" +
+                        "Enjoy your homemade Focaccia Bread!"
+            )
+        ),
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 
 
