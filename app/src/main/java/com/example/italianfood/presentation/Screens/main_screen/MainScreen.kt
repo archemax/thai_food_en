@@ -56,7 +56,10 @@ fun MainScreen(
 
     val state = viewModel.state
     val queryState = remember { mutableStateOf("") }
-    val filteredRecipes = viewModel.getFilteredRecipes(queryState.value)
+    val categoryState = remember { mutableStateOf(emptyList<String>()) }
+    Log.d("categoryState", "${categoryState.value}") // ok here
+
+    val filteredRecipes = viewModel.getFilteredRecipes(queryState.value,)
 
 
     Scaffold(
@@ -121,7 +124,8 @@ fun MainScreen(
                 val chipSelectedPizza = remember { mutableStateOf(false) }
                 FilterChip(
                     selected = chipSelectedPizza.value,
-                    onClick = { chipSelectedPizza.value = !chipSelectedPizza.value },
+                    onClick = { chipSelectedPizza.value = !chipSelectedPizza.value
+                        categoryState.value = listOf("Pizza")},
                     label = { Text(text = "Pizza")},
                     leadingIcon = {
                         if (chipSelectedPizza.value){
@@ -135,15 +139,19 @@ fun MainScreen(
                 )
                 Spacer(modifier = Modifier.padding(end = 4.dp))
 
-                //Antipasti///////////////////////////////////////////////////////////////////////
+ ////               //Antipasti///////////////////////////////////////////////////////////////////////
                 val chipSelectedAntipasti = remember { mutableStateOf(false) }
                 FilterChip(
                     selected = chipSelectedAntipasti.value,
-                    onClick = { chipSelectedAntipasti.value = !chipSelectedAntipasti.value },
+                    onClick = { chipSelectedAntipasti.value = !chipSelectedAntipasti.value
+                        categoryState.value = (listOf("Antipasti"))
+
+
+                              },
                     label = { Text(text = "Antipasti")},
                     leadingIcon = {
                         if (chipSelectedAntipasti.value){
-                            Icon(
+                           Icon(
                                 imageVector = Icons.Default.Done,
                                 contentDescription = null,
                             )
@@ -171,7 +179,7 @@ fun MainScreen(
                 )
                 Spacer(modifier = Modifier.padding(end = 4.dp))
 
-                //Breads CHIP///////////////////////////////////////////////////////////////////////
+    ///    /////Breads CHIP///////////////////////////////////////////////////////////////////////
                 val chipSelectedBreads = remember { mutableStateOf(false) }
                 FilterChip(
                     selected = chipSelectedBreads.value,
@@ -222,13 +230,13 @@ fun MainScreen(
 
             Column(modifier = Modifier.fillMaxSize()) {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
-                    items(
-                        //check if there is a search query
-                        if (queryState.value.isNotEmpty()) {
-                            filteredRecipes
-                        } else {
-                            state.value
-                        }
+                    items(if (queryState.value.isNotEmpty()){
+                        filteredRecipes
+                    }else{
+                        state.value
+                    }
+
+
                     ) { recipe ->
                         OneRecipeItem(
                             oneRecipe = recipe,
