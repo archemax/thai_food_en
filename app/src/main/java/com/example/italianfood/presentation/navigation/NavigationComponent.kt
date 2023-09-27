@@ -11,6 +11,7 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.italianfood.presentation.MainScreen
 import com.example.italianfood.presentation.Screens.OneRecipeScreen
+import com.example.italianfood.presentation.Screens.SplashScreen
 
 @Composable
 fun NavigationComponent() {
@@ -22,7 +23,7 @@ fun NavigationComponent() {
 
     NavHost(
         navController = navController,
-        startDestination = Screen.MAIN_USER_SCREEN.name,
+        startDestination = Screen.SPLASH_SCREEN.name,
     ) {
 
         //MAIN SCREEN//////////////////////////////////////////////////////////////////////////////
@@ -47,6 +48,16 @@ fun NavigationComponent() {
 
             )
         }
+        ///SPLASH SCREEN/////////////////////////////////////////////////////////////////////
+        composable(route = Screen.SPLASH_SCREEN.name){
+            SplashScreen() {
+                navController.navigate(Screen.MAIN_USER_SCREEN.name){
+                    popUpTo(Screen.SPLASH_SCREEN.name){
+                        inclusive = true
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -54,5 +65,5 @@ fun NavigationComponent() {
 enum class Screen {
     MAIN_USER_SCREEN,
     ONE_RECIPE_SCREEN,
-    FAVOURITES_SCREEN
+    SPLASH_SCREEN
 }

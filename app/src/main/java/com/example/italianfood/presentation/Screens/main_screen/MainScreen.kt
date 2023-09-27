@@ -4,8 +4,10 @@ import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.util.Log
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -33,11 +35,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.paint
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.example.italianfood.R
 import com.example.italianfood.model.RecipeDataClass
 import com.example.italianfood.presentation.Screens.main_screen.MainScreenViewModel
 
@@ -50,20 +55,21 @@ fun MainScreen(
     toOneRecipeScreen: (String) -> Unit,
     configuration: Configuration
 ) {
-
     val state = viewModel.state
-
     val queryState = remember { mutableStateOf("") }
     val categoryState = remember { mutableStateOf<List<String>>(emptyList()) }
-
     val filteredRecipes = viewModel.getFilteredRecipes(queryState.value)
+
 
 
 
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
-            .padding(8.dp),
+            .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
+            .paint(
+                painterResource(id = R.drawable.background_jpg),
+                contentScale = ContentScale.FillHeight),
         topBar = {},
         bottomBar = { },
 
@@ -73,6 +79,10 @@ fun MainScreen(
             modifier = Modifier
                 .padding(paddingValues)
                 .fillMaxSize()
+                .paint(
+                painterResource(id = R.drawable.background_jpg),
+                contentScale = ContentScale.FillHeight
+            )
         ) {
             SearchBar(
                 query = queryState.value,
@@ -93,7 +103,7 @@ fun MainScreen(
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(4.dp),
+                    .padding(0.dp),
 
                 ) {}
 

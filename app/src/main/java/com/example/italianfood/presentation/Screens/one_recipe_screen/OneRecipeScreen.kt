@@ -1,8 +1,11 @@
 package com.example.italianfood.presentation.Screens
 
 import android.annotation.SuppressLint
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -17,11 +20,17 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.draw.paint
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -32,7 +41,6 @@ import com.example.italianfood.presentation.Screens.one_recipe_screen.OneRecipeS
 @SuppressLint("SuspiciousIndentation")
 @Composable
 fun OneRecipeScreen(
-
     navController: NavController,
     routeId: String
 ) {
@@ -42,10 +50,15 @@ fun OneRecipeScreen(
         val recipe = oneRecipeScreenViewModel.getOneRecipe(id)
 
         /////////////////////////////////////////////////////////////////////////////////////////////////
+
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(8.dp)
+                .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
+                .paint(
+                    painterResource(id = R.drawable.background_jpg),
+                    contentScale = ContentScale.FillHeight
+                ),
         )
         {
 
@@ -53,9 +66,7 @@ fun OneRecipeScreen(
                 contentDescription = "arrow back",
                 modifier = Modifier
                     .clickable { navController.popBackStack() }
-                    .padding(4.dp))
-
-
+                    .padding(top = 8.dp, bottom = 4.dp, start = 4.dp, end = 4.dp))
 
 
             Row(
@@ -93,39 +104,68 @@ fun OneRecipeScreen(
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
 
-                ///////////////////////////////////////////////////////////
-                if (recipe != null)
-                    Text(
-                        text = " ${recipe.description}",
-                        maxLines = 3,
-                        fontSize = 24.sp
-                    )
+                /////////expandible descriprion of dish///////////////////////////////////////////////////////
+
+                var showMore = remember { mutableStateOf(false) }
+                val text = " ${recipe?.description}"
+
+                Column(modifier = Modifier.padding(20.dp)) {
+                    Column(modifier = Modifier
+                        .animateContentSize(animationSpec = tween(100))
+                        .clickable(
+                            interactionSource = remember { MutableInteractionSource() },
+                            indication = null
+                        ) { showMore.value = !showMore.value }) {
+
+                        if (showMore.value) {
+                            Text(text = text, fontSize = 18.sp)
+                        } else {
+                            Text(
+                                text = text,
+                                maxLines = 3,
+                                overflow = TextOverflow.Ellipsis,
+                                fontSize = 18.sp
+                            )
+                        }
+                    }
+                }
+//                if (recipe != null)
+//                    Text(
+//                        text = " ${recipe.description}",
+//                        maxLines = 3,
+//                        fontSize = 24.sp
+//                    )
                 MyDivider()
                 ///////////////////////////////////////////////////////////
 
                 if (recipe != null)
-                    Text(text = "${recipe.ingredients.joinToString()}", fontSize = 16.sp)
+                    Text(text = "${recipe.ingredients.joinToString()}",
+                        fontSize = 16.sp)
                 MyDivider()
                 ///////////////////////////////////////////////////////////
 
                 if (recipe != null)
                     Text(
                         text = "${recipe.instructions.joinToString()}",
-                        fontSize = 16.sp
+                        fontSize = 16.sp,
+                        modifier = Modifier.padding(start = 8.dp, end = 8.dp)
+
                     )
                 Spacer(modifier = Modifier.weight(0.5f))
 
                 MyDivider()
                 if (recipe != null)
-                    Text(text = "Category: ${recipe.category}", maxLines = 2, fontSize = 8.sp)
+                    Text(text = "Category: ${recipe.category}", maxLines = 2, fontSize = 12.sp)
+                Spacer(modifier = Modifier.padding(8.dp))
             }
         }
     }
 }
 
+
 @Composable
 fun MyDivider() {
-    Divider(modifier = Modifier.padding(16.dp), thickness = 4.dp)
+    Divider(modifier = Modifier.padding(16.dp), thickness = 3.dp, color = Color.DarkGray)
 }
 
 ////@Preview(showSystemUi = true)
