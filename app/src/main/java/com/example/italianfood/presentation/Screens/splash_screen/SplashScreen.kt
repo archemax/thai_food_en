@@ -7,7 +7,6 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -21,7 +20,6 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.italianfood.R
-import com.example.italianfood.presentation.Screens.splash_screen.SplashScreenViewModel
 import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -32,7 +30,7 @@ fun SplashScreen(
     onNavigationNext: () -> Unit
 ) {
     LaunchedEffect(true) {
-        delay(100) // Delay for 1 second (1000 milliseconds)
+        delay(0) // Delay for 1 second (1000 milliseconds)
         onNavigationNext.invoke()
     }
     Column(

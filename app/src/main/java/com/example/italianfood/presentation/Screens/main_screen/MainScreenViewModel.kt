@@ -13,19 +13,32 @@ import javax.inject.Inject
 
 class MainScreenViewModel @Inject constructor() : ViewModel() {
     private val repository = Repository
-
     private val _state = MutableStateFlow<List<RecipeDataClass>>(emptyList())
     val state: StateFlow<List<RecipeDataClass>> = _state
-
-    //1) this is a list of selected categories (from the main screen)
-    private val selectedCategories = mutableStateOf(emptyList<String>())
-
     init {
         _state.value = repository.recipes
     }
 
+    fun performSearch (query: String, category: String)
+    {
+
+        // Update the filtered recipes based on query and category
+        val filteredRecipes = getFilteredRecipes(query)
+        val filteredRecipesByCategory = getRecipesByCategory(category)
+
+        // Update the list of recipes based on the combination of query and category
+        if (query.isNotEmpty() && category.isNotEmpty()) {
+            _state.value = filteredRecipes.filter { it in filteredRecipesByCategory }
+        } else if (query.isNotEmpty()) {
+            _state.value = filteredRecipes
+        } else if (category.isNotEmpty()) {
+            _state.value = filteredRecipesByCategory
+        } else {
+            _state.value = repository.recipes
+        }
+    }
+
     fun getFilteredRecipes(query: String): List<RecipeDataClass> {
-        // 2) here i will filter recipes based on search query and selected categories
         val filteredList = _state.value.filter { oneRecipe ->
 
             oneRecipe.dishTitle.contains(query, ignoreCase = true)
@@ -34,18 +47,26 @@ class MainScreenViewModel @Inject constructor() : ViewModel() {
         return filteredList
 
     }
-
-    fun getRecipesByCategory(myCategories: List<String>): List<RecipeDataClass> {
-
+    fun getRecipesByCategory(myCategory: String): List<RecipeDataClass> {
         val fitleredByCategory = _state.value.filter { oneRecipe ->
-            // find if there is an element in myCategories than matches to oneRecipe.categoty
-            myCategories.any{ selectedCat ->
-                oneRecipe.category.equals(selectedCat, ignoreCase = true)
+            oneRecipe.category.contains(myCategory, ignoreCase = true)
 
-            }
         }
         return fitleredByCategory
     }
+
+    fun myFilter (query: String, category: String) : List<RecipeDataClass>{
+        val filteredRecipes = _state.value.filter {oneRecipe->
+            oneRecipe.category.contains(category, ignoreCase = true)
+                    &&
+                    (oneRecipe.dishTitle.contains(query, ignoreCase = true)
+                            || oneRecipe.description.contains(query,ignoreCase = true))
+        }
+        return filteredRecipes
+    }
+
+
+
 
     //extention function
     fun String.containsAnyCategory(
@@ -59,14 +80,14 @@ class MainScreenViewModel @Inject constructor() : ViewModel() {
 
 
     // get selected recipes from Main screen
-    fun toggleCategorySelection(category: String): List<String> {
-        selectedCategories.value = if (category in selectedCategories.value) {
-            selectedCategories.value - category
-        } else {
-            selectedCategories.value + category
-        }
-        return selectedCategories.value
-    }
+//    fun toggleCategorySelection(category: String): List<String> {
+//        selectedCategories.value = if (category in selectedCategories.value) {
+//            selectedCategories.value - category
+//        } else {
+//            selectedCategories.value + category
+//        }
+//        return selectedCategories.value
+//    }
 
 
 }

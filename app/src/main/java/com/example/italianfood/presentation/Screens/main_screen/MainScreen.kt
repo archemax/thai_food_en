@@ -4,10 +4,8 @@ import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.util.Log
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -56,23 +54,36 @@ fun MainScreen(
     configuration: Configuration
 ) {
     val state = viewModel.state
+
     val queryState = remember { mutableStateOf("") }
-    val categoryState = remember { mutableStateOf<List<String>>(emptyList()) }
-    val filteredRecipes = viewModel.getFilteredRecipes(queryState.value)
+    Log.d("queryState", "${queryState.value}")
+
+    val selectedCategory = remember { mutableStateOf("") }
+    Log.d("selectedCategory", "${selectedCategory.value}")
 
 
+    val filteredRecipesBySearch = viewModel.getFilteredRecipes(queryState.value)
+    Log.d("filteredRecipesBySearch", "${filteredRecipesBySearch}")
+
+    val filteredRecipesByCategory =
+        viewModel.getRecipesByCategory(selectedCategory.value)
+    val doubleSearchFilterList = filteredRecipesByCategory + filteredRecipesBySearch
+
+    val finalFilteredList =
+        viewModel.myFilter(query = queryState.value, category = selectedCategory.value)
 
 
+    val categoriesOfFood = listOf("Pasta", "Pizza", "Antipasti", "Dessert", "Breads", "Cocktail")
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
             .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
             .paint(
                 painterResource(id = R.drawable.background_jpg),
-                contentScale = ContentScale.FillHeight),
+                contentScale = ContentScale.FillHeight
+            ),
         topBar = {},
         bottomBar = { },
-
 
         ) { paddingValues ->
         Column(
@@ -80,9 +91,9 @@ fun MainScreen(
                 .padding(paddingValues)
                 .fillMaxSize()
                 .paint(
-                painterResource(id = R.drawable.background_jpg),
-                contentScale = ContentScale.FillHeight
-            )
+                    painterResource(id = R.drawable.background_jpg),
+                    contentScale = ContentScale.FillHeight
+                )
         ) {
             SearchBar(
                 query = queryState.value,
@@ -107,200 +118,47 @@ fun MainScreen(
 
                 ) {}
 
-/////////FILTERS/////////////////////////////////////////////////////////////////////////////////////////////////////
-            Text(text = "choose what you want to cook...")
             Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
-                //PASTA CHIP///////////////////////////////////////////////////////////////////////
-                val chipSelectedPasta = remember { mutableStateOf(false) }
-                FilterChip(
-                    selected = chipSelectedPasta.value,
-                    onClick = {
-                        chipSelectedPasta.value = !chipSelectedPasta.value
+                categoriesOfFood.forEach { category ->
+                    val isSelected = category == selectedCategory.value
 
-                        if (categoryState.value.contains("Pasta")) {
-                            //remove pizza
-                            categoryState.value = categoryState.value.filter { it != "Pasta" }
-                        } else {
-                            //add pizza
-                            categoryState.value = categoryState.value + "Pasta"
+                    FilterChip(
+                        selected = isSelected,
+                        onClick = {
+                            selectedCategory.value = if (isSelected) "" else category
+                        },
+                        label = { Text(text = category) },
+                        leadingIcon = {
+                            if (isSelected) {
+                                Icon(
+                                    imageVector = Icons.Default.Done,
+                                    contentDescription = null,
+                                )
+                            }
                         }
-                    },
-                    label = { Text(text = "Pasta") },
-                    leadingIcon = {
-                        if (chipSelectedPasta.value) {
-                            Icon(
-                                imageVector = Icons.Default.Done,
-                                contentDescription = null,
-                            )
-                        } else {
-                        }
+                    )
+                    Spacer(modifier = Modifier.padding(end = 4.dp))
 
-                    }
-                )
-                Spacer(modifier = Modifier.padding(end = 4.dp))
-
-                //PIZZA CHIP///////////////////////////////////////////////////////////////////////
-                val chipSelectedPizza = remember { mutableStateOf(false) }
-                FilterChip(
-                    selected = chipSelectedPizza.value,
-                    onClick = {
-                        chipSelectedPizza.value = !chipSelectedPizza.value
-
-                        if (categoryState.value.contains("Pizza")) {
-                            //remove pizza
-                            categoryState.value = categoryState.value.filter { it != "Pizza" }
-                        } else {
-                            //add pizza
-                            categoryState.value = categoryState.value + "Pizza"
-                        }
-                    },
-                    label = { Text(text = "Pizza") },
-                    leadingIcon = {
-                        if (chipSelectedPizza.value) {
-                            Icon(
-                                imageVector = Icons.Default.Done,
-                                contentDescription = null,
-                            )
-                        } else {
-                        }
-
-                    }
-                )
-                Spacer(modifier = Modifier.padding(end = 4.dp))
-
-                ////?/////////Antipasti///////////////////////////////////////////////////////////////////////
-                val chipSelectedAntipasti = remember { mutableStateOf(false) }
-                FilterChip(
-                    selected = chipSelectedAntipasti.value,
-                    onClick = {
-                        chipSelectedAntipasti.value = !chipSelectedAntipasti.value
-
-                        if (categoryState.value.contains("Antipasti")) {
-                            //remove pizza
-                            categoryState.value = categoryState.value.filter { it != "Antipasti" }
-                        } else {
-                            //add pizza
-                            categoryState.value = categoryState.value + "Antipasti"
-                        }
-
-
-                    },
-                    label = { Text(text = "Antipasti") },
-                    leadingIcon = {
-                        if (chipSelectedAntipasti.value) {
-                            Icon(
-                                imageVector = Icons.Default.Done,
-                                contentDescription = null,
-                            )
-                        } else {
-                        }
-
-                    }
-                )
-                Spacer(modifier = Modifier.padding(end = 4.dp))
-
-                //Desserts CHIP///////////////////////////////////////////////////////////////////////
-                val chipSelectedDesserts = remember { mutableStateOf(false) }
-                FilterChip(
-                    selected = chipSelectedDesserts.value,
-                    onClick = { chipSelectedDesserts.value = !chipSelectedDesserts.value
-
-                        if (categoryState.value.contains("Dessert")) {
-                            //remove pizza
-                            categoryState.value = categoryState.value.filter { it != "Dessert" }
-                        } else {
-                            //add pizza
-                            categoryState.value = categoryState.value + "Dessert"
-                        }
-                              },
-                    label = { Text(text = "Dessert") },
-                    leadingIcon = {
-                        if (chipSelectedDesserts.value) {
-                            Icon(
-                                imageVector = Icons.Default.Done,
-                                contentDescription = null,
-                            )
-                        } else {
-                        }
-
-                    }
-                )
-                Spacer(modifier = Modifier.padding(end = 4.dp))
-
-                ///    /////Breads CHIP///////////////////////////////////////////////////////////////////////
-                val chipSelectedBreads = remember { mutableStateOf(false) }
-                FilterChip(
-                    selected = chipSelectedBreads.value,
-                    onClick = { chipSelectedBreads.value = !chipSelectedBreads.value
-
-                        if (categoryState.value.contains("Breads")) {
-                            //remove pizza
-                            categoryState.value = categoryState.value.filter { it != "Breads" }
-                        } else {
-                            //add pizza
-                            categoryState.value = categoryState.value + "Breads"
-                        }
-                              },
-                    label = { Text(text = "Breads") },
-                    leadingIcon = {
-                        if (chipSelectedBreads.value) {
-                            Icon(
-                                imageVector = Icons.Default.Done,
-                                contentDescription = null,
-                            )
-                        } else {
-                        }
-
-                    }
-                )
-                Spacer(modifier = Modifier.padding(end = 4.dp))
-
-                //Cocktail CHIP///////////////////////////////////////////////////////////////////////
-                val chipSelectedCocktail = remember { mutableStateOf(false) }
-                FilterChip(
-                    selected = chipSelectedCocktail.value,
-                    onClick = { chipSelectedCocktail.value = !chipSelectedCocktail.value
-
-                        if (categoryState.value.contains("Cocktail")) {
-                            //remove pizza
-                            categoryState.value = categoryState.value.filter { it != "Cocktail" }
-                        } else {
-                            //add pizza
-                            categoryState.value = categoryState.value + "Cocktail"
-                        }
-                              },
-                    label = { Text(text = "Cocktail") },
-                    leadingIcon = {
-                        if (chipSelectedCocktail.value) {
-                            Icon(
-                                imageVector = Icons.Default.Done,
-                                contentDescription = null,
-                            )
-                        } else {
-                        }
-
-                    }
-                )
-                Spacer(modifier = Modifier.padding(end = 4.dp))
-
-
+                }
             }
 
-
-            val filterRecipesByCategory =
-                viewModel.getRecipesByCategory(categoryState.value)
-            val finalFilterList = filterRecipesByCategory + filteredRecipes
-
+//////LAZY COLUMN//////////////////////////////////////////////////////////////////////////////////////////////////
             Column(modifier = Modifier.fillMaxSize()) {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     items(
-                        if (queryState.value.isNotEmpty() || categoryState.value.isNotEmpty()) {
-                            finalFilterList
+                        if (selectedCategory.value.isNotEmpty()|| queryState.value.isNotEmpty()) {
+                            finalFilteredList
+                            //filteredRecipesByCategory
+
+                        } else if (queryState.value.isNotEmpty()) {
+                            filteredRecipesBySearch
+
+                        } else if (queryState.value.isNotEmpty() && selectedCategory.value.isNotEmpty()) {
+                            doubleSearchFilterList
+
                         } else {
                             state.value
                         }
-
-
                     ) { recipe ->
                         OneRecipeItem(
                             oneRecipe = recipe,
@@ -309,28 +167,19 @@ fun MainScreen(
                             }
 
                         )
-
                         Spacer(modifier = Modifier.height(16.dp))
-
                     }
-
                 }
             }
-
-
         }
-
     }
 }
-
 
 @Composable
 fun OneRecipeItem(
     oneRecipe: RecipeDataClass,
     onClick: (RecipeDataClass) -> Unit
 ) {
-
-
 //create
     Card(
         modifier = Modifier.clickable { onClick(oneRecipe) },
