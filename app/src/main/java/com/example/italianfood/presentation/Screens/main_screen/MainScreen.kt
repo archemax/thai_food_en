@@ -1,14 +1,18 @@
 package com.example.italianfood.presentation
 
+
 import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.util.Log
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.aspectRatio
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -22,7 +26,6 @@ import androidx.compose.material.icons.filled.Clear
 import androidx.compose.material.icons.filled.Done
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
@@ -32,11 +35,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.paint
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
@@ -114,7 +120,8 @@ fun MainScreen(
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(0.dp),
+                    .padding(0.dp)
+                    .border(1.dp, color = Color.LightGray),
 
                 ) {}
 
@@ -146,7 +153,7 @@ fun MainScreen(
             Column(modifier = Modifier.fillMaxSize()) {
                 LazyColumn(modifier = Modifier.fillMaxSize()) {
                     items(
-                        if (selectedCategory.value.isNotEmpty()|| queryState.value.isNotEmpty()) {
+                        if (selectedCategory.value.isNotEmpty() || queryState.value.isNotEmpty()) {
                             finalFilteredList
                             //filteredRecipesByCategory
 
@@ -182,66 +189,115 @@ fun OneRecipeItem(
 ) {
 //create
     Card(
-        modifier = Modifier.clickable { onClick(oneRecipe) },
+        modifier = Modifier
+            .aspectRatio(2.5f)
+            .clickable { onClick(oneRecipe) },
         elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
     ) {
 
-        Row(modifier = Modifier.fillMaxWidth()) {
+        Row(modifier = Modifier.fillMaxHeight()) {
             Image(
-                modifier = Modifier
-                    .size(100.dp),
+                modifier = Modifier.size(158.dp),
+                contentScale = ContentScale.FillHeight,
                 painter = painterResource(id = oneRecipe.imageResId),
                 contentDescription = null,
             )
             Column(
                 modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(start = 4.dp, end = 4.dp)
+                    .fillMaxSize()
+                    .padding(start = 16.dp, end = 16.dp, top = 11.dp)
                     .height(100.dp)
             ) {
                 Text(
                     text = "${oneRecipe.dishTitle}",
                     maxLines = 2,
-                    fontSize = 16.sp,
+                    fontSize = 14.sp,
                     fontWeight = FontWeight.Bold
                 )
-                Text(text = "${oneRecipe.description}", maxLines = 1, fontSize = 8.sp)
-                Divider()
+                //Text(text = "${oneRecipe.description}", maxLines = 1, fontSize = 8.sp)
+                Spacer(modifier = Modifier.size(8.dp))
 
                 // Iterate through ingredients and display each item
                 val listOfIngredients = oneRecipe.ingredients
-                val oneString = listOfIngredients.joinToString()
-                val cleanFinalStr = oneString.replace("\n", " /")
+                Log.d("listOfIngredients", "${listOfIngredients}")
+
+                val joinedToString = listOfIngredients.joinToString("")
+                Log.d("removedJoined", "${joinedToString}")
+
+                val replacedBackn = joinedToString.replace("\n", " ")
+                Log.d("replacedBackn", "${replacedBackn}")
+
+                val trimmed = replacedBackn.trim()
+                Log.d("trimmed", "${trimmed}")
+
 
                 Text(
-                    text = cleanFinalStr,
-                    maxLines = 1,
-                    fontSize = 8.sp
+                    text = trimmed,
+                    maxLines = 2,
+                    fontSize = 8.sp,
+                    lineHeight = 16.sp
                 )
 
 
 //////////////////////////////////////
-                val listOfInstructions = oneRecipe.instructions
-                val oneStringInstructions = listOfInstructions.joinToString()
-                val finalInstructions = oneStringInstructions.replace("\n", " /")
-                Text(
-                    text = "$finalInstructions",
-                    maxLines = 1,
-                    fontSize = 8.sp,
-                )
-                Log.d("instructions", finalInstructions)
+//                val listOfInstructions = oneRecipe.instructions
+//                val oneStringInstructions = listOfInstructions.joinToString()
+//                val finalInstructions = oneStringInstructions.replace("\n", " /")
+//                Text(
+//                    text = "$finalInstructions",
+//                    maxLines = 1,
+//                    fontSize = 8.sp,
+//                )
+//                Log.d("instructions", finalInstructions)
 
 
-                Divider()
+                //Divider()
                 Spacer(modifier = Modifier.weight(0.5f))
-                Text(
-                    text = "Category: ${oneRecipe.category}",
-                    maxLines = 1,
-                    fontSize = 8.sp
-                )
+                Row(
+                    modifier = Modifier.padding(bottom = 8.dp),
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Icon(
+                        painter = painterResource(id = R.drawable.category_icon),
+                        contentDescription = null
+                    )
+                    Text(
+                        text = "  ${oneRecipe.category}",
+                        maxLines = 1,
+                        fontSize = 8.sp
+                    )
+                }
+
             }
         }
     }
+}
+
+//// for preview only
+val sampleRecipe = RecipeDataClass(
+    id = 999,
+    dishTitle = "Sample Dish",
+    description = "Sample description",
+    ingredients = listOf(
+        "Ingredients:\n" +
+                "1 clove of garlic\n" +
+                "300 g of burrata\n" +
+                "2 tablespoons of white balsamic vinegar\n" +
+                "3 tablespoons of lemon olive oil\n" +
+                "1/4 teaspoon of salt a little pepper\n" +
+                "2 peeled lemons, cut into slices\n" +
+                "½ bunch of basil leaves\n" +
+                "a little fleur de sel"
+    ),
+    instructions = listOf("Step 1", "Step 2"),
+    category = "Sample Category",
+    imageResId = R.drawable.panna_cotta_60 // Replace with your actual image resource
+)
+
+@Preview(showSystemUi = true)
+@Composable
+fun OneRecipeItemPreview() {
+    OneRecipeItem(oneRecipe = sampleRecipe, onClick = {})
 }
 
 

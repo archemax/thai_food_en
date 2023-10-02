@@ -1,13 +1,29 @@
 package com.example.italianfood.data
 
 
-
 import com.example.italianfood.R
 import com.example.italianfood.model.RecipeDataClass
 
 
 object Repository {
     val recipes = listOf(
+
+
+        RecipeDataClass(
+            id = 65,
+            category = "Desserts",
+            dishTitle = "Amaretto Semifreddo",
+            imageResId = R.drawable.amaretto_semifreddo_65,
+            description = "Amaretto Semifreddo is a delightful Italian frozen dessert with amaretto liqueur and almond flavors. It's rich and creamy, similar to ice cream, but lighter in texture. There are no specific dietary restrictions for this dessert. Dessert. The calorie count may vary depending on the recipe, but it's approximately 250300 calories per serving. Amaretto Semifreddo is a semi frozen dessert that combines amaretto nutty taste with amaretti cookies' sweetness. It's a delightful treat with a creamy texture, perfect for a sweet ending to an Italian meal. The recipe typically serves 6.   ",
+            ingredients = listOf(
+                "Ingredients: 3 large egg yolks 1/2 cup granulated sugar 2 tablespoons amaretto liqueur 1 1/4 cups heavy cream 1/2 cup crushed amaretti cookies Sliced almonds and additional cookies for garnish (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: In a heatproof bowl, whisk together egg yolks and sugar. Place the bowl over a pot of simmering water (double boiler) and whisk until the mixture thickens. Remove from heat and stir in amaretto liqueur. Let it cool to room temperature. Whip the heavy cream until stiff peaks form. Gently fold the egg mixture into the whipped cream. Fold in the crushed amaretti cookies. Pour the mixture into a loaf pan lined with plastic wrap. Freeze for at least 4 hours or until set. Serve slices of semifreddo garnished with sliced almonds and additional amaretti cookies, if desired.",
+            )
+        ),
+
+
         RecipeDataClass(
             id = 84,
             category = "Antipasti",
@@ -128,7 +144,6 @@ object Repository {
             )
         ),
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
         RecipeDataClass(
@@ -329,7 +344,6 @@ object Repository {
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
         RecipeDataClass(
             id = 3,
             category = "Antipasti",
@@ -353,7 +367,6 @@ object Repository {
             )
         ),
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
         RecipeDataClass(
@@ -1126,7 +1139,6 @@ object Repository {
             )
         ),
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 
         RecipeDataClass(
@@ -2027,7 +2039,6 @@ object Repository {
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
         RecipeDataClass(
             id = 73,
             category = "Dessert",
@@ -2370,10 +2381,6 @@ object Repository {
             )
         ),
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
 
 
     )

@@ -4,20 +4,24 @@ import android.annotation.SuppressLint
 import androidx.compose.animation.animateContentSize
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Divider
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -25,18 +29,22 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.paint
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.example.italianfood.R
+import com.example.italianfood.model.RecipeDataClass
 import com.example.italianfood.presentation.Screens.one_recipe_screen.OneRecipeScreenViewModel
+import com.example.italianfood.ui.theme.*
 
 @SuppressLint("SuspiciousIndentation")
 @Composable
@@ -54,55 +62,72 @@ fun OneRecipeScreen(
         Column(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
-                .paint(
-                    painterResource(id = R.drawable.background_jpg),
-                    contentScale = ContentScale.FillHeight
-                ),
+                .padding(top = 0.dp, bottom = 0.dp, start = 0.dp, end = 0.dp)
+//                .paint(
+//                    painterResource(id = R.drawable.background_jpg),
+//                    contentScale = ContentScale.FillHeight),
         )
         {
 
-            Image(painter = painterResource(id = R.drawable.baseline_arrow_back_24),
-                contentDescription = "arrow back",
-                modifier = Modifier
-                    .clickable { navController.popBackStack() }
-                    .padding(top = 8.dp, bottom = 4.dp, start = 4.dp, end = 4.dp))
 
-
-            Row(
+            Box(
                 modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center
+                contentAlignment = Alignment.BottomCenter
+
             ) {
                 if (recipe != null)
                     Image(
+                        // image of the recipe
                         modifier = Modifier
-                            .size(250.dp)
-                            .clip(RoundedCornerShape(10.dp)),
+                            //.size(450.dp)
+                            .clip(RoundedCornerShape(0.dp))
+                            .height(350.dp)
+                            .fillMaxWidth(),
+                        contentScale = ContentScale.FillHeight,
                         painter = painterResource(id = recipe.imageResId),
-                        contentDescription = null,
+                        contentDescription = "recipe Image",
                     )
+                Box(
+                    modifier = Modifier.align(Alignment.TopStart)
+                ) {
+                    Image(painter = painterResource(id = R.drawable.arrow_narrow_left),
+                        contentDescription = "arrow back",
+                        modifier = Modifier
+                            .clickable { navController.popBackStack() }
+                            .padding(top = 8.dp, bottom = 0.dp, start = 8.dp, end = 0.dp))
+                }
 
+                Row(
+                    // row with the title of dish
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .background(
+                            color = MyGreyOneScreen,
+                            shape = RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp)
+                        )
+                        .padding(top = 8.dp),
+                    horizontalArrangement = Arrangement.Center,
 
+                    ) {
+                    if (recipe != null)
+                        Text(
+
+                            text = "${recipe.dishTitle}",
+                            maxLines = 2,
+                            fontSize = 16.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                }
             }
-            Row(
-                modifier = Modifier.fillMaxWidth(),
-                horizontalArrangement = Arrangement.Center
-            ) {
-                if (recipe != null)
-                    Text(
-                        text = "${recipe.dishTitle}",
-                        maxLines = 2,
-                        fontSize = 24.sp,
-                        fontWeight = FontWeight.Bold
-                    )
-            }
+
             Column(
                 modifier = Modifier
                     .fillMaxSize()
-                    .padding(start = 4.dp, end = 4.dp)
-                    .verticalScroll(rememberScrollState()),
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
+                    .padding(start = 0.dp, end = 0.dp)
+                    .verticalScroll(rememberScrollState())
+                    .background(color = MyGreyOneScreen),
+
+                ) {
 
                 /////////expandible descriprion of dish///////////////////////////////////////////////////////
 
@@ -110,8 +135,10 @@ fun OneRecipeScreen(
                 val text = " ${recipe?.description}"
 
                 Column(modifier = Modifier.padding(20.dp)) {
+                    MyCategoryBadge(category = "${recipe?.category}")
                     Column(modifier = Modifier
                         .animateContentSize(animationSpec = tween(100))
+
                         .clickable(
                             interactionSource = remember { MutableInteractionSource() },
                             indication = null
@@ -122,9 +149,10 @@ fun OneRecipeScreen(
                         } else {
                             Text(
                                 text = text,
-                                maxLines = 3,
+                                maxLines = 1,
                                 overflow = TextOverflow.Ellipsis,
-                                fontSize = 18.sp
+                                fontSize = 10.sp,
+                                color = MyGreyTextColor
                             )
                         }
                     }
@@ -135,22 +163,34 @@ fun OneRecipeScreen(
 //                        maxLines = 3,
 //                        fontSize = 24.sp
 //                    )
-                MyDivider()
+
+                ///////////////////////////////////////////////////////////
+                Column(
+                    modifier = Modifier.padding(start = 28.dp),
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    Text(text = "Ingredients", color = Color.Black, fontSize = 14.sp)
+                    if (recipe != null)
+                        Text(
+                            text = "${recipe.ingredients.joinToString()}",
+                            fontSize = 10.sp,
+                            color = MyGreyTextColor,
+                            lineHeight = 16.sp,
+                            style = TextStyle(letterSpacing = 0.4.sp)
+                        )
+                }
+
+
                 ///////////////////////////////////////////////////////////
 
                 if (recipe != null)
-                    Text(text = "${recipe.ingredients.joinToString()}",
-                        fontSize = 16.sp)
-                MyDivider()
-                ///////////////////////////////////////////////////////////
+                    Text(text = "Step by step guide", color = Color.Black, fontSize = 14.sp)
+                Text(
+                    text = "${recipe?.instructions?.joinToString()}",
+                    fontSize = 16.sp,
+                    modifier = Modifier.padding(start = 8.dp, end = 8.dp)
 
-                if (recipe != null)
-                    Text(
-                        text = "${recipe.instructions.joinToString()}",
-                        fontSize = 16.sp,
-                        modifier = Modifier.padding(start = 8.dp, end = 8.dp)
-
-                    )
+                )
                 Spacer(modifier = Modifier.weight(0.5f))
 
                 MyDivider()
@@ -162,27 +202,36 @@ fun OneRecipeScreen(
     }
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MyCategoryBadge(category: String) {
+    FilterChip(selected = false, onClick = { /*TODO*/ },
+        label = { Text(text = "$category") })
+
+
+}
+
 
 @Composable
 fun MyDivider() {
     Divider(modifier = Modifier.padding(16.dp), thickness = 3.dp, color = Color.DarkGray)
 }
 
-////@Preview(showSystemUi = true)
-//@Composable
-//fun ShowOneRecipeScreen() {
-//
-//    // Create sample data for testing
-//    val sampleRecipe = RecipeDataClass(
-//        id = 1,
-//        category = "Sample Category",
-//        dishTitle = "Sample Dish Title",
-//        imageResId = 1,
-//        description = "description",
-//        ingredients = emptyList(),
-//        instructions = emptyList()
-//    )
-//
-//    // Display your composable using the sample data
-//    //OneRecipeScreen(oneRecipe = sampleRecipe)
-//}
+@Preview(showSystemUi = true)
+@Composable
+fun ShowOneRecipeScreen() {
+
+    // Create sample data for testing
+    val sampleRecipe = RecipeDataClass(
+        id = 87,
+        category = "Sample Category",
+        dishTitle = "Sample Dish Title",
+        imageResId = 88,
+        description = "description",
+        ingredients = emptyList(),
+        instructions = emptyList()
+    )
+
+    // Display your composable using the sample data
+    OneRecipeScreen(navController = rememberNavController(), routeId = "1")
+}
