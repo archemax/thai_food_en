@@ -5,7 +5,6 @@ import android.annotation.SuppressLint
 import android.content.res.Configuration
 import android.util.Log
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
@@ -21,27 +20,35 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Clear
-import androidx.compose.material.icons.filled.Done
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedFilterChip
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
+import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SearchBar
+import androidx.compose.material3.SearchBarDefaults
+import androidx.compose.material3.SelectableChipElevation
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.paint
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -61,10 +68,10 @@ fun MainScreen(
 ) {
     val state = viewModel.state
 
-    val queryState = remember { mutableStateOf("") }
+    val queryState = rememberSaveable { mutableStateOf("") }
     Log.d("queryState", "${queryState.value}")
 
-    val selectedCategory = remember { mutableStateOf("") }
+    val selectedCategory = rememberSaveable { mutableStateOf("") }
     Log.d("selectedCategory", "${selectedCategory.value}")
 
 
@@ -83,11 +90,11 @@ fun MainScreen(
     Scaffold(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
-            .paint(
-                painterResource(id = R.drawable.background_jpg),
-                contentScale = ContentScale.FillHeight
-            ),
+            .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp),
+//            .paint(
+//                painterResource(id = R.drawable.background_jpg),
+//                contentScale = ContentScale.FillHeight
+//            ),
         topBar = {},
         bottomBar = { },
 
@@ -96,18 +103,26 @@ fun MainScreen(
             modifier = Modifier
                 .padding(paddingValues)
                 .fillMaxSize()
-                .paint(
-                    painterResource(id = R.drawable.background_jpg),
-                    contentScale = ContentScale.FillHeight
-                )
+//                .paint(
+//                    painterResource(id = R.drawable.background_jpg),
+//                    contentScale = ContentScale.FillHeight
+//                )
         ) {
             SearchBar(
+
                 query = queryState.value,
                 onQueryChange = { query -> queryState.value = query },
                 onSearch = {},
                 active = false,
                 onActiveChange = { },
-                placeholder = { Text(text = "Search") },
+                placeholder = { Text(text = "Search...") },
+                colors = SearchBarDefaults.colors(containerColor = Color(0xFFECEFFB)),
+                leadingIcon = {
+                    Icon(
+                        painter = painterResource(id = R.drawable.search_leading_icon),
+                        contentDescription = "search circkle"
+                    )
+                },
                 trailingIcon = {
                     if (queryState.value.isNotEmpty()) {
                         Icon(
@@ -120,34 +135,100 @@ fun MainScreen(
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(0.dp)
-                    .border(1.dp, color = Color.LightGray),
+                    .padding(top = 24.dp, start = 15.dp, end = 15.dp)
+                //.border(1.dp, color = Color.LightGray),
 
-                ) {}
+            ) {}
+            Spacer(modifier = Modifier.height(16.dp))
+            Text(
+                text = "What will you cook?",
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    lineHeight = 16.sp,
+                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                    fontWeight = FontWeight(700),
+                    color = Color(0xFF000000),
+                    letterSpacing = 0.4.sp,
+                )
+
+            )
+
 
             Row(modifier = Modifier.horizontalScroll(rememberScrollState())) {
                 categoriesOfFood.forEach { category ->
                     val isSelected = category == selectedCategory.value
+                    val myElevation: SelectableChipElevation? = if (isSelected) {
+                        FilterChipDefaults.filterChipElevation(8.dp)
+                    } else {
+                        FilterChipDefaults.filterChipElevation(0.dp)
+                    }
 
-                    FilterChip(
+                    ElevatedFilterChip(
                         selected = isSelected,
                         onClick = {
                             selectedCategory.value = if (isSelected) "" else category
                         },
-                        label = { Text(text = category) },
-                        leadingIcon = {
-                            if (isSelected) {
-                                Icon(
-                                    imageVector = Icons.Default.Done,
-                                    contentDescription = null,
+                        elevation = myElevation,
+
+                        label = {
+                            Text(
+                                text = category,
+                                style = TextStyle(
+                                    fontSize = 14.sp,
+                                    lineHeight = 20.sp,
+                                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                    fontWeight = FontWeight(500),
+                                    color = Color(0xFF3F486C),
+                                    textAlign = TextAlign.Center,
+                                    letterSpacing = 0.1.sp,
                                 )
-                            }
-                        }
+                            )
+                        },
+
+
+                        border = FilterChipDefaults.filterChipBorder(
+                            borderColor = Color(0xFF848EB2),
+                            selectedBorderColor = Color(0xFF848EB2), selectedBorderWidth = 1.dp
+                        ),
+                        colors = FilterChipDefaults.filterChipColors(
+                            selectedContainerColor = Color(0xFFECEFFB)
+                        ),
+
+
+//                        leadingIcon = {
+//                            if (isSelected) {
+//                                Icon(
+//                                    imageVector = Icons.Default.Clear,
+//                                    contentDescription = null,
+//                                    modifier = Modifier
+//                                        .background(color = Color(0xFFECEFFB))
+//                                        .clip(MaterialTheme.shapes.small)
+//                                )
+//                            }
+//                        }
                     )
                     Spacer(modifier = Modifier.padding(end = 4.dp))
 
                 }
             }
+
+////Recommended for you//////////////////////////////////////////////////////////////////////////////////
+
+            Text(
+                text = "Recommended for you",
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    lineHeight = 16.sp,
+                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                    fontWeight = FontWeight(700),
+                    color = Color(0xFF000000),
+                    letterSpacing = 0.4.sp,
+                )
+
+            )
+            Spacer(modifier = Modifier.height(12.dp))
+//////Recommended for you//////////////////////////////////////////////////////////////////////////////////
+
 
 //////LAZY COLUMN//////////////////////////////////////////////////////////////////////////////////////////////////
             Column(modifier = Modifier.fillMaxSize()) {
@@ -192,12 +273,17 @@ fun OneRecipeItem(
         modifier = Modifier
             .aspectRatio(2.5f)
             .clickable { onClick(oneRecipe) },
-        elevation = CardDefaults.cardElevation(defaultElevation = 10.dp)
+        shape = RoundedCornerShape(8.dp),
+        elevation = CardDefaults.cardElevation(defaultElevation = 0.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFECEFFB)),
     ) {
 
         Row(modifier = Modifier.fillMaxHeight()) {
             Image(
-                modifier = Modifier.size(158.dp),
+
+                modifier = Modifier
+                    .size(158.dp)
+                    .clip(RoundedCornerShape(8.dp)),
                 contentScale = ContentScale.FillHeight,
                 painter = painterResource(id = oneRecipe.imageResId),
                 contentDescription = null,
@@ -211,8 +297,15 @@ fun OneRecipeItem(
                 Text(
                     text = "${oneRecipe.dishTitle}",
                     maxLines = 2,
-                    fontSize = 14.sp,
-                    fontWeight = FontWeight.Bold
+                    style = TextStyle(
+                        fontSize = 14.sp,
+                        lineHeight = 16.sp,
+                        fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                        fontWeight = FontWeight(600),
+                        color = Color(0xFF3F486C),
+                        letterSpacing = 0.4.sp,
+                    )
+
                 )
                 //Text(text = "${oneRecipe.description}", maxLines = 1, fontSize = 8.sp)
                 Spacer(modifier = Modifier.size(8.dp))
@@ -221,21 +314,37 @@ fun OneRecipeItem(
                 val listOfIngredients = oneRecipe.ingredients
                 Log.d("listOfIngredients", "${listOfIngredients}")
 
-                val joinedToString = listOfIngredients.joinToString("")
-                Log.d("removedJoined", "${joinedToString}")
 
-                val replacedBackn = joinedToString.replace("\n", " ")
-                Log.d("replacedBackn", "${replacedBackn}")
+                val toMutList = listOfIngredients.toMutableList()
+                Log.d("toMutList", "${toMutList}")
 
-                val trimmed = replacedBackn.trim()
+                val noFirstElRemoved = toMutList.drop(1)
+                Log.d("noFirstElRemoved", "${noFirstElRemoved}")
+
+
+                val joinedToString = noFirstElRemoved.joinToString("")
+                Log.d("joinedToString", "${joinedToString}")
+
+                val stringNon = joinedToString.replace("\n", " ")
+                Log.d("StringNon", "${stringNon}")
+
+                val trimmed = stringNon.trim()
                 Log.d("trimmed", "${trimmed}")
 
 
+
                 Text(
-                    text = trimmed,
-                    maxLines = 2,
-                    fontSize = 8.sp,
-                    lineHeight = 16.sp
+                    text = stringNon,
+                    maxLines = 3,
+                    overflow = TextOverflow.Ellipsis,
+                    style = TextStyle(
+                        fontSize = 10.sp,
+                        lineHeight = 16.sp,
+                        fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                        fontWeight = FontWeight(400),
+                        color = Color(0xFF6B6A6A),
+                        letterSpacing = 0.4.sp,
+                    )
                 )
 
 
@@ -254,17 +363,25 @@ fun OneRecipeItem(
                 //Divider()
                 Spacer(modifier = Modifier.weight(0.5f))
                 Row(
-                    modifier = Modifier.padding(bottom = 8.dp),
+                    modifier = Modifier.padding(bottom = 10.dp),
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Icon(
                         painter = painterResource(id = R.drawable.category_icon),
-                        contentDescription = null
+                        contentDescription = null,
+                        tint = Color(0xFF3F486C)
                     )
                     Text(
                         text = "  ${oneRecipe.category}",
                         maxLines = 1,
-                        fontSize = 8.sp
+                        style = TextStyle(
+                            fontSize = 8.sp,
+                            lineHeight = 16.sp,
+                            fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                            fontWeight = FontWeight(400),
+                            color = Color(0xFF3F486C),
+                            letterSpacing = 0.4.sp,
+                        )
                     )
                 }
 
@@ -279,8 +396,8 @@ val sampleRecipe = RecipeDataClass(
     dishTitle = "Sample Dish",
     description = "Sample description",
     ingredients = listOf(
-        "Ingredients:\n" +
-                "1 clove of garlic\n" +
+        "Ingredients:\n",
+        "1 clove of garlic\n" +
                 "300 g of burrata\n" +
                 "2 tablespoons of white balsamic vinegar\n" +
                 "3 tablespoons of lemon olive oil\n" +

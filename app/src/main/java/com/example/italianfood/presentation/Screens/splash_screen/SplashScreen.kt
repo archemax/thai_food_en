@@ -2,6 +2,7 @@ package com.example.italianfood.presentation.Screens
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -13,6 +14,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.paint
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -36,23 +38,20 @@ fun SplashScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
-            .paint(
-                painterResource(id = R.drawable.background_jpg),
-                contentScale = ContentScale.FillHeight
-            ),
+            .background(color = Color(0xFFFAC819)),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = R.drawable.italy_flag),
+        Image(painter = painterResource(id = R.drawable.splash_logo,
+        ),
             contentDescription = null)
-        Text(
-            "Italian Food",
-            fontWeight = FontWeight.Bold,
-            fontSize = 32.sp,
-            maxLines = 1,
-            overflow = TextOverflow.Ellipsis
-        )
+//        Text(
+//            "Italian Recipe book",
+//            fontWeight = FontWeight.Bold,
+//            fontSize = 32.sp,
+//            maxLines = 1,
+//            overflow = TextOverflow.Ellipsis
+//        )
 
 
     }

@@ -16,12 +16,15 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Divider
+import androidx.compose.material3.ElevatedFilterChip
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilterChip
+import androidx.compose.material3.FilterChipDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -33,7 +36,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -63,6 +69,7 @@ fun OneRecipeScreen(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(top = 0.dp, bottom = 0.dp, start = 0.dp, end = 0.dp)
+                .background(Color.White)
 //                .paint(
 //                    painterResource(id = R.drawable.background_jpg),
 //                    contentScale = ContentScale.FillHeight),
@@ -71,7 +78,9 @@ fun OneRecipeScreen(
 
 
             Box(
-                modifier = Modifier.fillMaxWidth(),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .background(Color.White),
                 contentAlignment = Alignment.BottomCenter
 
             ) {
@@ -83,7 +92,7 @@ fun OneRecipeScreen(
                             .clip(RoundedCornerShape(0.dp))
                             .height(350.dp)
                             .fillMaxWidth(),
-                        contentScale = ContentScale.FillHeight,
+                        contentScale = ContentScale.Crop,
                         painter = painterResource(id = recipe.imageResId),
                         contentDescription = "recipe Image",
                     )
@@ -102,7 +111,7 @@ fun OneRecipeScreen(
                     modifier = Modifier
                         .fillMaxWidth()
                         .background(
-                            color = MyGreyOneScreen,
+                            color = Color.White,
                             shape = RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp)
                         )
                         .padding(top = 8.dp),
@@ -111,11 +120,17 @@ fun OneRecipeScreen(
                     ) {
                     if (recipe != null)
                         Text(
-
+                            modifier = Modifier.padding(start = 8.dp, end = 8.dp),
                             text = "${recipe.dishTitle}",
                             maxLines = 2,
-                            fontSize = 16.sp,
-                            fontWeight = FontWeight.Bold
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                lineHeight = 16.sp,
+                                fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                fontWeight = FontWeight(700),
+                                color = Color(0xFF000000),
+                                letterSpacing = 0.4.sp,
+                            )
                         )
                 }
             }
@@ -125,17 +140,22 @@ fun OneRecipeScreen(
                     .fillMaxSize()
                     .padding(start = 0.dp, end = 0.dp)
                     .verticalScroll(rememberScrollState())
-                    .background(color = MyGreyOneScreen),
+                    .background(color = Color.White),
 
                 ) {
 
-                /////////expandible descriprion of dish///////////////////////////////////////////////////////
+                /////////////////expandible descriprion of dish///////////////////////////////////////////////////////
 
                 var showMore = remember { mutableStateOf(false) }
-                val text = " ${recipe?.description}"
+                //val text = " ${recipe?.description}"
+                val text = ""
 
-                Column(modifier = Modifier.padding(20.dp)) {
+
+                Column(modifier = Modifier.padding(28.dp)) {
                     MyCategoryBadge(category = "${recipe?.category}")
+
+
+
                     Column(modifier = Modifier
                         .animateContentSize(animationSpec = tween(100))
 
@@ -143,16 +163,29 @@ fun OneRecipeScreen(
                             interactionSource = remember { MutableInteractionSource() },
                             indication = null
                         ) { showMore.value = !showMore.value }) {
-
                         if (showMore.value) {
-                            Text(text = text, fontSize = 18.sp)
+                            Text(
+                                text = text,
+                                style = TextStyle(
+                                    fontSize = 10.sp,
+                                    lineHeight = 16.sp,
+                                    fontWeight = FontWeight(400),
+                                    color = Color(0xFF444444),
+                                    letterSpacing = 0.4.sp,
+                                )
+                            )
                         } else {
                             Text(
                                 text = text,
                                 maxLines = 1,
                                 overflow = TextOverflow.Ellipsis,
-                                fontSize = 10.sp,
-                                color = MyGreyTextColor
+                                style = TextStyle(
+                                    fontSize = 10.sp,
+                                    lineHeight = 16.sp,
+                                    fontWeight = FontWeight(400),
+                                    color = Color(0xFF444444),
+                                    letterSpacing = 0.4.sp,
+                                )
                             )
                         }
                     }
@@ -169,34 +202,109 @@ fun OneRecipeScreen(
                     modifier = Modifier.padding(start = 28.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
-                    Text(text = "Ingredients", color = Color.Black, fontSize = 14.sp)
+                    Text(
+                        text = "Ingredients",
+                        modifier = Modifier.padding(bottom = 8.dp),
+                        style = TextStyle(
+                            fontSize = 14.sp,
+                            lineHeight = 16.sp,
+                            fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                            fontWeight = FontWeight(400),
+                            color = Color(0xFF000000),
+                            letterSpacing = 0.4.sp,
+                        )
+                    )
+                    val editedIgredients = recipe?.ingredients?.toMutableList()
+                    val dropFirstElement = editedIgredients?.drop(1)?.joinToString()
+
+                    if (recipe != null)
+
+                        Text(
+                            text = "$dropFirstElement",
+                            style = TextStyle(
+                                fontSize = 12.sp,
+                                lineHeight = 16.sp,
+                                fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                fontWeight = FontWeight(400),
+                                color = Color(0xFF444444),
+                                letterSpacing = 0.8.sp,
+                            )
+                        )
+                }
+                Spacer(modifier = Modifier.size(16.dp))
+
+
+                ///////Step by step guide/////////////////////////////////////////////////////////////////////////////////////
+                Column(
+                    modifier = Modifier.padding(start = 28.dp, end = 16.dp),
+                    horizontalAlignment = Alignment.Start
+                ) {
+                    Text(
+                        text = "Step by step guide",
+                        modifier = Modifier.padding(bottom = 8.dp),
+                        style = TextStyle(
+                            fontSize = 14.sp,
+                            lineHeight = 16.sp,
+                            fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                            fontWeight = FontWeight(400),
+                            color = Color(0xFF000000),
+                            letterSpacing = 0.4.sp,
+                        )
+                    )
+
+                    val mutableListRecipe = recipe?.instructions?.toMutableList()
+                    val firstElementRemoved = mutableListRecipe?.drop(1)?.joinToString()
                     if (recipe != null)
                         Text(
-                            text = "${recipe.ingredients.joinToString()}",
-                            fontSize = 10.sp,
-                            color = MyGreyTextColor,
-                            lineHeight = 16.sp,
-                            style = TextStyle(letterSpacing = 0.4.sp)
+                            text = "${firstElementRemoved}",
+
+                            modifier = Modifier.padding(start = 0.dp, end = 0.dp),
+                            style = TextStyle(
+                                fontSize = 10.sp,
+                                lineHeight = 16.sp,
+                                fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                fontWeight = FontWeight(400),
+                                color = Color(0xFF444444),
+                                letterSpacing = 0.4.sp,
+                            )
+
                         )
                 }
 
 
-                ///////////////////////////////////////////////////////////
-
-                if (recipe != null)
-                    Text(text = "Step by step guide", color = Color.Black, fontSize = 14.sp)
-                Text(
-                    text = "${recipe?.instructions?.joinToString()}",
-                    fontSize = 16.sp,
-                    modifier = Modifier.padding(start = 8.dp, end = 8.dp)
-
-                )
                 Spacer(modifier = Modifier.weight(0.5f))
 
-                MyDivider()
-                if (recipe != null)
-                    Text(text = "Category: ${recipe.category}", maxLines = 2, fontSize = 12.sp)
-                Spacer(modifier = Modifier.padding(8.dp))
+
+//////////////////////CATEGORY///////////////////////////////////////////////
+                Column(
+                    modifier = Modifier.padding(start = 28.dp, top = 24.dp, bottom = 24.dp),
+                    horizontalAlignment = Alignment.CenterHorizontally
+
+                ) {
+                    Row(
+                        modifier = Modifier.padding(bottom = 8.dp),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
+                        Icon(
+                            painter = painterResource(id = R.drawable.category_icon),
+                            contentDescription = null,
+                            tint = Color(0xFF3F486C)
+                        )
+                        Text(
+                            text = "  ${recipe?.category}",
+                            maxLines = 1,
+                            style = TextStyle(
+                                fontSize = 8.sp,
+                                lineHeight = 16.sp,
+                                fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                fontWeight = FontWeight(400),
+                                color = Color(0xFF3F486C),
+                                letterSpacing = 0.4.sp,
+                            )
+                        )
+                    }
+                }
+
             }
         }
     }
@@ -205,8 +313,32 @@ fun OneRecipeScreen(
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyCategoryBadge(category: String) {
-    FilterChip(selected = false, onClick = { /*TODO*/ },
-        label = { Text(text = "$category") })
+    ElevatedFilterChip(
+        selected = true,
+        onClick = { /*TODO*/ },
+        label = {
+            Text(
+                text = "$category",
+                style = TextStyle(
+                    fontSize = 14.sp,
+                    lineHeight = 20.sp,
+                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                    fontWeight = FontWeight(500),
+                    color = Color(0xFF3F486C),
+                    textAlign = TextAlign.Center,
+                    letterSpacing = 0.1.sp,
+                )
+            )
+        },
+        border = FilterChipDefaults.filterChipBorder(
+            borderColor = Color(0xFF848EB2),
+            selectedBorderColor = Color(0xFF848EB2), selectedBorderWidth = 1.dp
+        ),
+        colors = FilterChipDefaults.filterChipColors(
+            selectedContainerColor = Color(0xFFECEFFB)
+        ),
+        elevation = FilterChipDefaults.filterChipElevation(8.dp)
+    )
 
 
 }
@@ -228,7 +360,15 @@ fun ShowOneRecipeScreen() {
         dishTitle = "Sample Dish Title",
         imageResId = 88,
         description = "description",
-        ingredients = emptyList(),
+        ingredients = listOf(
+            "Ingredients:\n ",
+            "3 large egg yolks \n" +
+                    "1/2 cup granulated sugar \n" +
+                    "2 tablespoons amaretto liqueur \n" +
+                    "1 1/4 cups heavy cream \n" +
+                    "1/2 cup crushed amaretti cookies \n" +
+                    "Sliced almonds and additional cookies for garnish (optional)"
+        ),
         instructions = emptyList()
     )
 

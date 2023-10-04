@@ -16,10 +16,23 @@ object Repository {
             imageResId = R.drawable.amaretto_semifreddo_65,
             description = "Amaretto Semifreddo is a delightful Italian frozen dessert with amaretto liqueur and almond flavors. It's rich and creamy, similar to ice cream, but lighter in texture. There are no specific dietary restrictions for this dessert. Dessert. The calorie count may vary depending on the recipe, but it's approximately 250300 calories per serving. Amaretto Semifreddo is a semi frozen dessert that combines amaretto nutty taste with amaretti cookies' sweetness. It's a delightful treat with a creamy texture, perfect for a sweet ending to an Italian meal. The recipe typically serves 6.   ",
             ingredients = listOf(
-                "Ingredients: 3 large egg yolks 1/2 cup granulated sugar 2 tablespoons amaretto liqueur 1 1/4 cups heavy cream 1/2 cup crushed amaretti cookies Sliced almonds and additional cookies for garnish (optional)",
+                "Ingredients:\n " ,
+                        "3 large egg yolks \n" +
+                        "1/2 cup granulated sugar \n" +
+                        "2 tablespoons amaretto liqueur \n" +
+                        "1 1/4 cups heavy cream \n" +
+                        "1/2 cup crushed amaretti cookies \n" +
+                        "Sliced almonds and additional cookies for garnish (optional)"
             ),
             instructions = listOf(
-                "Cooking Process: In a heatproof bowl, whisk together egg yolks and sugar. Place the bowl over a pot of simmering water (double boiler) and whisk until the mixture thickens. Remove from heat and stir in amaretto liqueur. Let it cool to room temperature. Whip the heavy cream until stiff peaks form. Gently fold the egg mixture into the whipped cream. Fold in the crushed amaretti cookies. Pour the mixture into a loaf pan lined with plastic wrap. Freeze for at least 4 hours or until set. Serve slices of semifreddo garnished with sliced almonds and additional amaretti cookies, if desired.",
+                "Cooking Process: " ,
+                        "In a heatproof bowl, whisk together egg yolks and sugar. " +
+                        "Place the bowl over a pot of simmering water (double boiler) and whisk until the mixture thickens. " +
+                        "Remove from heat and stir in amaretto liqueur. " +
+                        "Let it cool to room temperature. Whip the heavy cream until stiff peaks form. " +
+                        "Gently fold the egg mixture into the whipped cream. Fold in the crushed amaretti cookies. " +
+                        "Pour the mixture into a loaf pan lined with plastic wrap. Freeze for at least 4 hours or until set. " +
+                        "Serve slices of semifreddo garnished with sliced almonds and additional amaretti cookies, if desired."
             )
         ),
 
@@ -31,7 +44,7 @@ object Repository {
             imageResId = R.drawable.burrata_84,
             description = "Burrata with stewed tomatoes is a delectable Italian appetizer. It features creamy burrata cheese, known for its delicate texture, served alongside slow-cooked, aromatic stewed tomatoes. The creamy richness of the burrata perfectly complements the savory sweetness of the tomatoes, creating a harmonious and indulgent flavor combination.",
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "700 g of tomatoes (e.g., beef hearts), cut in half\n" +
                         "2 tablespoons of olive oil\n" +
                         "½ teaspoon of salt\n" +
@@ -45,7 +58,7 @@ object Repository {
                         "½ teaspoons of salt, a little pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Put the tomatoes on a baking sheet lined with baking paper, drizzle with oil, and season with salt.\n" +
                         "Bake for about 20 minutes in the upper part of the oven, preheated to 220°C. Remove and let cool.\n" +
                         "Bring the water and sugar to a boil without stirring in a small saucepan. Reduce the heat and cook for 3 minutes until bubbles form on the surface. Add the fennel seeds and simmer, stirring, until the water evaporates and the fennel seeds are dry and white. Remove the pan from the heat and continue stirring briefly. Spread the fennel seeds on a sheet of baking paper let cool.\n" +
@@ -65,7 +78,7 @@ object Repository {
             description = "Burrata with lemon and basil is a delightful Italian appetizer. It features creamy burrata cheese paired with the zesty brightness of fresh lemon and the aromatic freshness of basil leaves. This combination creates a harmonious contrast of flavors and textures, making it a refreshing and indulgent dish.",
             ingredients = listOf(
                 "Ingredients:\n" +
-                        "1 clove of garlic\n" +
+                        "1 clove of garlic\n" ,
                         "300 g of burrata\n" +
                         "2 tablespoons of white balsamic vinegar\n" +
                         "3 tablespoons of lemon olive oil\n" +
@@ -75,7 +88,7 @@ object Repository {
                         "a little fleur de sel"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Bread: Place the slices of bread on a plate.\n" +
                         "2. Toast: Toast the slices of bread for approx. 10 minutes in the upper part of the oven, preheated to 220°C. Remove and let cool. Rub the bread slices with garlic.\n" +
                         "3. Burrata: chop the burrata put it in a salad bowl. Mix vinegar and oil, season, and pour over the burrata. Garnish with lemon and basil, sprinkle with fleur de sel. Serve the burrata with toasted bread."
@@ -91,7 +104,7 @@ object Repository {
             imageResId = R.drawable.carbonara_new11,
             description = "Spaghetti Carbonara is a classic Italian pasta dish. It's not suitable for vegetarians as it contains eggs, cheese, and pancetta. The dish is creamy, savory, and rich, with approximately 400450 calories per serving.",
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "400g spaghetti\n" +
                         "150g pancetta or guanciale, diced\n" +
                         "3 large eggs\n" +
@@ -102,7 +115,7 @@ object Repository {
                         "Fresh parsley, chopped (for garnish)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the spaghetti in salted boiling water until al dente. Reserve about 1/2 cup of pasta cooking water before draining.\n" +
                         "In a separate bowl, whisk together the eggs, grated Pecorino Romano, and grated Parmesan. Season with black pepper.\n" +
                         "In a pan, sauté the diced pancetta or guanciale until crispy. If desired, add minced garlic for extra flavor.\n" +
@@ -123,7 +136,7 @@ object Repository {
             description = "Fettuccine Alfredo is a classic Italian pasta dish known for its creamy, indulgent sauce. Traditional Fettuccine Alfredo is unsuitable for a vegan or dairy free diet due to its rich butter and cream based sauce. It is a creamy pasta dish featuring fettuccine noodles, butter, heavy cream, and Parmesan cheese",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "8 ounces (about 2 cups) of fettuccine pasta\n" +
                         "1/2 cup unsalted butter\n" +
                         "1 cup heavy cream\n" +
@@ -132,7 +145,7 @@ object Repository {
                         "Optional: minced garlic, parsley for garnish\n"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the fettuccine pasta according to package instructions until al dente, then drain.\n" +
                         "In a large skillet, melt the butter over medium heat. If desired, add minced garlic and sauté briefly for flavor.\n" +
                         "Stir in the heavy cream and bring it to a simmer.\n" +
@@ -154,7 +167,7 @@ object Repository {
             description = "Margherita Pizza is a classic Italian pizza known for its simplicity and delicious flavors. It features a thin crust topped with fresh ingredients. There are no specific dietary restrictions for Margherita Pizza.  Margherita Pizza consists of a thin pizza crust spread with tomato sauce, fresh mozzarella cheese, fresh basil leaves, a drizzle of olive oil, and a sprinkle of salt. It's a delightful blend of flavors, with the basil providing a fresh aroma. Approximately 250300 calories per slice (depending on the thickness of the crust and the amount of cheese used). Most Margherita Pizza recipes are designed to make one 12 inch pitch typically serves 24 people.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "1 pizza dough (store bought or homemade)\n" +
                         "1/2 cup tomato sauce or crushed tomatoes\n" +
                         "8 ounces fresh mozzarella cheese, sliced\n" +
@@ -163,7 +176,7 @@ object Repository {
                         "Salt"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature (usually around 500°F or 260°C).\n" +
                         "Roll out the pizza dough on a floured surface to your desired thickness.\n" +
                         "Transfer the dough to a pizza stone or a baking sheet.\n" +
@@ -187,7 +200,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (quantities vary by recipe):\n" +
+                "Ingredients (quantities vary by recipe):\n" ,
                         "Lasagna noodles\n" +
                         "Ground meat (usually beef, pork, or a combination)\n" +
                         "Tomato sauce\n" +
@@ -199,7 +212,7 @@ object Repository {
                         "Salt and pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook lasagna noodles according to package instructions.\n" +
                         "Brown ground meat with onions and garlic, add tomato sauce and season.\n" +
                         "Layer noodles, meat sauce, ricotta or béchamel, and cheeses in a baking dish.\n" +
@@ -220,7 +233,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (quantities may vary):\n" +
+                "Ingredients (quantities may vary):\n" ,
                         "2 cups all purpose flour\n" +
                         "2 large eggs\n" +
                         "1/2 teaspoon salt\n" +
@@ -229,7 +242,7 @@ object Repository {
                         "Sauce: tomato sauce, butter, garlic, basil, salt, and pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Make pasta dough by mixing flour, eggs, salt, and water. Knead, then roll out thinly.\n" +
                         "Mix ricotta, mozzarella, Parmesan, and provolone cheeses to prepare the cheese filling.\n" +
                         "Place spoonfuls of filling on the pasta sheet, leaving space between.\n" +
@@ -247,12 +260,12 @@ object Repository {
             id = 97,
             category = "Pasta",
             dishTitle = "Pasta with seafood (Scialatielli allo Scoglio)",
-            imageResId = R.drawable.pastawithseafood_scialatiellialloscoglio_97,
+            imageResId = R.drawable.pasta_with_seaffos_97,
             description = "Pasta with seafood, known as Scialatielli allo Scoglio, is an exquisite Italian coastal dish that showcases the bounties of the sea. This flavorful pasta typically features a medley of fresh seafood like mussels, clams, shrimp, and sometimes calamari, all cooked to perfection. The seafood is combined with a fragrant tomato-based sauce infused with garlic, chili flakes, and fresh herbs like parsley. This vibrant sauce envelops the al dente pasta, creating a harmonious blend of textures and flavors. The dish offers a delightful contrast between the sweetness of the seafood and the tanginess of the tomato sauce, making it a favorite in Italian cuisine. Scialatielli allo Scoglio captures the essence of coastal living, bringing the taste of the Mediterranean to your plate.",
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "300 g of white flour\n" +
                         "½ teaspoon of salt\n" +
                         "1 dl of milk\n" +
@@ -272,7 +285,7 @@ object Repository {
                         "½ bunch of flat-leaf parsley, coarsely chopped"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Make the noodle dough: mix the flour and salt in a bowl flour and salt in a bowl. Add the milk, oil and egg, mix and knead for for about 10 minutes to make a soft and smooth dough. Add the cheese and basil, knead and shape into a ball. Cover the dough with a bowl of with hot water and cover with parsley. Keep at room temperature for approx. 30 minutes.\n" +
                         "2. Scialatiellis: cut the dough into four pieces of dough. On a well-floured floured work surface, roll out roll them out to about 2 mm thick (approx. 12×60 cm), regularly removing the dough from the work surface. roll out the dough regularly. Roll out the pieces of dough lengthwise loosely, cut into strips about 4 mm wide, place them on a kitchen towel. \n" +
                         "3. Sauce: Heat the oil in a large in a large saucepan. Fry the garlic and chilli briefly. the garlic and chili. Add the tomatoes and wine, simmer for about 5 minutes, add salt. Add the seafood, cover with a cover and simmer for 2 minutes. Add parsley and stir. \n" +
@@ -291,7 +304,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "\n" +
                         "4 large ripe tomatoes\n" +
                         "1/4 cup fresh basil leaves\n" +
@@ -301,7 +314,7 @@ object Repository {
                         "1 baguette of Italian bread"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Dice the tomatoes, chop the basil, and mince the garlic.\n" +
                         "2. Combine the tomatoes, basil, and garlic in a bowl. Add olive oil, salt, and pepper. Mix well.\n" +
                         "3. Slice the bread into 1 inch thick slices and toast until golden brown.\n" +
@@ -322,7 +335,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "4 ripe tomatoes\n" +
                         "200g fresh mozzarella cheese\n" +
                         "Fresh basil leaves\n" +
@@ -331,7 +344,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Slice the tomatoes and mozzarella into 1/4 inch thick rounds.\n" +
                         "2. Arrange them on a serving platter, alternating tomato and mozzarella slices.\n" +
                         "3. Tuck fresh basil leaves between the tomato and mozzarella.\n" +
@@ -353,12 +366,12 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "1 ripe cantaloupe or honeydew melon\n" +
-                        "8 slices of prosciutto\n"
+                        "8 slices of prosciutto"
             ),
             instructions = listOf(
-                "Cooking Process: \n" +
+                "Cooking Process: \n" ,
                         "1. Cut the melon in half, remove the seeds, and slice it into thin wedges or cubes. \n" +
                         "2. Carefully wrap each slice of melon with a slice of prosciutto. \n" +
                         "3. Arrange the prosciutto wrapped melon on a platter. \n" +
@@ -378,7 +391,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "1 pound (450g) fresh squid (cleaned and cut into rings)\n" +
                         "1 cup all purpose flour\n" +
                         "1/2 cup cornstarch\n" +
@@ -389,7 +402,7 @@ object Repository {
                         "Lemon wedges (for garnish)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Сombine the flour, cornstarch, salt, pepper, and paprika in a bowl.\n" +
                         "2. Heat the vegetable oil in a deep fryer or a large pot to 350°F (180°C).\n" +
                         "3. Coat the squid rings in the flour mixture, shaking off any excess.\n" +
@@ -410,7 +423,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 12 arancini balls):\n" +
+                "Ingredients (for 12 arancini balls):\n" ,
                         "2 cups Arborio rice\n" +
                         "4 cups chicken or vegetable broth\n" +
                         "1/2 cup grated Parmesan cheese\n" +
@@ -423,7 +436,7 @@ object Repository {
                         "Vegetable oil for frying"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the Arborio rice in broth until tender, then let it cool.\n" +
                         "Mix in Parmesan, eggs, parsley, salt, and pepper.\n" +
                         "Take a handful of rice mixture, flatten it, add a cube of mozzarella and a spoonful of meat (if using), then form it into a ball.\n" +
@@ -443,7 +456,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "8 slices of white bread\n" +
                         "8 slices of fresh mozzarella cheese\n" +
                         "2 large eggs\n" +
@@ -455,7 +468,7 @@ object Repository {
                         "Marinara sauce (for dipping, optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Place mozzarella slices between two bread slices to form sandwiches.\n" +
                         "Whisk eggs, milk, salt, and pepper in a bowl.\n" +
                         "Dredge sandwiches in flour, then dip them into the egg mixture.\n" +
@@ -476,7 +489,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "4 cups of stale Italian bread torn into chunks\n" +
                         "4 large ripe tomatoes, cut into chunks\n" +
                         "1 red onion, thinly sliced\n" +
@@ -487,7 +500,7 @@ object Repository {
                         "Optional: cucumber, bell peppers, olives, or capers"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a large bowl, combine bread, tomatoes, onion, and basil.\n" +
                         "In a small bowl, whisk together olive oil, red wine vinegar, salt, and pepper.\n" +
                         "Drizzle the dressing over the salad and toss to combine.\n" +
@@ -506,7 +519,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "1/2 pound (225g) shrimp, cooked and peeled\n" +
                         "1/2 pound (225g) calamari, cooked and sliced into rings\n" +
                         "1/2 pound (225g) mussels, cooked and shelled\n" +
@@ -518,7 +531,7 @@ object Repository {
                         "Salt and black pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a large bowl, combine the seafood, cherry tomatoes, red onion, and parsley.\n" +
                         "Drizzle with olive oil and lemon juice. Season with salt and pepper.\n" +
                         "Gently toss all ingredients together until well mixed.\n" +
@@ -537,7 +550,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "8 large eggs\n" +
                         "1/2 cup grated Parmesan cheese\n" +
                         "1/2 cup diced vegetables (e.g., bell peppers, onions, spinach)\n" +
@@ -545,7 +558,7 @@ object Repository {
                         "2 tablespoons olive oil"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven's broiler.\n" +
                         "In a bowl, whisk the eggs, then add the grated Parmesan cheese and diced vegetables. Season with salt and pepper.\n" +
                         "Heat olive oil in an ovenproof skillet over medium heat. Pour in the egg mixture.\n" +
@@ -566,7 +579,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (for 6 servings):\n" +
+                "Ingredients (for 6 servings):\n" ,
                         "500g thinly sliced veal\n" +
                         "150g canned tuna in oil, drained\n" +
                         "45 anchovy fillets\n" +
@@ -577,7 +590,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Blend the drained tuna, anchovies, egg yolks, capers, and lemon juice in a food processor until smooth.\n" +
                         "Gradually add the mayonnaise and blend until the sauce is creamy.\n" +
                         "Season with salt and pepper to taste.\n" +
@@ -601,7 +614,7 @@ object Repository {
 
             ingredients = listOf(
                 "Ingredients:\n" +
-                        "700 g of potatoes\n" +
+                        "700 g of potatoes\n" ,
                         "175 g of white flour\n" +
                         "50 g of grated Parmesan cheese\n" +
                         "1 fresh beaten egg\n" +
@@ -618,7 +631,7 @@ object Repository {
                         "50 g of grated Parmesan cheese"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. For the gnocchi mixture: Cook the potatoes in boiling water for about 20 minutes. Peel them while still hot and mash them in a bowl, let them cool. Add the flour, Parmesan, egg and salt and mix. The mass should be moist, not stick to your hands. Add a little more flour if necessary. \n" +
                         "2. Forming: sprinkle the mass with a little flour and form 4 rolls of 2 cm each. Cut them into 2 cm pieces and wrap your thumb around the tines of a fork to make grooves. Place the gnocchi on a floured cloth.\n" +
                         "3. Tomato sauce: heat the oil in a saucepan and fry the onion. \n" +
@@ -641,7 +654,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (quantities may vary):\n" +
+                "Ingredients (quantities may vary):\n" ,
                         "12 oz penne pasta\n" +
                         "2 tbsp olive oil\n" +
                         "1/4 cup vodka\n" +
@@ -652,7 +665,7 @@ object Repository {
                         "Fresh basil and grated Parmesan cheese for garnish"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the penne pasta until al dente. Drain and set aside.\n" +
                         "Heat olive oil over medium heat in a skillet, add vodka and let it simmer to reduce by half.\n" +
                         "Stir in tomato sauce and heavy cream. Simmer for a few minutes.\n" +
@@ -674,14 +687,14 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "2 large russet potatoes (about 1 lb)\n" +
                         "1 cup all purpose flour\n" +
                         "1 egg (optional)\n" +
                         "Salt"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Boil or bake the potatoes until tender, then peel and mash them.\n" +
                         "Mix in the flour, egg (if using), and a pinch of salt, forming a dough.\n" +
                         "Divide the dough into small portions, rolling each into a rope, and cut into bite size pieces.\n" +
@@ -703,7 +716,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "8 oz fettuccine or spaghetti\n" +
                         "Assorted vegetables like bell peppers, cherry tomatoes, zucchini, and peas\n" +
                         "Olive oil\n" +
@@ -713,7 +726,7 @@ object Repository {
                         "Salt and pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the pasta according to package instructions.\n" +
                         "In a skillet, sauté garlic in olive oil, add vegetables and cook until tender.\n" +
                         "Toss the cooked pasta with the sautéed vegetables.\n" +
@@ -733,7 +746,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "12 oz orecchiette pasta\n" +
                         "1 bunch broccoli rabe\n" +
                         "2 cloves garlic\n" +
@@ -743,7 +756,7 @@ object Repository {
                         "Grated Pecorino Romano cheese (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the orecchiette pasta until al dente. Drain and set aside.\n" +
                         "In a large skillet, sauté garlic and red pepper flakes in olive oil.\n" +
                         "Add chopped broccoli rabe and cook until tender.\n" +
@@ -765,14 +778,14 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "12 oz spaghetti\n" +
                         "1 cup grated Pecorino Romano cheese\n" +
                         "Freshly ground black pepper\n" +
                         "Salt"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cook the spaghetti in salted water until al dente.\n" +
                         "Reserve some pasta cooking water, then drain the pasta.\n" +
                         "In a skillet, toast black pepper until fragrant.\n" +
@@ -794,7 +807,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "12 oz pappardelle pasta\n" +
                         "1 lb wild boar meat\n" +
                         "1 can crushed tomatoes\n" +
@@ -805,7 +818,7 @@ object Repository {
                         "Salt and black pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Brown the wild boar meat in olive oil.\n" +
                         "Add chopped onion, carrot, celery, and garlic; cook until softened.\n" +
                         "Pour in red wine and allow it to reduce.\n" +
@@ -826,7 +839,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients (quantities may vary based on the recipe):\n" +
+                "Ingredients (quantities may vary based on the recipe):\n" ,
                         "Bacon or pancetta\n" +
                         "Onion\n" +
                         "Garlic\n" +
@@ -840,7 +853,7 @@ object Repository {
                         "Grated Parmesan cheese (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a large pot, cook bacon or pancetta until crispy. Remove and set aside.\n" +
                         "In the same pot, sauté onions and garlic until softened.\n" +
                         "Add tomatoes, beans, broth, and herbs. Simmer until flavors meld.\n" +
@@ -861,7 +874,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "500 g of pasta (e.g. pikis) \n" +
                         "1 dl full cream\n" +
                         "50 g of butter\n" +
@@ -870,7 +883,7 @@ object Repository {
                         "a little pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Pasta: cook the pasta al dente in boiling salted water. salted water. Reserve 1 liter of cooking water, drain the pasta.\n" +
                         "2. Sauce: in the same saucepan, bring the reserved cooking water to a boil, cream, butter, lemon zest, and juice (about 1.5 dl). Reduce heat, and simmer for approx.5 min. Add pasta, stir, simmer for 2 minutes, season"
             )
@@ -886,7 +899,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "700 g of floury potatoes, cut in half\n" +
                         " 200g of white flour\n" +
                         "1 egg\n" +
@@ -901,7 +914,7 @@ object Repository {
                         "salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Forming the gnocchi: Add the flour, egg, salt and pepper to the potatoes and mix quickly.Divide the dough into 4 parts, form rolls of approx. 1.5 cm in diameter each into a small Meisen. Cut them into pieces about 1 cm long.\n" +
                         "Pesto: coarsely chop 2 tablespoons of pistachios, set aside. Place the remaining pistachios into a chopper. Add basil and water with the zest and juice of lime zest and juice, and mix everything. Add the the ricotta and stir.\n" +
                         "Bring the gnocchi to a boil: several times in salt water for about 5 minutes until they rise to the surface.\n" +
@@ -919,7 +932,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         " 3 tbsp of breadcrumbs\n" +
                         "½ bunch of chopped parsley\n" +
                         "160 g of parmesan cheese\n" +
@@ -931,7 +944,7 @@ object Repository {
                         "salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Spaghetti: cook the spaghetti al dente in salted water.\n" +
                         "Sauce: add 1 tablespoon of olive oil to the spaghetti\n" +
                         "Here's how to make Frisure: toast the breadcrumbs in a nonstick frying pan \n" +
@@ -956,7 +969,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "500g strong white bread flour\n" +
                         "10g salt\n" +
                         "7g fast action yeast\n" +
@@ -964,7 +977,7 @@ object Repository {
                         "300ml water"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Mix the flour, salt, and yeast in a large bowl.\n" +
                         "Add the olive oil and water, then mix to form a soft dough.\n" +
                         "Knead the dough on a floured surface for about 10 mins until it's smooth and elastic.\n" +
@@ -986,7 +999,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "2 cups all purpose flour\n" +
                         "1 teaspoon salt\n" +
                         "1/2 teaspoon sugar\n" +
@@ -996,7 +1009,7 @@ object Repository {
                         "Optional: sesame seeds, poppy seeds, or other toppings"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a bowl, combine warm water, sugar, and yeast. Let it sit for about 10 minutes until frothy.\n" +
                         "Add flour, salt, and olive oil to the yeast mixture. Mix to form a dough.\n" +
                         "Knead the dough on a floured surface for about 5 minutes until smooth.\n" +
@@ -1020,7 +1033,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "2 cups all purpose flour\n" +
                         "1/2 cup white wine (dry)\n" +
                         "1/2 cup extra virgin olive oil\n" +
@@ -1028,7 +1041,7 @@ object Repository {
                         "Optional: fennel seeds, black pepper, or other seasonings"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 375°F (190°C).\n" +
                         "In a bowl, combine flour, salt, and optional seasonings.\n" +
                         "Add white wine and olive oil, and mix until a dough forms.\n" +
@@ -1052,7 +1065,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "1 pizza dough (store bought or homemade)\n" +
                         "1/2 cup mozzarella cheese, shredded\n" +
                         "1/4 cup gorgonzola cheese, crumbled\n" +
@@ -1060,7 +1073,7 @@ object Repository {
                         "1/4 cup provolone cheese, shredded"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature (usually around 500°F or 260°C).\n" +
                         "Roll out the pizza dough on a floured surface to your desired thickness.\n" +
                         "Transfer the dough to a pizza stone or a baking sheet.\n" +
@@ -1082,7 +1095,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (store bought or homemade)\n" +
                         "San Marzano tomatoes or tomato sauce\n" +
                         "Fresh mozzarella cheese\n" +
@@ -1091,7 +1104,7 @@ object Repository {
                         "Salt"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your pizza stone or oven to the highest temperature (usually around 500°F or 260°C).\n" +
                         "Roll out the pizza dough on a floured surface to your desired thickness.\n" +
                         "Transfer the dough to a pizza peel or baking sheet dusted with cornmeal.\n" +
@@ -1115,7 +1128,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (store bought or homemade)\n" +
                         "Tomato sauce or marinara\n" +
                         "Mozzarella cheese\n" +
@@ -1124,7 +1137,7 @@ object Repository {
                         "Salt and pepper (to taste)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 475°F (245°C) or as directed by your recipe.\n" +
                         "Divide the pizza dough into equal portions.\n" +
                         "Roll each portion into a circle or oval shape on a floured surface.\n" +
@@ -1150,7 +1163,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (store bought or homemade)\n" +
                         "Olive oil\n" +
                         "Minced garlic\n" +
@@ -1161,7 +1174,7 @@ object Repository {
                         "Salt and pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the recommended temperature (usually around 475°F or 245°C).\n" +
                         "Roll out the pizza dough on a floured surface to your desired thickness.\n" +
                         "Transfer the dough to a baking sheet or pizza stone.\n" +
@@ -1185,7 +1198,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (homemade or store bought)\n" +
                         "Olive oil\n" +
                         "Tomato sauce\n" +
@@ -1196,7 +1209,7 @@ object Repository {
                         "Grated Parmesan cheese (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 475°F (245°C).\n" +
                         "Grease a baking sheet or rectangular pizza pan with olive oil.\n" +
                         "Stretch and press the pizza dough evenly into the pan, ensuring it reaches the edges.\n" +
@@ -1219,7 +1232,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "2 1/4 tsp active dry yeast\n" +
                         "1 tsp sugar\n" +
                         "1 cup warm water\n" +
@@ -1231,7 +1244,7 @@ object Repository {
                         "Optional toppings (e.g., cherry tomatoes, olives)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a bowl, combine yeast, sugar, and warm water. Let it sit for about 5 minutes until foamy.\n" +
                         "Add flour and salt to the yeast mixture. Mix until it forms a dough.\n" +
                         "Knead the dough on a floured surface for about 5 minutes.\n" +
@@ -1256,7 +1269,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (store bought or homemade)\n" +
                         "Tomato sauce\n" +
                         "Fresh garlic cloves\n" +
@@ -1265,7 +1278,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature it can reach (usually around 500°F or 260°C). Place a pizza stone or baking sheet in the oven to heat.\n" +
                         "Roll out the pizza dough into a thin round shape on a floured surface.\n" +
                         "Transfer the dough to parchment paper for easy transfer to the hot oven.\n" +
@@ -1290,7 +1303,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         " 500 g of pizza flour\n" +
                         "2 teaspoons of salt\n" +
                         "a cube of yeast (about 10 g), crushed\n" +
@@ -1303,7 +1316,7 @@ object Repository {
                         "½ teaspoon of chili flakes"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Pizza dough: mix the flour, salt and yeast. " +
                         "Add the water and olive oil and knead for approx. 10 minutes until the dough is soft and smooth. dough. " +
                         "Cover and let rise for approx. for approx. 1 hour at room until the dough has doubled in volume. in volume.\n" +
@@ -1323,7 +1336,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         " 475 g of white flour\n" +
                         "100 g of durum wheat semolina\n" +
                         "2 teaspoons of salt\n" +
@@ -1343,7 +1356,7 @@ object Repository {
                         "40 g of arugula"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. For the pizza dough: in a bowl, combine the flour, semolina, salt and yeast. Add the water and oil, mix for about 10 minutes with the minimum power of the food processor until you get a soft and smooth dough. \n" +
                         "dough. Cover and let rise for about 2 hours at room temperature until the dough has doubled in volume.\n" +
                         "2. Filling: divide the dough in half, shape into balls, flatten them slightly. Slowly roll them on the semolina to form two disks (about 30 cm in diameter). Place each pizza base on a baking sheet lined with baking paper. Mix the tomato coulis, oil, garlic and basil, and season. Spread this sauce over the two pizza bases, leaving a  1½ cm border. Top with mozzarella, cherry tomatoes and mascarpone.\n" +
@@ -1363,7 +1376,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (store bought or homemade)\n" +
                         "Tomato sauce\n" +
                         "Mozzarella cheese\n" +
@@ -1376,7 +1389,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature it can reach (usually around 500°F or 260°C). Place a pizza stone or baking sheet in the oven to heat.\n" +
                         "Roll out the pizza dough into a thin round shape on a floured surface.\n" +
                         "Transfer the dough to parchment paper for easy transfer to the hot oven.\n" +
@@ -1401,7 +1414,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (store bought or homemade)\n" +
                         "Tomato sauce\n" +
                         "Mozzarella cheese\n" +
@@ -1411,7 +1424,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to its highest temperature (usually around 500°F or 260°C) with a pizza stone or baking sheet inside.\n" +
                         "Roll out the pizza dough into a thin round shape on a floured surface.\n" +
                         "Transfer the dough to parchment paper for easy transfer to the hot oven.\n" +
@@ -1437,7 +1450,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough\n" +
                         "1/2 cup tomato sauce\n" +
                         "1 1/2 cups shredded mozzarella cheese\n" +
@@ -1445,7 +1458,7 @@ object Repository {
                         "1 tablespoon olive oil"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 475°F (245°C).\n" +
                         "Roll out the pizza dough on a floured surface.\n" +
                         "Transfer the dough to a pizza stone or baking sheet.\n" +
@@ -1469,7 +1482,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough\n" +
                         "1/2 cup tomato sauce\n" +
                         "1 1/2 cups mozzarella cheese\n" +
@@ -1479,7 +1492,7 @@ object Repository {
                         "Fresh basil leaves (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 475°F (245°C).\n" +
                         "Roll out the pizza dough on a floured surface.\n" +
                         "Transfer the dough to a pizza stone or baking sheet.\n" +
@@ -1505,7 +1518,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough\n" +
                         "1/2 cup tomato sauce\n" +
                         "1 1/2 cups buffalo mozzarella cheese\n" +
@@ -1514,7 +1527,7 @@ object Repository {
                         "Salt and pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature (usually around 500°F or 260°C) with a pizza stone inside.\n" +
                         "Roll out the pizza dough thinly on a floured surface.\n" +
                         "Transfer the dough to parchment paper.\n" +
@@ -1537,7 +1550,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (400g)\n" +
                         "Tomato sauce (200g)\n" +
                         "Mozzarella cheese (200g)\n" +
@@ -1546,7 +1559,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 220°C (430°F).\n" +
                         "Roll out the pizza dough to fit a rectangular baking pan, ensuring it's thin and evenly spread.\n" +
                         "Transfer the dough to the pan and press it into the corners.\n" +
@@ -1570,7 +1583,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (enough for one pizza)\n" +
                         "200g sausage, preferably Italian sausage\n" +
                         "150g broccoli rabe (friarielli)\n" +
@@ -1580,7 +1593,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature (typically around 475-500°F or 245-260°C) or use a pizza oven if available.\n" +
                         "Roll out the pizza dough into a round or rectangular shape, depending on your preference.\n" +
                         "Spread a thin layer of tomato sauce over the dough, leaving a small border for the crust.\n" +
@@ -1604,7 +1617,7 @@ object Repository {
 
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (enough for one pizza)\n" +
                         "Tomato sauce or passata\n" +
                         "200g mixed seafood (such as shrimp, mussels, squid, and clams)\n" +
@@ -1615,7 +1628,7 @@ object Repository {
                         "Red pepper flakes (optional for added heat)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to the highest temperature (typically around 475-500°F or 245-260°C) or use a pizza oven if available.\n" +
                         "Roll out the pizza dough into a round or rectangular shape.\n" +
                         "Spread a thin layer of tomato sauce or passata evenly over the dough.\n" +
@@ -1636,7 +1649,7 @@ object Repository {
             description = "Pizza Funghi e Tartufo is a delectable Italian pizza combining the earthy flavors of mushrooms and the luxurious essence of truffles.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Pizza dough (enough for one pizza)\n" +
                         "Tomato sauce or passata\n" +
                         "200g fresh mushrooms, thinly sliced (e.g., cremini or button mushrooms)\n" +
@@ -1648,7 +1661,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to its highest temperature (typically around 475-500°F or 245-260°C).\n" +
                         "Roll out the pizza dough into a round shape.\n" +
                         "Spread a thin layer of tomato sauce or passata over the dough.\n" +
@@ -1671,7 +1684,7 @@ object Repository {
             description = "Risotto alla Milanese is a creamy Italian rice dish with saffron, giving it a vibrant yellow color. There are no specific dietary restrictions. It's a classic, comforting dish with around 300 calories per serving. Risotto alla Milanese is a rich and velvety risotto known for its golden hue, achieved by saffron infusion. It's a sumptuous, comforting Italian dish. Most recipes serve 4 people.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "1 1/2 cups Arborio rice\n" +
                         "4 cups chicken or vegetable broth\n" +
                         "1 small onion, finely chopped\n" +
@@ -1683,7 +1696,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Heat the broth in a saucepan and add saffron threads to infuse the liquid with color and flavor.\n" +
                         "In a separate pan, heat the butter and olive oil. Sauté the finely chopped onion until translucent.\n" +
                         "Add Arborio rice and cook for a couple of minutes until it turns translucent at the edges.\n" +
@@ -1704,7 +1717,7 @@ object Repository {
             description = "Polenta is a versatile Italian dish made from cornmeal. It's naturally gluten free, making it suitable for those with dietary restrictions. Polenta can be served creamy or solid; its calories vary based on preparation. Generally, it's about 150 calories per 100g. Polenta is a cornmeal dish that can be creamy or firm, depending on how it's prepared. It's a staple in northern Italian cuisine, often as a side or base for various toppings. The recipe can be adjusted for the number of servings needed.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "1 cup of coarse cornmeal\n" +
                         "4 cups of water or broth\n" +
                         "Salt to taste\n" +
@@ -1712,7 +1725,7 @@ object Repository {
                         "Grated cheese (Parmesan or other) (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Boil water or broth in a large pot and add salt.\n" +
                         "Gradually pour the cornmeal into the boiling liquid while whisking continuously to avoid lumps.\n" +
                         "Reduce heat to low and cook, stirring often, until the polenta thickens (usually about 30 minutes). Add more liquid if needed.\n" +
@@ -1732,7 +1745,7 @@ object Repository {
             description = "Caponata is a Sicilian dish known for its sweet and sour flavor. It's suitable for various dietary preferences, including vegetarian and vegan. This dish features eggplants, tomatoes, onions, and capers, creating a delightful Mediterranean taste. It typically contains around 150 calories per 1 cup serving.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "2 large eggplants, diced\n" +
                         "1 onion, finely chopped\n" +
                         "3 celery stalks, chopped\n" +
@@ -1745,7 +1758,7 @@ object Repository {
                         "Salt and pepper to taste"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a large skillet, heat olive oil over medium heat. Add the diced eggplants and sauté until they become tender and golden, then remove and set aside.\n" +
                         "Add more olive oil if needed in the same skillet, and sauté the onions and celery until softened.\n" +
                         "Add the diced tomatoes, vinegar vinegar, and sugar to the skillet. Cook for about 10 minutes, allowing the flavors to meld.\n" +
@@ -1765,14 +1778,14 @@ object Repository {
             description = "Roasted Peppers is a classic Italian dish that can be enjoyed as an appetizer or a side. It's typically not associated with specific dietary restrictions, making it a versatile choice. Roasted Peppers are sweet, smoky, and vibrant. Each serving contains approximately 4050 calories",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "4 red bell peppers\n" +
                         "2 tablespoons olive oil\n" +
                         "Salt and pepper to taste\n" +
                         "Optional: garlic, herbs, or vinegar for extra flavor"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 450°F (232°C).\n" +
                         "Wash and dry the peppers. Place them on a baking sheet.\n" +
                         "Roast the peppers in the oven for about 3040 minutes, turning them occasionally until the skin is charred and blistered.\n" +
@@ -1792,7 +1805,7 @@ object Repository {
             description = "Fried Zucchini Flowers, a delectable Italian appetizer, are often served without specific dietary restrictions. These delicate blossoms are crispy on the outside, tender on the inside, and bursting with flavor. Each serving typically contains about 100150 calories.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "12 zucchini flowers\n" +
                         "1 cup all purpose flour\n" +
                         "1 cup sparkling water or beer\n" +
@@ -1801,7 +1814,7 @@ object Repository {
                         "Optional: mozzarella cheese, anchovies, or herbs for stuffing"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Gently wash the zucchini flowers and remove the pistil from inside.\n" +
                         "If desired, stuff each flower with a small piece of mozzarella cheese, anchovies, or herbs.\n" +
                         "In a bowl, mix the flour, sparkling water or beer, salt, and pepper until you have a smooth batter.\n" +
@@ -1823,7 +1836,7 @@ object Repository {
             description = "Italian Farro Salad is a wholesome and nutritious dish typically without specific dietary restrictions. This salad features chewy farro grains, fresh vegetables, and sometimes cheese. It's a versatile side or main course option. A serving contains around 250300 calories",
 
             ingredients = listOf(
-                "Ingredients (for approximately 4 servings):\n" +
+                "Ingredients (for approximately 4 servings):\n" ,
                         "1 cup farro\n" +
                         "2 cups water or broth\n" +
                         "1 cup cherry tomatoes, halved\n" +
@@ -1834,7 +1847,7 @@ object Repository {
                         "Olive oil, lemon juice, salt, and pepper for dressing"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Rinse the farro under cold water. In a saucepan, combine farro and water or broth. Bring to a boil, then reduce to a simmer and cook for about 2025 minutes until tender but still chewy. Drain any excess liquid.\n" +
                         "In a large bowl, combine cooked farro, cherry tomatoes, cucumber, red onion, and basil.\n" +
                         "If desired, add feta cheese for extra flavor.\n" +
@@ -1852,7 +1865,7 @@ object Repository {
             description = "Rapini with Garlic and Olive Oil, a classic Italian dish, is typically suitable for various dietary preferences. This dish features tender rapini sautéed with garlic and olive oil, creating a flavorful and slightly bitter side or topping. A serving contains approximately 100150 calories",
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "1 bunch rapini (broccoli rabe)\n" +
                         "23 cloves garlic, thinly sliced\n" +
                         "3 tablespoons olive oil\n" +
@@ -1860,7 +1873,7 @@ object Repository {
                         "Grated Pecorino Romano cheese (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Wash the rapini and trim the tough ends.\n" +
                         "In a large pot, bring salted water to a boil. Blanch the rapini for about 23 minutes until tender but still vibrant green. Drain and set aside.\n" +
                         "In a large skillet, heat olive oil over medium heat. Add sliced garlic and red pepper flakes if desired. Sauté until the garlic is fragrant but not browned.\n" +
@@ -1879,14 +1892,14 @@ object Repository {
             description = "Grilled Polenta is a delicious Italian dish made from cornmeal. It is typically gluten free and suitable for vegetarian diets. A serving of grilled polenta contains about 150 calories",
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "1 cup of polenta (cornmeal)\n" +
                         "4 cups of water\n" +
                         "Salt and pepper to taste\n" +
                         "Olive oil for grilling"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a saucepan, bring 4 cups of water to a boil. Add a pinch of salt.\n" +
                         "Gradually whisk in 1 cup of polenta, stirring constantly to avoid lumps.\n" +
                         "Reduce heat to low and continue stirring for about 1520 minutes until the mixture thickens and pulls away from the sides of the pan.\n" +
@@ -1907,7 +1920,7 @@ object Repository {
             description = "Risotto with apricots and scallops is a delightful culinary creation that combines the creamy comfort of risotto with the sweet and savory notes of apricots and succulent scallops. The dish typically starts with Arborio or Carnaroli rice cooked to a creamy consistency by gradually adding hot broth and stirring to release its starches.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         " 1 tbsp of butter\n" +
                         "2 finely chopped shallots \n" +
                         "1 sprig of rosemary\n" +
@@ -1926,7 +1939,7 @@ object Repository {
                         "1 tsp of salt"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Risotto: melt the butter in a saucepan. Make it a dream Finish the shallots and rosemary. Add the rice and cook, stirring, until it becomes transparent. Moisten with wine, let it steam almost completely. Pour in the stock while it is cooking, stirring frequently and making sure the rice is still covered with liquid. Let it simmer over low heat. 20 minutes, until the rice is creamy and al dente. Stir in the cheese and butter, season with\n" +
                         "Apricots: mix the apricots. with water, romaine and chili in a in a saucepan, cover with a lid and simmer for about 3 minutes, salt.\n" +
                         "Scallops: to make heat the oil in a nonstick frying in a nonstick frying pan. Add the scallops for about 2 minutes on each each side, searing. Spread out the risotto, distribute scallops and apricots.\n"
@@ -1942,7 +1955,7 @@ object Repository {
             description = "Limoncello Spritz is a delightful and refreshing Italian cocktail that captures the essence of the Amalfi Coast. This invigorating drink is made by combining Limoncello liqueur, known for its bright lemon flavor, with sparkling water and sometimes a splash of prosecco. It's typically served over ice and garnished with lemon slices and fresh mint leaves for added aroma and aesthetics.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "Lemon liqueur 20 ml.\n" +
                         "Prosecco 150 ml.\n" +
                         "Carbonated mineral water  50 ml.\n" +
@@ -1951,7 +1964,7 @@ object Repository {
                         "Ice 3-4 cubes."
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Put the ice cubes in a glass. Add the lemon liqueur, water and prosecco and stir lightly.\n" +
                         "2. Garnish with lemon and rosemary wedges."
             )
@@ -1966,13 +1979,13 @@ object Repository {
             description = "Magenta",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "3 tablespoons of ginger syrup\n" +
                         "4 dl almond drink\n" +
                         "1 dl of beet juice"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Mix the three ingredients vigorously the three ingredients. Garnish with with almond drink mousse and fresh mint."
             )
         ),
@@ -1987,13 +2000,13 @@ object Repository {
             description = "Affogato is a classic Italian dessert that consists of a scoop of vanilla ice cream or gelato \"drowned\" in a shot of hot espresso. There are no specific dietary restrictions for this dessert. Dessert. Approximately 100150 calories per 1 serving. Affogato is a simple yet indulgent dessert where the hot espresso melts the cold, creamy ice cream, creating a delightful blend of flavors and temperatures. It's a quick and easy dessert to satisfy your sweet cravings. The recipe is typically for one serving but can be multiplied for more",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "1 scoop of vanilla ice cream or gelato\n" +
                         "1 shot of hot espresso\n" +
                         "Optional: chocolate shavings, chopped nuts, or a drizzle of liqueur like Amaretto (for variations)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Place a scoop of vanilla ice cream or gelato in a serving glass or cup.\n" +
                         "Brew a shot of hot espresso using an espresso machine or a Moka pot.\n" +
                         "Pour the hot espresso over the ice cream.\n" +
@@ -2011,7 +2024,7 @@ object Repository {
             description = "A flambéed tart with apricots is a delightful dessert that combines the sweetness of ripe apricots with the rich and slightly caramelized flavors of a flambéed glaze. The base of this tart typically consists of a buttery and flaky pastry crust. It's then filled with a luscious mixture of fresh apricots and almond cream, known as frangipane. The unique element of flambéing involves igniting a liqueur (often apricot brandy or similar) over the tart just before serving. This process not only adds a dramatic flair but also imparts a warm, boozy aroma and flavor to the dessert. The result is a beautifully browned, fragrant tart with tender apricots that have absorbed the delightful essence of the flambéed liqueur. It's a wonderful combination of textures and flavors that's sure to impress dessert enthusiasts.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "300 g of white flour\n" +
                         "1 teaspoon of salt\n" +
                         "diced yeast (approx. 10 g), crushed\n" +
@@ -2027,7 +2040,7 @@ object Repository {
                         "little pepper"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Dough: Mix the flour, salt and yeast. Add water, oil and honey, mix with a small spatula until a soft dough is formed. soft dough, \n" +
                         "knead briefly, cover cover and leave for approx. 10 minutes.\n" +
                         "Forming: cutting the dough into into 4 pieces. On a small amount of flour, roll out the pieces of of dough to approx. 2 mm thick to form oval shapes and place them on two baking sheets lined with paper for baking.\n" +
@@ -2047,7 +2060,7 @@ object Repository {
             description = "Lemon Cake, known as Torta al Limone in Italian, is a delectable dessert that showcases the bright and zesty flavors of lemons. This cake is characterized by its moist and tender crumb, infused with the refreshing citrusy aroma and tangy taste of lemons. Typically, it is made by incorporating lemon zest and juice into the batter, creating a delightful balance between sweetness and tartness.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "200 g of white flour\n" +
                         "50 g of sugar\n" +
                         "4 teaspoons of salt\n" +
@@ -2062,7 +2075,7 @@ object Repository {
                         "cut into slices For a pie pan approx. 28 cm in in diameter, with the bottom lined with baking paper greased edges"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "1. Dough: mix the flour, sugar and salt. Add the butter, rub everything with your hands until you get a homogeneous crumbly mass. Add the water and \n" +
                         "quickly mix everything together, to get a soft dough without overmixing. Flatten the dough, cover and chill for about 30 minutes.\n" +
                         "2. For the base: roll out the dough between two sheets of baking paper  (approx. 32 cm in diameter) and place it on the baking sheet, keeping the bottom sheet on. Prick the bottom with a fork.\n" +
@@ -2084,7 +2097,7 @@ object Repository {
             description = "Tiramisu is a classic Italian dessert known for its creamy and coffee infused layers. It typically contains caffeine from coffee and raw eggs, so it's not suitable for those with dietary restrictions related to caffeine or raw eggs. A single serving of Tiramisu contains approximately 300 calories",
 
             ingredients = listOf(
-                "Ingredients (for 6 servings):\n" +
+                "Ingredients (for 6 servings):\n" ,
                         "6 egg yolks\n" +
                         "3/4 cup granulated sugar\n" +
                         "1 cup mascarpone cheese\n" +
@@ -2096,7 +2109,7 @@ object Repository {
                         "Dark chocolate shavings for garnish"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a heatproof bowl, whisk together egg yolks and 1/2 cup of sugar over a double boiler until pale and creamy.\n" +
                         "Remove from heat and add mascarpone cheese, mixing until well combined.\n" +
                         "In a separate bowl, whip the heavy cream until stiff peaks form.\n" +
@@ -2122,7 +2135,7 @@ object Repository {
             description = "Cannoli is a delightful Italian dessert known for its crispy pastry shells and creamy ricotta filling. It's a rich and indulgent treat, so it may not be suitable for those with dietary restrictions on dairy or sugar. A typical Cannoli contains about 100150 calories per serving",
 
             ingredients = listOf(
-                "Ingredients (for 12 Cannoli):\n" +
+                "Ingredients (for 12 Cannoli):\n" ,
                         "2 cups ricotta cheese\n" +
                         "1/2 cup powdered sugar\n" +
                         "1/2 teaspoon vanilla extract\n" +
@@ -2130,7 +2143,7 @@ object Repository {
                         "12 Cannoli shells (store bought or homemade)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a bowl, mix ricotta cheese, powdered sugar, and vanilla extract until well combined.\n" +
                         "Gently fold in the mini chocolate chips.\n" +
                         "Fill each Cannoli shell with the ricotta mixture using a piping bag or spoon.\n" +
@@ -2148,7 +2161,7 @@ object Repository {
             description = "Panna Cotta is a classic Italian dessert known for its creamy, custard like texture. It's generally not suitable for those with dietary restrictions on dairy. A typical serving of vanilla Panna Cotta contains about 250300 calories. It's a simple yet elegant dessert.",
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "2 cups heavy cream\n" +
                         "1/2 cup granulated sugar\n" +
                         "1 vanilla bean or 2 teaspoons of vanilla extract\n" +
@@ -2156,7 +2169,7 @@ object Repository {
                         "3 tablespoons cold water"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a saucepan, mix heavy cream and sugar. If using a vanilla bean, scrape the seeds into the mixture; otherwise, add vanilla extract.\n" +
                         "Sprinkle gelatin over cold water in a separate bowl and let it bloom for a few minutes.\n" +
                         "Heat the cream mixture over medium heat until it's hot but not boiling.\n" +
@@ -2177,7 +2190,7 @@ object Repository {
             description = "Gelato is a delightful Italian frozen dessert, similar to ice cream but creamier and denser. It's typically not suitable for those with dairy restrictions. A serving of gelato contains about 100130 calories, depending on the flavor.",
 
             ingredients = listOf(
-                "Ingredients (for 4 servings):\n" +
+                "Ingredients (for 4 servings):\n" ,
                         "2 cups whole milk\n" +
                         "1 cup heavy cream\n" +
                         "3/4 cup granulated sugar\n" +
@@ -2185,7 +2198,7 @@ object Repository {
                         "Flavoring ingredients like fruit, chocolate, or nuts (as desired)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Combine milk and cream in a saucepan. If using a vanilla bean, split it and scrape the seeds into the mixture; otherwise, add vanilla extract.\n" +
                         "Heat the mixture over medium heat until it's hot but not boiling.\n" +
                         "Remove from heat and let it cool slightly.\n" +
@@ -2208,7 +2221,7 @@ object Repository {
             description = "Zeppole are traditional Italian pastries, particularly popular on St. Joseph's Day. They are deep fried dough balls, similar to donuts but with a unique texture. Zeppole is not suitable for those on strict dietary restrictions due to their frying process. Dessert. Approximately 150 calories per serving Zeppole are light, airy, and slightly crispy on the outside. They are typically served with powdered sugar and sometimes a cherry on top, making them a sweet delight.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "1 cup water\n" +
                         "1/2 cup unsalted butter\n" +
                         "1 cup all purpose flour\n" +
@@ -2219,7 +2232,7 @@ object Repository {
                         "Maraschino cherries (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a saucepan, combine water and butter. Bring to a boil.\n" +
                         "Add flour and a pinch of salt all at once. Stir vigorously until the mixture forms a ball.\n" +
                         "Remove from heat and let it cool for a few minutes.\n" +
@@ -2241,7 +2254,7 @@ object Repository {
             description = "Biscotti are traditional Italian almond cookies. They're not suitable for those with nut allergies due to the almonds. Biscotti are a twice baked cookie, resulting in a crunchy texture, perfect for dipping in coffee or wine. They have around 110 calories per serving. Dessert. Approximately 110 calories per serving, Biscotti are oblong shaped cookies with a delightful crunch. They are often flavored with almonds and have a subtle sweetness. Biscotti are typically served with coffee or dessert wine and can be dipped to soften their texture. The recipe is designed to yield about 20 biscotti",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "2 cups all purpose flour\n" +
                         "1 1/2 teaspoons baking powder\n" +
                         "1/4 teaspoon salt\n" +
@@ -2252,7 +2265,7 @@ object Repository {
                         "1 cup whole almonds"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Preheat your oven to 350°F (175°C).\n" +
                         "In a bowl, whisk together the flour, baking powder, and salt.\n" +
                         "In a separate bowl, cream together the butter and sugar until light and fluffy.\n" +
@@ -2275,14 +2288,14 @@ object Repository {
             description = "Zabaione, also known as Zabaglione, is an Italian custard dessert with a creamy, frothy texture. It's made from egg yolks, sugar, and a sweet wine, often Marsala. There are no specific dietary restrictions unless you have concerns about consuming raw eggs. Dessert. Approximately 220 calories per serving, Zabaione is a luscious Italian dessert known for its rich, velvety texture and sweet, wine infused flavor. It's often served as a standalone dessert or over fresh berries or cake. The recipe typically serves 4.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "4 large egg yolks\n" +
                         "1/4 cup granulated sugar\n" +
                         "1/2 cup sweet Marsala wine\n" +
                         "Fresh berries or other toppings (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a heatproof bowl, whisk together the egg yolks and sugar until well combined.\n" +
                         "Place the bowl over a pot of simmering water (double boiler) and add the Marsala wine.\n" +
                         "Whisk continuously for about 810 minutes until the mixture becomes thick, frothy, and triples in volume. It should be heated but not boiling.\n" +
@@ -2300,7 +2313,7 @@ object Repository {
             description = "Amaretto Semifreddo is a delightful Italian frozen dessert with amaretto liqueur and almond flavors. It's rich and creamy, similar to ice cream, but lighter in texture. There are no specific dietary restrictions for this dessert. Dessert. The calorie count may vary depending on the recipe, but it's approximately 250300 calories per serving. Amaretto Semifreddo is a semi frozen dessert that combines amaretto nutty taste with amaretti cookies' sweetness. It's a delightful treat with a creamy texture, perfect for a sweet ending to an Italian meal. The recipe typically serves 6.",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "3 large egg yolks\n" +
                         "1/2 cup granulated sugar\n" +
                         "2 tablespoons amaretto liqueur\n" +
@@ -2309,7 +2322,7 @@ object Repository {
                         "Sliced almonds and additional cookies for garnish (optional)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a heatproof bowl, whisk together egg yolks and sugar. Place the bowl over a pot of simmering water (double boiler) and whisk until the mixture thickens.\n" +
                         "Remove from heat and stir in amaretto liqueur. Let it cool to room temperature.\n" +
                         "Whip the heavy cream until stiff peaks form.\n" +
@@ -2331,7 +2344,7 @@ object Repository {
             description = "Red cabbage cream is a vibrant and flavorful dish that showcases the earthy and slightly sweet taste of red cabbage. This recipe typically involves finely shredding red cabbage and cooking it until tender. The cabbage is then combined with various ingredients to create a creamy and rich texture. While the exact recipe can vary, it often includes ingredients like cream, butter, onions, and seasonings such as nutmeg. The result is a velvety, purplish-red cream with a unique taste profile that balances the cabbage's natural sweetness with the richness of the cream. Red cabbage cream is a delightful side dish that complements a wide range of main courses, adding both color and flavor to the plate",
 
             ingredients = listOf(
-                "Ingredients:\n" +
+                "Ingredients:\n" ,
                         "600 g of red cabbage\n" +
                         "1 tbsp of melted butter\n" +
                         "2 chopped onions\n" +
@@ -2341,7 +2354,7 @@ object Repository {
                         "1 dl of apple juice"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "Cut the red cabbage into into strips, fry in butter together with onions and potatoes and brush with vinegar. \n" +
                         "Pour in the broth and simmer over low heat for about 30 minutes. \n" +
                         "Add the apple juice and whisk. \n" +
@@ -2366,7 +2379,7 @@ object Repository {
                         "Toppings of your choice (rosemary, olives, cherry tomatoes, etc.)"
             ),
             instructions = listOf(
-                "Cooking Process:\n" +
+                "Cooking Process:\n" ,
                         "In a bowl, dissolve yeast in warm water. Let it sit for 510 minutes until frothy.\n" +
                         "In a large mixing bowl, combine flour and salt. Pour in the yeast mixture and olive oil. Mix until a dough forms.\n" +
                         "Knead the dough for 57 minutes until smooth and elastic.\n" +
