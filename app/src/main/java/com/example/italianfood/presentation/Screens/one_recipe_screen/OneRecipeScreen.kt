@@ -1,9 +1,12 @@
 package com.example.italianfood.presentation.Screens
 
 import android.annotation.SuppressLint
+import androidx.compose.animation.animateContentSize
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -37,6 +40,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -144,48 +148,50 @@ fun OneRecipeScreen(
                 /////////////////expandible descriprion of dish///////////////////////////////////////////////////////
 
                 var showMore = remember { mutableStateOf(false) }
-                //val text = " ${recipe?.description}"
-                val text = ""
+                val text = "${recipe?.description}"
 
 
-                Column(modifier = Modifier.padding(start=28.dp)) {
-                    MyCategoryBadge(category = "${recipe?.category}")
+
+                Column(modifier = Modifier.padding(start=28.dp, end = 28.dp)) {
+                    //MyCategoryBadge(category = "${recipe?.category}")
 
 
 //
-//                    Column(modifier = Modifier
-//                        .animateContentSize(animationSpec = tween(100))
-//
-//                        .clickable(
-//                            interactionSource = remember { MutableInteractionSource() },
-//                            indication = null
-//                        ) { showMore.value = !showMore.value }) {
-//                        if (showMore.value) {
-//                            Text(
-//                                text = text,
-//                                style = TextStyle(
-//                                    fontSize = 10.sp,
-//                                    lineHeight = 16.sp,
-//                                    fontWeight = FontWeight(400),
-//                                    color = Color(0xFF444444),
-//                                    letterSpacing = 0.4.sp,
-//                                )
-//                            )
-//                        } else {
-//                            Text(
-//                                text = text,
-//                                maxLines = 1,
-//                                overflow = TextOverflow.Ellipsis,
-//                                style = TextStyle(
-//                                    fontSize = 10.sp,
-//                                    lineHeight = 16.sp,
-//                                    fontWeight = FontWeight(400),
-//                                    color = Color(0xFF444444),
-//                                    letterSpacing = 0.4.sp,
-//                                )
-//                            )
-//                        }
-//                    }
+                    Column(modifier = Modifier
+                        .animateContentSize(animationSpec = tween(100))
+
+                        .clickable(
+                            interactionSource = remember { MutableInteractionSource() },
+                            indication = null
+                        ) { showMore.value = !showMore.value }) {
+                        if (showMore.value) {
+                            Text(
+                                text = text,
+                                style = TextStyle(
+                                    fontSize = 12.sp,
+                                    lineHeight = 16.sp,
+                                    fontWeight = FontWeight(400),
+                                    color = Color(0xFF444444),
+                                    letterSpacing = 0.4.sp,
+                                    fontFamily = FontFamily(Font(R.font.montserrat_medium))
+                                )
+                            )
+                        } else {
+                            Text(
+                                text = text,
+                                maxLines = 3,
+                                overflow = TextOverflow.Ellipsis,
+                                style = TextStyle(
+                                    fontSize = 12.sp,
+                                    lineHeight = 16.sp,
+                                    fontWeight = FontWeight(400),
+                                    color = Color(0xFF444444),
+                                    letterSpacing = 0.4.sp,
+                                    fontFamily = FontFamily(Font(R.font.montserrat_medium))
+                                )
+                            )
+                        }
+                    }
                 }
 //                if (recipe != null)
 //                    Text(
@@ -195,6 +201,7 @@ fun OneRecipeScreen(
 //                    )
 
                 ///////////////////////////////////////////////////////////
+                Spacer(modifier = Modifier.height(16.dp))
                 Column(
                     modifier = Modifier.padding(start = 28.dp),
                     horizontalAlignment = Alignment.Start
@@ -209,6 +216,7 @@ fun OneRecipeScreen(
                             fontWeight = FontWeight(400),
                             color = Color(0xFF000000),
                             letterSpacing = 0.4.sp,
+
                         )
                     )
                     val editedIgredients = recipe?.ingredients?.toMutableList()
@@ -220,7 +228,7 @@ fun OneRecipeScreen(
                             text = "$dropFirstElement",
                             style = TextStyle(
                                 fontSize = 12.sp,
-                                lineHeight = 16.sp,
+                                lineHeight = 18.sp,
                                 fontFamily = FontFamily(Font(R.font.montserrat_medium)),
                                 fontWeight = FontWeight(400),
                                 color = Color(0xFF444444),
@@ -257,7 +265,7 @@ fun OneRecipeScreen(
 
                             modifier = Modifier.padding(start = 0.dp, end = 0.dp),
                             style = TextStyle(
-                                fontSize = 10.sp,
+                                fontSize = 12.sp,
                                 lineHeight = 16.sp,
                                 fontFamily = FontFamily(Font(R.font.montserrat_medium)),
                                 fontWeight = FontWeight(400),

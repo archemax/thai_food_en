@@ -89,27 +89,19 @@ fun MainScreen(
     val categoriesOfFood = listOf("Pasta", "Pizza", "Antipasti", "Dessert", "Breads", "Cocktail")
     Scaffold(
         modifier = Modifier
-            .fillMaxSize()
-            .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp),
-//            .paint(
-//                painterResource(id = R.drawable.background_jpg),
-//                contentScale = ContentScale.FillHeight
-//            ),
+            .fillMaxSize(),
         topBar = {},
         bottomBar = { },
-
         ) { paddingValues ->
+
         Column(
             modifier = Modifier
                 .padding(paddingValues)
                 .fillMaxSize()
-//                .paint(
-//                    painterResource(id = R.drawable.background_jpg),
-//                    contentScale = ContentScale.FillHeight
-//                )
+                .padding(top = 0.dp, bottom = 0.dp, start = 8.dp, end = 8.dp)
+//
         ) {
             SearchBar(
-
                 query = queryState.value,
                 onQueryChange = { query -> queryState.value = query },
                 onSearch = {},
@@ -135,7 +127,7 @@ fun MainScreen(
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(top = 24.dp, start = 15.dp, end = 15.dp)
+                    .padding(top = 24.dp, start = 0.dp, end = 0.dp)
                 //.border(1.dp, color = Color.LightGray),
 
             ) {}
@@ -145,7 +137,7 @@ fun MainScreen(
                 style = TextStyle(
                     fontSize = 14.sp,
                     lineHeight = 16.sp,
-                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                    fontFamily = FontFamily(Font(R.font.montserrat_bold)),
                     fontWeight = FontWeight(700),
                     color = Color(0xFF000000),
                     letterSpacing = 0.4.sp,
@@ -174,9 +166,9 @@ fun MainScreen(
                             Text(
                                 text = category,
                                 style = TextStyle(
-                                    fontSize = 14.sp,
+                                    fontSize = 12.sp,
                                     lineHeight = 20.sp,
-                                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                                    fontFamily = FontFamily(Font(R.font.montserrat_semi_bold)),
                                     fontWeight = FontWeight(500),
                                     color = Color(0xFF3F486C),
                                     textAlign = TextAlign.Center,
@@ -219,7 +211,7 @@ fun MainScreen(
                 style = TextStyle(
                     fontSize = 14.sp,
                     lineHeight = 16.sp,
-                    fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                    fontFamily = FontFamily(Font(R.font.montserrat_bold)),
                     fontWeight = FontWeight(700),
                     color = Color(0xFF000000),
                     letterSpacing = 0.4.sp,
@@ -311,7 +303,7 @@ fun OneRecipeItem(
                 ////////////////////////description in card//////////////////////////////////////////////
                 Text(
                     text = "${oneRecipe.description}",
-                    maxLines = 1,
+                    maxLines = 5,
                     overflow = TextOverflow.Ellipsis,
                     style = TextStyle(
                         fontSize = 10.sp,
@@ -349,19 +341,19 @@ fun OneRecipeItem(
 
 
 
-                Text(
-                    text = stringNon,
-                    maxLines = 3,
-                    overflow = TextOverflow.Ellipsis,
-                    style = TextStyle(
-                        fontSize = 10.sp,
-                        lineHeight = 16.sp,
-                        fontFamily = FontFamily(Font(R.font.montserrat_medium)),
-                        fontWeight = FontWeight(400),
-                        color = Color(0xFF6B6A6A),
-                        letterSpacing = 0.4.sp,
-                    )
-                )
+//                Text(
+//                    text = stringNon,
+//                    maxLines = 3,
+//                    overflow = TextOverflow.Ellipsis,
+//                    style = TextStyle(
+//                        fontSize = 10.sp,
+//                        lineHeight = 16.sp,
+//                        fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+//                        fontWeight = FontWeight(400),
+//                        color = Color(0xFF6B6A6A),
+//                        letterSpacing = 0.4.sp,
+//                    )
+//                )
 
 
 //////////////////////////////////////
