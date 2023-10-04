@@ -300,15 +300,31 @@ fun OneRecipeItem(
                     style = TextStyle(
                         fontSize = 14.sp,
                         lineHeight = 16.sp,
-                        fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                        fontFamily = FontFamily(Font(R.font.montserrat_semi_bold)),
                         fontWeight = FontWeight(600),
                         color = Color(0xFF3F486C),
                         letterSpacing = 0.4.sp,
                     )
 
                 )
-                //Text(text = "${oneRecipe.description}", maxLines = 1, fontSize = 8.sp)
                 Spacer(modifier = Modifier.size(8.dp))
+                ////////////////////////description in card//////////////////////////////////////////////
+                Text(
+                    text = "${oneRecipe.description}",
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    style = TextStyle(
+                        fontSize = 10.sp,
+                        lineHeight = 16.sp,
+                        fontFamily = FontFamily(Font(R.font.montserrat_medium)),
+                        fontWeight = FontWeight(400),
+                        color = Color(0xFF6B6A6A),
+                        letterSpacing = 0.4.sp,
+                    )
+
+                )
+                Spacer(modifier = Modifier.size(8.dp))
+//INGREDIENTS//////////////////////////                //
 
                 // Iterate through ingredients and display each item
                 val listOfIngredients = oneRecipe.ingredients
