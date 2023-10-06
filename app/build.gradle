@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.italianfood'
+    namespace 'com.example.italianfoodukraine'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.italianfood"
+        applicationId "com.example.italianfoodukraine"
         minSdk 24
         targetSdk 34
         versionCode 1
