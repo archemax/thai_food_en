@@ -208,7 +208,7 @@ fun OneRecipeScreen(
                     horizontalAlignment = Alignment.Start
                 ) {
                     Text(
-                        text = "Ingredients",
+                        text = "Інгредієнти",
                         modifier = Modifier.padding(bottom = 8.dp),
                         style = TextStyle(
                             fontSize = 14.sp,
@@ -246,7 +246,7 @@ fun OneRecipeScreen(
                     horizontalAlignment = Alignment.Start
                 ) {
                     Text(
-                        text = "Step by step guide",
+                        text = "Процес приготування",
                         modifier = Modifier.padding(bottom = 8.dp),
                         style = TextStyle(
                             fontSize = 14.sp,
