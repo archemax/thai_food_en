@@ -1,6 +1,7 @@
-package com.example.italianfoodukraine.user_interface
+package com.example.thai_food_en.user_interface
 
 import android.annotation.SuppressLint
+import android.content.res.Configuration
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
@@ -51,14 +52,15 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.italianfoodukraine.R
-import com.example.italianfoodukraine.model.RecipeModel
-import com.example.italianfoodukraine.user_interface.Displays.main_display.MainDisplayViewModel
+import com.example.thai_food_en.R
+import com.example.thai_food_en.model.RecipeModel
+import com.example.thai_food_en.user_interface.Displays.main_display.MainDisplayViewModel
 
 @SuppressLint("UnrememberedMutableState")
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MyMainDisplay(
+    configurationOfScreen: Configuration,
     viewModel: MainDisplayViewModel = hiltViewModel(),
     toOneRecipeScreen: (String) -> Unit,
 ) {
@@ -123,6 +125,8 @@ fun MyMainDisplay(
                     .fillMaxWidth()
                     .padding(top = 24.dp, start = 0.dp, end = 0.dp)
             ) {}
+
+
             Spacer(modifier = Modifier.height(16.dp))
             Text(
                 text = stringResource(R.string.whatShallWeCook),
@@ -144,7 +148,6 @@ fun MyMainDisplay(
                             selectedCategory.value = if (isSelected) "" else category
                         },
                         elevation = myElevation,
-
                         label = {
                             Text(
                                 text = category,
@@ -188,7 +191,8 @@ fun MyMainDisplay(
 
 //////LAZY COLUMN//////////////////////////////////////////////////////////////////////////////////////////////////
             Column(modifier = Modifier.fillMaxSize()) {
-                LazyColumn(modifier = Modifier.fillMaxSize()) {
+                LazyColumn(modifier = Modifier.fillMaxSize(),
+                 ) {
                     items(
                         if (selectedCategory.value.isNotEmpty() || queryState.value.isNotEmpty()) {
                             finalFilteredList
@@ -279,7 +283,7 @@ fun OneRecipeItem(
                         tint = Color(0xFF3F486C)
                     )
                     Text(
-                        text = "  ${oneRecipe.category}",
+                        text = "  ${oneRecipe.categoryOfFood}",
                         maxLines = 1,
                         style = TextStyle(
                             fontSize = 8.sp,

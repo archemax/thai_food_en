@@ -3,16 +3,14 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
-
-
 }
 
 android {
-    namespace 'com.example.italianfoodukraine'
+    namespace 'com.example.thai_food_en'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.example.italianfoodukraine"
+        applicationId "com.example.thai_food_en"
         minSdk 24
         targetSdk 34
         versionCode 1

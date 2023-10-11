@@ -1,8 +1,8 @@
-package com.example.italianfoodukraine.user_interface.Displays.main_display
+package com.example.thai_food_en.user_interface.Displays.main_display
 
 import androidx.lifecycle.ViewModel
-import com.example.italianfoodukraine.list_of_food.BigListOfFood
-import com.example.italianfoodukraine.model.RecipeModel
+import com.example.thai_food_en.list_of_food.BigListOfFood
+import com.example.thai_food_en.model.RecipeModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -21,7 +21,7 @@ class MainDisplayViewModel @Inject constructor() : ViewModel() {
 
     fun myFilter(query: String, category: String): List<RecipeModel> {
         val filteredRecipes = _state.value.filter { oneRecipe ->
-            oneRecipe.category.contains(category, ignoreCase = true)
+            oneRecipe.categoryOfFood.contains(category, ignoreCase = true)
                     &&
                     (oneRecipe.dishTitle.contains(query, ignoreCase = true)
                             || oneRecipe.description.contains(query, ignoreCase = true))

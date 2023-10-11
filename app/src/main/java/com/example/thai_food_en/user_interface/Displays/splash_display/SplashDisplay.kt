@@ -1,4 +1,4 @@
-package com.example.italianfoodukraine.user_interface.Displays
+package com.example.thai_food_en.user_interface.Displays
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
@@ -13,7 +13,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import com.example.italianfoodukraine.R
+import com.example.thai_food_en.R
 import kotlinx.coroutines.delay
 
 @OptIn(ExperimentalMaterial3Api::class)

@@ -1,4 +1,4 @@
-package com.example.italianfoodukraine
+package com.example.thai_food_en
 
 import org.junit.Test
 

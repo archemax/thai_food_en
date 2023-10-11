@@ -1,4 +1,4 @@
-package com.example.italianfoodukraine.ui.theme
+package com.example.thai_food_en.ui.theme
 
 import android.app.Activity
 import android.os.Build

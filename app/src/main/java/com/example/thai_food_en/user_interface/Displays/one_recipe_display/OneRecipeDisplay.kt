@@ -1,4 +1,4 @@
-package com.example.italianfoodukraine.user_interface.Displays
+package com.example.thai_food_en.user_interface.Displays
 
 import android.annotation.SuppressLint
 import androidx.compose.animation.animateContentSize
@@ -41,9 +41,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.example.italianfoodukraine.R
-import com.example.italianfoodukraine.ui.theme.*
-import com.example.italianfoodukraine.user_interface.Displays.one_recipe_display.OneRecipeDispalyViewModel
+import com.example.thai_food_en.R
+import com.example.thai_food_en.ui.theme.*
+import com.example.thai_food_en.user_interface.Displays.one_recipe_display.OneRecipeDispalyViewModel
 
 @SuppressLint("SuspiciousIndentation")
 @Composable
@@ -222,7 +222,7 @@ fun MyOneRecipeDispaly(
                             tint = Color(0xFF3F486C)
                         )
                         Text(
-                            text = "  ${recipe?.category}",
+                            text = "  ${recipe?.categoryOfFood}",
                             maxLines = 1,
                             style = TextStyle(
                                 fontSize = 8.sp,

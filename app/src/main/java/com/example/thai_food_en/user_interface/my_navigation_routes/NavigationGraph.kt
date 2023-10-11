@@ -1,4 +1,4 @@
-package com.example.italianfoodukraine.user_interface.my_navigation_routes
+package com.example.thai_food_en.user_interface.my_navigation_routes
 
 
 import androidx.compose.runtime.Composable
@@ -8,9 +8,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.italianfoodukraine.user_interface.MyMainDisplay
-import com.example.italianfoodukraine.user_interface.Displays.MyOneRecipeDispaly
-import com.example.italianfoodukraine.user_interface.Displays.SplashScreen
+import com.example.thai_food_en.user_interface.MyMainDisplay
+import com.example.thai_food_en.user_interface.Displays.MyOneRecipeDispaly
+import com.example.thai_food_en.user_interface.Displays.SplashScreen
 
 @Composable
 fun NavigationComponent() {
@@ -18,7 +18,7 @@ fun NavigationComponent() {
     val toBackScreen = { navController.popBackStack() }
     val toOneRecipeScreen =
         { id: String -> navController.navigate("${Screen.ONE_RECIPE_SCREEN.name}/$id") }
-    val configuration = LocalConfiguration.current
+    val configurationOfScreen = LocalConfiguration.current
 
     NavHost(
         navController = navController,
@@ -30,7 +30,7 @@ fun NavigationComponent() {
             route = Screen.MAIN_USER_SCREEN.name
         ) {
             MyMainDisplay(
-                //configuration = Configuration(),
+                configurationOfScreen = configurationOfScreen,
                 toOneRecipeScreen = toOneRecipeScreen,
             )
         }
@@ -42,6 +42,7 @@ fun NavigationComponent() {
             val routeId = it.arguments?.getString("id").orEmpty()
 
             MyOneRecipeDispaly(
+                //configurationOfScreen = configurationOfScreen,
                 navController = navController,
                 routeId = routeId
 

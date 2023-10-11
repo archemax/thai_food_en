@@ -1,12 +1,12 @@
-package com.example.italianfoodukraine.user_interface
+package com.example.thai_food_en.user_interface
 
 import android.os.Build
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.annotation.RequiresExtension
-import com.example.italianfoodukraine.user_interface.my_navigation_routes.NavigationComponent
-import com.example.italianfoodukraine.ui.theme.ItalianFoodTheme
+import com.example.thai_food_en.user_interface.my_navigation_routes.NavigationComponent
+import com.example.thai_food_en.ui.theme.ItalianFoodTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

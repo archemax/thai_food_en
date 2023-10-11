@@ -1,4 +1,4 @@
-package com.example.italianfoodukraine.user_interface.Displays.splash_display
+package com.example.thai_food_en.user_interface.Displays.splash_display
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
