@@ -17,7 +17,7 @@ class OneRecipeDispalyViewModel @Inject constructor(): ViewModel() {
 
     fun getOneRecipe (id: Int): RecipeModel?{
         return recipes.find {
-            it.id == id
+            it.recipeId == id
         }
     }
 

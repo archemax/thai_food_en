@@ -203,7 +203,7 @@ fun MyMainDisplay(
                         OneRecipeItem(
                             oneRecipe = recipe,
                             onClick = {
-                                toOneRecipeScreen(recipe.id.toString())
+                                toOneRecipeScreen(recipe.recipeId.toString())
                             }
 
                         )

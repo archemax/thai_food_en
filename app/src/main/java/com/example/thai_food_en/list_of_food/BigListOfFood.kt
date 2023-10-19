@@ -4,3130 +4,1558 @@ import com.example.thai_food_en.R
 import com.example.thai_food_en.model.RecipeModel
 
 object BigListOfFood {
-
     val recipes = listOf(
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 2,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Буррата з тушкованими помідорами",
-            imageResId = R.drawable.burrata_with_roasted_tomatoes_2,
-            description =
-            "Буррата з тушкованими помідорами - вишукана італійська закуска. Вершковий сир буррата, відомий своєю ніжною текстурою, подається разом з ароматними тушкованими помідорами, приготованими на повільному вогні. Вершкова насиченість буррати ідеально доповнює пікантну солодкість томатів, створюючи гармонійне та вишукане смакове поєднання.",
+        //////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 1,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Satay Gai",
+            imageResId = R.drawable.satay_gai_1_501,
+            description = "Satay Gai is a beloved Thai street food known for its succulent, skewered, and grilled chicken served with a rich and aromatic peanut sauce. It's a delightful combination of tender marinated chicken, smoky char-grilled flavor, and the nutty creaminess of the dipping sauce. Perfectly balanced sweet, savory, and spicy flavors make it a Thai favorite.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "700 г помідорів (наприклад, яловичих сердець), розрізаних навпіл\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "½ чайної ложки солі\n" +
-                        "2 столові ложки цукру\n" +
-                        "2 столові ложки води\n" +
-                        "2 столові ложки насіння кропу\n" +
-                        "300 г бурати\n" +
-                        "2 столові ложки червоного винного оцту\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "2 зубчики часнику\n" +
-                        "½ чайної ложки солі, трохи перцю",
+                "Ingredients: " ,
+                        "300g chicken breast, thinly sliced into strips " +
+                        "2 tablespoons soy sauce 1 tablespoon fish sauce " +
+                        "1 tablespoon brown sugar 1 teaspoon curry powder " +
+                        "1 teaspoon turmeric powder " +
+                        "2 cloves garlic, minced 1 tablespoon vegetable oil Wooden skewers, " +
+                        "soaked in water Fresh cilantro leaves (for garnish)  " +
+                        "Peanut Sauce Ingredients: " +
+                        "1/2 cup peanut butter 1/4 cup coconut milk " +
+                        "2 tablespoons soy sauce 2 tablespoons brown sugar " +
+                        "1 tablespoon lime juice 1 teaspoon red curry paste " +
+                        "1 clove garlic, minced Crushed peanuts (for garnish)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Викласти помідори на деко, застелене папером для випічки, збризнути олією та посолити.\n" +
-                        "Запікати близько 20 хвилин у верхній частині духовки, розігрітої до 220°C. Вийняти і дати охолонути.\n" +
-                        "У невеликій каструлі довести воду з цукром до кипіння, не помішуючи. Зменшити вогонь і варити 3 хвилини, поки на поверхні не з'являться бульбашки. Додати насіння фенхелю і варити, помішуючи, поки вода не випарується, а насіння фенхелю не стане сухим і білим. Зняти сковороду з вогню і продовжувати коротко помішувати. Викласти насіння фенхелю на аркуш паперу для випічки і дати охолонути.\n" +
-                        "Злити буррату, зібрати 3 столові ложки рідини і перелити в блендер. Змішати і заправити оцтом, олією, часником і 2 половинками тушкованих помідорів (близько 150 г).\n" +
-                        "Виливаємо заправку на тарілку. Зверху викласти буррату та помідори. Посипати насінням фенхелю.",
+                "Cooking Process: " ,
+                        "Marinate Chicken: In a bowl, combine soy sauce, fish sauce, brown sugar, curry powder, turmeric powder, minced garlic, and vegetable oil. Mix well. Add the sliced chicken to the marinade, ensuring each piece is well-coated. Marinate for at least 30 minutes. Prepare Peanut Sauce: In another bowl, whisk together peanut butter, coconut milk, soy sauce, brown sugar, lime juice, red curry paste, and minced garlic until smooth. Set aside. Assemble Satay: Thread marinated chicken strips onto the soaked wooden skewers, ensuring they are evenly distributed. Grill Satay: Preheat a grill or grill pan over medium-high heat. Grease the grill grates. Grill the chicken skewers for about 2-3 minutes on each side or until they are cooked through and have grill marks. Serve: Arrange Satay Gai on a plate, garnish with fresh cilantro leaves, and serve with the peanut sauce for dipping. Sprinkle crushed peanuts over the sauce for added texture. Enjoy your homemade Chicken Satay! It's perfect for sharing with friends and family.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 2,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Tod Mun Pla",
+            imageResId = R.drawable.tod_mun_pla_2,
+            description = "Tod Mun Pla, Thai fish cakes, are a flavorful and crispy Thai appetizer made from minced fish, fragrant herbs, and red curry paste. These golden-brown cakes offer a harmonious blend of savory, spicy, and aromatic flavors, making them a popular Thai street food and party favorite.",
+            ingredients = listOf(
+                "Ingredients: " +
+                        "300g white fish fillets (such as cod or haddock), cut into chunks 1-2 tablespoons red curry paste 1 egg 2 tablespoons fish sauce 1 tablespoon sugar 2 kaffir lime leaves, finely shredded 2-3 fresh green beans, finely chopped 1-2 fresh red chilies, finely chopped (adjust to taste) Vegetable oil for frying Cucumber slices and sweet chili sauce (for serving)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Fish Mixture: In a food processor, combine fish chunks, red curry paste, egg, fish sauce, and sugar. Blend until a smooth paste forms. Transfer the mixture to a mixing bowl and add shredded kaffir lime leaves, chopped green beans, and red chilies. Mix well. Shape the Fish Cakes: Wet your hands and shape the fish mixture into small, flat patties. Fry the Fish Cakes: Heat vegetable oil in a frying pan over medium-high heat. Carefully place the fish cakes in the hot oil and fry until they turn golden brown and crispy, about 2-3 minutes per side. Serve: Remove the fish cakes from the oil and drain on paper towels. Serve Tod Mun Pla with cucumber slices and sweet chili sauce for dipping. Enjoy your homemade Thai Fish Cakes, packed with vibrant Thai flavors and a satisfying crunch!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 3,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Буррата з лимоном і базиліком",
-            imageResId = R.drawable.burrata_with_lemons,
-            description =
-            "Буррата з лимоном і базиліком - чудова італійська закуска. У ній вершковий сир буррата поєднується з пікантною яскравістю свіжого лимона та ароматною свіжістю листя базиліка. Таке поєднання створює гармонійний контраст смаків і текстур, роблячи цю страву освіжаючою та поблажливою.",
+            recipeId = 3,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Miang Kham",
+            imageResId = R.drawable.miang_kham_3_500,
+            description = "Miang Kham is a traditional Thai snack that bursts with an explosion of flavors and textures. These bite-sized, hand-held appetizers feature a medley of ingredients wrapped in wild pepper leaves, including toasted coconut, peanuts, dried shrimp, ginger, shallots, lime, and a sweet-and-savory sauce. Miang Kham offers a delightful blend of sweet, salty, sour, and spicy tastes, making it a popular Thai street food choice.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 зубчик часнику\n" +
-                        "300 г буррата\n" +
-                        "2 столові ложки білого бальзамічного оцту\n" +
-                        "3 столові ложки лимонної оливкової олії\n" +
-                        "1/4 чайної ложки солі трохи перцю\n" +
-                        "2 очищені лимони, нарізані скибочками\n" +
-                        "½ пучка листя базиліка\n" +
-                        "трохи флер де сел"
+                "Ingredients: 10-12 wild pepper leaves (or substitute with spinach or lettuce leaves) 1/4 cup toasted unsweetened coconut flakes 1/4 cup roasted unsalted peanuts 2 tablespoons dried shrimp 2 tablespoons finely chopped fresh ginger 2 tablespoons finely chopped shallots 1 small lime, diced (including the peel)  Miang Kham Sauce: 2 tablespoons palm sugar 1 tablespoon fish sauce 1 tablespoon tamarind paste 1/2 teaspoon chili flakes",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Нарізати хліб: Викласти скибочки хліба на тарілку.\n" +
-                        "2. Підсмажити: Підсмажте скибочки хліба приблизно 10 хвилин у верхній частині духовки, розігрітої до 220°C. Вийняти і дати охолонути. Натерти скибочки хліба часником.\n" +
-                        "3. Буррата: нарізати буррату і покласти в салатник. Змішати оцет і олію, заправити і полити буррату. Прикрасити лимоном і базиліком, посипати флердоранжем. Подавати буррату з підсмаженим хлібом.",
+                "Cooking Process: Prepare Miang Kham Sauce: In a small saucepan, combine palm sugar, fish sauce, tamarind paste, and chili flakes. Heat over low heat, stirring until sugar dissolves. Let the sauce cool. Assemble Miang Kham: Place wild pepper leaves on a serving platter. Arrange small portions of toasted coconut, peanuts, dried shrimp, chopped ginger, shallots, and lime pieces on each leaf. Wrap and Enjoy: Drizzle a little of the prepared sauce onto each leaf. Fold or wrap the leaf to create a small, bite-sized package. Pop the entire Miang Kham into your mouth and savor the burst of flavors! Miang Kham offers a delightful journey through Thai cuisine with its unique combination of ingredients and textures, showcasing the bold flavors of Thailand in every bite.",
             )
         ),
+////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 4,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Брускетта",
-            imageResId = R.drawable.bruschetta_1,
-            description =
-            "Брускетта - класична італійська закуска до пасти. Це ароматна суміш підсмаженого хліба, свіжих помідорів, базиліка, часнику та оливкової олії. Для цієї страви немає особливих дієтичних обмежень, що робить її універсальним вибором. Кожна порція зазвичай містить близько 70-100 калорій.",
+            recipeId = 4,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Kai Jiew",
+            imageResId = R.drawable.kai_jiew_4_500,
+            description = "Kai Jiew is a beloved Thai comfort food known for its simplicity and deliciousness. This fluffy Thai omelette is a versatile dish, perfect for any meal of the day. It's made by whisking eggs and seasoning with fish sauce and a pinch of sugar, then frying until golden and crispy on the outside, while remaining tender inside. Kai Jiew is often served with jasmine rice, jasmine flowers, or as a topping for Pad Thai or fried rice, showcasing the heartwarming flavors of Thai home cooking. ",
+            ingredients = listOf(
+                "Ingredients: 3 large eggs 1 tablespoon fish sauce 1/2 teaspoon sugar 2 tablespoons vegetable oil Freshly ground black pepper, to taste Optional toppings: thinly sliced green onions, cilantro, or Thai chili sauce",
+            ),
+            instructions = listOf(
+                "Cooking process: Beat the eggs: Crack the eggs into a bowl, add the fish sauce, sugar and a pinch of black pepper. Whisk the mixture until it is well combined and becomes a light foam. Heat the oil:  Heat the vegetable oil in a non-stick frying pan over medium-high heat. Fry the omelet:  When the oil is hot, pour the egg mixture into the pan. Let it cook undisturbed for a minute or until the edges start to set. Fold and cook:  Carefully fold the omelet in half using a spatula. Continue cooking until both sides are golden brown and the centre is set. To serve:  Place the Kai Jiew on a plate. Garnish with additional toppings if desired. Serve hot with jasmine rice or your favourite Thai dishes.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 5,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Thung Thong",
+            imageResId = R.drawable.thung_thong_5,
+            description = "Thung Thong, often referred to as Golden Bags, are a delectable Thai appetizer. These crispy, golden parcels are filled with a flavorful mixture of ground pork, shrimp, water chestnuts, and aromatic herbs. Wrapped in thin wonton wrappers and deep-fried to perfection, Thung Thong are a delightful blend of textures and flavors. They are typically served with a sweet chili dipping sauce and make a popular choice for Thai gatherings and celebrations.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "4 великі стиглі помідори\n" +
-                        "1/4 склянки свіжого листя базиліка\n" +
-                        "2 зубчики часнику\n" +
-                        "1/4 склянки оливкової олії першого віджиму\n" +
-                        "Сіль і перець за смаком\n" +
-                        "1 багет італійського хліба",
+                "Ingredients: - 20-25 wonton wrappers - 100g ground pork - 100g shrimp, finely chopped - 1/4 cup finely diced water chestnuts - 2 cloves garlic, minced - 2 tablespoons finely chopped cilantro - 1 tablespoon oyster sauce - 1/2 teaspoon soy sauce - 1/4 teaspoon white pepper - Vegetable oil for deep frying",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Помідори нарізати кубиками, базилік подрібнити, часник подрібнити.\n" +
-                        "2. Змішуємо помідори, базилік та часник у мисці. Додати оливкову олію, сіль та перець. Добре перемішати.\n" +
-                        "3. Нарізати хліб скибочками завтовшки 1 дюйм і підсмажити до золотистої скоринки.\n" +
-                        "4. Натріть підсмажений хліб зубчиком часнику для додаткового аромату.\n" +
-                        "5. Ложкою викладіть томатну суміш на підсмажені скибочки хліба.\n" +
-                        "6. Збризніть ще трохи оливковою олією та прикрасьте додатково базиліком.\n" +
-                        "7. Подавайте негайно та насолоджуйтеся смачною брускеттою!",
+                "Cooking process: Prepare Filling: In a bowl, combine ground pork, chopped shrimp, water chestnuts, minced garlic, cilantro, oyster sauce, soy sauce, and white pepper. Mix well until all ingredients are thoroughly combined. Assemble Golden Bags:** Lay out a wonton wrapper and place a teaspoon of the filling in the center. Wet the edges of the wrapper with water and fold it diagonally to create a triangle. Press the edges to seal, ensuring there are no air pockets. Bring the two opposite corners of the triangle together and seal them, creating a little purse or bag shape. Heat Oil: In a deep skillet or pot, heat vegetable oil to 350°F (175°C). Fry Thung Thong: Carefully slide a few Thung Thong into the hot oil. Fry until they turn golden brown and crispy, which usually takes about 2-3 minutes. Use a slotted spoon to remove them and drain on paper towels. Serve: Serve Thung Thong hot with sweet chili dipping sauce.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 6,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Gung Chae Nam Pla",
+            imageResId = R.drawable.gung_chae_nam_pla_6,
+            description = "Gung Chae Nam Pla is a simple yet vibrant Thai dish that highlights the natural flavors of fresh shrimp. The shrimp are marinated in a zesty mixture of fish sauce, lime juice, garlic, and chilies, resulting in a savory and tangy appetizer or salad. Served with crisp vegetables and aromatic herbs, this dish offers a refreshing burst of flavors and textures.",
+            ingredients = listOf(
+                "Ingredients: 200g fresh shrimp, peeled and deveined 3 cloves garlic, minced 2-3 Thai bird's eye chilies, finely chopped (adjust to your spice preference) 2 tablespoons fish sauce 1 1/2 tablespoons lime juice 1 teaspoon sugar 2-3 cherry tomatoes, halved 1 shallot, thinly sliced 1/4 cup cucumber, thinly sliced 1/4 cup fresh cilantro leaves 1/4 cup fresh mint leaves 1/4 cup fresh basil leaves",
+            ),
+            instructions = listOf(
+                "Cooking process: Prepare the Marinade: In a bowl, combine minced garlic, chopped bird's eye chilies, fish sauce, lime juice, and sugar. Mix well until the sugar dissolves. Marinate the Shrimp: Add the peeled and deveined shrimp to the marinade. Toss the shrimp to coat them evenly. Let them marinate for about 10-15 minutes while you prepare the vegetables and herbs. Assemble the Salad: On a serving plate, arrange the halved cherry tomatoes, thinly sliced shallot, cucumber slices, cilantro leaves, mint leaves, and basil leaves. Grill the Shrimp: Heat a grill or grill pan over medium-high heat. Thread the marinated shrimp onto skewers. Grill the shrimp for about 2-3 minutes on each side until they turn pink and slightly charred. Remove the shrimp from the skewers. Serve: Arrange the grilled shrimp over the prepared vegetables and herbs. Pour any remaining marinade over the dish. Gung Chae Nam Pla offers a delightful combination of savory, tangy, and spicy flavors, making it a perfect appetizer or light meal. Enjoy the freshness and zestiness of this Thai dish!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 5,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Салат Капрезе",
-            imageResId = R.drawable.caprese_salad_5,
-            description =
-            "Салат капрезе - чудова італійська страва, яка не потребує приготування, що робить її ідеальною літньою закускою. Він не має особливих дієтичних обмежень і є різновидом салату. В середньому він містить близько 150 калорій на порцію.",
+            recipeId = 7,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Hoi Tod",
+            imageResId = R.drawable.hoi_tod_7,
+            description = "Hoi Tod is a delectable Thai street food dish known for its crispy texture and savory flavors. This seafood pancake combines fresh mussels, bean sprouts, and aromatic herbs, all bound together in a flavorful batter and pan-fried until golden and crispy. Served with a tangy and slightly sweet dipping sauce, Hoi Tod is a popular snack or appetizer in Thailand, loved for its satisfying crunch and delightful taste. ",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "4 стиглі помідори\n" +
-                        "200 г свіжого сиру моцарела\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія Extra Virgin\n" +
-                        "Бальзамічний оцет (за бажанням)\n" +
-                        "Сіль і перець за смаком",
+                "Ingredients: " +
+                        "200g fresh mussels 1 cup bean sprouts 2 stalks green onions (chopped) 2 cloves garlic (minced) 1/4 cup all-purpose flour 1/4 cup rice flour 1/2 tsp baking powder 1/2 cup water 1 egg 2 tbsp fish sauce 1/2 tsp sugar Vegetable oil for frying  Dipping Sauce: 2 tbsp fish sauce 2 tbsp rice vinegar 1 tbsp sugar 1-2 red chilies (chopped) 1 clove garlic (minced)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Нарізати помідори та моцарелу кружальцями товщиною 1/4 дюйма.\n" +
-                        "2. Викласти на сервірувальне блюдо, чергуючи скибочки помідорів і моцарели.\n" +
-                        "3. Між помідорами та моцарелою покласти листя свіжого базиліка.\n" +
-                        "4. Збризніть оливковою олією (і бальзамічним оцтом за бажанням).\n" +
-                        "5. Посолити та поперчити.\n" +
-                        "6. Прикрасити свіжим базиліком.\n" +
-                        "7. Подавайте негайно і насолоджуйтеся цим простим, освіжаючим салатом Капрезе!",
+                "Cooking process: Rinse the fresh mussels thoroughly and remove any beards or debris. Drain them and set aside. In a mixing bowl, combine the all-purpose flour, rice flour, baking powder, water, egg, fish sauce, and sugar. Mix until you have a smooth batter. Heat a large non-stick pan over medium-high heat. Add a generous amount of vegetable oil to cover the bottom of the pan. Once the oil is hot, add minced garlic and chopped green onions to the pan. Sauté for about a minute until fragrant. Add the fresh mussels and bean sprouts to the pan, spreading them out evenly. Pour the batter over the mussels and bean sprouts, ensuring an even distribution. Cook for about 4-5 minutes until the bottom becomes golden brown and crispy. Carefully flip the pancake over and continue frying for another 4-5 minutes until both sides are crispy and golden. While the pancake is frying, prepare the dipping sauce by mixing fish sauce, rice vinegar, sugar, chopped red chilies, and minced garlic in a small bowl. Adjust the ingredients to your taste. Once the Hoi Tod is crispy and golden on both sides, remove it from the pan and drain on paper towels to remove excess oil. Slice the pancake into portions and serve it hot with the dipping sauce on the side.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 8,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Kai Ho Bai Toei",
+            imageResId = R.drawable.kai_ho_bai_toei_8_600,
+            description = " Kai Ho Bai Toei is a beloved Thai dish known for its unique and delightful aroma and flavors. It features marinated chicken pieces wrapped in fragrant pandan leaves, resulting in a mouthwatering combination of tender chicken infused with the sweet scent of pandan. These flavorful chicken parcels are perfect as an appetizer or a main course and are often enjoyed with a dipping sauce.",
+            ingredients = listOf(
+                "Ingredients: 4 boneless chicken thighs, cut into bite-sized pieces 10-12 pandan leaves, washed and patted dry 2 cloves garlic, minced 1 shallot, minced 1 tablespoon oyster sauce 1 tablespoon light soy sauce 1 teaspoon sugar 1/2 teaspoon white pepper 1/2 teaspoon salt Vegetable oil for frying Toothpicks or kitchen twine for securing  Dipping Sauce: 2 tablespoons sweet chili sauce 1 tablespoon light soy sauce 1 tablespoon lime juice 1 clove garlic, minced",
+            ),
+            instructions = listOf(
+                "Cooking process: In a bowl, combine minced garlic, minced shallot, oyster sauce, light soy sauce, sugar, white pepper, and salt. Mix well to create the marinade. Add the chicken pieces to the marinade, ensuring they are well coated. Allow the chicken to marinate for at least 30 minutes to absorb the flavors. While the chicken is marinating, prepare the dipping sauce by mixing sweet chili sauce, light soy sauce, lime juice, and minced garlic in a small bowl. Set aside. Take each pandan leaf and trim off the tough end. Fold the leaf in half lengthwise, then fold it in half widthwise to create a pocket. Place a marinated chicken piece in the pandan leaf pocket and fold the leaf around the chicken, securing it with a toothpick or kitchen twine. Repeat for all the chicken pieces. Heat vegetable oil in a deep pan or wok over medium-high heat. Carefully fry the pandan-wrapped chicken until they turn golden brown and crispy, approximately 5-7 minutes. Remove the pandan chicken from the oil and drain on paper towels to remove excess oil. Serve the Kai Ho Bai Toei hot with the prepared dipping sauce on the side.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 6,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Прошутто з динею",
-            imageResId = R.drawable.prosciutto_and_melon_3,
+            recipeId = 9,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Som Tum",
+            imageResId = R.drawable.som_tum_9_700,
             description =
-            "Прошутто з динею - класична італійська закуска, яка поєднує солодкість стиглої дині з пікантним, солоним смаком прошутто. Особливих дієтичних обмежень для цієї страви немає. Це холодна закуска, і кожна порція містить приблизно 60-80 калорій.",
+            "Som Tum is a vibrant and zesty Thai salad that offers a harmonious blend of sweet, sour, and spicy flavors. It features shredded green papaya, cherry tomatoes, chili peppers, and other ingredients, all bathed in a tangy dressing. This refreshing salad is a staple in Thai cuisine and is often enjoyed as a side dish or a light meal.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "1 стигла канталупа або диня медової роси\n" +
-                        "8 скибочок прошутто",
+                "Ingredients: 2 cups shredded green papaya 1/2 cup cherry tomatoes, halved 2-3 Thai bird's eye chili peppers, minced (adjust to taste) 2 cloves garlic, minced 2 tablespoons roasted peanuts, crushed 2 tablespoons fish sauce 1.5 tablespoons lime juice 1 tablespoon palm sugar or brown sugar 1-2 tablespoons dried shrimp (optional) 1-2 tablespoons tamarind juice (optional) Fresh cilantro leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування: \n" ,
-                        "1. Розрізаємо диню навпіл, видаляємо насіння та нарізаємо тонкими часточками або кубиками. \n" +
-                        "2. Акуратно обертаємо кожну скибочку дині скибочкою прошутто. \n" +
-                        "3. Викласти диню, загорнуту в прошутто, на тарілку. \n" +
-                        "4. Можна подавати так, як є, або прикрасити свіжими листочками м'яти для додаткової свіжості. \n" +
-                        "5. Насолоджуйтесь цією чудовою закускою, яка не потребує приготування, що ідеально балансує солодкий та солоний смаки.",
+                "Cooking process: In a mortar and pestle, pound the minced garlic and chili peppers until they form a rough paste. Add the roasted peanuts and lightly crush them, maintaining some texture. Toss the shredded green papaya and halved cherry tomatoes in a large mixing bowl. Add the pounded garlic and chili mixture to the bowl. In a separate small bowl, combine fish sauce, lime juice, palm sugar, dried shrimp (if using), and tamarind juice (if using). Mix until the sugar dissolves. Pour the dressing over the papaya and tomato mixture. Use a spatula or your hands to gently toss and combine all the ingredients. Adjust the seasoning to your taste by adding more fish sauce, lime juice, or sugar if needed. Transfer the salad to a serving plate, and garnish with fresh cilantro leaves and extra crushed peanuts.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 10,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Khao Niew Mamuang",
+            imageResId = R.drawable.khao_niew_mamuang_10_500,
+            description = "Khao Niew Mamuang, also known as Mango Sticky Rice, is a beloved Thai dessert known for its delightful blend of sweet, creamy, and fragrant flavors. Khao Niew Mamuang is best enjoyed while the sticky rice is still warm and the mangoes are cool. It's a delightful dessert that captures the essence of Thai cuisine with its sweet and tropical flavors.",
+            ingredients = listOf(
+                "Ingredients: 1 cup glutinous rice 2 ripe mangoes 1 cup coconut milk 1/2 cup sugar 1/2 teaspoon salt Toasted sesame seeds (optional)",
+            ),
+            instructions = listOf(
+                "Cooking process: Prepare the Rice: Rinse the glutinous rice until the water runs clear. Soak the rice in water for about 30 minutes, then drain. Steam the Rice: Place the soaked rice in a bamboo or metal steamer lined with muslin cloth. Steam the rice over boiling water for about 30 minutes or until it's tender. Prepare the Coconut Sauce: In a saucepan, heat the coconut milk, sugar, and salt over low heat. Stir until the sugar dissolves. Remove from heat. Mix and Rest: Transfer the steamed rice into a bowl. Pour half of the warm coconut sauce over the rice and gently mix until it's well-coated. Let it sit for about 30 minutes. Peel and Slice Mangoes: Peel the ripe mangoes and cut them into thin slices. Serve: Serve the sticky rice on a plate or in a banana leaf. Arrange the mango slices on top. Drizzle the remaining coconut sauce over the mangoes. Optionally, sprinkle with toasted sesame seeds for added flavor and texture.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 7,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Смажені кальмари",
-            imageResId = R.drawable.fried_calamari_7_small,
-            description =
-            "Смажені кальмари - це класична італійська страва, відома своїми хрусткими, ніжними та ароматними смаженими кальмарами. Зазвичай її подають як закуску або гарнір. Не має особливих дієтичних обмежень, що робить її придатною для більшості людей. Кожна порція смажених кальмарів містить приблизно 200-250 калорій.",
-            ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "1 фунт (450 г) свіжих кальмарів (очищених і нарізаних кільцями)\n" +
-                        "1 склянка борошна грубого помелу\n" +
-                        "1/2 склянки кукурудзяного крохмалю\n" +
-                        "1 чайна ложка солі\n" +
-                        "1/2 чайної ложки чорного перцю\n" +
-                        "1/2 чайної ложки паприки\n" +
-                        "Рослинна олія (для смаження)\n" +
-                        "Часточки лимона (для прикраси)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Змішати в мисці борошно, кукурудзяний крохмаль, сіль, перець та паприку.\n" +
-                        "2. Нагрійте рослинну олію у фритюрниці або великій каструлі до 350°F (180°C).\n" +
-                        "3. Обваляйте кільця кальмарів у борошняній суміші, струшуючи надлишки.\n" +
-                        "4. Обережно опустити кальмари в паніровці в гарячу олію і смажити до золотистої скоринки (приблизно 23 хвилини).\n" +
-                        "5. За допомогою шумівки виймаємо кальмари та викладаємо на паперові рушники, щоб стекла зайва олія.\n" +
-                        "6. Подавайте гарячими з часточками лимона і насолоджуйтеся хрусткими смаженими кальмарами!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 8,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Аранчіні (фаршировані рисові кульки)",
-            imageResId = R.drawable.aranchinne_stuffed_rice_balls_8_good_pic,
-            description =
-            "Аранчіні - це смачні італійські рисові кульки з начинкою. Не мають особливих дієтичних обмежень, але зазвичай не підходять для безглютенової дієти через використання панірувальних сухарів. Вони є різновидом закуски або перекусу. Кожна кулька аранчіні містить близько 150-200 калорій.",
-            ingredients = listOf(
-                "Інгредієнти (на 12 кульок аранчіні):\n" ,
-                        "2 склянки рису Арборіо\n" +
-                        "4 склянки курячого або овочевого бульйону\n" +
-                        "1/2 склянки тертого сиру пармезан\n" +
-                        "2 великі яйця\n" +
-                        "1/2 склянки сиру моцарела (кубиками)\n" +
-                        "1/2 склянки вареного яловичого фаршу або ковбаси (за бажанням)\n" +
-                        "1/4 склянки свіжої петрушки (подрібненої)\n" +
-                        "Сіль і перець за смаком\n" +
-                        "1 склянка панірувальних сухарів\n" +
-                        "Рослинна олія для смаження",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Відваріть рис Арборіо в бульйоні до готовності, потім дайте йому охолонути.\n" +
-                        "Змішайте пармезан, яйця, петрушку, сіль та перець.\n" +
-                        "Візьміть жменю рисової суміші, розрівняйте її, додайте кубик моцарели і ложку м'яса (якщо використовуєте), потім сформуйте кульку.\n" +
-                        "Обваляти кульку в панірувальних сухарях.\n" +
-                        "Розігріти олію до 350°F (175°C) і обсмажити аранчіні до золотистого кольору.\n" +
-                        "Викладіть на паперові рушники, подавайте гарячими і насолоджуйтеся смачними аранчіні!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 9,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Моцарела в кареті",
-            imageResId = R.drawable.mozzarella_carrozza_6,
-            description =
-            "Моцарела в кареті - вишукана італійська страва, що складається зі смаженого сиру моцарела, прокладеного між шматочками хліба. Вона не підходить для тих, хто має обмеження на глютен або лактозу через використання хліба та сиру. Кожна порція містить близько 300-350 калорій.",
-            ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "8 скибочок білого хліба\n" +
-                        "8 скибочок свіжого сиру моцарела\n" +
-                        "2 великих яйця\n" +
-                        "1/2 склянки молока\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Борошно (для панірування)\n" +
-                        "Оливкова олія (для смаження)\n" +
-                        "Свіже листя базиліка (за бажанням)\n" +
-                        "Соус Маринара (для вмочування, за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Покладіть шматочки моцарели між двома скибочками хліба, щоб сформувати бутерброди.\n" +
-                        "У мисці збийте яйця, молоко, сіль та перець.\n" +
-                        "Обваляти бутерброди в борошні, потім занурити в яєчну суміш.\n" +
-                        "Нагріваємо оливкову олію на сковороді на середньому вогні.\n" +
-                        "Обсмажити сендвічі до золотистої скоринки з обох боків.\n" +
-                        "Виймаємо, висипаємо на паперові рушники та прикрашаємо базиліком.\n" +
-                        "Подавати гарячими, за бажанням, з соусом маринара для вмочування. Насолоджуйтесь хрусткою моцарелою в карроцці!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 10,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Панцанелла",
-            imageResId = R.drawable.panzanella_7,
-            description =
-            "Панцанелла - класичний італійський хлібний салат, який ідеально підходить для літа. Він не має особливих дієтичних обмежень. До складу цього салату зазвичай входить черствий хліб, помідори, цибуля, базилік і простий вінегрет. Це освіжаюча страва, яка містить близько 150-250 калорій на порцію, залежно від порцій та додаткових інгредієнтів.",
+            recipeId = 11,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Laab Gai",
+            imageResId = R.drawable.laab_gai_11,
+            description = "Laab Gai is a classic Thai dish known for its vibrant flavors and aromatic herbs. This ground chicken salad is a harmonious blend of spicy, sour, and herbal notes, making it a popular choice in Thai cuisine.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "4 склянки черствого італійського хліба, розрізаного на шматочки\n" +
-                        "4 великі стиглі помідори, нарізані шматочками\n" +
-                        "1 червона цибулина, тонко нарізана\n" +
-                        "1/2 склянки свіжого листя базиліка, порваного\n" +
-                        "1/4 склянки оливкової олії першого віджиму\n" +
-                        "3 столові ложки червоного винного оцту\n" +
-                        "Сіль і чорний перець за смаком\n" +
-                        "За бажанням: огірок, болгарський перець, оливки або каперси",
+                "Ingredients: 200g ground chicken 2-3 shallots, thinly sliced 2-3 spring onions, thinly sliced 1-2 cloves garlic, minced 2-3 fresh red or green chilies, finely chopped (adjust to your spice preference) 1-2 tablespoons roasted rice powder 1 lime, juiced 2-3 sprigs fresh cilantro, chopped 2-3 sprigs fresh mint leaves, chopped Fish sauce, to taste Sugar, to taste Vegetable oil for cooking",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій мисці змішайте хліб, помідори, цибулю та базилік.\n" +
-                        "У невеликій мисці збийте оливкову олію, червоний винний оцет, сіль і перець.\n" +
-                        "Полити заправкою салат і перемішати, щоб перемішати.\n" +
-                        "Дати салату настоятися близько 30 хвилин, щоб смаки злилися воєдино.\n" +
-                        "Якщо потрібно, додайте ще заправки та подавайте до столу. Насолоджуйтесь освіжаючою Панцанеллою!",
+                "Cooking process: Start by roasting the rice powder. Toast uncooked jasmine rice in a dry pan until it turns golden brown. Grind the toasted rice into a coarse powder using a mortar and pestle or a coffee grinder. Set aside. Heat a small amount of vegetable oil in a pan over medium heat. Add minced garlic and chopped chilies. Sauté until fragrant. Add ground chicken to the pan and cook, breaking it apart with a spatula, until it's no longer pink and well-cooked. Season the cooked chicken with fish sauce, sugar, and lime juice. Adjust the seasoning to balance the flavors according to your taste. Remove the pan from the heat and let the chicken cool slightly. In a mixing bowl, combine the cooked chicken with thinly sliced shallots, spring onions, fresh cilantro, and mint leaves. Mix well. Sprinkle the roasted rice powder over the mixture and gently toss it all together. Taste the Laab Gai and adjust the seasoning if needed by adding more fish sauce, sugar, or lime juice. Transfer the Laab Gai to a serving platter and garnish with extra mint leaves and cilantro. Serve this delicious Thai salad as an appetizer or alongside fresh lettuce leaves and sticky rice. Enjoy the delightful combination of flavors!",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 12,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Khai Luk Koei",
+            imageResId = R.drawable.khai_luk_koei_12_500,
+            description = "Khai Luk Koei is a delectable Thai appetizer featuring crispy, deep-fried quail eggs paired with a tangy tamarind sauce. This dish offers a delightful contrast of textures and flavors, making it a popular choice among Thai food enthusiasts.",
+            ingredients = listOf(
+                "Ingredients: 12 quail eggs 1/2 cup all-purpose flour Vegetable oil for frying 1/4 cup tamarind paste 2 tablespoons fish sauce 2 tablespoons palm sugar (or brown sugar) 1 shallot, finely chopped 1-2 Thai bird's eye chilies, finely chopped (adjust to taste) Chopped cilantro and sliced scallions for garnish",
+            ),
+            instructions = listOf(
+                "Cooking process: Begin by boiling the quail eggs: Place the quail eggs in a saucepan and cover them with water. Bring the water to a boil, then reduce the heat to a simmer. Cook the eggs for about 3-4 minutes. Once done, transfer them to a bowl of ice water to cool. Peel the quail eggs and set them aside. In a mixing bowl, combine the tamarind paste, fish sauce, and palm sugar. Stir until the sugar has dissolved, creating a sweet and tangy tamarind sauce. Adjust the taste with more sugar or fish sauce if needed. Heat vegetable oil in a deep frying pan or wok over medium-high heat. Roll each quail egg in the all-purpose flour, ensuring they are well coated. Carefully place them in the hot oil and fry until they turn golden brown and crispy. Remove the fried quail eggs and place them on paper towels to drain excess oil. In a separate pan, sauté the chopped shallot and Thai bird's eye chilies until fragrant. Pour in the tamarind sauce mixture and simmer briefly until it thickens slightly. Arrange the crispy quail eggs on a serving plate, drizzle the tamarind sauce over them, and garnish with chopped cilantro and sliced scallions. Serve your Khai Luk Koei immediately as a delightful Thai appetizer. Enjoy!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 13,
-            categoryOfFood = "Антипасти",
-            dishTitle = "Вітелло Тоннато (телятина з тунцем під соусом)",
-            imageResId = R.drawable.vitello_tonnato_13_new,
-            description =
-            "Вітелло Тоннато - це італійська холодна страва, що складається з тонко нарізаної телятини, яку подають з вершковим соусом з тунця та анчоусів. Суворих дієтичних обмежень немає, але вона не підходить для вегетаріанців. Це різновид антипасто з приблизно 200-250 калоріями на порцію.",
+            recipeId = 13,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Tod Man Khao Pod",
+            imageResId = R.drawable.tod_man_khao_pod_13,
+            description = "Tod Man Khao Pod is a delightful Thai appetizer known for its crispy texture and sweet corn flavor. These golden fritters are a popular street food snack and are perfect for sharing with friends and family. Whether served as an appetizer or a side dish, they are sure to please your taste buds with their savory and slightly sweet taste.",
             ingredients = listOf(
-                "Інгредієнти (на 6 порцій):\n" ,
-                        "500 г тонко нарізаної телятини\n" +
-                        "150 г консервованого тунця в олії, відцідженого\n" +
-                        "45 філе анчоусів\n" +
-                        "2 яєчних жовтки\n" +
-                        "2 ст.л. каперсів\n" +
-                        "2 ст.л. лимонного соку\n" +
-                        "150мл майонезу\n" +
-                        "Сіль та перець за смаком",
+                "Ingredients: 1 cup fresh corn kernels (about 2 ears of corn) 1/4 cup rice flour 1/4 cup all-purpose flour 1/2 teaspoon baking powder 1/2 teaspoon red curry paste 1 egg 2 kaffir lime leaves, finely sliced 2-3 tablespoons coconut milk 1/2 teaspoon sugar 1/2 teaspoon salt Vegetable oil for frying Sweet chili sauce for dipping",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Відціджений тунець, анчоуси, яєчні жовтки, каперси та лимонний сік змішати в кухонному комбайні до однорідної маси.\n" +
-                        "Поступово додайте майонез і збивайте, поки соус не стане кремоподібним.\n" +
-                        "Посолити та поперчити за смаком.\n" +
-                        "Викласти шматочки телятини на сервірувальну тарілку.\n" +
-                        "Вилити соус з тунця на шматочки телятини, повністю покриваючи їх.\n" +
-                        "Перед подачею на стіл поставити в холодильник на кілька годин, щоб смаки злилися воєдино.\n" +
-                        "Подавайте охолодженим і за бажанням прикрасьте додатково каперсами та скибочками лимона.\n" +
-                        "Насолоджуйтесь цією класичною італійською стравою як закускою або легкою основною стравою.",
+                "Cooking process: Begin by preparing the fresh corn kernels. You can use a knife to remove them from the cob. In a mixing bowl, combine the rice flour, all-purpose flour, baking powder, red curry paste, egg, kaffir lime leaves, coconut milk, sugar, and salt. Mix well until you have a smooth batter. Add the fresh corn kernels to the batter and stir until they are evenly coated. Heat vegetable oil in a deep frying pan or wok over medium-high heat. You'll need enough oil to submerge the fritters. Once the oil is hot, carefully drop spoonfuls of the corn mixture into the oil. Fry until the fritters turn golden brown and crispy, about 2-3 minutes per side. Remove the fritters from the oil and place them on paper towels to drain excess oil. Serve the Tod Man Khao Pod hot with sweet chili sauce for dipping.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 14,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Gai Hor Bai Toey",
+            imageResId = R.drawable.gai_hor_bai_toey_14,
+            description = "Gai Hor Bai Toey is a delectable Thai appetizer where marinated chicken is wrapped in fragrant pandan leaves and deep-fried to perfection. It offers a delightful blend of flavors and textures, with tender chicken encased in a crispy, aromatic wrapper.",
+            ingredients = listOf(
+                "Ingredients: 300g chicken breast, cut into bite-sized pieces 10-12 pandan leaves 2 cloves garlic, minced 1 shallot, minced 1 tablespoon oyster sauce 1 tablespoon light soy sauce 1 teaspoon sugar 1/2 teaspoon black pepper Cooking oil for deep-frying",
+            ),
+            instructions = listOf(
+                "Cooking process: In a bowl, combine minced garlic, minced shallot, oyster sauce, light soy sauce, sugar, and black pepper. Mix well to create a marinade. Add the chicken pieces to the marinade and coat them thoroughly. Allow the chicken to marinate for at least 30 minutes. While the chicken is marinating, prepare the pandan leaves. Remove the tough central vein from each leaf and cut them into 6-inch sections. Take a piece of marinated chicken and wrap it securely in a pandan leaf, using a toothpick to hold it together. Heat the cooking oil in a deep pan to 350°F (175°C). Carefully place the wrapped chicken into the hot oil and fry until they turn golden brown and crispy, which should take about 3-4 minutes. Remove the chicken from the oil and place them on paper towels to drain excess oil. Serve the Gai Hor Bai Toey with sweet chili sauce or a dipping sauce of your choice. Enjoy this delightful Thai appetizer!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 17,
-            categoryOfFood = "Паста",
-            dishTitle = "Лазанья",
-            imageResId = R.drawable.lasagna_13,
-            description =
-            "Лазанья - улюблена італійська страва, відома своїми шарами пасти, густим соусом і плавленим сиром.  Лазанья зазвичай містить м'ясо, молочні продукти (сир і соус бешамель) і макарони на основі пшениці, що робить її непридатною для вегетаріанців і людей з непереносимістю лактози або глютену. Це багатошарова страва з макаронних виробів, що складається з листів лазаньї, м'ясного соусу, соусу рікотта або бешамель, моцарели та сиру пармезан.",
-            ingredients = listOf(
-                "Інгредієнти (кількість залежить від рецепту):\n" ,
-                        "Локшина для лазаньї\n" +
-                        "М'ясний фарш (зазвичай яловичина, свинина або їх поєднання)\n" +
-                        "Томатний соус\n" +
-                        "Соус рікотта або бешамель\n" +
-                        "Сир моцарела\n" +
-                        "Сир пармезан\n" +
-                        "Цибуля, часник і зелень (для аромату)\n" +
-                        "Оливкова олія\n" +
-                        "Сіль та перець",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Відварити локшину для лазаньї згідно з інструкцією на упаковці.\n" +
-                        "Підрум'янити м'ясний фарш з цибулею та часником, додати томатний соус і приправити.\n" +
-                        "У форму для запікання викласти шарами локшину, м'ясний соус, рікотту або бешамель та сири.\n" +
-                        "Повторювати шари, закінчуючи сиром зверху.\n" +
-                        "Випікати до утворення пухирців і золотистого кольору.\n" +
-                        "Перед подачею дати відпочити.\n" +
-                        "Для наочності ви можете переглянути зображення цієї страви на вказаних сайтах з рецептами.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 19,
-            categoryOfFood = "Паста",
-            dishTitle = "Паста з морепродуктами Scialatielli allo Scoglio",
-            imageResId = R.drawable.scialatielli_allo_scoglio_19,
-            description =
-            "Паста з морепродуктами, відома як Scialatielli allo Scoglio, - це вишукана італійська прибережна страва, яка демонструє щедрість моря. Ця ароматна паста зазвичай містить суміш свіжих морепродуктів, таких як мідії, молюски, креветки, а іноді й кальмари, приготованих до досконалості. Морепродукти поєднуються з ароматним томатним соусом на основі часнику, пластівців чилі та свіжої зелені, наприклад, петрушки. Цей яскравий соус огортає пасту аль денте, створюючи гармонійне поєднання текстур і смаків. Страва пропонує чудовий контраст між солодкістю морепродуктів і гостротою томатного соусу, що робить її улюбленою в італійській кухні. Scialatielli allo Scoglio відображає суть життя на узбережжі, приносячи смак Середземномор'я на вашу тарілку.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "300 г білого борошна\n" +
-                        "½ чайної ложки солі\n" +
-                        "1 склянка молока\n" +
-                        "1½ столові ложки оливкової олії \n" +
-                        "1 яйце\n" +
-                        "50 г дрібно натертого сиру пекоріно\n" +
-                        "½ пучка подрібненого базиліка\n" +
-                        "трохи білого борошна\n" +
-                        "2 столові ложки оливкової олії \n" +
-                        "2 зубчики часнику, дрібно нарізані\n" +
-                        "1 червоний перець, нарізаний\n" +
-                        "300 г помідорів черрі, розрізаних навпіл\n" +
-                        "1 склянка білого вина\n" +
-                        "3/4 чайної ложки солі\n" +
-                        "400 г заморожених морепродуктів, розморожених \n" +
-                        "1 крупно нарізаний пучок петрушки\n" +
-                        "½ пучка плоскої петрушки, крупно нарізаної",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Приготувати тісто для локшини: змішати в мисці борошно і сіль. Додайте молоко, олію та яйце, перемішайте і вимішуйте близько 10 хвилин, щоб вийшло м'яке і гладке тісто. Додати сир і базилік, вимісити і сформувати кулю. Накрити тісто мискою з гарячою водою і притрусити петрушкою. Залиште при кімнатній температурі приблизно на 30 хвилин.\n" +
-                        "2. Сціалатієлліс: розрізати тісто на чотири частини. На добре присипаній борошном робочій поверхні розкачати їх до товщини приблизно 2 мм (приблизно 12×60 см), регулярно прибираючи тісто з робочої поверхні. регулярно розкачувати тісто. Шматки тіста вільно розкачати вздовж, нарізати на смужки шириною приблизно 4 мм, викласти на кухонний рушник. \n" +
-                        "3. Готуємо соус: Нагріти олію у великій каструлі. Недовго обсмажити часник і перець чилі. часник і перець чилі. Додати помідори і вино, тушкувати близько 5 хвилин, посолити. Додати морепродукти, накрити кришкою і тушкувати 2 хвилини. Додати петрушку і перемішати. \n" +
-                        "4. Паста: опустити чіалятеллі в киплячу підсолену воду і варити аль денте протягом 3 хвилин. Вийняти шумівкою, обсушити, додати до соусу та перемішати. Розкласти макарони та посипати сиром.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 20,
-            categoryOfFood = "Паста",
-            dishTitle = "Ньоккі алла Соррентіна",
-            imageResId = R.drawable.gnocchi_alla_sorrentina_20,
-            description =
-            "Ньоккі алла Соррентина - улюблена італійська страва з макаронів, яка походить з мальовничого півострова Сорренто на півдні Італії. Ця страва складається з м'яких і пухких картопляних ньоккі, зазвичай домашнього приготування, хоча можна використовувати і магазинні варіанти. Ньоккі тушкуються в соковитому томатному соусі, приготованому зі стиглих томатів сорту Сан-Марцано, часнику, свіжого листя базиліка та сиру моцарела. Готові ньоккі промащують цим ароматним соусом і щедро посипають свіжою моцарелою, а потім запікають до утворення пухирців і золотистого відтінку.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "700 г картоплі\n" +
-                        "175 г білого борошна\n" +
-                        "50 г тертого пармезану\n" +
-                        "1 свіже збите яйце\n" +
-                        "1½ чайної ложки солі\n" +
-                        "1 столова ложка оливкової олії\n" +
-                        "1 дрібно нарізана цибулина\n" +
-                        "1 банка помідорів черрі (приблизно 400 г)\n" +
-                        "250 г помідорів черрі\n" +
-                        "1/2 чайної ложки цукру\n" +
-                        "2 чайні ложки солі\n" +
-                        "трохи перцю\n" +
-                        "150 г моцарели, нарізаної на шматочки \n" +
-                        "½ пучка подрібненого базиліка\n" +
-                        "50 г тертого пармезану",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Для суміші для ньоккі: Варимо картоплю в окропі близько 20 хвилин. Ще гарячою почистіть картоплю та розімніть її в мисці, дайте їй охолонути. Додайте борошно, пармезан, яйце, сіль і перемішайте. Маса повинна бути вологою, не прилипати до рук. За потреби додати ще трохи борошна. \n" +
-                        "2. Формуємо: присипаємо масу невеликою кількістю борошна і формуємо 4 рулетики по 2 см кожен. Розріжте їх на шматочки по 2 см і обмотайте великим пальцем навколо зубців виделки, щоб зробити борозенки. Викласти ньоккі на присипану борошном тканину.\n" +
-                        "3. Томатний соус: розігріти олію в каструлі та обсмажити цибулю. \n" +
-                        "Додати помідори черрі та цукор, довести до кипіння. Накрити кришкою і тушкувати близько 10 хвилин, приправити.\n" +
-                        "4. Ньоккі: Відварити ньокки кілька разів у киплячій підсоленій воді протягом 4 хвилин, поки вони не спливуть на поверхню.\n" +
-                        "Вийняти їх шумівкою, злити воду і додати до томатного соусу.\n" +
-                        "5. Начинка: викласти ньоккі у формочки, зверху викласти моцарелу та базилік, посипати сиром пармезан.\n" +
-                        "6. Приготування: готувати близько 30 хвилин у духовці, розігрітій до 200°C.",
-            )
-        ),
-
-
-        RecipeModel(
-            id = 15,
-            categoryOfFood = "Паста",
-            dishTitle = "Спагеті карбонара",
-            imageResId = R.drawable.carbonara_new11,
-            description =
-            "Спагеті карбонара - класична італійська страва з макаронів. Вона не підходить для вегетаріанців, оскільки містить яйця, сир і панчетту. Страва вершкова, пікантна та насичена, з приблизно 400-450 калоріями на порцію.",
+            recipeId = 15,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Moo Ping",
+            imageResId = R.drawable.moo_ping_15,
+            description = "Moo Ping is a popular Thai street food dish known for its savory and slightly sweet flavor. Tender pork pieces are marinated, skewered, and grilled to perfection, resulting in a delightful combination of smokiness and aromatic spices.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) pork loin or shoulder, thinly sliced into strips 2 tablespoons oyster sauce 2 tablespoons soy sauce 2 tablespoons fish sauce 1 tablespoon sugar 1 teaspoon turmeric powder 1 teaspoon garlic, minced 1 teaspoon coriander seeds, crushed Bamboo skewers, soaked in water for 30 minutes",
+            ),
+            instructions = listOf(
+                "Cooking process: In a bowl, combine oyster sauce, soy sauce, fish sauce, sugar, turmeric powder, minced garlic, and crushed coriander seeds to create the marinade. Add the sliced pork to the marinade, ensuring each piece is well coated. Allow it to marinate for at least 30 minutes, or refrigerate for a more intense flavor, up to 4 hours. Thread the marinated pork strips onto the soaked bamboo skewers. Preheat your grill or grill pan to medium-high heat. Oil the grates lightly to prevent sticking. Grill the skewers for about 2-3 minutes on each side, or until the pork is fully cooked and slightly charred. Serve the Moo Ping hot with sticky rice and your choice of dipping sauce, such as sweet chili sauce or a classic Thai dipping sauce made with fish sauce, lime juice, and chilies.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 16,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Goong Sarong",
+            imageResId = R.drawable.goong_sarong_16_500,
+            description = "Goong Sarong is a delightful Thai appetizer that features plump shrimp coated in a crispy noodle sarong. The combination of tender shrimp and crunchy noodles, paired with a sweet and tangy dipping sauce, makes it a delightful treat.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n",
-                "400 г спагеті\n" +
-                        "150 г панчетти або гвіанче, нарізаних кубиками\n" +
-                        "3 великих яйця\n" +
-                        "100 г сиру Пекоріно Романо, натертого на тертці\n" +
-                        "50 г пармезану, натертого на тертці\n" +
-                        "2 зубчики часнику, подрібнені (за бажанням)\n" +
-                        "Сіль і чорний перець за смаком\n" +
-                        "Свіжа петрушка, подрібнена (для прикраси)",
+                "Ingredients: 12 large shrimp, peeled and deveined 100g thin rice noodles (vermicelli) 1 egg, beaten Cooking oil for frying 12 cilantro leaves (for garnish) Sweet chili sauce or plum sauce (for dipping)",
             ),
             instructions = listOf(
-                "Процес приготування:\n",
-                "Відварити спагеті в підсоленій киплячій воді до стану аль денте. Перед тим, як злити воду, залишити приблизно 1/2 склянки води для варіння макаронів.\n" +
-                        "В окремій мисці збити яйця, тертий пекоріно романо та тертий пармезан. Приправити чорним перцем.\n" +
-                        "На сковороді обсмажити нарізану кубиками панчетту або гвіанче до хрусткої скоринки. За бажанням додайте подрібнений часник для додаткового аромату.\n" +
-                        "Знімаємо сковороду з вогню і даємо їй трохи охолонути.\n" +
-                        "З'єднайте готову пасту з панчеттою/гуанчіче та добре перемішайте.\n" +
-                        "Швидко виливаємо яєчно-сирну суміш на макарони. Перемішуємо, щоб рівномірно покрити макарони. Якщо макарони здаються сухуватими, додати трохи зарезервованої води для варіння макаронів.\n" +
-                        "Подавати негайно, прикрасивши свіжою петрушкою та додатковим сиром за бажанням.\n" +
-                        "Насолоджуйтесь цією вершковою та вишуканою італійською класикою!"
+                "Cooking process: Cook the rice noodles according to package instructions until they are soft. Drain and set aside. Butterfly each shrimp by slicing down the back without cutting all the way through. Lay them flat and press gently to flatten. Wrap each shrimp with a small amount of cooked rice noodles, securing them with a bit of beaten egg. Heat oil in a deep frying pan over medium-high heat. Once the oil is hot, carefully fry the shrimp-wrapped noodles until they turn golden brown and crispy, about 2-3 minutes per side. Remove the shrimp sarong from the oil and place them on paper towels to drain excess oil. Garnish each shrimp sarong with a cilantro leaf. Serve Goong Sarong hot with your choice of sweet chili sauce or plum sauce for dipping.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 16,
-            categoryOfFood = "Паста",
-            dishTitle = "Феттучіне Альфредо",
-            imageResId = R.drawable.fetticine_alfredo_12,
-            description = "Феттучіне Альфредо - класична італійська страва з макаронів, відома своїм вершковим, ніжним соусом. Традиційне  Феттучіне Альфредо не підходить для веганської або безмолочної дієти через його багатий соус на основі вершкового масла та вершків . Це вершкова страва з локшини фетучіні, вершкового масла, жирних вершків і сиру пармезан",
+            recipeId = 17,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Kuay Tiew Lui Suan",
+            imageResId = R.drawable.kuay_tiew_lui_suan_17_500,
+            description = "Kuay Tiew Lui Suan, also known as Fresh Spring Rolls, are a refreshing Thai appetizer that combines fresh vegetables, herbs, rice noodles, and often shrimp or tofu, all wrapped in soft rice paper. These rolls are served with a savory peanut dipping sauce and are a light and healthy way to start a meal. ",
+            ingredients = listOf(
+                "Ingredients: For the Spring Rolls: 10-12 rice paper wrappers 12 cooked medium-sized shrimp, peeled and deveined, or tofu slices 1 cup rice vermicelli noodles, cooked and cooled 1 cucumber, julienned 1 carrot, julienned 1/2 cup fresh bean sprouts Fresh cilantro leaves Fresh mint leaves Fresh basil leaves Lettuce leaves For the Peanut Dipping Sauce: 1/2 cup smooth peanut butter 2 tablespoons soy sauce 1 tablespoon rice vinegar 1 tablespoon honey or brown sugar 1 clove garlic, minced 1/2 teaspoon grated fresh ginger 2-4 tablespoons warm water (adjust for desired consistency)",
+            ),
+            instructions = listOf(
+                "Cooking process: For the Peanut Dipping Sauce: In a bowl, whisk together peanut butter, soy sauce, rice vinegar, honey (or sugar), garlic, and ginger until smooth. Gradually add warm water, one tablespoon at a time, until the sauce reaches your desired consistency. Set aside. For the Spring Rolls: Prepare a shallow dish with warm water to soften the rice paper wrappers. Dip one rice paper wrapper into the warm water for a few seconds until it becomes pliable. Lay the wet rice paper on a clean, damp kitchen towel. Place a lettuce leaf on the lower third of the rice paper, leaving space on the sides. Add a small amount of cooked rice vermicelli noodles, julienned cucumber, carrot, bean sprouts, fresh herbs, and either a shrimp or tofu slice. Carefully fold the sides of the rice paper over the filling and then tightly roll it up from the bottom, similar to rolling a burrito. Repeat with the remaining ingredients. Serve the fresh spring rolls with the peanut dipping sauce.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 18,
+            categoryOfFood = "Appetizers",
+            dishTitle = "Miang Pla Pao",
+            imageResId = R.drawable.miang_pla_pao_18_500,
+            description = "Miang Pla Pao, or Grilled Fish Miang, is a delectable Thai appetizer that features perfectly grilled fish served with a medley of aromatic herbs, vegetables, and a zesty sauce. The fish is typically wrapped in a fresh leaf, such as wild betel leaves or lettuce, along with various condiments, creating a harmonious blend of flavors and textures.",
             ingredients = listOf(
-                "Інгредієнти:\n",
-                "8 унцій (близько 2 склянок) пасти фетучіні\n" +
-                        "1/2 склянки несолоного вершкового масла\n" +
-                        "1 склянка жирних вершків\n" +
-                        "1 1/2 склянки тертого пармезану\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Додатково: часниковий фарш, петрушка для прикраси",
+                "Ingredients: 2 whole fish (such as sea bass or tilapia), cleaned and gutted Wild betel leaves or lettuce leaves (for wrapping) Fresh Thai herbs (e.g., basil, mint, cilantro) 1 cucumber, thinly sliced 1 shallot, thinly sliced 1-2 bird's eye chilies, finely chopped (adjust to your preferred level of spiciness) For the Sauce: 3 tablespoons fish sauce 2 tablespoons lime juice 1-2 teaspoons palm sugar (adjust to taste) 1 garlic clove, minced 1-2 bird's eye chilies, finely chopped (adjust to your preferred level of spiciness)",
             ),
             instructions = listOf(
-                "Процес приготування:\n",
-                "Відваріть пасту фетучіні відповідно до інструкцій на упаковці до стану аль денте, потім відцідіть воду.\n" +
-                        "У великій сковороді розтопити вершкове масло на середньому вогні. За бажанням додайте подрібнений часник і коротко обсмажте для аромату.\n" +
-                        "Влити жирні вершки і довести до кипіння.\n" +
-                        "Зменшити вогонь і поступово всипати тертий пармезан, поки соус не стане однорідним і не загусне.\n" +
-                        "Посолити та поперчити за смаком.\n" +
-                        "Додаємо до соусу відварені фетучіні, перемішуємо, щоб локшина ретельно вкрилася соусом.\n" +
-                        "Подавати гарячими, за бажанням прикрасивши петрушкою.\n" +
-                        "Для наочності ви можете переглянути зображення цієї страви на вказаних сайтах з рецептами",
+                "Cooking process: Prepare the sauce by mixing fish sauce, lime juice, palm sugar, minced garlic, and chopped bird's eye chilies in a bowl. Adjust the sweetness and spiciness according to your preference. Set aside. Preheat your grill or barbecue to medium-high heat. Grill the whole fish, turning occasionally, until the skin is crispy and the flesh is cooked through. This should take about 10-15 minutes depending on the size of the fish. Once grilled, remove the fish from the heat and let them cool slightly. Carefully debone the grilled fish and break the flesh into small pieces. To assemble Miang Pla Pao, take a wild betel leaf or lettuce leaf and place a small amount of grilled fish on it. Add cucumber slices, shallot slices, fresh herbs, and chopped bird's eye chilies. Drizzle a spoonful of the prepared sauce over the ingredients. Fold or roll the leaf to enclose the fillings, creating a bite-sized parcel. Enjoy your Miang Pla Pao by taking a mouthful of these flavorful, herbaceous wraps.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
         RecipeModel(
-            id = 18,
-            categoryOfFood = "Паста",
-            dishTitle = "Равіолі",
-            imageResId = R.drawable.ravioli_14,
-            description =
-            "Равіолі - це класична італійська страва з макаронних виробів, що складається з кишеньок з начинкою. Рецепти равіолі можуть бути найрізноманітнішими. Типові начинки включають сир, м'ясо або овочі, тому дієтичні обмеження залежать від рецепту. Равіолі - це страва з макаронного тіста, що складається з маленьких квадратиків або кружечків, фаршированих різними начинками, і зазвичай подається з соусом.",
+            recipeId = 20,
+            categoryOfFood = "Soups",
+            dishTitle = "Tom Kha Gai",
+            imageResId = R.drawable.tom_kha_gai_20_500,
+            description = "Tom Kha Gai is a classic Thai soup known for its rich, creamy, and aromatic flavors. It combines tender chicken, coconut milk, fragrant herbs, and a hint of spice. This dish strikes a perfect balance between creamy and tangy, making it a comforting and satisfying Thai favorite.",
             ingredients = listOf(
-                "Інгредієнти (кількість може змінюватися):\n",
-                "2 склянки борошна грубого помелу\n" +
-                        "2 великих яйця\n" +
-                        "1/2 чайної ложки солі\n" +
-                        "1/3 склянки води\n" +
-                        "Начинка: сир рікотта, сир моцарела, сир пармезан, сир проволоне\n" +
-                        "Соус: томатний соус, масло, часник, базилік, сіль, перець",
+                "Ingredients: 2 cups of chicken broth 1 can (14 oz) of coconut milk 1 cup of sliced chicken breast 1 stalk of lemongrass, cut into 2-inch pieces and smashed 3-4 slices of galangal or ginger 3-4 kaffir lime leaves, torn into pieces 2-3 slices of red chili (adjust to taste) 200g of mushrooms, sliced 1 small onion, sliced 2-3 tablespoons of fish sauce (adjust to taste) 1-2 tablespoons of lime juice (adjust to taste) 1 teaspoon of sugar Fresh cilantro leaves for garnish Thai basil leaves for garnish (optional)",
             ),
             instructions = listOf(
-                "Процес приготування:\n",
-                "Замісити тісто для макаронів, змішавши борошно, яйця, сіль і воду. Вимісити, потім тонко розкачати.\n" +
-                        "Змішати рікотту, моцарелу, пармезан та проволоне, щоб приготувати сирну начинку.\n" +
-                        "Викладіть ложками начинку на лист макаронів, залишаючи між ними проміжки.\n" +
-                        "Складіть макарони так, щоб покрити начинку, притисніть, щоб запечатати, і розріжте на окремі равіолі.\n" +
-                        "Варити равіолі в киплячій воді, поки вони не спливуть на поверхню.\n" +
-                        "Тим часом приготуйте соус, розігрівши вершкове масло, часник, базилік, сіль і перець з томатним соусом.\n" +
-                        "Подавайте готові равіолі з томатним соусом.\n" +
-                        "Для наочності ви можете знайти зображення страв з равіолі на різних кулінарних сайтах, наприклад, на сайті Allrecipes.",
+                "Cooking process: In a pot, combine chicken broth, lemongrass, galangal (or ginger), kaffir lime leaves, and red chili slices. Bring to a gentle boil and let it simmer for about 5-10 minutes to infuse the flavors. Add the sliced chicken, mushrooms, and onion to the pot. Let them cook until the chicken turns white and the mushrooms are tender, which should take about 5-7 minutes. Pour in the coconut milk and stir well to combine. Allow the soup to simmer for another 5 minutes, ensuring it doesn't come to a rolling boil. Season the soup with fish sauce, lime juice, and sugar. Adjust these seasonings to achieve the desired balance of salty, sour, and sweet flavors. Taste and make any necessary adjustments. Remove the soup from heat, discard the lemongrass, galangal (or ginger), and kaffir lime leaves. Serve hot, garnished with fresh cilantro leaves and Thai basil leaves if desired.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 21,
+            categoryOfFood = "Soups",
+            dishTitle = "Tom Yum Goong",
+            imageResId = R.drawable.tom_yum_goong_21_600,
+            description = "Tom Yum Goong is a classic Thai soup known for its bold and spicy flavors. This hot and sour soup features succulent shrimp, fragrant herbs, and a delightful mix of ingredients that create a symphony of taste sensations.",
+            ingredients = listOf(
+                "Ingredients: 10 large shrimp (peeled and deveined) 4 cups chicken or shrimp stock 2-3 stalks lemongrass (cut into 2-inch pieces and smashed) 3-4 slices galangal (or ginger if unavailable) 3-4 kaffir lime leaves (torn into pieces) 3-4 bird's eye chili peppers (adjust to taste) 200g mushrooms (straw or oyster mushrooms, sliced) 2 medium tomatoes (cut into wedges) 1 medium onion (cut into thin wedges) 2-3 tablespoons fish sauce (adjust to taste) 2-3 tablespoons lime juice (adjust to taste) 1 teaspoon sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: In a pot, bring the chicken or shrimp stock to a boil. Add lemongrass, galangal, kaffir lime leaves, and chili peppers to the stock. Let it simmer for about 5 minutes to infuse the flavors. Add mushrooms, tomatoes, and onions to the pot and cook until the mushrooms are tender. Stir in the shrimp and cook until they turn pink and opaque. Season the soup with fish sauce, lime juice, and sugar. Adjust the flavors to your liking, adding more fish sauce for saltiness or lime juice for acidity. Remove the soup from heat and discard lemongrass, galangal, and kaffir lime leaves. Serve hot, garnished with fresh cilantro leaves.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
         RecipeModel(
-            id = 21,
-            categoryOfFood = "Паста",
-            dishTitle = "Пенне з горілкою",
-            imageResId = R.drawable.penne_alla_vodka_15,
+            recipeId = 22,
+            categoryOfFood = "Soups",
+            dishTitle = "Tom Kha Talay",
+            imageResId = R.drawable.tom_kha_talay_22_500,
             description =
-            "Пенне алла горілка - це італійська страва з макаронних виробів, відома своїм вершково-томатним горілчаним соусом. Пенне алла Горілка зазвичай містить алкоголь (горілку) та молочні продукти (вершки), що робить її непридатною для людей з непереносимістю алкоголю або лактози. Це страва з макаронних виробів, що складається з пасти пенне з вершково-томатним соусом, настояним на горілці. ",
+            "Tom Kha Talay is a delightful Thai soup that combines the flavors of the sea with the creaminess of coconut milk. This aromatic and tangy soup features an assortment of fresh seafood and fragrant herbs, making it a refreshing and satisfying dish.",
             ingredients = listOf(
-                "Інгредієнти:\n",
-                "2 великі червоні картоплини (близько 1 фунта)\n" +
-                        "1 склянка борошна грубого помелу\n" +
-                        "1 яйце (за бажанням)\n" +
-                        "Сіль",
+                "Ingredients: 1 cup mixed seafood (shrimp, squid, mussels) 2 cups coconut milk 2 cups chicken or seafood broth 2-3 slices of galangal (or ginger) 2 stalks lemongrass, cut into 2-inch pieces and smashed 3-4 kaffir lime leaves, torn 3-4 slices of Thai red chili peppers (adjust to your spice preference) 200g mushrooms, sliced 1 medium tomato, cut into wedges 1 small onion, sliced 2-3 tablespoons fish sauce (adjust to taste) 1-2 tablespoons lime juice (adjust to taste) 1 teaspoon sugar Fresh cilantro leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n",
-                "Відварити пасту пенне до стану аль денте. Відцідити та відставити.\n" +
-                        "Нагріти оливкову олію на середньому вогні в сковорідці, додати горілку і залишити на повільному вогні, щоб вона зменшилася вдвічі.\n" +
-                        "Влити томатний соус і жирні вершки. Тушкувати кілька хвилин.\n" +
-                        "За бажанням посолити, поперчити та додати пластівці червоного перцю.\n" +
-                        "Додайте в соус відварену пасту пенне і перемішайте, щоб вона покрилася соусом.\n" +
-                        "Прикрасьте свіжим базиліком і тертим пармезаном.\n" +
-                        "Подавати гарячою та насолоджуватися Penne alla Vodka!\n" +
-                        "Ви можете переглянути зображення цієї страви на різних кулінарних сайтах для наочного ознайомлення."
+                "Cooking Process: In a pot, heat the chicken or seafood broth over medium heat. Add galangal (or ginger), lemongrass, kaffir lime leaves, and Thai red chili peppers. Simmer for about 5-10 minutes to infuse the flavors. Add the coconut milk to the pot and bring it to a gentle boil while stirring. Once it's boiling, add the mixed seafood, mushrooms, tomato, and onion. Simmer until the seafood is cooked and opaque, which takes about 2-3 minutes. Season the soup with fish sauce, lime juice, and sugar. Adjust these seasonings to your preferred taste. Remove the soup from heat and discard the galangal slices, lemongrass stalks, and kaffir lime leaves. Serve the Tom Kha Talay hot, garnished with fresh cilantro leaves.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 23,
+            categoryOfFood = "Soups",
+            dishTitle = "Gang Jued Woon Sen",
+            imageResId = R.drawable.gang_jued_woon_sen_23,
+            description = "Gang Jued Woon Sen is a light and nourishing Thai soup known for its simplicity and clean flavors. This clear soup features delicate glass noodles, tofu, and an assortment of vegetables. It's often enjoyed as a healthy and comforting dish. ",
+            ingredients = listOf(
+                "Ingredients: 50g glass noodles (bean thread noodles) 200g firm tofu, cubed 2-3 cups chicken or vegetable broth 2-3 cloves garlic, minced 1/2 cup sliced carrots 1/2 cup sliced cabbage 1/2 cup sliced mushrooms 1/2 cup sliced snow peas 1-2 green onions, chopped 1 tablespoon soy sauce Salt and white pepper to taste Fresh cilantro leaves for garnish Thai chili vinegar sauce (optional, for serving)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Start by soaking the glass noodles in warm water until they become soft, usually about 5-7 minutes. Drain and set them aside. In a pot, bring the chicken or vegetable broth to a gentle boil over medium-high heat. Add the minced garlic, tofu cubes, sliced carrots, cabbage, mushrooms, and snow peas to the broth. Let them simmer for about 5-7 minutes or until the vegetables are tender. Stir in the soaked glass noodles and continue cooking for an additional 2-3 minutes. Season the soup with soy sauce, salt, and white pepper. Adjust the seasonings according to your preference. Remove the pot from heat and garnish with chopped green onions and fresh cilantro leaves. Serve the Gang Jued Woon Sen hot, optionally with Thai chili vinegar sauce for an extra kick.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 22,
-            categoryOfFood = "Паста",
-            dishTitle = "Ньоккі",
-            imageResId = R.drawable.niokki_gnokki_22,
-            description =
-            "Ньоккі - класична італійська страва, відома своїми м'якими картопляними галушками. Ньоккі, як правило, підходять для вегетаріанців, але деякі рецепти можуть містити яйця. Вони не містять глютену завдяки використанню пшеничного борошна. Ньоккі - це м'які, подушкоподібні картопляні галушки, які подають з різними соусами, найчастіше томатним або песто. В середньому порція картопляних ньоккі містить близько 130-150 калорій. Ньоккі - це чудові італійські галушки з картопляного пюре та борошна, які створюють ніжну, ситну альтернативу макаронам. Приготування ньоккі включає в себе приготування картопляного тіста, формування галушок, їх відварювання та подачу з улюбленим соусом. Рецепти варіюються, але типовий рецепт розрахований на 4 порції.",
+            recipeId = 24,
+            categoryOfFood = "Soups",
+            dishTitle = "Tom Som",
+            imageResId = R.drawable.tom_som_24,
+            description = "Tom Som is a tangy and refreshing Thai soup known for its vibrant flavors. This soup balances the sourness of tamarind with the sweetness of palm sugar, creating a delightful taste sensation. It typically features shrimp, vegetables, and aromatic herbs, making it a beloved Thai comfort food.",
             ingredients = listOf(
-                "Інгредієнти:\n",
-                "2 великі червоні картоплини (близько 1 фунта)\n" +
-                        "1 склянка борошна грубого помелу\n" +
-                        "1 яйце (за бажанням)\n" +
-                        "Сіль",
+                "Ingredients: 200g shrimp, peeled and deveined 2-3 cups water 2-3 slices of galangal (or ginger as a substitute) 2-3 slices of lemongrass, smashed 2-3 kaffir lime leaves, torn into pieces 2-3 Thai bird's eye chilies, crushed (adjust to taste) 1 small tomato, cut into wedges 1 small onion, sliced 1 small cucumber, sliced 1-2 tablespoons tamarind paste 1-2 tablespoons palm sugar (adjust to taste) Fish sauce to taste Fresh cilantro leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n",
-                "Відваріть або запечіть картоплю до готовності, потім почистіть і розімніть її в пюре.\n" +
-                        "Змішати борошно, яйце (якщо використовуєте) і дрібку солі, утворивши тісто.\n" +
-                        "Розділіть тісто на невеликі порції, розкачайте кожну в мотузочку і наріжте на шматочки розміром з укус.\n" +
-                        "Зробіть на кожній ньоккі гребінці за допомогою виделки.\n" +
-                        "Відваріть у підсоленій воді, поки вони не спливуть на поверхню (приблизно 23 хвилини).\n" +
-                        "Подавайте з улюбленим соусом, наприклад, томатним або песто.\n" +
-                        "Ви можете знайти зображення цієї страви на різних кулінарних сайтах для візуального ознайомлення.",
+                "Cooking Process: In a pot, bring the water to a boil over medium-high heat. Add the galangal (or ginger), lemongrass, kaffir lime leaves, and Thai bird's eye chilies to the boiling water. Let them simmer for about 5-7 minutes to infuse the broth with flavor. Stir in the tamarind paste, palm sugar, and fish sauce. Adjust the levels of sourness, sweetness, and saltiness to suit your taste. Keep in mind that Tom Som should have a balanced sweet and sour taste. Add the sliced onion, tomato wedges, and cucumber slices to the soup. Simmer for another 3-5 minutes until the vegetables are slightly tender. Gently place the peeled shrimp into the soup and cook until they turn pink, which usually takes about 2-3 minutes. Remove the pot from heat and discard the galangal (or ginger) slices, lemongrass, and kaffir lime leaves. Serve the Tom Som hot, garnished with fresh cilantro leaves.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 23,
-            categoryOfFood = "Паста",
-            dishTitle = "Паста Прімавера",
-            imageResId = R.drawable.pasta_primavera_17,
-            description =
-            "Паста Прімавера - це італійська страва з макаронних виробів зі свіжими овочами. Ось запитувана інформація: Паста Примавера, як правило, вегетаріанська і може бути адаптована до веганських дієт, якщо не додавати сир. Вона підходить для більшості дієтичних уподобань. Це страва з макаронних виробів зі свіжими пасерованими овочами, яку зазвичай подають з фетучіні або спагеті. Типова порція Pasta Primavera містить близько 250-350 калорій. Паста примавера - це яскрава італійська страва, що оспівує весняні аромати. Вона поєднує сезонні овочі з макаронами та легким соусом, створюючи свіжу та яскраву страву. Приготування пасти примавера включає в себе варіння пасти, пасерування овочів і приготування легкого соусу. Рецепти варіюються, але типовий рецепт розрахований на 4 порції.",
+            recipeId = 25,
+            categoryOfFood = "Soups",
+            dishTitle = "Gang Om",
+            imageResId = R.drawable.gang_om_25_500,
+            description = "Gang Om is a traditional Thai soup renowned for its aromatic blend of herbs and spices. This flavorful soup features a variety of fresh vegetables, herbs, and a choice of protein (often fish or shrimp). The key to its exquisite taste lies in the use of fragrant herbs like fingerroot, turmeric, and lemongrass, resulting in a warm and comforting Thai dish.",
             ingredients = listOf(
-                "Інгредієнти:\n",
-                "8 унцій фетучіні або спагеті\n" +
-                        "Асорті овочів: болгарський перець, помідори черрі, цукіні, горошок\n" +
-                        "Оливкова олія\n" +
-                        "Часник\n" +
-                        "Сир пармезан (за бажанням)\n" +
-                        "Свіжий базилік\n" +
-                        "Сіль та перець",
+                "Ingredients: 200g fish fillets (or shrimp), cut into bite-sized pieces 2-3 cups water or vegetable broth 1-2 tablespoons vegetable oil 2-3 slices of fingerroot (or ginger as a substitute) 2-3 slices of turmeric 2-3 slices of lemongrass, smashed 2-3 Thai bird's eye chilies, crushed (adjust to taste) 1 small tomato, cut into wedges 1 small onion, sliced 1 small cucumber, sliced 1 cup of mixed vegetables (e.g., green beans, baby corn, mushrooms) 1-2 kaffir lime leaves, torn into pieces Fish sauce to taste Fresh basil leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n",
-                "Відваріть макарони згідно з інструкцією на упаковці.\n" +
-                        "На сковороді обсмажити часник на оливковій олії, додати овочі та готувати до готовності.\n" +
-                        "Готову пасту додати до овочевої пасеровки.\n" +
-                        "Прикрасьте свіжим базиліком, сиром пармезан, сіллю та перцем.\n" +
-                        "Подавайте гарячою і насолоджуйтеся пастою Прімавера!\n" +
-                        "Для наочності ви можете знайти зображення цієї страви на різних кулінарних сайтах.",
+                "Cooking Process: In a pot, heat the vegetable oil over medium-high heat. Add the fingerroot (or ginger), turmeric, lemongrass, and Thai bird's eye chilies to the oil. Sauté for about 1-2 minutes to release their aromas. Pour in the water or vegetable broth and bring it to a boil. Add the fish fillets (or shrimp) to the boiling liquid and cook until they are almost done, usually 2-3 minutes for fish or 1-2 minutes for shrimp. Stir in the mixed vegetables, tomato wedges, onion, and cucumber slices. Let the soup simmer for another 3-5 minutes until the vegetables are tender. Season the Gang Om with fish sauce, adjusting the saltiness to your liking. Add the torn kaffir lime leaves and let the soup simmer for another minute to infuse the flavors. Remove the pot from heat, discard the lemongrass, fingerroot (or ginger), and turmeric slices, and serve the Gang Om hot. Garnish each bowl with fresh basil leaves for added fragrance.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 24,
-            categoryOfFood = "Паста",
-            dishTitle = "Ореккетте з броколі рабе",
-            imageResId = R.drawable.orecchiette_with_broccoli_rabe_18,
-            description =
-            "Орек'єте з броколі рабе - італійська страва, відома своєю унікальною пастою у формі вуха та смачною гірчинкою броколі рабе. Ця страва не має особливих дієтичних обмежень, але ви можете адаптувати її до своїх уподобань, включаючи вегетаріанські або веганські варіації. Орек'єте з броколі рабе - класична італійська страва з макаронних виробів. Кількість калорій може варіюватися залежно від інгредієнтів та розміру порції, але зазвичай становить близько 350-400 калорій на порцію. Ця страва складається з макаронних виробів Орек'єте, заправлених пасерованою броколі рабе, часником і пластівцями чилі, і часто включає ковбасу або сир для додаткового смаку. Вона пропонує чудовий баланс смаків і текстур. Приготування орек'єте з броколі рабе включає підготовку макаронних виробів, пасерування броколі рабе з часником і пластівцями чилі та додавання вареної ковбаси або сиру. Зазвичай рецепти розраховані на 4 порції.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "12 унцій макаронних виробів ореккієтте\n" +
-                        "1 пучок брокколі рабе\n" +
-                        "2 зубчики часнику\n" +
-                        "Пластівці червоного перцю (за смаком)\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець\n" +
-                        "Тертий сир Пекоріно Романо (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Відварити пасту ореккієтте до стану аль денте. Відцідити воду і відставити в сторону.\n" +
-                        "У великій сковороді обсмажити часник і пластівці червоного перцю на оливковій олії.\n" +
-                        "Додайте нарізану броколі рабе і готуйте до готовності.\n" +
-                        "Готову пасту всипати до суміші з броколі рабе.\n" +
-                        "Посолити та поперчити. За бажанням посипте зверху тертим сиром Пекоріно Романо.\n" +
-                        "Подавайте гарячими та насолоджуйтеся ореккієтте з броколі рабе!\n" +
-                        "Зображення та детальні інструкції ви можете знайти у наданих джерелах.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 25,
-            categoryOfFood = "Паста",
-            dishTitle = "Качіо є Пепе",
-            imageResId = R.drawable.cacio_e_pepe_19,
-            description =
-            "Качо е пепе - класична римська страва з макаронів, відома своєю простотою та сміливими смаками. По суті, це паста з сиром і чорним перцем. Ця страва, як правило, не підходить для вегетаріанців, оскільки містить сир Пекоріно Романо, виготовлений з овечого молока. Вона також не підходить для людей з непереносимістю лактози або алергією на молочні продукти. Качо е Пепе - традиційна італійська страва з макаронних виробів. Кількість калорій варіюється, але приблизно 400-500 калорій на порцію. Cacio e Pepe - це спагеті або інші макаронні вироби, заправлені вершковим соусом з сиру Пекоріно Романо, водою для приготування макаронів і великою кількістю свіжомеленого чорного перцю. Має насичений, пікантний і злегка гострий смак. Ця страва складається з варіння макаронів, приготування соусу шляхом розплавлення сиру та перцю у воді для макаронів, а потім занурення варених макаронів у цю вершкову суміш.  У більшості рецептів подається на 4 персони.",
+            recipeId = 26,
+            categoryOfFood = "Soups",
+            dishTitle = "Poh Taek",
+            imageResId = R.drawable.poh_taek_26,
+            description = "Poh Taek is a beloved Thai seafood hot pot known for its bold and spicy flavors. This dish combines a variety of fresh seafood, aromatic herbs, and fiery chilies in a bubbling broth. Poh Taek is a communal meal, often shared among friends and family, creating an unforgettable dining experience. With ingredients like shrimp, fish, and mushrooms, it's a seafood lover's delight.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "12 унцій спагеті\n" +
-                        "1 склянка тертого сиру Пекоріно Романо\n" +
-                        "Свіжомелений чорний перець\n" +
-                        "Сіль",
+                "Ingredients: 200g shrimp, deveined and peeled 200g fish fillets, sliced into bite-sized pieces 100g squid, sliced into rings 100g mussels or clams, cleaned 200g straw mushrooms or other mushrooms of choice 1-2 stalks lemongrass, cut into 2-inch pieces and smashed 3-4 slices galangal 2-3 kaffir lime leaves, torn into pieces 2-3 Thai bird's eye chilies, crushed (adjust to taste) 3-4 slices of ginger 2-3 tablespoons fish sauce (adjust to taste) 1-2 tablespoons lime juice (adjust to taste) 1-2 tablespoons roasted chili paste (Nam Prik Pao) 1-2 teaspoons sugar (adjust to taste) Fresh Thai basil leaves for garnish 4 cups water or seafood broth",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Відварити спагеті в підсоленій воді до стану аль денте.\n" +
-                        "Залишити трохи води для варіння макаронів, а потім злити воду.\n" +
-                        "На сковороді підсмажити чорний перець до аромату.\n" +
-                        "Додайте воду для макаронів і доведіть до кипіння.\n" +
-                        "Додати варені макарони та сир, перемішати до утворення кремоподібної маси.\n" +
-                        "Подавати негайно, прикрасивши сиром і перцем.\n" +
-                        "Зображення та детальні інструкції можна знайти у вказаних джерелах.",
+                "Cooking Process: In a large pot, bring the water or seafood broth to a boil. Add the lemongrass, galangal, kaffir lime leaves, Thai bird's eye chilies, and ginger to the boiling liquid. Let them simmer for about 5-10 minutes to infuse their flavors. Stir in the roasted chili paste (Nam Prik Pao) to create a spicy and flavorful broth. Add the shrimp, fish, squid, mussels or clams, and mushrooms to the pot. Cook until the seafood is just done and the mussels or clams have opened, typically 3-5 minutes. Season the Poh Taek with fish sauce, lime juice, and sugar. Adjust the flavors to achieve the desired balance of salty, sour, and sweet. Remove the pot from heat and discard the lemongrass, galangal, kaffir lime leaves, Thai bird's eye chilies, and ginger slices. Ladle the hot and spicy Poh Taek into bowls, garnish with fresh Thai basil leaves, and serve immediately.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 26,
-            categoryOfFood = "Паста",
-            dishTitle = "Папарделле з рагу з дикого кабана",
-            imageResId = R.drawable.pappardelle_with_wild_boar_ragu_20,
-            description =
-            "Папарделле з кабанячим рагу - ароматна італійська страва з насиченим, ситним соусом.  Ця страва не підходить для вегетаріанців або веганів через використання м'яса дикого кабана. Вона також може не підійти людям з алергією на свинину. Папарделле з кабанячим рагу - це традиційна італійська страва з макаронів. Кількість калорій варіюється, але становить приблизно 500-600 калорій на порцію. У цій страві широкі плоскі макарони папарделле подаються з повільно приготованим рагу з ніжного м'яса дикого кабана, томатами, ароматними травами та червоним вином. Вона має міцний і пікантний смак. Цей рецепт передбачає приготування рагу шляхом підрум'янювання м'яса кабана, потім тушкування з іншими інгредієнтами і, нарешті, подачу з вареною пастою папарделле. У більшості рецептів подається на 4 персони.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "12 унцій пасти папарделле\n" +
-                        "1 фунт м'яса дикого кабана\n" +
-                        "1 банка подрібнених помідорів\n" +
-                        "Червоне вино\n" +
-                        "Цибуля, морква, селера, часник\n" +
-                        "Оливкова олія\n" +
-                        "Свіжі трави (наприклад, розмарин, чебрець)\n" +
-                        "Сіль і чорний перець",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Підрум'янити м'ясо кабана на оливковій олії.\n" +
-                        "Додати нарізані цибулю, моркву, селеру та часник, готувати до розм'якшення.\n" +
-                        "Влити червоне вино і дати йому уваритися.\n" +
-                        "Додати подрібнені помідори, зелень, сіль і перець, тушкувати, поки рагу не загусне.\n" +
-                        "Зварити пасту папарделле та додати до рагу.\n" +
-                        "Подавати гарячим, за бажанням прикрасивши тертим сиром.\n" +
-                        "Детальні інструкції та зображення можна знайти у вказаних джерелах.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 27,
-            categoryOfFood = "Паста",
-            dishTitle = "Паста з квасолею",
-            imageResId = R.drawable.pasta_e_fagioli_33,
-            description =
-            "Паста та квасоля - італійський суп з макаронами та квасолею, який зазвичай не підходить для вегетаріанців через використання бекону або панчетти. Інших специфічних дієтичних обмежень страва не має. Це ситний і ароматний суп, що містить приблизно 200-250 калорій на порцію. Паста з квасолею - заспокійливий італійський суп з макаронами та квасолею на ароматному бульйоні, часто з помідорами, зеленню та беконом або панчеттою. Рецепти варіюються в залежності від порцій, підходять як для однієї людини, так і для сім'ї.",
-            ingredients = listOf(
-                "Інгредієнти (кількість може змінюватися залежно від рецепту):\n" ,
-                        "Бекон або панчетта\n" +
-                        "Цибуля\n" +
-                        "Часник\n" +
-                        "Помідори (консервовані або свіжі)\n" +
-                        "Квасоля каннелліні\n" +
-                        "Курячий або овочевий бульйон\n" +
-                        "Діталіні або інші дрібні макарони\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець\n" +
-                        "Італійські трави (наприклад, орегано, базилік)\n" +
-                        "Тертий пармезан (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій каструлі обсмажте бекон або панчетту до хрусткої скоринки. Вийняти і відкласти в сторону.\n" +
-                        "У тій же каструлі обсмажте цибулю та часник до розм'якшення.\n" +
-                        "Додайте помідори, квасолю, бульйон і зелень. Тушкуйте, поки не змішаються смаки.\n" +
-                        "Окремо відваріть макарони та додайте їх у суп.\n" +
-                        "Посолити та поперчити.\n" +
-                        "Подавати гарячим, прикрасивши хрустким беконом та тертим пармезаном за бажанням.\n" +
-                        "Детальні інструкції можна знайти у наданих джерелах рецептів. Насолоджуйтесь цим смачним італійським супом!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 28,
-            categoryOfFood = "Паста",
-            dishTitle = "Лимонна Пвста",
-            imageResId = R.drawable.lemon_paste_pasta_al_limone_86,
-            description =
-            "Паста аль лімоне, або лимонна паста, - це класична італійська страва, відома своєю простотою та чудовим смаком. Ця страва, як правило, складається з довгих макаронних виробів, таких як спагеті або феттучіні, приготованих до ідеального стану \"аль денте\". Особливістю цієї страви є вершково-лимонний соус. Соус готується з поєднання свіжовичавленого лимонного соку, лимонної цедри, вершкового масла, вершків і сиру пармезан, створюючи оксамитове і пікантне покриття для макаронів.",
+            recipeId = 27,
+            categoryOfFood = "Soups",
+            dishTitle = "Gang Tay Po",
+            imageResId = R.drawable.gang_tay_po_27,
+            description = "Gang Tay Po is a fiery and aromatic Thai green curry hailing from the southern region of Thailand. Known for its intense spiciness and rich flavors, this dish features tender pieces of meat, usually chicken or beef, simmered in a vibrant green curry paste made from fresh herbs and chilies. Creamy coconut milk balances the heat, making it a delightful culinary adventure for spice lovers. ",
             ingredients = listOf(
-                "Інгредієнти\n" ,
-                        "500 г макаронних виробів (наприклад, пікіс) \n" +
-                        "1 склянка вершків\n" +
-                        "50 г вершкового масла\n" +
-                        "2 органічні лимони, терта цедра і весь сік\n" +
-                        "½ чайної ложки солі\n" +
-                        "трохи перцю",
+                "Ingredients: 250g chicken or beef, thinly sliced 2-3 tablespoons green curry paste (store-bought or homemade) 1 can (400ml) coconut milk 1 small eggplant, cut into chunks 1-2 kaffir lime leaves, torn into pieces 2-3 Thai bird's eye chilies, sliced (adjust to taste) 1-2 tablespoons fish sauce (adjust to taste) 1-2 teaspoons sugar (adjust to taste) A handful of Thai basil leaves for garnish 2-3 tablespoons vegetable oil Sliced red chili for garnish (optional)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Макарони: відварити макарони аль денте в киплячій підсоленій воді. підсоленій воді. " +
-                        "Зарезервувати 1 літр води для варіння, відцідити макарони.\n" +
-                        "2. Соус: у тій же каструлі довести до кипіння воду, вершки, вершкове масло, лимонну цедру та сік (близько 1,5 л). " +
-                        "Зменшити вогонь і тушкувати приблизно 5 хвилин. Додати макарони, перемішати, тушкувати 2 хвилини, приправити.",
+                "Cooking Process: Heat the vegetable oil in a pan over medium heat. Add the green curry paste and stir-fry for a few minutes until fragrant. Pour in half of the coconut milk and continue to cook, stirring, until the oil starts to separate from the paste. Add the sliced chicken or beef to the pan and cook until it turns white and is partially cooked. Pour in the remaining coconut milk, stirring to combine. Bring the mixture to a gentle simmer. Add the eggplant chunks, kaffir lime leaves, and Thai bird's eye chilies. Simmer until the meat is fully cooked, and the eggplant becomes tender. Season the Gang Tay Po with fish sauce and sugar. Adjust the flavors to your preference, achieving the right balance of salty and sweet. Remove the pan from heat and discard any kaffir lime leaves. Ladle the spicy green curry into bowls, garnish with Thai basil leaves and sliced red chilies if desired.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 28,
+            categoryOfFood = "Soups",
+            dishTitle = "Kuay Tiew Tom Yum",
+            imageResId = R.drawable.kuay_tiew_tom_yum_28_500,
+            description = "Kuay Tiew Tom Yum is a fiery and tangy Thai noodle soup known for its bold and vibrant flavors. This soup combines soft rice noodles with a spicy and sour broth made from ingredients like lemongrass, galangal, lime leaves, and Thai bird's eye chilies. It's usually prepared with either shrimp (Goong) or chicken (Gai) and is a popular street food dish in Thailand. The balance of heat, sourness, and umami flavors makes this soup a true culinary delight.",
+            ingredients = listOf(
+                "Ingredients: 200g rice noodles, cooked and drained 200g shrimp (Goong) or chicken (Gai), peeled and deveined 4 cups chicken or shrimp broth 2 stalks lemongrass, cut into 2-inch pieces and smashed 3 slices galangal 4 kaffir lime leaves, torn 3-4 Thai bird's eye chilies, smashed (adjust to your spice preference) 2-3 tablespoons fish sauce (adjust to taste) 1-2 tablespoons lime juice (adjust to taste) 1-2 teaspoons sugar (adjust to taste) Fresh cilantro leaves and chopped green onions for garnish Fresh bean sprouts and lime wedges for serving",
+            ),
+            instructions = listOf(
+                "Cooking Process: In a pot, bring the chicken or shrimp broth to a boil. Add the lemongrass, galangal, kaffir lime leaves, and Thai bird's eye chilies. Simmer for about 5-10 minutes to infuse the flavors. Add the shrimp or chicken and cook until they are just cooked through. Season the soup with fish sauce, lime juice, and sugar. Adjust these seasonings to achieve the right balance of spicy, sour, and salty flavors. To serve, place a portion of cooked rice noodles in a bowl. Ladle the hot and fragrant broth over the noodles, making sure to include some shrimp or chicken. Garnish with fresh cilantro leaves, chopped green onions, and bean sprouts. Serve with lime wedges on the side for an extra zing.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 29,
-            categoryOfFood = "Паста",
-            dishTitle = "Ньоккі з фісташковим песто",
-            imageResId = R.drawable.gnocchi_with_pistachio_pesto_pesto_87,
-            description =
-            "Ньоккі з фісташковим песто - вишукана італійська страва, яка поєднує в собі м'якість ньоккі з насиченим горіховим смаком фісташкового песто. Ньоккі, маленькі картопляні галушки, відварюють до готовності, а потім заливають вершково-фісташковим соусом песто. Цей соус зазвичай складається з мелених фісташок, свіжого базиліка, сиру пармезан, оливкової олії, часнику і трохи лимонного соку, створюючи гармонійне поєднання текстур і смаків.",
+            recipeId = 29,
+            categoryOfFood = "Soups",
+            dishTitle = "Gang Som",
+            imageResId = R.drawable.gang_som_29,
+            description = "Gang Som is a beloved Thai tamarind soup that's known for its sweet, sour, and spicy flavors. This vibrant orange soup features a variety of vegetables, shrimp, or fish, and it's characterized by the tanginess of tamarind paste. The soup is often served with steamed rice and provides a perfect balance of flavors that Thai cuisine is famous for.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "700 г картоплі крупного сорту, поділеної навпіл.\n" +
-                        " 200 г білого борошна\n" +
-                        "1 яйце\n" +
-                        "1½ чайної ложки солі\n" +
-                        "трохи перцю\n" +
-                        "Кукурудзяний крохмаль для посипання\n" +
-                        "180 г фісташок\n" +
-                        "½ пучка базиліка\n" +
-                        "3 ст.л. води\n" +
-                        "1 органічний лайм, натерти цедру та 1 ст.л. соку\n" +
-                        "100 г рікотти\n" +
-                        "сіль та перець за смаком",
+                "Ingredients: 200g shrimp or fish fillets, cleaned and peeled (you can also use mixed seafood) 2 cups water 2 tablespoons tamarind paste 2-3 tablespoons fish sauce (adjust to taste) 1-2 tablespoons sugar (adjust to taste) 1/2 cup sliced bamboo shoots 1/2 cup sliced long beans or green beans 1/2 cup sliced eggplant 1/4 cup cherry tomatoes 2-3 slices galangal 3-4 kaffir lime leaves, torn 2-3 Thai bird's eye chilies, smashed (adjust to spice preference) Fresh cilantro leaves for garnish Steamed rice for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Формуємо ньокки: До картоплі додати борошно, яйце, сіль і перець та швидко перемішати. Розділити тісто на 4 частини, сформувати з них рулетики діаметром приблизно 1,5 см кожен у вигляді невеликого мейзена. Наріжте їх на шматочки довжиною близько 1 см.\n" +
-                        "Песто: 2 столові ложки фісташок крупно нарізати, відкласти в сторону. Решту фісташок покласти в подрібнювач. Додати базилік і воду з цедрою і соком лайма, все перемішати. Додати рикотту і перемішати.\n" +
-                        "Довести ньоккі до кипіння: кілька разів у підсоленій воді приблизно по 5 хвилин, поки вони не піднімуться на поверхню.\n" +
-                        "Вийняти їх, відцідити воду і додати до песто. Додати 2 ст. води, перемішати і приправити. Розкласти ньоккі та посипати фісташками, що залишилися.",
+                "Cooking Process: In a pot, bring the water to a boil. Add the tamarind paste and stir until it dissolves, creating a tangy base for the soup. Add the galangal, kaffir lime leaves, and Thai bird's eye chilies to the pot. Let them simmer for a few minutes to infuse their flavors. Add the shrimp, fish, or mixed seafood to the pot and cook until they are just done. This should only take a few minutes. Stir in the fish sauce and sugar, adjusting to your preferred level of sweetness and saltiness. Add the sliced bamboo shoots, long beans, eggplant, and cherry tomatoes to the pot. Simmer until the vegetables are tender but still crisp. Taste the soup and adjust the seasoning with more fish sauce, sugar, or tamarind paste if needed. Remove the soup from heat and discard the galangal slices and kaffir lime leaves. Serve the Gang Som hot, garnished with fresh cilantro leaves, and accompanied by steamed rice. Enjoy the delightful blend of sweet, sour, and spicy flavors!",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 30,
-            categoryOfFood = "Паста",
-            dishTitle = "Спагеті  Салерно",
-            imageResId = R.drawable.spaghetti_in_salerno_style_89,
-            description =
-            "Спагеті по-салернськи, або \"Спагеті ала салернітана\" - це вишукана італійська страва з макаронних виробів, що походить з прибережного міста Салерно в регіоні Кампанія. Ця страва відображає суть південної італійської кухні, відомої своїм використанням свіжих та яскравих інгредієнтів.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "  3 ст.л панірувальних сухарів\n" +
-                        "½ пучка подрібненої петрушки\n" +
-                        "160 г сиру пармезан\n" +
-                        "3 столові ложки оливкової олії\n" +
-                        "подрібнених зубчиків часнику\n" +
-                        "½ чайної ложки пластівців чилі\n" +
-                        "500 г спагетті\n" +
-                        "  4 яйця\n" +
-                        "сіль і перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Спагеті: відварити спагеті аль денте в підсоленій воді.\n" +
-                        "Соус: додайте до спагеті 1 столову ложку оливкової олії\n" +
-                        "Як приготувати фрізуру: підсмажте панірувальні сухарі на антипригарній сковороді \n" +
-                        "на антипригарній сковорідці та перелийте в миску. Додайте петрушку та 3 столові ложки тертого сиру і перемішайте.\n" +
-                        "Часникова олія: розігріти олію в тій же сковороді, додати часник і \n" +
-                        "пластівці чилі, обсмажуємо протягом 4 хвилин, відставляємо на \n" +
-                        "плиту. Додайте воду для пасти з часниковою олією та решту тертого сиру. Повільно нагріти спагетті, помішуючи, поки соус не стане кремоподібним.\n" +
-                        "Яєчня: як приготувати На тій же сковороді розігріти олію, розбити куфи по одному \n" +
-                        "по одному, покладіть їх у сковороду і смажте на повільному вогні приблизно 3 хвилини. \n" +
-                        "Подавати зі спагеті з яєчнею, посипати картоплею фрі, приправити.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 32,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Особуко",
-            imageResId = R.drawable.osobuko_32,
-            description =
-            "Особуко - класична італійська страва, відома своїми наваристими та ніжними тушкованими телячими гомілками. Оссо Буко не підходить для вегетаріанців або веганів через використання м'яса. Вона також може не підходити людям з алергією на яловичину або телятину. Оссо Буко - це традиційна італійська тушкована м'ясна страва. Кількість калорій варіюється, але становить приблизно 350-400 калорій на 1 порцію (близько 6 унцій м'яса з соусом). Оссо Буко складається з товстих телячих гомілок, які повільно готуються в ароматному соусі з томатів, білого вина, бульйону, цибулі, часнику та зелені. Страва відома своїм ніжним м'ясом, що відпадає від кістки, та ароматним соусом. У цьому рецепті телячі гомілки обсмажують, пасерують з ароматними овочами, заливають білим вином, додають томати та бульйон і тушкують до готовності, поки гомілки не стануть м'якими. У більшості рецептів подають на 4 персони.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 телячі гомілки (товщиною близько 2 дюймів)\n" +
-                        "Борошно для днопоглиблювальних робіт\n" +
-                        "Оливкова олія\n" +
-                        "Цибуля, морква, селера, часник\n" +
-                        "Біле вино\n" +
-                        "Консервовані помідори\n" +
-                        "Курячий або яловичий бульйон\n" +
-                        "Свіжа зелень (наприклад, чебрець, розмарин)\n" +
-                        "Гремолата на гарнір (лимонна цедра, часник, петрушка)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Обваляйте телячі гомілки в борошні та підрум'яньте на оливковій олії.\n" +
-                        "Обсмажити цибулю, моркву, селеру та часник.\n" +
-                        "Влити біле вино.\n" +
-                        "Додаємо консервовані томати, бульйон і зелень, тушкуємо.\n" +
-                        "Варити, поки м'ясо не стане м'яким (близько 2 годин).\n" +
-                        "Подавати гарячим, прикрасивши гремолатою.\n" +
-                        "Детальні інструкції та зображення можна знайти у наданих джерелах.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 33,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Сальтімбокка",
-            imageResId = R.drawable.saltimbokka_33_small,
-            description =
-            "Сальтімбокка - це італійська страва, що складається з тонко нарізаної телятини, прошутто та листя шавлії, які загортають разом і зазвичай готують у білому вині. Традиційно для сальтимоки використовується телятина, яка може не підходити для тих, хто уникає червоного м'яса. Однак ви можете приготувати варіації, використовуючи курку або індичку, залежно від ваших дієтичних уподобань. Сальтімбокка - класична італійська страва, відома своїм пікантним і ароматним смаком. Кількість калорій варіюється, але становить приблизно 300-400 калорій на 1 порцію (з телятини).  Сальтімбокка перекладається як \"стрибає в роті\", описуючи смакове поєднання ніжної телятини, солоної прошутто та ароматного шавлії. Зазвичай за цим рецептом телятину або інше м'ясо тонко відбивають, солять, додають листочок шавлії та скибочку прошутто, закріплюють зубочистками і обсмажують на сковороді у вершковому маслі та білому вині. У більшості рецептів подається 4 порції.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 телячі скалопіні (або інше м'ясо, наприклад, курка)\n" +
-                        "4 скибочки прошутто\n" +
-                        "4 листочки свіжої шавлії\n" +
-                        "Сіль і перець\n" +
-                        "Біле вино\n" +
-                        "Вершкове масло\n" +
-                        "Зубочистки для закріплення",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Посоліть м'ясо та поперчіть.\n" +
-                        "На кожен шматочок м'яса покласти по листочку шавлії, а зверху - скибочку прошутто.\n" +
-                        "Закріплюємо шари зубочистками.\n" +
-                        "Розігріваємо вершкове масло, додаємо м'ясо і смажимо до рум'яної скоринки.\n" +
-                        "Сковороду змащуємо білим вином і готуємо до готовності м'яса.\n" +
-                        "Подавати гарячим.\n" +
-                        "Детальніші інструкції та варіації ви можете знайти в наданих джерелах.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 34,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Баклажани з пармезаном",
-            imageResId = R.drawable.baklazhany_z_parmezanom_34_small,
-            description =
-            "Баклажани з пармезаном або парміджана ді меланзане - класична італійська страва, відома своїми шарами панірованих і обсмажених скибочок баклажанів, соусом маринара та сиром. Ця страва, як правило, підходить для вегетаріанців, але не для веганів через використання сиру та яєць. Це ситна, запечена італійська запіканка з шарами баклажанів, томатного соусу та сиру. Кількість калорій залежить від способу приготування, але зазвичай становить близько 300-400 калорій на 1 порцію. Баклажани з пармезаном - це хрусткі обсмажені скибочки баклажанів з насиченим соусом маринара та сумішшю плавлених сирів, які створюють пікантну та ситну страву. За цим рецептом скибочки баклажанів панірують і обсмажують, перешаровують соусом маринара та сиром моцарела і запікають до утворення рум'яної скоринки. У більшості рецептів подається на 4 персони.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 великі баклажани\n" +
-                        "Сіль\n" +
-                        "Борошно для днопоглиблювальних робіт\n" +
-                        "Яйця, для миття яєць\n" +
-                        "Хлібні крихти\n" +
-                        "Оливкова олія для смаження\n" +
-                        "Соус Маринара\n" +
-                        "Сир моцарела\n" +
-                        "Сир пармезан\n" +
-                        "Свіже листя базиліка",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Баклажани нарізати кружальцями, посолити і дати постояти, щоб стекла зайва волога.\n" +
-                        "Обваляйте в борошні, вмочіть у збиті яйця та запаніруйте в панірувальних сухарях.\n" +
-                        "Обсмажуємо скибочки баклажанів до золотистої скоринки.\n" +
-                        "У форму для запікання викласти шарами обсмажені баклажани, соус маринара, моцарелу, пармезан і базилік.\n" +
-                        "Повторювати шари, завершуючи зверху сиром і соусом.\n" +
-                        "Запікати, доки сир не розплавиться і не почне пузиритися.\n" +
-                        "За детальними інструкціями ви можете звернутися до наданих джерел.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 35,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Куряча марсала",
-            imageResId = R.drawable.kuriacha_marsala_35,
-            description =
-            "Куряча марсала - класична італійська страва, відома своїм пікантним смаком. Зазвичай вона містить обсмажені на сковороді курячі котлети, гриби та винний соус \"Марсала\". У джерелах нічого не згадується. Джерела не вказують конкретну кількість калорій, але вона може варіюватися залежно від розміру порції та використовуваних інгредієнтів. Куряча марсала - це ніжні курячі котлети, приготовані з земляними грибами в насиченому винному соусі \"Марсала\", в результаті чого виходить чудова, ароматна страва. Рецепти розраховані на 4 порції.",
-            ingredients = listOf(
-                "Інгредієнти:" ,
-                        " 4 курячі грудки без кісток, без шкіри\n" +
-                        "1/2 склянки універсального борошна\n" +
-                        "Сіль і перець за смаком\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "8 унцій грибів, нарізаних скибочками\n" +
-                        "1/2 склянки вина Марсала\n" +
-                        "1/2 склянки курячого бульйону\n" +
-                        "2 столові ложки вершкового масла\n" +
-                        "Свіжа петрушка для прикраси",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Відбити курячі грудки до рівномірної товщини.\n" +
-                        "Посолити, поперчити, обваляти в борошні.\n" +
-                        "У сковороді розігріти оливкову олію, обсмажити курку до золотистого кольору і перекласти на тарілку.\n" +
-                        "У тій же сковороді обсмажуємо гриби.\n" +
-                        "Додаємо вино Марсала та курячий бульйон, тушкуємо.\n" +
-                        "Повернути курку в сковороду і готувати до готовності.\n" +
-                        "Додайте вершкове масло і прикрасьте блюдо петрушкою.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 36,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Теляча пікката",
-            imageResId = R.drawable.teliata_pikatta_36_small,
-            description =
-            "Теляча пікката - чудова італійська страва з ніжними телячими котлетами у лимонно-вершковому соусі.  Основна страва. У джерелах не згадується. Джерела не вказують конкретну кількість калорій, але вона може змінюватися залежно від розміру порції та використовуваних інгредієнтів.  Теляча пікката - класична італійська страва, відома своїм ніжним смаком. У ній поєднуються тонко відрубані телячі котлети, пікантний лимонно-вершковий соус і каперси для пікантного та пікантного смаку. Рецепт розрахований на 4 порції.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 котлети з телятини\n" +
-                        "Сіль і перець за смаком\n" +
-                        "1/2 склянки універсального борошна\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "2 столові ложки несолоного вершкового масла\n" +
-                        "1/4 склянки свіжого лимонного соку\n" +
-                        "1/4 склянки курячого бульйону\n" +
-                        "2 столові ложки каперсів\n" +
-                        "Нарізана свіжа петрушка для прикраси",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Телячі котлети посолити, поперчити, обваляти в борошні.\n" +
-                        "У сковороді розігріти оливкову олію, обсмажити телятину до золотистої скоринки та перекласти на тарілку.\n" +
-                        "У тій же сковороді розтоплюємо вершкове масло, додаємо лимонний сік, курячий бульйон і каперси. Готуємо, поки соус злегка не загусне.\n" +
-                        "Повертаємо телятину в сковороду, поливаємо соусом і тушкуємо кілька хвилин.\n" +
-                        "Прикрашаємо подрібненою петрушкою та подаємо до столу.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 37,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Брачіола",
-            imageResId = R.drawable.bracciolla_37_small,
-            description =
-            "Брачіола - італійська страва, що складається з тонких шматочків яловичини або свинини, загорнутих в рулетики з ароматною начинкою, часто тушкованою в томатному соусі. Основна страва. Сама по собі брачіола не має особливих дієтичних обмежень, але можуть існувати варіації. Кількість калорій може змінюватися залежно від інгредієнтів та розміру порції, але зазвичай становить від 200 до 400 калорій на порцію. Брачіола - це тонко нарізане м'ясо, обгорнуте навколо начинки з панірувальних сухарів, сиру, зелені та іноді прошутто. М'ясо тушкується в томатному соусі до готовності, створюючи пікантну і ситну класичну італійську страву. Зазвичай ця страва розрахована на 4-х осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тонко нарізана яловичина або свинина\n" +
-                        "Хлібні крихти\n" +
-                        "Тертий пармезан\n" +
-                        "Свіжа петрушка\n" +
-                        "Часник\n" +
-                        "Прошутто (за бажанням)\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець\n" +
-                        "Томатний соус",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Викладіть шматочки м'яса на плоску тарілку, посоліть і поперчіть.\n" +
-                        "На кожну скибочку викласти суміш панірувальних сухарів, пармезану, петрушки, часнику та прошутто.\n" +
-                        "Поверніть скибочки рулетом, закріпивши їх зубочистками.\n" +
-                        "На сковороді розігріваємо оливкову олію та підрум'янюємо рулетики.\n" +
-                        "Залити томатним соусом і тушкувати до готовності (близько 12 годин).\n" +
-                        "Перед подачею вийняти зубочистки.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 38,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Порчетта",
-            imageResId = R.drawable.porchetta_38_small,
-            description =
-            "Порчетта - італійська страва зі смаженої свинини, відома своєю хрусткою шкіркою та ароматною начинкою. Вона не має особливих дієтичних обмежень, але це ситна страва. Порчетта - це італійська вулична їжа, яка містить приблизно 400-600 калорій на порцію. Порчетта готується шляхом фарширування обваленої свині часником, травами та спеціями, потім її згортають, перев'язують і смажать, поки шкіра не потріскається, а м'ясо не стане м'яким. Рецепти, як правило, розраховані на велику компанію через розмір печені, часто 12 або більше порцій",
+            recipeId = 31,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Keow Wan Gai",
+            imageResId = R.drawable.gang_keow_wan_gai_31_500,
+            description = "Gang Keow Wan Gai, or Green Curry Chicken, is a classic Thai dish known for its aromatic and vibrant green curry paste. This creamy and slightly spicy curry features tender pieces of chicken, Thai eggplant, and aromatic herbs. It's traditionally served with jasmine rice and offers a perfect balance of flavors, making it a favorite among Thai cuisine enthusiasts.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Свиняча частина або корейка без кісток.\n" +
-                        "Часник, розмарин, насіння фенхелю та інші трави та спеції.\n" +
-                        "Сіль і перець.\n" +
-                        "Оливкова олія.\n" +
-                        "Деякі рецепти можуть містити лимонну цедру або інші варіанти.",
+                "Ingredients: 400g boneless chicken thighs, cut into bite-sized pieces 2 tablespoons green curry paste 1 can (14 oz) coconut milk 1 cup Thai eggplant, quartered 4-5 kaffir lime leaves, torn 2-3 Thai bird's eye chilies, smashed (adjust to spice preference) 1 tablespoon fish sauce 1 teaspoon sugar 1/2 cup sweet basil leaves 1 red chili, thinly sliced (for garnish) Cooked jasmine rice for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Змащуємо свинячу черевце вершковим маслом.\n" +
-                        "Приправляємо сіллю, перцем, часником і травами.\n" +
-                        "Щільно скручуємо рулетом, перев'язуємо кухонним шпагатом.\n" +
-                        "Запікаємо в гарячій духовці до хрусткої скоринки та повної готовності.\n" +
-                        "Нарізати і подавати як основну страву або на бутербродах.",
+                "Cooking Process: Heat a large skillet or wok over medium-high heat. Add 1/2 cup of the coconut milk and green curry paste. Stir and cook for a few minutes until fragrant, and the oil starts to separate from the paste. Add the chicken pieces and cook until they start to turn white. Pour in the remaining coconut milk and add the Thai eggplant, kaffir lime leaves, and Thai bird's eye chilies. Bring the mixture to a gentle simmer. Season with fish sauce and sugar. Stir well and let it simmer until the chicken is cooked through and the eggplant is tender. Taste and adjust the seasoning if needed, adding more fish sauce or sugar to balance the flavors. Just before serving, stir in the sweet basil leaves and allow them to wilt slightly. Remove the curry from heat and discard any kaffir lime leaves or chilies that you can easily fish out. Serve the Gang Keow Wan Gai hot, garnished with thinly sliced red chili. Enjoy this delightful Thai green curry with jasmine rice for a satisfying meal!",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 39,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Фарширований болгарський перець",
-            imageResId = R.drawable.farshyrovanyj_bolg_perec_39,
-            description =
-            "Фаршировані болгарські перці - чудова італійська страва, в якій болгарський перець наповнюють пікантною сумішшю. Вони можуть бути адаптовані до різних дієтичних обмежень. Ця італійська версія зазвичай містить близько 300-400 калорій на порцію. Фарширований болгарський перець - це болгарський перець, наповнений ароматною сумішшю з меленого м'яса, рису, овочів і зелені. Перець запікають, поки він не стане м'яким, створюючи ситну страву на одну страву. Рецепт розрахований на 4 особи.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 великих болгарських перці (червоний, зелений або жовтий)\n" +
-                        "1 фунт м'ясного фаршу (яловичина, індичка або свинина)\n" +
-                        "1 склянка вареного рису\n" +
-                        "1 невелика цибулина, дрібно нарізана\n" +
-                        "2 зубчики часнику, подрібнені\n" +
-                        "1 банка нарізаних кубиками помідорів\n" +
-                        "1/2 склянки томатного соусу\n" +
-                        "Італійська приправа, сіль, перець\n" +
-                        "Тертий пармезан (за бажанням)\n" +
-                        "Свіжий базилік або петрушка для прикраси",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігріти духовку до 350°F (175°C).\n" +
-                        "Зріжте верхівки перців, видаліть насіння та бланшуйте їх у киплячій воді протягом декількох хвилин.\n" +
-                        "На сковороді спасерувати цибулю та часник, додати м'ясо і готувати, поки не підрум'яниться.\n" +
-                        "Додаємо рис, нарізані кубиками помідори, італійську приправу, сіль та перець. Готуємо кілька хвилин.\n" +
-                        "Нафаршируйте перець м'ясо-рисовою сумішшю.\n" +
-                        "Викласти фаршировані перці у форму для запікання, полити томатним соусом і накрити фольгою.\n" +
-                        "Запікати приблизно 45 хвилин до години, поки перець не стане м'яким.\n" +
-                        "За бажанням, перед подачею посипати сиром пармезан і прикрасити свіжою зеленню.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 40,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Бістека ала Фіорентіна - Флорентійський стейк",
-            imageResId = R.drawable.bisteka_ala_fiorentina,
-            description =
-            "Бістека ала Фіорентіна - це класична італійська страва, відома своєю простотою та виразним смаком. Вона складається з товстого стейку T Bone або портергауза, який грилюється до ідеального ступеня. У цій страві відсутні конкретні обмеження дієти, що робить її справжньою насолодою для м'ясоїдів. Один порція містить приблизно 800-1000 калорій. Бістека ала Фіорентіна - це флорентійський стейк, який обсмажують на високій температурі, щоб створити хрустку корку, при цьому залишаючи середину рідкісною. Він приправляється сіллю, перцем і оливковою олією, що дозволяє смаку м'яса блищати. Один стейк зазвичай подають на 2-4 осіб, залежно від розміру.",
+            recipeId = 32,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Massaman",
+            imageResId = R.drawable.gang_massaman_32,
+            description = "Gang Massaman, or Massaman Curry, is a rich and aromatic Thai dish with roots in Southern Thailand. This curry features tender chunks of meat (often beef or chicken) cooked in a flavorful sauce made from a blend of warm spices, coconut milk, and peanuts. The result is a harmonious balance of sweet, savory, and slightly spicy flavors that make it a beloved Thai classic.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 або більше стейків з Т-подібної кістки або біфштексів (товщиною приблизно 1,5-2 дюйми)\n" +
-                        "Високоякісна оливкова олія\n" +
-                        "Крупна морська сіль\n" +
-                        "Свіжомелений чорний перець",
+                "Ingredients: 500g beef or chicken, cut into bite-sized pieces 2 tablespoons Massaman curry paste 1 can (14 oz) coconut milk 2-3 potatoes, peeled and diced 1 onion, sliced 1 cinnamon stick 2-3 cardamom pods 2-3 bay leaves 1 tablespoon palm sugar (or brown sugar) 2 tablespoons fish sauce 1/4 cup unsalted roasted peanuts Cooking oil Roasted chili flakes (optional, for added heat) Fresh cilantro leaves (for garnish) Cooked jasmine rice for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Дістати стейк з холодильника щонайменше за 30 хвилин до приготування.\n" +
-                        "Розігріти гриль або чавунну сковорідку на сильному вогні.\n" +
-                        "Щедро приправити стейк крупною морською сіллю та свіжомеленим чорним перцем.\n" +
-                        "Збризніть стейк оливковою олією.\n" +
-                        "Покладіть стейк на гарячий гриль або сковорідку.\n" +
-                        "Готуйте по 35 хвилин з кожного боку для прожарювання або довше для бажаної готовності.\n" +
-                        "Перед нарізанням дайте йому відпочити кілька хвилин.\n" +
-                        "Подавайте нарізаний стейк з оливковою олією і, за потреби, досолити.",
+                "Cooking Process: Heat a bit of cooking oil in a large pot over medium heat. Add Massaman curry paste and cook for a few minutes until fragrant. Add the beef or chicken and cook until it starts to brown. Pour in half of the coconut milk and stir well. Allow it to simmer and thicken for a few minutes. Add the remaining coconut milk, potatoes, onion, cinnamon stick, cardamom pods, and bay leaves. Stir to combine. Season with palm sugar and fish sauce. Adjust the sweetness and saltiness according to your taste. Cover the pot and let the curry simmer on low heat for about 30-40 minutes, or until the meat is tender and the potatoes are cooked through. While simmering, toast the peanuts in a dry pan until they become golden brown, then crush them. Once the curry is ready, remove the cinnamon stick, cardamom pods, and bay leaves. Serve Gang Massaman hot, garnished with roasted peanuts, roasted chili flakes (if you like it spicy), and fresh cilantro leaves. Enjoy this delightful Thai curry with jasmine rice for a satisfying meal!",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 41,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Риба у шаленій воді - Pesce all'Acqua Pazza",
-            imageResId = R.drawable.ryba_u_shalenij_vodi,
-            description =
-            "Pesce all'Acqua Pazza, або \"Риба у шаленій воді\" - традиційна італійська страва з морепродуктів, відома своїм легким та ароматним бульйоном. Зазвичай вона не пов'язана з особливими дієтичними обмеженнями, що робить її придатною для різних дієт. У цій страві біла риба тушкується в ароматному томатному бульйоні з травами та спеціями. Кожна порція містить приблизно 150-200 калорій. Pesce all'Acqua Pazza - це проста, але елегантна страва, де біла риба ніжно припущена в бульйоні з томатів, оливкової олії, часнику, перцю чилі та свіжої зелені. Вона відома своїми яскравими смаками та ніжною текстурою. Рецепт зазвичай розрахований на 2-4 особи.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 філе білої риби (наприклад, окунь, морський окунь або тріска)\n" +
-                        "2 склянки нарізаних кубиками помідорів (консервованих або свіжих)\n" +
-                        "4 зубчики часнику, подрібнені\n" +
-                        "1/2 склянки оливкової олії першого віджиму\n" +
-                        "1/2 чайної ложки пластівців червоного перцю (за смаком)\n" +
-                        "Свіже листя базиліка\n" +
-                        "Свіже листя петрушки\n" +
-                        "Сіль та перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій сковороді розігрійте оливкову олію на середньому вогні.\n" +
-                        "Додайте подрібнений часник і пластівці червоного перцю; обсмажте до появи аромату.\n" +
-                        "Додайте нарізані кубиками помідори, посоліть, поперчіть і готуйте кілька хвилин.\n" +
-                        "Покладіть рибне філе в сковороду і викладіть ложкою трохи томатної суміші.\n" +
-                        "Накрити кришкою і тушкувати приблизно 10-15 хвилин або до повної готовності риби.\n" +
-                        "Прикрасити свіжим базиліком і петрушкою.\n" +
-                        "Подавати рибу з томатним бульйоном, политим зверху ложкою.\n" +
-                        "За більш детальними інструкціями ви можете звернутися до наданих джерел рецептів. Насолоджуйтесь цією чудовою італійською стравою з морепродуктів!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 42,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Італійський салат з квасолі",
-            imageResId = R.drawable.italijskyj_salat_z_kvasoli_42,
-            description =
-            "Італійський квасолевий салат, який часто називають \"Insalata di Fagioli\", - це освіжаюча та поживна страва, яка оспівує простоту середземноморської кухні. Цей салат, як правило, містить білу квасолю, таку як каннелліні або квасоля північна, як головний інгредієнт. Ця квасоля поєднується зі свіжими овочами та зеленню, включаючи помідори, червону цибулю, болгарський перець і петрушку.",
+            recipeId = 33,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Dang",
+            imageResId = R.drawable.gang_dang_33,
+            description = "Gang Dang, also known as Red Curry, is a classic Thai curry dish that combines bold flavors with a rich, creamy sauce. This aromatic curry is made with a flavorful red curry paste, coconut milk, and a variety of proteins and vegetables. It strikes a perfect balance between spiciness and sweetness, making it a favorite among Thai food enthusiasts.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        " 1 чайна ложка діжонської гірчиці\n" +
-                        "5 столових ложок червоного винного оцту\n" +
-                        "4 столові ложки оливкової олії \n" +
-                        "1 нарізана червона цибуля\n" +
-                        "1 подрібнений зубчик часнику\n" +
-                        "1 банка філе анчоусів (близько 25 г), відціджена, дрібно нарізана \n" +
-                        "трохи перцю\n" +
-                        "2 банки білої квасолі (близько 400 г кожна), промити і відцідити\n" +
-                        "500 г помідорів черрі, розрізаних на четвертинки\n" +
-                        "½ пучка крупно нарізаного орегано\n" +
-                        "500 g of cherry tomatoes, cut into quarters\n" +
-                        "½ bunch of coarsely chopped oregano",
+                "Ingredients: 200g of chicken, beef, or tofu (your choice) 2 tablespoons of red curry paste 1 can (400ml) of coconut milk 1 red bell pepper, sliced 1 green bell pepper, sliced 1 small eggplant, diced 4-5 kaffir lime leaves, torn 1-2 tablespoons of fish sauce 1-2 teaspoons of sugar 2-3 tablespoons of vegetable oil Fresh Thai basil leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Соус: змішати гірчицю, оцет та олію в салатнику. Додати цибулю, часник і анчоуси, перемішати і заправити.\n" +
-                        "Салат: до соусу з квасолею, помідорами та орегано додати квасолю та помідори, перемішати та заправити.",
+                "Cooking Process: Heat the vegetable oil in a wok or deep pan over medium-high heat. Add the red curry paste and stir-fry for 1-2 minutes until it becomes fragrant. Gradually pour in half of the coconut milk while continuing to stir. Cook for another 2-3 minutes, allowing the paste to dissolve into the coconut milk and thicken slightly. Add the sliced chicken or beef to the pan and cook until it starts to change color and is almost cooked through. Pour in the remaining coconut milk, add kaffir lime leaves, and bring the curry to a gentle simmer. Cook for 5-7 minutes, allowing the meat to become tender. Stir in the fish sauce, palm sugar, and a pinch of salt to balance the flavors. Adjust the seasoning to your taste. Add the eggplant and bell peppers to the curry, simmer for an additional 5 minutes until the vegetables are tender. Toss in the Thai basil leaves and sliced red chilies for an extra burst of flavor and spice. Remove the curry from heat and discard kaffir lime leaves. Serve hot over cooked jasmine rice, garnished with fresh cilantro leaves.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 34,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Panang",
+            imageResId = R.drawable.gang_panang_34_500,
+            description = "Gang Panang, also known as Panang Curry, is a Thai culinary masterpiece known for its rich and creamy consistency and an exquisite blend of flavors. This curry features tender strips of meat, commonly beef or chicken, bathed in a luscious coconut-based sauce infused with aromatic herbs and spices. With its slightly sweet and mildly spicy profile, Gang Panang offers a delightful harmony of taste that keeps you coming back for more.",
+            ingredients = listOf(
+                "Ingredients: 200g beef or chicken, thinly sliced 3 tablespoons Panang curry paste 1 can (400ml) coconut milk 1-2 kaffir lime leaves, thinly sliced 1 small red chili, thinly sliced (adjust to your spice preference) 1 tablespoon vegetable oil 1 tablespoon fish sauce 1 teaspoon palm sugar or brown sugar Salt to taste Fresh Thai basil leaves for garnish Cooked jasmine rice for serving",
+            ),
+            instructions = listOf(
+                "Cooking Process: Heat the cooking oil in a pan over medium heat. Add the Panang curry paste and sauté for a few minutes until it becomes fragrant. Pour in about half of the coconut milk and stir well with the curry paste. Allow it to simmer and thicken. Add the sliced beef or chicken and cook until it's no longer pink. Pour in the remaining coconut milk, sliced red bell pepper, and green beans. Let the mixture simmer until the meat is fully cooked and the vegetables are tender. Season the curry with palm sugar and fish sauce, adjusting the sweetness and saltiness to your taste. Toss in Thai basil leaves and sliced red chili (if you prefer extra heat). Stir for a minute until the basil leaves wilt. Remove from heat and garnish with sliced kaffir lime leaves, if desired. Serve the Gang Panang hot over steamed jasmine rice.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 43,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Тефтелі по-неаполітанськи \"Polpette alla Napoletana\"",
-            imageResId = R.drawable.polpette_alla_napoletana_43,
-            description =
-            "Неаполітанські фрикадельки, або \"Polpette alla Napoletana\" - класична італійська страва, що походить з Неаполя, Італія. Ці фрикадельки відомі своєю ситністю та ароматом. Зазвичай їх готують із суміші яловичого та свинячого фаршу, приправляють часником, петрушкою та тертим сиром пармезан. Фрикадельки часто обсмажують на сковороді до золотистої скоринки, що надає їм насиченого пікантного смаку.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "300 г м'ясного фаршу (яловичини)\n" +
-                        "180 г сальтисону, видалити м'якоть і нарізати шматочками\n" +
-                        "2 подрібнені зубчики часнику\n" +
-                        "1 дрібно нарізана цибулина\n" +
-                        "1 яйце\n" +
-                        "2 ст.л. панірувальних сухарів\n" +
-                        "40 г тертого пармезану\n" +
-                        "½ пучка подрібненої петрушки\n" +
-                        "½ ч.л. солі\n" +
-                        "трохи перцю\n" +
-                        "оливкова олія для приготування\n" +
-                        "1 дрібно нарізана цибулина\n" +
-                        "1 подрібнений зубчик часнику\n" +
-                        "1 ст.л. томатного пюре\n" +
-                        "800 г м'ясистих помідорів,\n" +
-                        "нарізаних скибочками\n" +
-                        "3 гілочки орегано\n" +
-                        "½ столової ложки цукру\n" +
-                        "34 чайні ложки солі",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Фрикадельки: Змішати м'ясо та всі інгредієнти, включно з перцем. " +
-                        "Добре вимісити руками до отримання компактної маси. Зліпити мокрими руками приблизно 16 фрикадельок. \n" +
-                        "2. Соус: Нагріти трохи олії на антипригарній сковороді. " +
-                        "Обсмажте фрикадельки з усіх боків у кілька прийомів протягом 8 хвилин. " +
-                        "Виймаємо їх зі сковороди та відкладаємо в сторону. У тій же сковороді розігріти трохи олії. " +
-                        "Обсмажуємо цибулю та часник протягом 2 хвилин. Додайте томатне пюре і продовжуйте смажити ще 1 хвилину. " +
-                        "Додати помідори, орегано і цукор, приправити і довести до кипіння. " +
-                        "Зменшити вогонь, накрити кришкою і тушкувати близько 15 хвилин, періодично помішуючи. " +
-                        "Повернути фрикадельки в сковороду та підігріти.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 44,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Дорадо з літніми овочами",
-            imageResId = R.drawable.darado_z_litnimy_ovochamy_44,
-            description =
-            "Дорадо, також відома як махі-махі, - популярна риба, відома своїм м'яким смаком і універсальністю в приготуванні. У поєднанні з літніми овочами рибу зазвичай готують на грилі або запікають і подають разом зі свіжими сезонними овочами, такими як помідори, болгарський перець, цукіні та зелень. Овочі додають страві яскравих барв, а риба забезпечує ніжний і злегка солодкуватий смак. Це легка і корисна страва, яка втілює аромати літа, що робить її чудовим вибором для вечері в теплу пору року.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "75 г чорних оливок без кісточок,\n" +
-                        "розрізані навпіл\n" +
-                        "2 столові ложки відціджених каперсів\n" +
-                        "1 пучок плоскої петрушки, нарізаний\n" +
-                        "1 столова ложка подрібненого розмарину\n" +
-                        "1 столова ложка подрібненого орегано\n" +
-                        "4 чайні ложки\n" +
-                        "сіль, трохи перцю\n" +
-                        "1 столова ложка оливкової олії\n" +
-                        "50 г панірувальних сухарів\n" +
-                        "1 подрібнений зубчик часнику\n" +
-                        "1 органічний лимон, натерта цедра\n" +
-                        "4 гілочки чебрецю\n" +
-                        "2 щіпки солі\n" +
-                        "1 столова ложка оливкової олії\n" +
-                        "4 філе морського ляща (приблизно 150 г кожне)\n" +
-                        "½ чайної ложки солі\n" +
-                        "трохи перцю\n" +
-                        " 3 жовті болгарські перці, нарізані шматочками\n" +
-                        "400 г помідорів черрі, розрізаних навпіл\n" +
-                        "75 г зелених оливок без кісточок, розрізаних навпіл",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                "1.Панграттато (смажені борошняні крихти): Розігрійте олію в антипригарній сковороді. " +
-                        "Знизьте вогонь, додайте борошняні крихти, часник, цедру лимона і тим'ян, смажте протягом 4 хвилин, помішуючи час від часу, соліть за смаком. " +
-                        "Видаліть гілку тим'яну, дайте охолонути.\n" +
-                        "2.Овочі: розігрійте олію в тій же сковороді. Смажте перці протягом 5 хвилин, потім томати приблизно 5 хвилин. " +
-                        "Додайте оливки та всі інгредієнти, включаючи перець, добре перемішайте і поділіть між тарілками.\n" +
-                        "3.Дорадо: Розігрійте олію в антипригарній сковороді. Приправте філе риби соллю і перцем, смажте зі шкіркою 3 хвилини. " +
-                        "Поверніть їх і продовжуйте смажити ще 1 хвилину. Розкладіть філе на овочі та посипте смаженими борошняними крохмалі.\n" +
-                        "Подавайте з запеченими картоплею.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 45,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Морський окунь з томатами і білим вином",
-            imageResId = R.drawable.morskii_okun_z_tomatamy_45,
-            description =
-            "Морський окунь з помідорами та білим вином - чудова страва з морепродуктів, відома своїми яскравими смаковими якостями. Як правило, це свіже філе морського окуня, обсмажене на сковороді до ідеальної консистенції, яке подається з ароматним томатним соусом. Соус часто готують з помідорами черрі, часником, травами та білим вином, що додає страві глибини та складності. Таке поєднання створює гармонійне поєднання ніжного хрусткого морського окуня та пікантної солодкості томатів, збалансованої кислотністю вина. Це популярний вибір для тих, хто цінує вишуканий смак морепродуктів у поєднанні з яскравими, пікантними нотками томатів і білого вина. Ця страва демонструє універсальність морського окуня, що робить його фаворитом середземноморської та сицилійської кухонь.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "300 г помідорів черрі на виноградній лозі\n" +
-                        "400 г філе морського окуня з кісткою\n" +
-                        "3 зубчики часнику, подрібнені\n" +
-                        "½ пучка плоскої листової петрушки\n" +
-                        "1 склянка білого вина\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "4 чайні ложки солі\n" +
-                        "трохи перцю\n" +
-                        "1 органічний лимон, нарізаний скибочками\n" +
-                        "Для форми приблизно на 21 змащену олією форму для запікання",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Риба з помідорами: у підготовлену форму викласти помідори, рибу, часник і петрушку. " +
-                        "Змішати вино та олію, приправити та полити сумішшю рибу з помідорами.\n" +
-                        "2. Приготування: готувати близько 20 хвилин у верхній частині духовки, розігрітої до 220°C. " +
-                        "Вийняти з духовки і подавати з часточками лимона. Подавати з хлібом.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 46,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Гратен з кабачків зі Скаморцо",
-            imageResId = R.drawable.graten_z_kabachkiv_slamorzi_46,
-            description =
-            "Гратен з кабачків зі Скаморцо - це смачна і затишна страва з кабачків та сиру Скаморцо. Зазвичай ця страва включає тонко нарізані кабачки, які часто укладаються у формі для запікання та запікаються до досконалості з вершковим соусом з сиру Скаморцо, який є напівм'яким італійським сиром, схожим на моцарелу, але з більш насиченим смаком. Сирний соус обволікає кабачки, створюючи кремовий, солоний та трохи димчастий смак. Зазвичай його приправляють травами, часником і борошном, щоб додати текстури і смаку. Страву потім запікають до утворення золотисто-коричневої корки. Це чудовий спосіб насолодитися природною солодкістю кабачків та розкішчю розтопленого сиру, що робить її улюбленою гарніром або навіть основною стравою в італійській кухні.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "500 г кабачків, нарізаних в довгі смужки приблизно 5 мм завширшки\n" +
-                        "500 г жовтих кабачків, нарізаних в довгі смужки приблизно 5 мм завширшки\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "½ чайної ложки солі\n" +
-                        "400 г картоплі, нарізаної на тонкі кружечки приблизно 3 мм завтовшки\n" +
-                        "1 нарізаний зубчик часнику\n" +
-                        "½ пучка нарізаної м'яти\n" +
-                        "1 столова ложка оливкової олії\n" +
-                        "¼ чайної ложки солі\n" +
-                        "трохи перцю\n" +
-                        "300 г моцарели, грубо натертої\n" +
-                        "250 г копченої скаморці, грубо натертої\n" +
-                        "2 столові ложки борошна\n" +
-                        "1 столова ложка оливкової олії\n" +
-                        "Для форми приблизно 21 запіканки, змащеної олією.",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        " 1. Кабачки: Викласти кабачки на два дека, застелених папером для випічки. Збризнути олією та сіллю, добре перемішати.\n" +
-                        "2. Приготування: готувати близько 20 хвилин у попередньо розігрітій до 200°C духовці (конвекційний нагрів). Вийняти кабачки з духовки і знову довести температуру до 200°C (верхній і нижній нагрів).\n" +
-                        "3. Картопля: змішати картоплю з усіма інгредієнтами, включаючи перець.\n" +
-                        "4. Запіканка: розподілити кабачки, ½ картоплі та сир у формі для запікання. Повторіть операцію двічі, закінчуючи сиром. Змішати панірувальні сухарі з олією та посипати запіканку.\n" +
-                        "5. Приготування: готувати приблизно 35 хвилин в середині розігрітої духовки.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 47,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Стейк і середземноморські овочі",
-            imageResId = R.drawable.steik_z_ovochamy_47,
-            description =
-            "Страва \"Стейк з середземноморськими овочами\" - це ароматна та корисна страва, яка поєднує в собі насичений смак стейка та яскраві аромати середземноморських овочів. Зазвичай для цієї страви використовується соковитий шматок стейка, наприклад, філейна частина або рибай, приготований до бажаного ступеня готовності. До стейка додається асорті з середземноморських овочів, таких як помідори, болгарський перець, цукіні та червона цибуля. Ці овочі часто приправляють середземноморськими травами та спеціями, такими як орегано, чебрець і часник, створюючи чудове ароматне поєднання. Страва відома своїм збалансованим смаком, ніжним стейком і користю для здоров'я, пов'язаною з середземноморською дієтою, що робить її смачним і поживним вибором для тих, хто шукає ситну, але корисну їжу.",
+            recipeId = 35,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Garee Gai",
+            imageResId = R.drawable.gang_garee_gai_35_500,
+            description = "Gang Garee Gai, or Thai Yellow Curry with Chicken, is a comforting and aromatic dish known for its mild yet flavorful taste. This creamy yellow curry is made with tender chicken pieces, potatoes, and an array of aromatic herbs and spices. It's slightly sweet, creamy, and the perfect balance of flavors. A bowl of this curry is a delightful Thai culinary experience. ",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1% чайна ложка трав'яної солі\n" +
-                        "трохи перцю\n" +
-                        "½ чайної ложки трав'яної солі\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "1 зубчик часнику, подрібнений\n" +
-                        "1 ст.л. листя розмарину, трохи меленого перцю\n" +
-                        "2 антрекоти з яловичини (приблизно по 200 г)\n" +
-                        "50 г руколи\n" +
-                        "4 чайні ложки флер де сел\n" +
-                        "2 столові ложки оливкової олії",
+                "Ingredients: 500g chicken thigh or breast, cut into bite-sized pieces 2-3 tablespoons yellow curry paste 1 can (400ml) coconut milk 2-3 medium-sized potatoes, peeled and cubed 1 small onion, sliced 2-3 tablespoons fish sauce 1-2 tablespoons palm sugar or brown sugar 1-2 tablespoons cooking oil 1 red chili, sliced (optional, for extra heat) Fresh cilantro leaves, for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Маринад: добре змішайте олію, часник, розмарин і перець. Помажте м'ясо цим маринадом і залиште його маринувати приблизно 1 годину під кришкою у холодильнику. Вийміть м'ясо з холодильника за 30 хвилин до приготування.\n" +
-                        "Овочі і м'ясо: трохи розігрійте олію в антипригарній сковороді. Половинки кабачків (приблизно 500 г) розріжте вдовж, а потім наріжте на кружечки приблизно 5 мм завтовшки. 2 баклажани розріжте вдовж, а потім наріжте на кружечки приблизно 5 мм завтовшки. Додайте часник, цедру лимона, розмарин і лавровий лист. Посоліть та продовжуйте готувати ще приблизно 10 хвилин на середньому вогні. Переложіть овочі в велику миску та закрийте кришкою. В тій же сковороді розігрійте трохи оливкової олії.\n" +
-                        "Злущіть маринад, посоліть м'ясо і обсмажте його приблизно 1 хвилину з кожного боку, перевертаючи лише тоді, коли утворюється корка. Зменште вогонь і продовжуйте готувати ще приблизно 1½ хвилини з кожного боку на середньому вогні. Залиште під кришкою приблизно 5 хвилин.\n" +
-                        "Подавання: додайте руколу до овочів, полийте залишеним лимонним соком. Наріжте м'ясо перпендикулярно до напрямку волокон і подавайте на тарілках разом з овочами. Посоліть м'ясо і полийте олією.",
+                "Cooking Process: Heat the cooking oil in a pan over medium heat. Add the yellow curry paste and sauté for a few minutes until it becomes fragrant. Pour in about half of the coconut milk and stir well with the curry paste. Allow it to simmer and thicken. Add the chicken pieces and cook until they are no longer pink. Pour in the remaining coconut milk and add the cubed potatoes and sliced onion. Let the mixture simmer until the chicken is cooked through, and the potatoes are tender. Season the curry with fish sauce and palm sugar, adjusting the saltiness and sweetness to your taste. If you prefer extra heat, add sliced red chili to the curry and stir. Once everything is cooked and well-blended, remove the curry from heat. Serve the Gang Garee Gai hot, garnished with fresh cilantro leaves.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 36,
+            categoryOfFood = "Curries",
+            dishTitle = "Gung Ho",
+            imageResId = R.drawable.gung_ho_36,
+            description = "Gung Ho is a Thai culinary masterpiece known for its vibrant flavors and fiery kick. This spicy shrimp soup boasts a delectable combination of succulent shrimp, aromatic herbs, and a rich broth made from coconut milk and Thai spices. The result is a harmonious dance of sweet, sour, salty, and spicy notes that tantalize the taste buds. Gung Ho is a comforting yet invigorating soup that embodies the essence of Thai cuisine.",
+            ingredients = listOf(
+                "Ingredients: 300g medium-sized shrimp, peeled and deveined 400ml coconut milk 2 cups chicken or vegetable broth 1 stalk lemongrass, sliced 3 slices galangal 2 kaffir lime leaves 2-3 red chili peppers, sliced 1 small onion, sliced 1 tomato, cut into wedges 1 lime, cut into wedges Fresh cilantro leaves for garnish Fish sauce, sugar, and salt to taste",
+            ),
+            instructions = listOf(
+                "Cooking Process: Begin by preparing the shrimp. Season them lightly with salt and set aside. In a pot, combine the coconut milk and chicken or vegetable broth. Heat it over medium heat. Add lemongrass, galangal, kaffir lime leaves, and sliced red chili peppers to the pot. Allow the flavors to infuse for about 5-10 minutes. Add the sliced onion and tomato to the broth. Simmer until the vegetables are tender. Slide the seasoned shrimp into the simmering soup. Cook until the shrimp turn pink and opaque. Season the soup with fish sauce, sugar, and salt to achieve a well-balanced flavor profile. It should be sweet, sour, salty, and spicy. To serve, ladle the hot Gung Ho soup into bowls, ensuring each serving contains shrimp, vegetables, and aromatic herbs. Garnish with fresh cilantro leaves and a lime wedge for an extra burst of flavor. Dive into the heartwarming, spicy embrace of Gung Ho and savor the essence of Thai cuisine.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 48,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Сицилійський хліб",
-            imageResId = R.drawable.sicylijskyj_chlib_48,
-            description =
-            "Pane Siciliano - традиційний сицилійський хліб, відомий своїм сільським виглядом і чудовим смаком. Дієтичні обмеження: У результатах пошуку не згадано жодних конкретних дієтичних обмежень, але загалом він підходить для більшості дієт, якщо у вас немає специфічної алергії або непереносимості. Pane Siciliano - вид італійського хліба. Кількість калорій на порцію: Точна кількість калорій може змінюватися залежно від розміру порції, але типова порція хліба становить близько 80-100 калорій. Короткий опис: Pane Siciliano - це сільський італійський хліб круглої форми з хрусткою скоринкою та м'якою, повітряною серединою. Він має злегка жувальну текстуру і м'який, горіховий смак. Кількість порцій залежить від рецепту, але зазвичай він розрахований на 4-6 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "500г борошна грубого помелу\n" +
-                        "10г солі\n" +
-                        "15г цукру\n" +
-                        "7 г активних сухих дріжджів\n" +
-                        "300 мл теплої води\n" +
-                        "30мл оливкової олії\n" +
-                        "Кунжут (за бажанням для посипання)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У теплій воді розчиняємо дріжджі та цукор. Дати постояти 5 хвилин до утворення піни.\n" +
-                        "У великій мисці змішати борошно і сіль. Додайте дріжджову суміш та оливкову олію.\n" +
-                        "Вимішуйте тісто близько 10 хвилин, поки воно не стане гладким та еластичним.\n" +
-                        "Покладіть тісто в змащену олією миску, накрийте тканиною і залиште на 1-2 години підніматися, поки воно не збільшиться вдвічі.\n" +
-                        "Розігрійте духовку до 220°C (430°F).\n" +
-                        "Пробийте тісто і надайте йому форму круглої буханки. За бажанням можна посипати зверху кунжутом.\n" +
-                        "Випікайте 25-30 хвилин, доки хліб не стане золотисто-коричневим і не видасть порожнистого звуку при постукуванні по дну.\n" +
-                        "Дайте йому охолонути перед тим, як нарізати і подавати до столу.\n" +
-                        "Насолоджуйтесь домашнім сицилійським хлібом!",
-            )
-        ),
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 49,
-            categoryOfFood = "Основні страви",
-            dishTitle = "Смажений свинячий рулет",
-            imageResId = R.drawable.smazenyi_svyniachyj_rulet_49,
-            description =
-            "Ці рулети глибоко смажаться до золотисто-коричневого кольору і хрусткості. Результатом є чудовий контраст між хрустким, смаженим зовнішнім шаром і ніжним, смачним внутрішнім наповненням. Смажені свинячі рулети зазвичай подаються як закуска або снек, часто разом із соусом для занурення, таким як соус солодкого чилі або нуок чам. Їх цінують за смачний смак і задовільну текстуру, що робить їх популярними.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1,2 кг свинячої грудинки\n" +
-                        "1 ч. л. солі, трохи перцю\n" +
-                        "120 г шинки (наприклад, вареної мальбунера)\n" +
-                        "1 пучок нарізаного базиліка\n" +
-                        "½ пучка подрібненого орегано\n" +
-                        "½ пучка подрібненої петрушки \n" +
-                        "3 подрібнені зубчики часнику\n" +
-                        "1 чайна ложка дрібно змеленого насіння кропу\n" +
-                        "8 шматків кухонного шпагату (приблизно 40 см кожен)\n" +
-                        "1 ст.л. вершкового масла для смаження \n" +
-                        "500 г моркви, розрізаної навпіл уздовж \n" +
-                        "300 г нарізаної селери приблизно 2 см\n" +
-                        "2 червоні цибулини\n" +
-                        "2 столові ложки томатного пюре\n" +
-                        "1 лавровий лист\n" +
-                        "2 склянки червоного вина\n" +
-                        "4 склянки телячого бульйону",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Наповнення м'яса: Покласти м'ясо із шкірою на дошку для різання, видаливши при необхідності кістки та хрящі. Розріжте його на дві частини завдовжки найбільшої сторони, не розрізаючи його до кінця, розкрийте. Посоліть м'ясо з обох сторін. Покладіть вишневу шинку зверху. Змішайте трави, часник і насіння фенхелю, посипте ними м'ясо. Зверніть м'ясо з короткого боку, утворюючи щільний рулон так, щоб шкіра була зовні. Проведіть мотузку під м'ясом і зав'яжіть м'ясо мотузками.\n" +
-                        "Приготування на сковороді: Розтопіть вершкове масло в сковороді. Смажте м'ясо з усіх боків на середньому вогні протягом 8 хвилин, потім переложіть його в каструлю. Додайте моркву та яблуко селери.\n" +
-                        "Приготування в духовці: Приблизний час приготування - приблизно 45 хвилин у нижній частині попередньо розігрітого духовки до 180°C. Вийміть каструлю з духовки, підвищте температуру до 200°C.\n" +
-                        "Для соусу: Смажте цибулю у залишеній сковороді з томатами і лавровим листом протягом приблизно 10 хвилин, помішуючи час від часу. Додайте вино та бульйон, доведіть до кипіння і варіть протягом приблизно 15 хвилин. Злейте соус на м'ясо в каструлю. Помістіть каструлю в нижню частину холодної духовки.\n" +
-                        "Завершення приготування: Готуйте приблизно 5 хвилин, вийміть з духовки, зніміть кулінарну мотузку. Наріжте м'ясо на шматочки і приправте овочами та соусом.\n" +
-                        "Подавайте з: полентою.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 51,
-            categoryOfFood = "Супи",
-            dishTitle = "Мінестроне",
-            imageResId = R.drawable.minestrone_51,
-            description =
-            "Мінестроне - це ситний італійський овочевий суп, зазвичай вегетаріанський і нежирний, що робить його гарним вибором для тих, хто дотримується дієтичних обмежень. Це густий суп з різноманітними овочами, квасолею та макаронами або рисом. В середньому одна порція мінестроне містить близько 150-200 калорій. Мінестроне - це універсальний італійський суп, до складу якого входять сезонні овочі, квасоля, часто макарони або рис. Він приправлений ароматними травами та ідеально вариться в пікантному бульйоні. Рецепт розрахований приблизно на 6 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 столові ложки оливкової олії\n" +
-                        "1 цибуля, нарізана\n" +
-                        "2 моркви, нарізані кубиками\n" +
-                        "2 селери, нарізані кубиками\n" +
-                        "2 зубчики часнику, подрібнені\n" +
-                        "1 кабачок, нарізаний кубиками\n" +
-                        "1 жовта кабачка, нарізана кубиками\n" +
-                        "1 банка (14 унцій) нарізаних помідорів\n" +
-                        "6 чашок овочевого бульйону\n" +
-                        "1 банка (15 унцій) кінді бобів, злитих і промитих\n" +
-                        "1 чашка маленьких макаронів або рису\n" +
-                        "1 чайна ложка сушеного базиліку\n" +
-                        "1 чайна ложка сушеного орегано\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Тертий сир Пармезан для подачі (за бажанням)"
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій каструлі розігріти оливкову олію на середньому вогні.\n" +
-                        "Додати нарізану цибулю, моркву, селеру та часник. Обсмажити до розм'якшення.\n" +
-                        "Додати цукіні, жовті патисони та нарізані кубиками помідори. Готуємо ще кілька хвилин.\n" +
-                        "Вливаємо овочевий бульйон і доводимо до кипіння.\n" +
-                        "Додати квасолю, макарони або рис, сушений базилік, сушений орегано, сіль і перець.\n" +
-                        "Зменшити вогонь, накрити кришкою і тушкувати 15-20 хвилин або поки овочі не стануть м'якими.\n" +
-                        "Подавати гарячим, за бажанням прикрасивши тертим пармезаном.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 52,
-            categoryOfFood = "Супи",
-            dishTitle = "Тосканський суп",
-            imageResId = R.drawable.toskanskyj_sup_52,
-            description =
-            "Тосканський суп - це вершковий італійський суп з насиченим і заспокійливим смаком. Хоча він не підходить для вегетаріанців через використання ковбаси, він не має особливих дієтичних обмежень. Одна порція Тосканського супа зазвичай містить близько 250-300 калорій. Тосканський суп - це ситний суп з італійською ковбасою, картоплею, капустою та вершковим бульйоном з ноткою гостроти від пластівців червоного перцю. Це смачна та зігріваюча страва, яка ідеально підходить для прохолодних днів. Рецепти розраховані на різні порції, від однієї до великої каструлі для сімейного обіду.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Італійська ковбаса (м'яка або гостра)\n" +
-                        "Цибуля ріпчаста\n" +
-                        "Часник\n" +
-                        "Курячий бульйон\n" +
-                        "Картопля\n" +
-                        "Червоний перець пластівці\n" +
-                        "Капуста\n" +
-                        "Жирні вершки\n" +
-                        "Сіль і перець\n" +
-                        "Оливкова олія\n" +
-                        "Сир пармезан (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Зварити італійську ковбасу у великій каструлі, розламавши її на шматочки. Вийняти і відкласти в сторону.\n" +
-                        "У тій же каструлі пасеруємо цибулю та часник до напівпрозорості.\n" +
-                        "Додаємо курячий бульйон і доводимо до кипіння.\n" +
-                        "Додаємо нарізану картоплю та пластівці червоного перцю. Варити, поки картопля не стане м'якою.\n" +
-                        "Всипати нарізану капусту і варити до зів'янення.\n" +
-                        "Повертаємо в каструлю варену ковбасу.\n" +
-                        "Вливаємо жирні вершки і тушкуємо до повного загустіння.\n" +
-                        "Посолити та поперчити за смаком.\n" +
-                        "Подавати гарячим, за бажанням прикрасивши сиром пармезан."
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 53,
-            categoryOfFood = "Супи",
-            dishTitle = "Чоппіно",
-            imageResId = R.drawable.choppino_53,
-            description =
-            "Чоппіно - це італійське рагу з морепродуктів, чудова страва без особливих дієтичних обмежень. Це рагу на основі томатів з різними морепродуктами, такими як креветки, краби та риба, яке зазвичай подається з хрустким хлібом. Порція містить близько 350-450 калорій. Чоппіно - це ароматне рагу з морепродуктів на основі томатів і наваристого бульйону. До нього додають різноманітні морепродукти, часто креветки, краби, молюски, мідії та рибу, приправляють зеленню і подають з хрустким хлібом. Наведені рецепти розраховані на 46 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Оливкова олія\n" +
-                        "Цибуля\n" +
-                        "Часник\n" +
-                        "Пластівці червоного перцю\n" +
-                        "Подрібнені помідори\n" +
-                        "Біле вино\n" +
-                        "Рибний бульйон або бульйон з морепродуктів\n" +
-                        "Лаврове листя\n" +
-                        "Свіжа зелень (наприклад, базилік, петрушка)\n" +
-                        "Асорті з морепродуктів (креветки, краби, молюски, мідії, риба)\n" +
-                        "Сіль і перець\n" +
-                        "Хліб з хрусткою скоринкою (для подачі)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій каструлі обсмажте на оливковій олії цибулю, часник і пластівці червоного перцю.\n" +
-                        "Додати подрібнені помідори, біле вино, рибний або морепродуктовий бульйон і лавровий лист. Тушкуємо на повільному вогні.\n" +
-                        "Додайте морепродукти, починаючи з товстих шматків і закінчуючи делікатними, такими як креветки.\n" +
-                        "Варити до готовності морепродуктів (креветки стануть рожевими, молюски та мідії розкриються).\n" +
-                        "Приправити свіжою зеленню, сіллю та перцем.\n" +
-                        "Подавати гарячим з хрустким хлібом, щоб ввібрати смачний бульйон.\n" +
-                        "Будь ласка, зверніться до наданих джерел рецептів за детальними інструкціями та насолоджуйтеся цим італійським делікатесом з морепродуктів!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 54,
-            categoryOfFood = "Супи",
-            dishTitle = "Риболліта",
-            imageResId = R.drawable.rybollitto_54,
-            description =
-            "Риболліта - це ситний тосканський суп родом з Італії. До його складу зазвичай входять овочі, квасоля та хліб, що робить його вегетаріанським. Порція містить приблизно 250-350 калорій.  Риболліта - густий, ароматний суп з квасолею каннелліні, капустою, морквою та помідорами. Його загущують шматочками хліба і часто приправляють часником та ароматними травами. Більшість рецептів розраховані на 68 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Оливкова олія\n" +
-                        "Цибуля\n" +
-                        "Морква\n" +
-                        "Селера\n" +
-                        "Часник\n" +
-                        "Капуста або капуста\n" +
-                        "Квасоля каннеліні\n" +
-                        "Подрібнені помідори\n" +
-                        "Хліб\n" +
-                        "Бульйон або вода\n" +
-                        "Сіль і перець\n" +
-                        "Трави (наприклад, розмарин, чебрець)\n" +
-                        "Тертий пармезан (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Обсмажте цибулю, моркву, селеру та часник на оливковій олії.\n" +
-                        "Додайте капусту і готуйте, поки вона не зів'яне.\n" +
-                        "Додайте подрібнені помідори, квасолю каннеліні та зелень.\n" +
-                        "Додайте шматочки хліба та бульйон або воду.\n" +
-                        "Тушкувати, доки хліб не розчиниться, утворюючи густу консистенцію.\n" +
-                        "Посолити, поперчити, за бажанням прикрасити тертим пармезаном і подавати гарячим.\n" +
-                        "Зверніться до наданих джерел рецептів за детальними інструкціями та насолоджуйтеся цим затишним італійським супом!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 55,
-            categoryOfFood = "Супи",
-            dishTitle = "Каччуко",
-            imageResId = R.drawable.caccukko_55,
-            description =
-            "Каччуко - це наваристе італійське рагу з морепродуктів родом з Ліворно, Тоскана. Ця ароматна страва зазвичай включає різноманітні види риби та молюсків, такі як кальмари, восьминоги, креветки та різні види риби, тушковані в томатному бульйоні з часником, пластівцями червоного перцю та травами. Це ситна і сільська страва, яка ідеально підходить для любителів морепродуктів. Через вміст морепродуктів каччуко не підходить для вегетаріанців та людей з алергією на молюсків. Кількість калорій може варіюватися залежно від конкретних інгредієнтів, але зазвичай становить від 300 до 500 калорій на порцію. Каччуко - це рагу з морепродуктів, відоме своїм насиченим і пікантним смаком. Більшість рецептів розраховані на 4-6 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Суміш свіжих морепродуктів (наприклад, кальмари, восьминоги, креветки, рибне філе)\n" +
-                        "Оливкова олія\n" +
-                        "Часник\n" +
-                        "Пластівці червоного перцю\n" +
-                        "Біле вино\n" +
-                        "Консервовані помідори\n" +
-                        "Свіжа зелень (наприклад, петрушка та базилік)\n" +
-                        "Шматочки хліба\n",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій каструлі розігріти оливкову олію, додати подрібнений часник і пластівці червоного перцю для гостроти.\n" +
-                        "Додайте біле вино і дайте йому покипіти, щоб уваритися.\n" +
-                        "Додайте консервовані помідори та воду і варіть на повільному вогні, щоб утворилася основа.\n" +
-                        "Додайте морепродукти, починаючи з тих, що готуються найповільніше.\n" +
-                        "Тушкувати до повної готовності морепродуктів.\n" +
-                        "Подавати в тарілках, поклавши на дно скибочки хліба.\n" +
-                        "Вилийте тушковане м'ясо на хліб, щоб воно ввібрало в себе смачні аромати.\n" +
-                        "Прикрасьте свіжою зеленню і полийте оливковою олією.\n" +
-                        "Подавайте гарячим і насолоджуйтеся цією чудовою італійською стравою з морепродуктів!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 56,
-            categoryOfFood = "Супи",
-            dishTitle = "Рулька по-римски",
-            imageResId = R.drawable.trippa_alla_romana_56,
-            description =
-            "Рулька по-римски (Trippa alla Romana) - класична римська страва з рульки (яловичого шлунка), приготована в томатному соусі з м'ятою та сиром Пекоріно. Це ситна та ароматна страва, традиційно римська. Рулька по-римски (Trippa alla Romana) не підходить для вегетаріанців або тих, хто не вживає продукти з яловичини. Кількість калорій може варіюватися, як правило, близько 200-300 калорій на порцію. Рулька по-римски (Trippa alla Romana) - це страва з рульки в римському стилі, відома своїми унікальними смаковими якостями. Більшість рецептів розраховані на 4-6 осіб.",
+            recipeId = 37,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Ped Yang",
+            imageResId = R.drawable.gang_ped_yang_37_500,
+            description = "Gang Ped Yang is a sumptuous Thai curry featuring succulent roast duck immersed in a rich, aromatic red curry sauce. This dish is a harmonious blend of tender duck, creamy coconut milk, and a medley of Thai herbs and spices. The result is a flavor explosion that balances the heat of red chili peppers with the sweetness of coconut milk. Gang Ped Yang is a delightful Thai curry that offers a tantalizing journey for your taste buds. ",
+            ingredients = listOf(
+                "Ingredients: 300g roast duck, sliced 400ml coconut milk 2-3 tbsp red curry paste 2 kaffir lime leaves, torn 1 red chili pepper, thinly sliced (for garnish) 1 small eggplant, sliced 4-5 Thai basil leaves 1 tbsp fish sauce 1 tsp palm sugar (or brown sugar) Vegetable oil for frying",
+            ),
+            instructions = listOf(
+                "Cooking Process: Begin by heating a small amount of vegetable oil in a wok or deep skillet over medium-high heat. Add the red curry paste to the hot oil and stir-fry until it becomes fragrant and the oil begins to separate. Pour in half of the coconut milk and continue to stir-fry for a few minutes until the mixture thickens and the oil rises to the surface. Add the sliced roast duck to the wok and stir to coat it in the curry paste. Pour in the remaining coconut milk, add torn kaffir lime leaves, and bring the mixture to a gentle simmer. Toss in the sliced eggplant and let it cook until tender. Season the curry with fish sauce and palm sugar to achieve a balanced flavor profile. Adjust the seasoning to your liking. Just before serving, add Thai basil leaves for a burst of freshness. Transfer the Gang Ped Yang to a serving bowl and garnish with thinly sliced red chili peppers. Serve this delectable red curry over steamed jasmine rice and relish the fusion of flavors",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 38,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Phet Pet Yang",
+            imageResId = R.drawable.gang_phet_pet_yang_38,
+            description = "Gang Phet Pet Yang is a mouthwatering Thai curry featuring succulent roast duck immersed in a luscious red curry sauce. This dish strikes a harmonious balance between the richness of roast duck and the bold flavors of Thai spices. The creamy coconut milk base combines with the aromatic red curry paste to create a tantalizing and fragrant curry. It's a true Thai culinary delight that marries savory and spicy elements. ",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Рубець (яловичий шлунок)\n" +
-                        "Оливкова олія\n" +
-                        "Цибуля\n" +
-                        "Томатний соус\n" +
-                        "Свіже листя м'яти\n" +
-                        "Сир Пекоріно\n" +
-                        "Сіль і перець",
+                "Ingredients: 200g roast duck slices 2 tablespoons red curry paste 400ml coconut milk 2 kaffir lime leaves, torn 1 red chili, sliced diagonally 1 small eggplant, sliced 1/2 cup pineapple chunks 1 tablespoon fish sauce 1 teaspoon palm sugar Thai basil leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Почистити та бланшувати потруху, потім нарізати її невеликими шматочками.\n" +
-                        "На сковороді обсмажити дрібно нарізану цибулю на оливковій олії до напівпрозорості.\n" +
-                        "Додаємо вирізку і смажимо, поки не підрум'яниться.\n" +
-                        "Вливаємо томатний соус, додаємо подрібнену м'яту, сіль та перець.\n" +
-                        "Тушкувати приблизно від 45 хвилин до години, періодично помішуючи.\n" +
-                        "Подавати гарячим, прикрасивши сиром Пекоріно та додатковими листочками м'яти.\n" +
-                        "Насолоджуйтесь цим римським делікатесом з його неповторним смаком!",
+                "Cooking Process: Heat a pan over medium heat and add the red curry paste. Stir-fry for a minute or until fragrant. Pour in half of the coconut milk and simmer for a couple of minutes, allowing the curry paste to blend in. Add the roast duck slices and cook for another 2-3 minutes. Pour in the remaining coconut milk and bring it to a gentle simmer. Add the kaffir lime leaves, sliced red chili, and eggplant. Simmer for about 5 minutes or until the eggplant becomes tender. Stir in the pineapple chunks, fish sauce, and palm sugar. Cook for an additional 2 minutes. Taste and adjust the seasoning with more fish sauce or palm sugar if needed. Once everything is well combined and the flavors have melded together, remove from heat. Garnish with Thai basil leaves and serve hot with steamed jasmine rice.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 39,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Kiew Wan Talay",
+            imageResId = R.drawable.gang_kiew_wan_talay_39,
+            description = "Gang Kiew Wan Talay is a delectable Thai green curry infused with aromatic herbs and spices, enriched with a medley of fresh seafood. This vibrant dish boasts a harmonious blend of flavors, from the creamy coconut milk to the zesty green chili kick, all balanced by the sweetness of seafood. It's a true Thai culinary masterpiece, known for its rich green color and complex, savory taste. Perfectly cooked prawns, mussels, and squid soak up the fragrant curry, making each bite a delightful journey of textures and tastes. Served with steamed jasmine rice, it's an irresistible, comforting Thai classic.",
+            ingredients = listOf(
+                "Ingredients: 1 lb mixed seafood (prawns, mussels, squid) 2 cups coconut milk 3 tbsp green curry paste 2 tbsp vegetable oil 1 cup Thai eggplants, halved 4-5 kaffir lime leaves, torn 1 red chili, sliced 1 tsp palm sugar 2 tbsp fish sauce 1 cup fresh basil leaves 1/2 cup bamboo shoots, sliced 1 red bell pepper, sliced",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Seafood: Clean and devein the prawns. Scrub the mussels and remove any beards. Clean the squid and slice it into rings. Heat the Oil: In a large pan or wok, heat the vegetable oil over medium heat. Add the green curry paste and stir-fry for 1-2 minutes until fragrant. Add Coconut Milk: Pour in 1 cup of coconut milk and stir well. Allow it to simmer for a few minutes until the oil begins to separate. Cook the Seafood: Add the mixed seafood to the pan and cook for 3-4 minutes, or until the prawns turn pink and the mussels open. Add Vegetables: Stir in the Thai eggplants, bamboo shoots, kaffir lime leaves, and red bell pepper. Continue to cook for another 2-3 minutes. Season the Curry: Add palm sugar and fish sauce, adjusting the flavors to your liking. Be cautious with the fish sauce, as it can be quite salty. Finish with Basil: Turn off the heat and stir in the fresh basil leaves. Serve: Ladle the Gang Kiew Wan Talay into serving bowls and garnish with sliced red chili. Serve hot with steamed jasmine rice.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 57,
-            categoryOfFood = "Супи",
-            dishTitle = " Суп  з помідорів - Паппа аль памодоро",
-            imageResId = R.drawable.sup_z_pomodoriv_57,
-            description =
-            "Суп з помідорів (Pappa al Pomodoro) - класичний тосканський суп з помідорами та хлібом, насичений смаком і глибоко заспокійливий. Він підходить для вегетаріанців і є різновидом італійського хлібного супу. Приблизно 200-300 калорій на порцію, залежно від розміру порції та інгредієнтів. Суп з помідорів (Pappa al Pomodoro) - густий суп, приготований з простих інгредієнтів: помідорів, черствого хліба, оливкової олії, часнику та свіжого базиліка. Це ситна страва, яка перетворює хліб на заспокійливу томатну насолоду. Більшість рецептів розраховані на 4-х осіб.",
+            recipeId = 40,
+            categoryOfFood = "Curries",
+            dishTitle = "Gang Som Pak Ruam",
+            imageResId = R.drawable.gaeng_som_pak_ruam_40,
+            description = "Gang Som Pak Ruam is a tantalizing Thai sour curry that bursts with vibrant flavors. This dish marries the tangy goodness of tamarind and the subtle heat of chili paste with a medley of fresh vegetables. It's a perfect balance of sour, spicy, and savory, making it a beloved Thai comfort food. This vegan-friendly curry showcases the beauty of nature's bounty, with ingredients like crunchy long beans, tender pumpkin, and earthy mushrooms swimming in a luscious broth. Prepare to be transported to the streets of Thailand as you savor each spoonful of this aromatic, wholesome delight. ",
             ingredients = listOf(
-                "Інгредієнти\n" ,
-                        "500 г стиглих помідорів (очищених і нарізаних)\n" +
-                        "250 г черствого тосканського або заквашеного хліба\n" +
-                        "2 зубчики часнику\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія першого віджиму\n" +
-                        "Сіль і перець\n" +
-                        "Овочевий бульйон (за бажанням)",
+                "Ingredients: 1/2 cup of tamarind paste 2 tablespoons of vegetable oil 3 tablespoons of red curry paste 3 cups of mixed vegetables (e.g., pumpkin, long beans, mushrooms) 2 cups of water 1 tablespoon of palm sugar 1 teaspoon of salt 2-3 kaffir lime leaves Thai basil leaves for garnish Optional: tofu or tempeh for protein",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У каструлі розігріти оливкову олію та обсмажити подрібнений часник до появи аромату.\n" +
-                        "Додати помідори, посолити, поперчити та розірвані листочки базиліку.\n" +
-                        "Тушкувати, поки помідори не перетворяться на соус.\n" +
-                        "Черствий хліб розламати на маленькі шматочки і додати в каструлю.\n" +
-                        "Якщо суміш занадто густа, додаємо овочевий бульйон.\n" +
-                        "Добре перемішати і дати покипіти, поки хліб не вбере в себе томатний соус.\n" +
-                        "Подавайте теплим, прикрасивши свіжим базиліком і скропивши оливковою олією.\n" +
-                        "Насолоджуйтесь цією смачною та заспокійливою тосканською класикою!\n",
+                "Cooking Process: Prep the Tamarind: In a small bowl, mix the tamarind paste with 1 cup of warm water. Stir and set aside to soak for 10 minutes. Once softened, strain the mixture to remove any seeds or fibers, leaving you with tamarind juice. Sauté the Curry Paste: Heat vegetable oil in a pot over medium heat. Add the red curry paste and sauté for a couple of minutes until fragrant. Add Vegetables: Add your choice of mixed vegetables to the pot. Traditionally, pumpkin, long beans, and mushrooms are used. If desired, you can also add tofu or tempeh at this stage. Stir-fry for a few minutes. Pour in Tamarind Juice: Pour the tamarind juice into the pot, followed by 2 cups of water. Stir to combine all the ingredients. Season: Add palm sugar, salt, and torn kaffir lime leaves. Adjust the level of sweetness and saltiness to your taste. Simmer: Reduce the heat to low and let the curry simmer for about 15-20 minutes or until the vegetables are tender. Serve: Once the curry is cooked and the flavors have melded, remove it from heat. Serve hot, garnished with Thai basil leaves.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
         RecipeModel(
-            id = 58,
-            categoryOfFood = "Супи",
-            dishTitle = "Суп із сочевиці",
-            imageResId = R.drawable.sup_iz_sochevytsi_58,
-            description =
-            "Сочевичний суп (Zuppa di Lenticchie) - поживний і ситний італійський суп. Зазвичай він містить зелену або коричневу сочевицю, овочі, такі як морква і селера, цибуля, часник, а іноді нарізані кубиками помідори. Суп приправляють травами, такими як лавровий лист і чебрець, і часто подають з краплею оливкової олії та тертим сиром пармезан. Хоча він зазвичай не асоціюється з дієтичними обмеженнями, ви повинні підбирати інгредієнти відповідно до своїх дієтичних потреб.  Приблизно 200-300 калорій на порцію, залежно від розміру порції та інгредієнтів.  Більшість рецептів розраховані на 46 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 склянка зеленої або коричневої сочевиці\n" +
-                        "1 цибулина, подрібнена\n" +
-                        "2 зубчики часнику, подрібнені\n" +
-                        "2 моркви, нарізані кубиками\n" +
-                        "2 стебла селери, нарізані кубиками\n" +
-                        "1 банка нарізаних кубиками помідорів (за бажанням)\n" +
-                        "1 лавровий лист\n" +
-                        "1 чайна ложка сушеного чебрецю\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Оливкова олія для збризкування\n" +
-                        "Тертий пармезан для подачі",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Сочевицю промити та відцідити.\n" +
-                        "У великій каструлі розігріти оливкову олію і обсмажити цибулю, часник, моркву та селеру до розм'якшення.\n" +
-                        "Додайте сочевицю, лавровий лист, чебрець і нарізані кубиками помідори (якщо використовуєте).\n" +
-                        "Влийте достатньо води, щоб покрити інгредієнти, і доведіть до кипіння.\n" +
-                        "Зменшити вогонь, накрити кришкою і варити приблизно 30-40 хвилин, або поки сочевиця не стане м'якою.\n" +
-                        "Посолити та поперчити.\n" +
-                        "Подавати гарячою, полив оливковою олією та посипавши тертим пармезаном.\n" +
-                        "Зверніть увагу, що за конкретним рецептом італійського супу з сочевиці ви можете звернутися до італійських кулінарних сайтів або кулінарних книг.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 60,
-            categoryOfFood = "Піца",
-            dishTitle = "Маргарита Піца",
-            imageResId = R.drawable.ol_margherita_pizza_40,
-            description =
-            "Піца \"Маргарита\" - класична італійська піца, відома своєю простотою та вишуканим смаком. Вона має тонкий корж, увінчаний свіжими інгредієнтами. Для піци \"Маргарита\" немає особливих дієтичних обмежень.  Піца \"Маргарита\" складається з тонкого коржа, змащеного томатним соусом, свіжого сиру моцарела, листя свіжого базиліка, оливкової олії та дрібки солі. Це чудове поєднання смаків, з базиліком, що надає свіжого аромату. Приблизно 250-300 калорій на шматок (залежно від товщини скоринки та кількості сиру). Більшість рецептів піци \"Маргарита\" розраховані на приготування одного шматка розміром 12 дюймів, який зазвичай обслуговує 24 особи.",
+            recipeId = 42,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pad Thai",
+            imageResId = R.drawable.pad_thai_42_500,
+            description = "Pad Thai is a delightful Thai dish with stir-fried rice noodles, tofu, shrimp (optional), and a flavorful sauce. It offers a perfect blend of sweet, sour, and savory flavors, garnished with bean sprouts, green onions, crushed peanuts, and a squeeze of lime. Enjoy this iconic Thai favorite at home!",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 тісто для піци (магазинне або домашнє)\n" +
-                        "1/2 склянки томатного соусу або подрібнених помідорів\n" +
-                        "8 унцій свіжого сиру моцарела, нарізаного скибочками\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія\n" +
-                        "Сіль",
+                "Ingredients: 200g rice noodles 200g shrimp (or tofu 2 cloves garlic, minced 2 tablespoons vegetable oil 2 eggs 150g bean sprouts 3 tablespoons tamarind paste 2 tablespoons fish sauce (or soy sauce for vegetarians) 1 tablespoon sugar 1/2 cup chopped 1/4 cup crushed peanuts 1 lime, cut into wedges Red chili flakes (optional)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури (зазвичай близько 500°F або 260°C).\n" +
-                        "Розкачайте тісто для піци на присипаній борошном поверхні до бажаної товщини.\n" +
-                        "Перенесіть тісто на піцца-камінь або пекарський лист.\n" +
-                        "Рівномірно розподіліть томатний соус по тісту, залишивши бордюр по краях для скоринки.\n" +
-                        "Викладіть скибочки свіжого сиру моцарела поверх соусу.\n" +
-                        "Порвіть листя свіжого базиліка і розкладіть їх по піці.\n" +
-                        "Збризніть піцу оливковою олією та посипте дрібкою солі.\n" +
-                        "Випікайте в попередньо розігрітій духовці приблизно 1012 хвилин або поки скоринка не стане золотистою, а сир не стане пухирчастим.\n" +
-                        "Вийміть з духовки, дайте трохи охолонути, наріжте і подавайте гарячим. Насолоджуйтесь домашньою піцою Маргарита!",
+                "Cooking Process: Soak the rice noodles in warm water for 20-30 minutes or until they become pliable. Then, drain them and set them aside. In a wok or large pan, heat the vegetable oil over medium-high heat. Add minced garlic and shrimp (or tofu) and stir-fry until the shrimp turns pink or tofu is lightly browned. Push the cooked ingredients (garlic, shrimp or tofu) to one side of the wok. Crack the eggs into the other side of the wok and scramble them. Cook until they're just set. Now, add the soaked rice noodles to the wok with the cooked shrimp (or tofu) and scrambled eggs. In a small bowl, mix together the tamarind paste, fish sauce (or soy sauce), and sugar until well combined. Pour this sauce mixture over the noodles. Continue to stir-fry everything together until the noodles absorb the sauce and become tender. Toss in the bean sprouts and chopped green onions, and cook for another 1-2 minutes until they're slightly wilted. Serve the Pad Thai hot. Garnish each serving with crushed peanuts and a lime wedge. If you like it spicy, you can also add red chili flakes to taste.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 43,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pad See Ew",
+            imageResId = R.drawable.pad_see_ew_43_500,
+            description = "Pad See Ew is a beloved Thai stir-fried noodle dish known for its savory, slightly sweet, and smoky flavors. This comforting one-pan wonder combines wide rice noodles, tender protein of your choice (commonly chicken, beef, or tofu), and crisp Chinese broccoli, all bathed in a rich sauce made with soy sauce and oyster sauce. The noodles soak up the sauce's essence, creating a delightful umami harmony. With a hint of garlic and a quick stir-fry, Pad See Ew is a quick and satisfying Thai classic that's sure to become a favorite in your home.",
+            ingredients = listOf(
+                "Ingredients: 8 oz (about 230g) wide rice noodles 1 cup protein (sliced chicken, beef, or tofu) 2 cups Chinese broccoli (or broccoli rabe), chopped into bite-sized pieces 3 cloves garlic, minced 2 tablespoons vegetable oil 2 tablespoons soy sauce 1 tablespoon oyster sauce 1 teaspoon sugar 1/4 cup chicken or vegetable broth 1 egg (optional) Crushed red pepper flakes (optional, for heat)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Noodles: Cook the wide rice noodles according to package instructions until they are just tender but not overly soft. Drain, rinse with cold water, and set aside. Prepare the Sauce: In a small bowl, mix together the soy sauce, oyster sauce, and sugar. This will be your sauce for the dish. Cook the Protein: Heat 1 tablespoon of vegetable oil in a large wok or skillet over high heat. Add the minced garlic and protein (chicken, beef, or tofu) and cook until the protein is no longer pink. If using tofu, ensure it's lightly browned on all sides. Remove the protein from the pan and set it aside. Cook the Broccoli: In the same pan, add another tablespoon of oil if needed. Add the chopped Chinese broccoli and stir-fry for 2-3 minutes until it begins to wilt and turn bright green. Stir in Noodles: Return the cooked noodles to the pan and pour the sauce over them. Toss everything together, ensuring the noodles and broccoli are evenly coated with the sauce. Add Protein: Return the cooked protein to the pan and mix it with the noodles and broccoli. If using, crack an egg into the pan and stir-fry until the egg is cooked and distributed throughout the dish. Final Touches: If desired, add a splash of chicken or vegetable broth to keep the noodles moist and create a bit of sauce. Add crushed red pepper flakes for some heat, if you like. Serve: Transfer Pad See Ew to serving plates and enjoy immediately. It's often served with additional condiments like fish sauce, sugar, and crushed peanuts on the side, so diners can adjust the flavors to their liking. Pad See Ew is a comforting and satisfying Thai dish that's perfect for any meal.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 61,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Чотири сири",
-            imageResId = R.drawable.pizza_chotyry_syry_61_small,
-            description =
-            "\"Кватро Формаджі\", або \"Чотири сири\" - це чудова італійська піца з начинкою з комбінації чотирьох сирів. Ця страва не має особливих дієтичних обмежень, якщо у вас немає алергії на сир або непереносимості лактози. Тонкий корж піци \"Кватро формаджі\" щедро вкритий сумішшю з чотирьох видів сиру: моцарелли, горгонзоли, пармезану та проволоне. В результаті виходить насичена, сирна та ароматна піца. Типовий шматок піци кватро-формаджі містить близько 250350 калорій, залежно від розміру та товщини скоринки. За більшістю рецептів готується одна 12-дюймова піца, яка розрахована на 24 особи.",
+            recipeId = 44,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pad Kee Mao",
+            imageResId = R.drawable.pad_kee_mao_44,
+            description = "Pad Kee Mao, also known as Drunken Noodles, is a fiery and flavorful Thai stir-fried noodle dish that packs a punch. Wide rice noodles are stir-fried with a spicy sauce, tender protein (commonly chicken, pork, or shrimp), and an assortment of colorful vegetables. The dish derives its name from the idea that it's a perfect late-night snack after a night out, offering an addictive blend of heat and savory notes. Thai basil leaves add an aromatic twist to this culinary adventure. If you're a fan of bold, spicy Thai flavors, Pad Kee Mao is sure to become a favorite.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 піцца-тісто (готове або власноруч приготоване)\n" +
-                        "1/2 чашки моцарели, тертої\n" +
-                        "1/4 чашки горгонзоли, дрібно подрібненої\n" +
-                        "1/4 чашки пармезану, тертого\n" +
-                        "1/4 чашки проволоне, тертої",
+                "Ingredients: 8 oz (about 230g) wide rice noodles 1 cup protein (sliced chicken, pork, or shrimp) 2 cloves garlic, minced 2 bird's eye chili peppers, finely chopped (adjust to your spice preference) 2 tablespoons vegetable oil 1 cup mixed vegetables (bell peppers, Thai holy basil leaves, and baby corn) 2 tablespoons oyster sauce 1 tablespoon soy sauce 1 teaspoon sugar 1 tablespoon fish sauce Lime wedges for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Перед нагрійте вашу піч до найвищої температури (зазвичай близько 500°F або 260°C).\n" +
-                        "Розкатайте піцца-тісто на попередньо припудреній поверхні до бажаної товщини.\n" +
-                        "Перенесіть тісто на піцца-камінь або пекарський лист.\n" +
-                        "Рівномірно розподіліть моцарелу на тісто, залишаючи краї для корки.\n" +
-                        "Додайте горгонзолу, пармезану і проволоне, розподіляючи їх рівномірно.\n" +
-                        "Пекти в попередньо розігрітій печі протягом близько 10-12 хвилин або доки корка не стане золотистою, а сир не розтане і не підскочить.\n" +
-                        "Вийміть з печі, дайте трохи охолонути, наріжте і насолоджуйтесь своєю смачною домашньою піццею \"Кватро Формаджi\"!",
+                "Cooking Process: Prepare Noodles: Cook the wide rice noodles according to package instructions until they are just tender. Drain, rinse with cold water, and set aside. Prepare the Sauce: In a small bowl, mix together the oyster sauce, soy sauce, sugar, and fish sauce. This will be your sauce for the dish. Cook the Protein: Heat 1 tablespoon of vegetable oil in a large wok or skillet over high heat. Add the minced garlic and chopped chili peppers. Stir-fry for about 30 seconds until fragrant. Add Protein: Add your choice of protein (chicken, pork, or shrimp) and stir-fry until it's cooked through. If using shrimp, cook until they turn pink and opaque. Remove the protein from the pan and set it aside. Stir-Fry Vegetables: In the same pan, add another tablespoon of oil if needed. Add the mixed vegetables (bell peppers, Thai basil leaves, and baby corn) and stir-fry for 2-3 minutes until they begin to soften. Combine Noodles and Sauce: Return the cooked noodles to the pan and pour the sauce over them. Toss everything together, ensuring the noodles and vegetables are evenly coated with the sauce. Add Protein Back: Return the cooked protein to the pan and mix it with the noodles and vegetables. Final Touches: Squeeze lime juice over the dish for a zesty kick. Taste and adjust the flavors as needed, adding more fish sauce for saltiness or more chili for heat. Serve: Transfer Pad Kee Mao to serving plates and garnish with extra Thai basil leaves and lime wedges. This spicy and savory Thai classic is best enjoyed hot and is sure to satisfy your craving for bold flavors.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 45,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pad Krapow Moo",
+            imageResId = R.drawable.pad_krapow_moo__45,
+            description = "Pad Krapow Moo, or Thai Basil Pork, is a beloved Thai street food dish that's revered for its bold and spicy flavors. It's a quick and satisfying stir-fry featuring ground pork infused with fragrant Thai basil leaves, chili, and garlic. Served over steamed jasmine rice with a fried egg on top, this dish offers a tantalizing combination of savory, sweet, and spicy notes. It's a perfect example of Thai comfort food with its irresistible aroma and mouthwatering taste. Get ready to tantalize your taste buds with this classic Thai dish you can easily whip up at home.",
+            ingredients = listOf(
+                "Ingredients: 1 tablespoon vegetable oil 3 cloves garlic, minced 2-3 Thai bird's eye chili peppers, finely chopped (adjust to your spice preference) 8 oz (about 230g) ground pork 2 tablespoons oyster sauce 1 tablespoon soy sauce 1 teaspoon sugar 1 cup Thai basil leaves (holy basil or sweet basil) Steamed jasmine rice for serving Fried eggs (1 per serving) Optional: Sliced cucumbers and lime wedges for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Heat Oil: Heat vegetable oil in a wok or large skillet over high heat. Sauté Garlic and Chili: Add minced garlic and chopped Thai chili peppers to the hot oil. Stir-fry for about 30 seconds until fragrant. Add Ground Pork: Add the ground pork to the pan and break it up with a spatula. Stir-fry until the pork is cooked and no longer pink, breaking it into small crumbles as it cooks. Prepare the Sauce: In a small bowl, mix together the oyster sauce, soy sauce, and sugar. Add Sauce: Pour the sauce mixture over the cooked pork. Stir-fry for another minute or until the pork is evenly coated with the sauce. Add Basil Leaves: Remove the pan from heat and add the Thai basil leaves to the pork. Toss them in until they wilt slightly from the residual heat. Serve: Serve the Pad Krapow Moo over steamed jasmine rice, and top each serving with a fried egg. The egg yolk adds a creamy element to the dish. Optionally, garnish with sliced cucumbers and lime wedges for extra freshness. Enjoy: Dive into this spicy and savory delight, mixing the runny yolk with the flavorful pork and aromatic basil. Adjust the spice level by adding more chili as desired.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 62,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Неаполітанська",
-            imageResId = R.drawable.ol_pizza_napoletana_42,
-            description =
-            "Піца Наполетана, або неаполітанська піца, - це класична італійська піца, відома своєю тонкою, м'якою і злегка жувальною скоринкою. Зазвичай вона складається з простих інгредієнтів, таких як помідори Сан-Марцано, сир моцарела, базилік, оливкова олія та сіль. Ця страва не має особливих дієтичних обмежень, якщо у вас немає алергії на ці інгредієнти.   Неаполітанська піца має тонку скоринку, м'яку, повітряну середину та злегка хрустку скоринку зовні. Вона відома своєю простотою, з акцентом на високоякісні інгредієнти.  Типова неаполітанська піца містить близько 200300 калорій на шматок, що може змінюватися залежно від начинки та розміру піци.  Більшість рецептів передбачає приготування однієї 12-дюймової піци, яка розрахована на 2-4 особи.",
+            recipeId = 46,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pad Priew Wan",
+            imageResId = R.drawable.pad_priew_wan_46_500,
+            description = "Pad Priew Wan, also known as Thai Sweet and Sour Stir-Fry, is a delightful Thai dish that balances sweet and tangy flavors in perfect harmony. This vibrant stir-fry combines succulent chunks of meat (often chicken or shrimp) with an array of colorful vegetables, all bathed in a luscious sweet and sour sauce. The sauce, made from a blend of tamarind paste, sugar, and vinegar, creates a tantalizingly tangy profile that's perfectly complemented by the crunch of fresh vegetables. A quick and easy dish to prepare, Pad Priew Wan is a favorite choice for those craving a taste of Thai cuisine at home.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (магазинне або домашнє)\n" +
-                        "Помідори Сан Марцано або томатний соус\n" +
-                        "Свіжий сир моцарела\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія першого віджиму\n" +
-                        "Сіль",
+                "Ingredients: 8 oz (about 230g) chicken or shrimp, cut into bite-sized pieces 1 tablespoon vegetable oil 1/2 red bell pepper, sliced 1/2 green bell pepper, sliced 1 small onion, sliced 1/2 cucumber, sliced 1 small tomato, cut into wedges 2 cloves garlic, minced 2 tablespoons tamarind paste 2 tablespoons sugar 2 tablespoons white vinegar 2 tablespoons ketchup 1 tablespoon fish sauce 1/4 cup water Optional: pineapple chunks for extra sweetness",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте камінь для піци або духовку до найвищої температури (зазвичай близько 500°F або 260°C).\n" +
-                        "Розкачайте тісто для піци на присипаній борошном поверхні до бажаної товщини.\n" +
-                        "Перекладіть тісто на форму для піци або деко, присипане кукурудзяним борошном.\n" +
-                        "Викладаємо на тісто тонкий шар томатного соусу.\n" +
-                        "Додайте шматочки свіжої моцарели та листя свіжого базиліка.\n" +
-                        "Збризніть оливковою олією та посипте дрібкою солі.\n" +
-                        "Обережно перекладіть піцу в гарячу духовку або на камінь для піци.\n" +
-                        "Випікайте приблизно від 90 секунд до 2 хвилин, поки скоринка не підрум'яниться і не обвуглиться.\n" +
-                        "Дістаньте з духовки, дайте трохи охолонути, наріжте і насолоджуйтеся справжньою неаполітанською піцою!",
+                "Cooking Process: Prepare the Sauce: In a small bowl, mix together the tamarind paste, sugar, white vinegar, ketchup, fish sauce, and water. Adjust the balance of sweet and sour flavors to your liking. Set aside. Sauté the Protein: Heat vegetable oil in a wok or large skillet over high heat. Add minced garlic and sauté for about 30 seconds until fragrant. Add the chicken or shrimp and stir-fry until cooked through. Remove from the pan and set aside. Stir-Fry Vegetables: In the same pan, add the sliced bell peppers, onion, cucumber, and tomato. Stir-fry for about 3-4 minutes until the vegetables are slightly tender but still crisp. Combine Sauce: Pour the sweet and sour sauce mixture into the pan with the vegetables. Stir well to coat the vegetables evenly. Return Protein: Return the cooked chicken or shrimp to the pan and stir to combine everything. Optional Pineapple: If you like extra sweetness, add pineapple chunks to the stir-fry and mix them in. Heat Through: Allow everything to heat through for another 2-3 minutes, ensuring the sauce thickens slightly and coats all the ingredients. Serve: Transfer Pad Priew Wan to serving plates and enjoy hot. It's commonly served with steamed jasmine rice to soak up the flavorful sauce. This Thai Sweet and Sour Stir-Fry is a taste sensation that marries contrasting flavors in a mouthwatering medley.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 47,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pla Pad Krapow",
+            imageResId = R.drawable.pla_pad_krapow_47,
+            description = "Pla Pad Krapow, or Thai Basil Stir-Fried Fish, is a delightful Thai seafood dish that harmoniously combines flaky white fish with aromatic Thai basil and fiery chili. The dish bursts with savory, sweet, and spicy flavors, making it a favorite among Thai cuisine enthusiasts. Tender fish fillets are stir-fried to perfection in a fragrant sauce, featuring garlic, Thai bird's eye chili, and holy basil leaves. Pla Pad Krapow is a culinary adventure that's quick to prepare, offering a satisfying and flavorful Thai meal that's perfect for seafood lovers.",
+            ingredients = listOf(
+                "Ingredients: 2 white fish fillets (such as tilapia or snapper), about 6-8 oz each 2 tablespoons vegetable oil 3 cloves garlic, minced 2-3 Thai bird's eye chili peppers, finely chopped (adjust to your spice preference) 1 cup Thai holy basil leaves (or sweet basil leaves) 1 tablespoon oyster sauce 1 tablespoon soy sauce 1 teaspoon sugar Lime wedges for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Heat the vegetable oil in a wok or large skillet over medium-high heat. Add the minced garlic and chopped bird's eye chilies. Sauté for about 30 seconds until fragrant. Add the fish pieces to the wok and stir-fry for 2-3 minutes until they start to turn opaque. Stir in the sliced bell peppers and continue to cook for another 2 minutes until the peppers begin to soften. Season the dish with oyster sauce, fish sauce, soy sauce, sugar, and a generous pinch of freshly ground black pepper. Stir well to combine. Add the fresh Thai basil leaves to the wok and toss everything together. Cook for an additional 1-2 minutes until the basil leaves wilt and release their aromatic flavor. Taste and adjust the seasoning, if needed. You can add more fish sauce or sugar to suit your taste. Serve the Pla Pad Krapow hot over steamed jasmine rice, garnished with lime wedges. Enjoy your flavorful Thai basil fish stir-fry!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 63,
-            categoryOfFood = "Піца",
-            dishTitle = "Кальцоне",
-            imageResId = R.drawable.ol_calzone_43,
-            description =
-            "Кальцоне - смачна італійська страва зі складеним удвічі тістом для піци з начинкою з різних інгредієнтів, схожа на перевертень. Для кальцоне немає особливих дієтичних обмежень, але інгредієнти можуть варіюватися. В середньому кальцоне містить близько 500700 калорій на порцію. Кальцоне - це кишеньки з тіста, наповнені сиром, томатним соусом, овочами та м'ясом. Зазвичай їх складають у формі півмісяця і випікають до золотистої скоринки. У більшості рецептів виходить 24 кальцоне, залежно від того, який розмір ви віддаєте перевагу.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (магазинне або домашнє)\n" +
-                        "Томатний соус або маринара\n" +
-                        "Сир моцарела\n" +
-                        "Начинка на ваш вибір (наприклад, пепероні, ковбаса, овочі)\n" +
-                        "Оливкова олія (для змащування)\n" +
-                        "Сіль і перець (за смаком)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 475°F (245°C) або відповідно до рецепту.\n" +
-                        "Розділіть тісто для піци на рівні частини.\n" +
-                        "Розкачайте кожну частину в коло або овал на присипаній борошном поверхні.\n" +
-                        "Нанесіть шар томатного соусу на одну половину кожного кола тіста.\n" +
-                        "Додайте бажану начинку, залишаючи трохи місця по краях.\n" +
-                        "Складіть другу половину тіста поверх начинки, створюючи форму півмісяця.\n" +
-                        "Щільно притисніть краї, щоб запечатати.\n" +
-                        "Змастіть верхівки кальцоне оливковою олією, посоліть і поперчіть.\n" +
-                        "Викласти кальцоне на деко або камінь для піци.\n" +
-                        "Випікати в попередньо розігрітій духовці приблизно 1215 хвилин або до золотистої скоринки.\n" +
-                        "Вийміть з духовки, дайте їм трохи охолонути і насолоджуйтеся свіжоспеченими кальцоне!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 64,
-            categoryOfFood = "Піца",
-            dishTitle = "Біла піца або Піца Б'янка.",
-            imageResId = R.drawable.ol_pizza_bianca_44,
-            description =
-            "Піца Б'янка, або Біла піца - це італійська піца, відома своєю простотою. Зазвичай вона не містить томатного соусу і поєднує в собі вершкові сири, часник і зелень. Особливих дієтичних обмежень немає. В середньому шматок білої піци містить близько 250-300 калорій. Піца Б'янка - це піца без томатного соусу, до складу якої входять такі інгредієнти, як моцарела, рікотта, пармезан, часник, оливкова олія та свіжа зелень. Вона відома своїм насиченим вершковим смаком. За більшістю рецептів готується 1 велика піца або 2 менші, розраховані на 2-4 особи.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (магазинне або домашнє)\n" +
-                        "Оливкова олія\n" +
-                        "Часниковий фарш\n" +
-                        "Сир моцарела\n" +
-                        "Сир рікотта\n" +
-                        "Сир пармезан\n" +
-                        "Свіжі трави (наприклад, базилік, орегано)\n" +
-                        "Сіль і перець",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до рекомендованої температури (зазвичай близько 475°F або 245°C).\n" +
-                        "Розкачайте тісто для піци на присипаній борошном поверхні до бажаної товщини.\n" +
-                        "Перекладіть тісто на деко або камінь для піци.\n" +
-                        "Змастіть тісто оливковою олією та подрібненим часником.\n" +
-                        "Рівномірно посипте тісто сиром моцарела.\n" +
-                        "Додаємо кусочки сиру рікотта та тертий пармезан.\n" +
-                        "Посолити, поперчити та посипати свіжими травами.\n" +
-                        "Випікати в розігрітій духовці 1012 хвилин або поки скоринка не стане золотистою, а сир - пухирчастим і злегка підрум'яненим.\n" +
-                        "Дістаньте з духовки, дайте охолонути, наріжте і насолоджуйтеся смачною піцою Б'янка!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 65,
-            categoryOfFood = "Піца",
-            dishTitle = "Сицилійська піца",
-            imageResId = R.drawable.ol_sicilian_pizza_45,
-            description =
-            "Сицилійська піца - це товста, прямокутна піца з хрусткою скоринкою, що характеризується пишною внутрішньою частиною. Вона не має особливих дієтичних обмежень, якщо тільки у вас немає особливих уподобань щодо інгредієнтів. Зазвичай до складу піци входить сир, томатний соус і різноманітні начинки. Одна порція сицилійської піци містить приблизно 285300 калорій. Сицилійська піца відома своєю товстою, повітряною скоринкою, хрусткою зовні і м'якою всередині. Зазвичай її прикрашають томатним соусом, сиром моцарела та начинками, такими як пепероні або овочі. За більшістю рецептів виходить піца розміром 12x18 дюймів, що розрахована на 6-8 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (домашнє або магазинне)\n" +
-                        "Оливкова олія\n" +
-                        "Томатний соус\n" +
-                        "Сир моцарела\n" +
-                        "Начинка на ваш вибір (наприклад, пепероні, болгарський перець, цибуля)\n" +
-                        "Сіль і перець\n" +
-                        "Свіжий базилік (за бажанням)\n" +
-                        "Тертий пармезан (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 475°F (245°C).\n" +
-                        "Змастіть деко або прямокутну форму для піци оливковою олією.\n" +
-                        "Тісто для піци рівномірно розтягнути і втиснути у форму, щоб воно доходило до країв.\n" +
-                        "Змастіть тісто оливковою олією.\n" +
-                        "Викладаємо на тісто шар томатного соусу.\n" +
-                        "Додайте щедрий шар сиру моцарела.\n" +
-                        "Рівномірно викласти обрану вами начинку.\n" +
-                        "Посоліть та поперчіть.\n" +
-                        "Випікайте в духовці 1520 хвилин або поки скоринка не стане золотистою, а сир не пузириться.\n" +
-                        "За бажанням: Перед подачею прикрасьте свіжим базиліком і тертим пармезаном. Нарізати і насолоджуватися сицилійською піцою!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 66,
-            categoryOfFood = "Піца",
-            dishTitle = "Фокачча",
-            imageResId = R.drawable.ol_focaccia_46,
-            description =
-            "Фокачча - це універсальний італійський коржик, який часто приправляють зеленню та оливковою олією. Не має особливих дієтичних обмежень. Це м'який, жувальний хліб, ідеально підходить для вмочування в оливкову олію або як гарнір. Одна порція зазвичай містить близько 100120 калорій. Фокачча - це ароматний, багатий на оливкову олію хліб, здобрений зеленню, іноді овочами або навіть сиром. Це простий, але смачний хліб, яким можна насолоджуватися різними способами. У більшості рецептів виходить стандартна прямокутна фокача, яку можна нарізати на 8-12 порцій.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 1/4 ч.л. активних сухих дріжджів\n" +
-                        "1 ч.л. цукру\n" +
-                        "1 склянка теплої води\n" +
-                        "3 склянки борошна грубого помелу\n" +
-                        "1 1/4 ч.л. солі\n" +
-                        "1/4 склянки оливкової олії першого віджиму\n" +
-                        "Свіжі або сушені трави (наприклад, розмарин, чебрець)\n" +
-                        "Крупна сіль\n" +
-                        "Додаткові інгредієнти (наприклад, помідори черрі, оливки)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У мисці змішайте дріжджі, цукор і теплу воду. Дати постояти близько 5 хвилин до утворення піни.\n" +
-                        "Додайте до дріжджової суміші борошно та сіль. Перемішати до утворення тіста.\n" +
-                        "Вимішувати тісто на присипаній борошном поверхні близько 5 хвилин.\n" +
-                        "Покладіть тісто в змащену маслом миску, накрийте і залиште на 12 годин підніматися, поки воно не збільшиться вдвічі.\n" +
-                        "Розігріти духовку до 425°F (220°C).\n" +
-                        "Обминаємо тісто і викладаємо його у змащену олією форму для випікання.\n" +
-                        "Накрийте його тканиною і залиште на 20-30 хвилин.\n" +
-                        "Пальцями зробіть ямочки на поверхні тіста.\n" +
-                        "Збризніть оливковою олією, посипте зеленню та крупною сіллю.\n" +
-                        "За бажанням додайте додаткову начинку.\n" +
-                        "Випікайте 20-25 хвилин до золотистої скоринки.\n" +
-                        "Наріжте та подавайте до столу!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 67,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Марінара",
-            imageResId = R.drawable.ol_pizza_marinara_47,
-            description =
-            "Піца Марінара - класична італійська піца, відома своєю простотою та насиченим смаком. Вона підходить для вегетаріанців і зазвичай не має дієтичних обмежень. Ця піца має тонкий корж з томатним соусом, часником, орегано та оливковою олією. Одна порція містить приблизно 150200 калорій. Піца Марінара - італійська піца, відома своїм мінімалістичним підходом. Вона складається з тонкого коржа, прикрашеного яскравим томатним соусом, ароматним часником, запашним орегано та краплиною оливкової олії. За більшістю рецептів виходить одна піца, яку можна розрізати на 2-4 порції.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (магазинне або домашнє)\n" +
-                        "Томатний соус\n" +
-                        "Свіжі зубчики часнику\n" +
-                        "Сушений орегано\n" +
-                        "Оливкова олія першого віджиму\n" +
-                        "Сіль і перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури, яку вона може досягти (зазвичай близько 500°F або 260°C). Помістіть піцца-камінь або пекарський лист у духовку для нагрівання.\n" +
-                        "На присипаній борошном поверхні розкачайте тісто для піци в тонку круглу форму.\n" +
-                        "Перекладіть тісто на пергаментний папір, щоб його було легше перенести в гарячу духовку.\n" +
-                        "Рівномірно розподіліть тонкий шар томатного соусу по тісту, залишаючи невеликий бордюр по краях.\n" +
-                        "Подрібнюємо зубчики часнику та розподіляємо їх поверх соусу.\n" +
-                        "Щедро посипаємо піцу сушеним орегано.\n" +
-                        "Збризніть зверху оливковою олією першого віджиму.\n" +
-                        "Посоліть і поперчіть за смаком.\n" +
-                        "Обережно покладіть пергаментний папір з піцою на гарячий камінь для випікання або деко.\n" +
-                        "Випікайте приблизно 10-12 хвилин, поки скоринка не стане хрусткою, а краї злегка золотистими.\n" +
-                        "Вийміть з духовки, дайте трохи охолонути, наріжте і насолоджуйтеся смачною піцою Марінара!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 68,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца б'янка з лимоном",
-            imageResId = R.drawable.ol_pizza_bianca_with_lemon_91,
-            description =
-            "Піца Б'янка з лимоном - це чудова варіація традиційної піци, яка пропонує свіжий та пікантний смак. Ця піца характеризується білою основою, яку зазвичай готують з вершковим сиром рікотта або моцарелою, і прикрашається пікантною яскравістю лимона. Лимонна цедра і сік надають піці цитрусового аромату, який чудово доповнює насиченість сиру. Начинка може включати такі інгредієнти, як фісташково-лимонний песто, зелень, а іноді навіть рукколу для пікантного смаку. В результаті виходить гармонійне поєднання вершкових, сирних і цитрусових ноток, які створюють унікальний і апетитний смак піци, ідеальний для тих, хто шукає нові та захоплюючі смаки у світі піци.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        " 500 г борошна для піци\n" +
-                        "2 чайні ложки солі\n" +
-                        "кубик дріжджів (близько 10 г), подрібнених\n" +
-                        "3 склянки води\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "3 столові ложки борошна для піци\n" +
-                        "150 г нарізаної моцарели\n" +
-                        "220 г сиру з блакитними прожилками (наприклад, горгонзола), подрібненого\n" +
-                        "1 органічний лимон розрізати навпіл, а потім тонко нарізати\n" +
-                        "½ чайної ложки пластівців чилі",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Тісто для піци: змішати борошно, сіль і дріжджі. " +
-                        "Додайте воду та оливкову олію і вимішуйте приблизно 10 хвилин, поки тісто не стане м'яким і гладким. тісто. " +
-                        "Накрити і залишити підніматися приблизно на 1 годину при кімнатній температурі, поки тісто не збільшиться в об'ємі вдвічі. в об'ємі.\n" +
-                        "2. Начинка: поставте деко в холодну духовку і розігрійте її до 240°C. " +
-                        "Розріжте тісто навпіл, сформуйте дві кульки, злегка приплюсніть їх рукою і розтягніть на невеликій кількості борошна, поки у вас не вийдуть тонкі диски з тіста. з тіста. " +
-                        "Покладіть кожен з них на аркуш паперу для випічки. Викласти на диски тіста моцарелу, горгонзолу та лимон.\n" +
-                        "3. Приготування: покласти одну з двох піц на гарячу плиту, не знімаючи папір для випікання. " +
-                        "Випікати приблизно 20 хвилин у нижній частині попередньо розігрітої духовки. Дістати піцу з духовки і посипати половиною пластівців чилі. " +
-                        "Негайно приготувати другу піцу такого ж типу",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 69,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца маскарпоне з шинкою",
-            imageResId = R.drawable.ol_pizza_with_mascarpone_and_ham_92,
-            description =
-            "Піца з маскарпоне та шинкою - це вишуканий делікатес, який поєднує в собі вершкову насиченість сиру маскарпоне та пікантну смакоту шинки. Ця піца, як правило, має тонкий хрусткий корж, на який наноситься шар соковитого сиру маскарпоне. Зверху щедро розкидані шматочки високоякісної шинки, найчастіше італійської або подібної до неї. Доповнюючими інгредієнтами можуть бути земляні гриби для додаткової глибини смаку. Коли піца випікається до досконалості, вона набуває чудового поєднання вершкового, солоного та умамі смаків. Це вишукана версія класичної піци, яка пропонує гармонійний баланс текстур і смаків, що робить її улюбленою серед тих, хто цінує вишукану італійську кухню.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        " 475 г білого борошна\n" +
-                        "100 г манки з твердих сортів пшениці\n" +
-                        "2 чайні ложки солі\n" +
-                        "½ кубика дріжджів (близько 20 г), подрібнених\n" +
-                        "3½ літра води\n" +
-                        "3 столові ложки оливкової олії\n" +
-                        "трохи манки з твердих сортів пшениці\n" +
-                        "2 ст.л. томатного соку\n" +
-                        "1 столова ложка оливкової олії\n" +
-                        "1 зубчик часнику, роздавлений\n" +
-                        "1 столова ложка подрібненого базиліка\n" +
-                        "4 чайні ложки солі і трохи перцю\n" +
-                        "300 г нарізаної моцарели\n" +
-                        "150 г помідорів черрі, розрізаних навпіл\n" +
-                        "150 г маскарпоне\n" +
-                        "50 г нарізаної сирої шинки\n" +
-                        "40 г руколи",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "1. Для тіста для піци: в мисці змішайте борошно, манку, сіль і дріжджі. Додайте воду та олію, перемішуйте близько 10 хвилин на мінімальній потужності кухонного комбайна до отримання м'якого та однорідного тіста. \n" +
-                        "Викласти тісто. Накрити і залишити підніматися приблизно на 2 години при кімнатній температурі, поки тісто не збільшиться в об'ємі вдвічі.\n" +
-                        "2. Начинка: розділити тісто навпіл, сформувати кульки, злегка приплюснути їх. Повільно обваляйте їх у манній крупі, щоб сформувати два диски (близько 30 см в діаметрі). Викласти кожну основу для піци на деко, застелене папером для випічки. Змішати томатний соус, олію, часник і базилік, приправити. Розподіліть соус по обох основах піци, залишаючи 1½ см від краю. Зверху викладіть моцарелу, помідори чері та маскарпоне.\n" +
-                        "3. Готуємо: Готуйте приблизно 25 хвилин у нижній частині духовки, розігрітій до 240°C. Дістати піцу з духовки, \n" +
-                        "викладіть на неї половину сирої шинки та руколи, приправте. Так само випікаємо і прикрашаємо другу піцу. Щоб тісто було більш хрустким, розігрійте деко в духовці або використовуйте камінь для піци.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 70,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Капріччоза",
-            imageResId = R.drawable.ol_pizza_capricciosa_48,
-            description =
-            "Піца Капріччоза - чудова італійська піца. Зазвичай вона містить шинку, гриби, артишоки, томатний соус, сир моцарела, оливки, оливкову олію та базилік. Особливих дієтичних обмежень для цієї страви немає. Одна порція становить приблизно 250300 калорій. Піца Капріччоза - класична італійська піца, відома своєю збалансованою та ароматною начинкою. Вона поєднує в собі насиченість шинки та сиру із землянистістю грибів та артишоків, доповнену свіжістю оливок та базиліку. З більшості рецептів виходить одна піца, розрахована на 2-4 порції.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (магазинне або домашнє)\n" +
-                        "Томатний соус\n" +
-                        "Сир моцарела\n" +
-                        "Шматочки шинки\n" +
-                        "Консервовані серцевини артишоків, відціджені та нарізані\n" +
-                        "Шампіньйони, тонко нарізані\n" +
-                        "Маслини без кісточок, розрізані навпіл\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія\n" +
-                        "Сіль та перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури, яку вона може досягти (зазвичай близько 500°F або 260°C). Помістіть в духовку камінь для піци або деко, щоб розігріти.\n" +
-                        "На присипаній борошном поверхні розкачайте тісто для піци в тонку круглу форму.\n" +
-                        "Перекладіть тісто на пергаментний папір, щоб його було легше перенести в гарячу духовку.\n" +
-                        "Рівномірно розподілити тонкий шар томатного соусу по тісту, залишаючи невеликий бордюр по краях.\n" +
-                        "Посипаємо соус сиром моцарела.\n" +
-                        "Зверху викласти скибочки шинки, нарізані артишоки, скибочки грибів та половинки оливок.\n" +
-                        "Посолити та поперчити за смаком.\n" +
-                        "Обережно покладіть пергаментний папір з піцою на гарячий камінь для випікання або деко.\n" +
-                        "Випікати приблизно 10-12 хвилин, доки скоринка не стане хрусткою, а сир - пухирчастим і золотистим.\n" +
-                        "Дістаньте з духовки, посипте зверху свіжим листям базиліка, полийте оливковою олією, наріжте і насолоджуйтеся смачною піцою \"Капріччоза\"!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 71,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Диявола",
-            imageResId = R.drawable.ol_pizza_diavola_49,
-            description =
-            "Піца Диавола - це італійська піца, відома своїми гострими смаками. Зазвичай до її складу входять томатний соус, сир моцарела, гостра салямі та іноді пластівці чилі. Особливих дієтичних обмежень немає. Кожна порція містить приблизно 250-300 калорій. Піца Диавола, що означає \"Диявольська піца\", містить пунш з гострою салямі та пластівцями чилі. Це ароматна і вогняна піца, яка врівноважує спеку з насиченістю сиру і томатного соусу. Більшість рецептів розраховані на 2-4 особи.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (магазинне або домашнє)\n" +
-                        "Томатний соус\n" +
-                        "Сир моцарела\n" +
-                        "Гостра салямі або пепероні\n" +
-                        "Пластівці чилі (за бажанням)\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури (зазвичай близько 500°F або 260°C), поставивши в неї камінь для піци або деко.\n" +
-                        "На присипаній борошном поверхні розкачайте тісто для піци в тонку круглу форму.\n" +
-                        "Перекладіть тісто на пергаментний папір, щоб його було легше перенести в гарячу духовку.\n" +
-                        "Рівномірно розподіляємо тонкий шар томатного соусу по тісту, залишаючи невеликий бортик.\n" +
-                        "Посипаємо соус сиром моцарела.\n" +
-                        "Додаємо шматочки гострої салямі або пепероні.\n" +
-                        "За бажанням можна посипати пластівцями чилі для додаткової гостроти.\n" +
-                        "Посоліть і поперчіть.\n" +
-                        "Обережно покладіть пергаментний папір з піцою на гарячий камінь для випікання або деко.\n" +
-                        "Випікайте 10-12 хвилин, поки скоринка не стане хрусткою, а сир - золотистим.\n" +
-                        "Дістаньте з духовки, наріжте і насолоджуйтеся пікантною піцою Диавола!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 72,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Пепероні",
-            imageResId = R.drawable.ol_pizza_pepperoni_76,
-            description =
-            "Піца Пепероні - улюблена класика з хрусткою скоринкою, пікантним томатним соусом, ніжним сиром моцарела та гострим пепероні. ",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци\n" +
-                        "1/2 склянки томатного соусу\n" +
-                        "1 1/2 склянки подрібненого сиру моцарела\n" +
-                        "3,5 унції (приблизно 24 скибочки) пепероні\n" +
-                        "1 столова ложка оливкової олії",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 475°F (245°C).\n" +
-                        "Розкачати тісто для піци на присипаній борошном поверхні.\n" +
-                        "Перекласти тісто на камінь для піци або деко.\n" +
-                        "Рівномірно розподіліть томатний соус по тісту.\n" +
-                        "Щедро посипати сиром моцарела.\n" +
-                        "Розкласти скибочки пепероні поверх сиру.\n" +
-                        "Збризнути зверху оливковою олією.\n" +
-                        "Випікайте 12-15 хвилин, поки скоринка не стане золотистою, а сир не пузириться.\n" +
-                        "Наріжте і насолоджуйтеся домашньою піцою пепероні.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 73,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Прошутто з грибами",
-            imageResId = R.drawable.pizza_prosciutto_e_funghi_77,
-            description =
-            "Піца \"Прошутто е фунгі\" - смачна італійська піца з пікантним прошутто та пікантними грибами.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци\n" +
-                        "1/2 склянки томатного соусу\n" +
-                        "1 1/2 склянки сиру моцарела\n" +
-                        "4-6 скибочок прошутто\n" +
-                        "1 склянка нарізаних грибів\n" +
-                        "Оливкова олія\n" +
-                        "Свіже листя базиліка (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 475°F (245°C).\n" +
-                        "Розкатайте тісто для піци на посипаній борошном поверхні.\n" +
-                        "Перенесіть тісто на піцца-камінь або пекарський лист.\n" +
-                        "Розподіліть тонкий шар томатного соусу на тісті.\n" +
-                        "Рівномірно посипте сиром моцарела.\n" +
-                        "Розподіліть кілька ломтиків прошутто і грибів.\n" +
-                        "Полийте оливковою олією по начинці.\n" +
-                        "Пекти протягом 12-15 хвилин або до золотистої корки і пузирчастого сиру.\n" +
-                        "Прикрасьте свіжим базиліком за бажанням.\n" +
-                        "Наріжте і насолоджуйтесь цією ароматною піццею \"Прошутто е Фунгі\".",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 74,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Маргарита з буффала моцареллою",
-            imageResId = R.drawable.pizza_margherita_con_bufala_78,
-            description =
-            "Піца Маргарита з буфалою - це класична італійська піца, яка поєднує в собі простоту та насиченість.",
+            recipeId = 48,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Goong Pad Nam Prik Pao",
+            imageResId = R.drawable.goong_pad_nam_prik_pao_48,
+            description = "Goong Pad Nam Prik Pao is a fiery and flavorful Thai dish that features succulent shrimp stir-fried with aromatic Thai chili paste (Nam Prik Pao), which adds a smoky and slightly sweet flavor. This dish is a tantalizing combination of spicy, salty, and umami-rich tastes, making it a favorite among spice lovers.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци\n" +
-                        "1/2 склянки томатного соусу\n" +
-                        "1 1/2 склянки буйволиного сиру моцарела\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець",
+                "Ingredients: 400g large shrimp, peeled and deveined 2 tablespoons vegetable oil 2-3 cloves garlic, minced 1-2 tablespoons Thai chili paste (Nam Prik Pao) 1 red bell pepper, sliced into thin strips 1 yellow bell pepper, sliced into thin strips 1 onion, sliced 1 teaspoon fish sauce 1 teaspoon soy sauce 1/2 teaspoon sugar Freshly ground black pepper Fresh cilantro leaves, for garnish Lime wedges, for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до максимальної температури (зазвичай близько 500°F або 260°C) з внутрішнім піцца-каменем.\n" +
-                        "Тонко розкатайте тісто для піци на борошняній поверхні.\n" +
-                        "Перенесіть тісто на папір для випічки.\n" +
-                        "Рівномірно розподіліть томатний соус, залишаючи краї для корки.\n" +
-                        "Додайте ломки буффало моцарелі і посипте сіллю та перцем.\n" +
-                        "Поставте піццу (разом з папером для випічки) на розігрітий піцца-камінь.\n" +
-                        "Випікайте приблизно 10-12 хвилин, або поки корка не стане золотистою, а сир не розтане і не покриється пузирцями.\n" +
-                        "Вийміть з духовки, прикрасьте свіжими листками базиліку, полийте оливковою олією і насолоджуйтесь вашою Маргарита з буффало, ідеальним поєднанням смаків і текстур.",
+                "Cooking Process: Heat the vegetable oil in a wok or large skillet over medium-high heat. Add the minced garlic and stir-fry for about 30 seconds until fragrant. Add the shrimp to the wok and stir-fry for 2-3 minutes until they turn pink and start to curl. Remove the shrimp from the wok and set them aside. In the same wok, add the Thai chili paste (Nam Prik Pao) and stir-fry for about 1 minute until it becomes fragrant. Add the sliced bell peppers and onion to the wok. Stir-fry for 2-3 minutes until the vegetables begin to soften. Return the cooked shrimp to the wok and toss everything together. Season the dish with fish sauce, soy sauce, sugar, and freshly ground black pepper. Stir well to combine. Taste and adjust the seasoning if needed. You can add more chili paste for extra heat. Serve the Goong Pad Nam Prik Pao hot, garnished with fresh cilantro",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 49,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Gai Pad Khing",
+            imageResId = R.drawable.gai_pad_khing_49,
+            description = "Gai Pad Khing is a fragrant and flavorful Thai stir-fry dish that features tender chicken, fresh ginger, and an aromatic blend of Thai spices. This dish offers a delightful balance of savory and slightly sweet flavors, with a hint of heat from red chili peppers. Served with steamed jasmine rice, it's a satisfying and comforting meal that showcases the essence of Thai cuisine.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) boneless, skinless chicken breasts or thighs, thinly sliced 2 tablespoons vegetable oil 3 cloves garlic, minced 2-inch piece of fresh ginger, julienned 1 red bell pepper, thinly sliced 1 yellow onion, thinly sliced 2-3 fresh red chili peppers, thinly sliced (adjust to your spice preference) 1/4 cup sliced spring onions (green onions) 2 tablespoons soy sauce 1 tablespoon oyster sauce 1 teaspoon fish sauce 1 teaspoon sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Ingredients: Thinly slice the chicken into bite-sized strips. Julienne the fresh ginger. Slice the red bell pepper, yellow onion, and red chili peppers. Mince the garlic and chop the spring onions. Make the Sauce: In a small bowl, combine the soy sauce, oyster sauce, fish sauce, and sugar. Mix well and set aside. Stir-Fry: Heat the vegetable oil in a wok or a large frying pan over medium-high heat. Add the minced garlic and julienned ginger. Stir-fry for about 1-2 minutes until fragrant. Cook the Chicken: Add the sliced chicken to the wok or pan. Stir-fry for 3-4 minutes until the chicken turns white and is cooked through. Add Vegetables and Chili Peppers: Add the sliced red bell pepper, yellow onion, and red chili peppers to the pan. Stir-fry for an additional 2-3 minutes until the vegetables are slightly tender but still crisp. Sauce and Spring Onions: Pour the prepared sauce over the stir-fry. Stir well to coat the ingredients evenly. Cook for another 2 minutes. Serve: Transfer the Gai Pad Khing to a serving plate. Garnish with sliced spring onions and fresh cilantro leaves. Enjoy: Serve hot with steamed jasmine rice. Enjoy your homemade Gai Pad Khing, a delectable Thai dish bursting with ginger-infused flavors.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 75,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Романа",
-            imageResId = R.drawable.ol_pizza_romana_79,
-            description =
-            "Піца Романа, також відома як римська піца на сковороді, - смачна італійська страва, що характеризується прямокутною формою та хрусткою, повітряною скоринкою.",
+            recipeId = 50,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Neua Pad Prik",
+            imageResId = R.drawable.neua_pad_prik_50,
+            description = "Neua Pad Prik is a spicy and savory Thai stir-fry dish that showcases tender slices of beef, vibrant vegetables, and a fiery chili sauce. This flavorful dish is known for its bold combination of tastes, with the heat of red chili peppers complementing the umami-rich beef. Served over steamed jasmine rice, it's a satisfying and spicy Thai classic.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (400г)\n" +
-                        "Томатний соус (200г)\n" +
-                        "Сир моцарела (200г)\n" +
-                        "Оливкова олія\n" +
-                        "Свіже листя базиліка\n" +
-                        "Сіль та перець за смаком",
+                "Ingredients: 1 lb (450g) thinly sliced beef (sirloin or flank steak) 2 tablespoons vegetable oil 3 cloves garlic, minced 1 red bell pepper, thinly sliced 1 green bell pepper, thinly sliced 2-3 fresh red chili peppers, thinly sliced (adjust to your spice preference) 1/4 cup sliced onions 2 tablespoons soy sauce 1 tablespoon oyster sauce 1 teaspoon fish sauce 1 teaspoon sugar Fresh basil leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 220°C (430°F).\n" +
-                        "Розкачайте тісто для піци за розміром прямокутної форми для випікання, щоб воно було тонким і рівномірно розподіленим.\n" +
-                        "Перекладіть тісто на деко і притисніть його до кутів.\n" +
-                        "Збризніть тісто оливковою олією.\n" +
-                        "Рівномірно розподіляємо томатний соус, залишаючи невеликий бордюр для скоринки.\n" +
-                        "Зверху посипаємо подрібненою моцарелою.\n" +
-                        "Посолити та поперчити.\n" +
-                        "Випікати приблизно 20-25 хвилин або поки скоринка не стане золотистою, а сир не пузириться.\n" +
-                        "Дістаньте з духовки, посипте зверху свіжим листям базиліка і подавайте цю чудову піцу в римському стилі.",
+                "Cooking Process: Prepare the Ingredients: Slice the beef into thin strips. Mince the garlic and slice the red and green bell peppers. Thinly slice the fresh red chili peppers and onions. Make the Sauce: In a small bowl, combine the soy sauce, oyster sauce, fish sauce, and sugar. Mix well and set aside. Stir-Fry: Heat the vegetable oil in a wok or a large frying pan over medium-high heat. Add the minced garlic and stir-fry for about 1-2 minutes until fragrant. Cook the Beef: Add the sliced beef to the wok or pan. Stir-fry for 2-3 minutes until the beef is browned and cooked to your desired level of doneness. Remove the beef from the pan and set it aside. Cook the Vegetables: In the same pan, add the sliced red and green bell peppers, fresh red chili peppers, and onions. Stir-fry for 2-3 minutes until the vegetables are slightly tender but still crisp. Sauce and Beef: Return the cooked beef to the pan with the vegetables. Pour the prepared sauce over the beef and vegetables. Stir well to coat everything evenly. Cook for another 2 minutes. Serve: Transfer Neua Pad Prik to a serving plate. Garnish with fresh basil leaves for an aromatic finish. Enjoy: Serve hot over steamed jasmine rice. Savor the spicy and savory flavors of this Thai delight, Neua Pad Prik.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 51,
+            categoryOfFood = "Main Dishes",
+            dishTitle = "Pla Muk Pad Prik",
+            imageResId = R.drawable.pla_muk_pad_prik_51,
+            description = "Pla Muk Pad Prik is a zesty and vibrant Thai seafood dish that highlights the tender texture of squid and the bold flavors of Thai chilies. The succulent squid is stir-fried with a medley of aromatic ingredients and a spicy chili sauce, creating a mouthwatering and fiery culinary experience. Served with steamed jasmine rice, it's a delightful and satisfying seafood delicacy.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) fresh squid, cleaned and sliced into rings 2 tablespoons vegetable oil 3 cloves garlic, minced 2-3 fresh red chili peppers, thinly sliced (adjust to your spice preference) 1 red bell pepper, thinly sliced 1 green bell pepper, thinly sliced 1/4 cup sliced onions 2 tablespoons soy sauce 1 tablespoon oyster sauce 1 teaspoon fish sauce 1 teaspoon sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Squid: Clean the squid by removing the head, beak, and any internal parts. Slice the squid into rings and set them aside. Make the Sauce: In a small bowl, combine the soy sauce, oyster sauce, fish sauce, and sugar. Mix well and set aside. Stir-Fry: Heat the vegetable oil in a wok or a large frying pan over medium-high heat. Add the minced garlic and stir-fry for about 1-2 minutes until fragrant. Cook the Squid: Add the sliced squid to the wok or pan. Stir-fry for 2-3 minutes until the squid turns opaque and is cooked through. Remove the cooked squid and set it aside. Cook the Vegetables: In the same pan, add the sliced red and green bell peppers, fresh red chili",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 76,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Сальсіча та Фріаріеллі",
-            imageResId = R.drawable.pizza_salsiccia_e_friarielli_80,
-            description =
-            "Піца Сальсіча і Фріаріеллі - ароматна піца в неаполітанському стилі з сосисками та рабе з броколі.",
+            recipeId = 53,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Khao Pad",
+            imageResId = R.drawable.khao_pad_53,
+            description = "Khao Pad, or Thai Fried Rice, is a beloved Thai street food dish that combines fragrant jasmine rice with a harmonious blend of flavors. This quick and versatile dish features a medley of ingredients like shrimp, chicken, or vegetables, stir-fried with aromatic spices, and served with a dash of lime and cilantro. With its balance of salty, sweet, and savory notes, Khao Pad is a delightful and satisfying one-pan meal, perfect for any occasion.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (достатньо для однієї піци)\n" +
-                        "200 г ковбаси, бажано італійської\n" +
-                        "150г броколі рабе (фріаріеллі)\n" +
-                        "Томатний соус\n" +
-                        "Сир моцарела\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець за смаком",
+                "Ingredients: 2 cups cooked jasmine rice (preferably cold and day-old) 2 tablespoons vegetable oil 2 cloves garlic, minced 1/2 cup diced chicken, shrimp, or tofu (optional) 1/4 cup diced carrots 1/4 cup diced bell peppers (red or green) 1/4 cup frozen peas 2 tablespoons soy sauce 1 teaspoon fish sauce (optional) 1/2 teaspoon sugar 2 eggs, beaten Fresh cilantro leaves and lime wedges for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури (зазвичай близько 475-500°F або 245-260°C) або скористайтеся піччю для піци, якщо така є.\n" +
-                        "Розкачайте тісто для піци в круглу або прямокутну форму, залежно від ваших уподобань.\n" +
-                        "Намажте тісто тонким шаром томатного соусу, залишивши невеликий бордюр для скоринки.\n" +
-                        "Рівномірно додаємо подрібнений сир моцарела.\n" +
-                        "Окремо готуємо ковбасу та фріареллі. Готову ковбасу нарізати скибочками.\n" +
-                        "Викласти ковбасу та фріареллі на піцу.\n" +
-                        "Збризніть зверху оливковою олією, посоліть і поперчіть.\n" +
-                        "Випікайте піцу приблизно 10-12 хвилин або поки скоринка не стане золотистою, а сир не пузириться.\n" +
-                        "Дістаньте з духовки, дайте їй трохи охолонути, потім наріжте і насолоджуйтеся піцою \"Сальсіча і Фріаріеллі\".",
+                "Cooking Process: Prepare Ingredients: Cook the jasmine rice in advance and allow it to cool. Cold rice works best for fried rice. Mince the garlic and dice the chicken, shrimp, or tofu (if using). Dice the carrots and bell peppers. Beat the eggs in a bowl. Stir-Fry Aromatics: Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add minced garlic and stir-fry for 1-2 minutes until fragrant. Add Protein and Vegetables: If using, add the diced chicken, shrimp, or tofu to the wok. Cook until they are cooked through and slightly browned. Add diced carrots, bell peppers, and frozen peas. Stir-fry for an additional 2-3 minutes until the vegetables are tender. Stir in Rice and Seasonings: Add the cold, cooked jasmine rice to the wok. Break up any clumps and stir-fry for a few minutes to heat the rice evenly. Drizzle soy sauce, and fish sauce (if using) over the rice. Sprinkle with sugar. Stir-fry to combine all ingredients thoroughly. Scramble Eggs: Push the rice mixture to one side of the wok, creating an empty space. Pour the beaten eggs into the empty space. Scramble the eggs until they are cooked but still slightly runny. Combine and Finish: Mix the scrambled eggs into the rice and stir-fry for an additional 2 minutes to combine all the ingredients and flavors. Garnish and Serve: Transfer Khao Pad to serving plates. Garnish with fresh cilantro leaves and serve with lime wedges on the side. Enjoy: Serve hot and enjoy your homemade Thai Fried Rice!",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 54,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Khao Pad Gai ",
+            imageResId = R.drawable.khao_pad_gai__54_500,
+            description = "Khao Pad Gai is a delectable Thai dish that fuses tender chicken with fragrant jasmine rice and an array of savory seasonings. This quick and flavorful meal is a culinary staple of Thai street food, offering a perfect harmony of textures and tastes. It's a satisfying combination of diced chicken, aromatic herbs, and a touch of heat from Thai chilies, making it a delightful one-pan wonder that's both comforting and bursting with Thai flavors.",
+            ingredients = listOf(
+                "Ingredients: 2 cups cooked jasmine rice (preferably cold and day-old) 2 tablespoons vegetable oil 2 cloves garlic, minced 1/2 lb (225g) boneless, skinless chicken breast or thigh, diced 1/2 cup mixed vegetables (e.g., diced carrots, peas, bell peppers) 2 tablespoons soy sauce 1 teaspoon fish sauce 1/2 teaspoon sugar 2 eggs, beaten Fresh cilantro leaves and lime wedges for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Ingredients: Cook the jasmine rice in advance and let it cool. Cold rice works best for fried rice. Mince the garlic and dice the chicken into small pieces. Dice the mixed vegetables. Stir-Fry Aromatics: Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add minced garlic and stir-fry for 1-2 minutes until fragrant. Cook Chicken and Vegetables: Add diced chicken to the wok. Stir-fry until it's cooked through and slightly browned. Add the mixed vegetables and continue stir-frying for an additional 2-3 minutes until the vegetables are tender. Stir in Rice and Seasonings: Add the cold, cooked jasmine rice to the wok. Break up any clumps and stir-fry for a few minutes to evenly heat the rice. Drizzle soy sauce, fish sauce, and sugar over the rice. Stir-fry to combine all ingredients thoroughly. Scramble Eggs: Push the rice mixture to one side of the wok, creating an empty space. Pour the beaten eggs into the empty space. Scramble the eggs until they are cooked but still slightly runny. Combine and Finish: Mix the scrambled eggs into the rice and stir-fry for an additional 2 minutes to combine all the ingredients and flavors. Garnish and Serve: Transfer Khao Pad Gai to serving plates. Garnish with fresh cilantro leaves and serve with lime wedges on the side. Enjoy: Serve hot and savor the delightful flavors of your homemade Thai Chicken Fried Rice, Khao Pad Gai!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 77,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца Фрутті ді Маре",
-            imageResId = R.drawable.pizza_frutti_di_mare_81,
-            description =
-            "Піца Фрутті ді Маре - чудова італійська піца з морепродуктами, відома своєю великою кількістю смаків свіжих морепродуктів.",
+            recipeId = 55,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Khao Pad Kung ",
+            imageResId = R.drawable.khao_pad_kung__55,
+            description = "Khao Pad Kung is a delightful Thai dish that combines succulent shrimp with aromatic jasmine rice, creating a symphony of flavors. This quick and flavorful dish is a Thai street food favorite. It features plump shrimp, fragrant herbs, and a medley of seasonings. The result is a mouthwatering one-pan meal that's both satisfying and bursting with Thai culinary magic.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (достатньо для однієї піци)\n" +
-                        "Томатний соус або пассата\n" +
-                        "200 г змішаних морепродуктів (креветки, мідії, кальмари, молюски)\n" +
-                        "1/2 склянки сиру моцарела\n" +
-                        "Свіже листя базиліка\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Пластівці червоного перцю (за бажанням, для більшої гостроти)",
+                "Ingredients: 2 cups cooked jasmine rice (preferably cold and day-old) 2 tablespoons vegetable oil 2 cloves garlic, minced 1/2 lb (225g) large shrimp, peeled and deveined 1/2 cup mixed vegetables (e.g., diced carrots, peas, bell peppers) 2 tablespoons soy sauce 1 teaspoon fish sauce 1/2 teaspoon sugar 2 eggs, beaten Fresh cilantro leaves and lime wedges for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури (зазвичай близько 475-500°F або 245-260°C) або скористайтеся піччю для піци, якщо вона є.\n" +
-                        "Розкачайте тісто для піци в круглу або прямокутну форму.\n" +
-                        "Рівномірно розподіліть тонкий шар томатного соусу або пасти на тісті.\n" +
-                        "Рівномірно викладіть суміш морепродуктів та сир моцарела.\n" +
-                        "Посоліть, поперчіть та додайте пластівці червоного перцю (за бажанням).\n" +
-                        "Збризніть зверху оливковою олією.\n" +
-                        "Випікайте піцу приблизно 10-12 хвилин або поки скоринка не стане золотистою, а морепродукти не приготуються.\n" +
-                        "Дістаньте з духовки, прикрасьте свіжим листям базиліка, наріжте і насолоджуйтеся піцою Фрутті ді Маре, наповненою океанськими ароматами.",
+                "Cooking Process: Prepare Ingredients: Cook the jasmine rice in advance and allow it to cool. Cold rice works best for fried rice. Mince the garlic, peel and devein the shrimp, and dice any mixed vegetables you're using. Stir-Fry Aromatics: Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add minced garlic and stir-fry for 1-2 minutes until fragrant. Cook Shrimp and Vegetables: Add the peeled and deveined shrimp to the wok. Stir-fry until they turn pink and opaque, then remove them and set aside. Add the mixed vegetables to the wok. Stir-fry for 2-3 minutes until they become tender. Stir in Rice and Seasonings: Add the cold, cooked jasmine rice to the wok. Break up any clumps and stir-fry for a few minutes to heat the rice. Drizzle soy sauce, fish sauce, and sugar over the rice. Stir-fry to evenly combine all ingredients. Scramble Eggs: Push the rice mixture to one side of the wok, creating an empty space. Pour the beaten eggs into the empty space. Scramble the eggs until they are cooked but still slightly runny. Combine and Finish: Mix the scrambled eggs into the rice and stir-fry for an additional 2 minutes to blend all the ingredients and flavors. Garnish and Serve: Transfer Khao Pad Kung to serving plates. Garnish with fresh cilantro leaves and serve with lime wedges on the side. Enjoy: Serve hot and savor the exquisite flavors of your homemade Thai Shrimp Fried Rice, Khao Pad Kung!",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 56,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Khao Pad Sapparot ",
+            imageResId = R.drawable.khao_pad_sapparot__56,
+            description = "Khao Pad Sapparot is a tantalizing Thai dish that combines the sweetness of ripe pineapple with fragrant jasmine rice and an array of savory ingredients. This flavorful fried rice boasts a perfect balance of textures and flavors, featuring succulent shrimp or chicken, cashew nuts, and aromatic spices. Served in a pineapple shell for a visually stunning presentation, it's a delightful and exotic Thai dish that elevates your dining experience.",
+            ingredients = listOf(
+                "Ingredients: 2 cups cooked jasmine rice (preferably cold and day-old) 2 tablespoons vegetable oil 2 cloves garlic, minced 1/2 lb (225g) shrimp or diced chicken 1/2 cup diced ripe pineapple 1/4 cup diced bell peppers (red and green) 1/4 cup diced onions 2 tablespoons soy sauce 1 teaspoon fish sauce 1/2 teaspoon sugar 2 eggs, beaten 1/4 cup roasted cashew nuts Fresh cilantro leaves for garnish 1 whole pineapple, halved and flesh scooped out (to serve in)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Pineapple: Cut a whole pineapple in half lengthwise and scoop out the flesh, leaving the pineapple shells intact. Dice the pineapple flesh and set it aside. Prepare Ingredients: Cook the jasmine rice in advance and let it cool. Cold rice works best for fried rice. Mince the garlic and dice the shrimp or chicken, ripe pineapple, bell peppers, and onions. Stir-Fry Aromatics: Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add minced garlic and stir-fry for 1-2 minutes until fragrant. Cook Protein and Pineapple: Add diced shrimp or chicken to the wok. Stir-fry until cooked through and slightly browned. Add diced ripe pineapple, bell peppers, and onions. Stir-fry for an additional 2-3 minutes until the vegetables are tender. Stir in Rice and Seasonings: Add the cold, cooked jasmine rice to the wok. Break up any clumps and stir-fry for a few minutes to evenly heat the rice. Drizzle soy sauce, fish sauce, and sugar over the rice. Stir-fry to combine all ingredients thoroughly. Scramble Eggs: Push the rice mixture to one side of the wok, creating an empty space. Pour the beaten eggs into the empty space. Scramble the eggs until they are cooked but still slightly runny. Combine and Finish: Mix the scrambled eggs into the rice and stir-fry for an additional 2 minutes to blend all the ingredients and flavors. Serve in Pineapple Shells: Carefully fill the hollowed-out pineapple shells with Khao Pad Sapparot. Garnish with roasted cashew nuts and fresh cilantro leaves. Enjoy: Serve immediately and enjoy the exquisite flavors and stunning presentation of Thai Pineapple Fried Rice, Khao Pad Sapparot!",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 78,
-            categoryOfFood = "Піца",
-            dishTitle = "Піца з грибами та трюфелем",
-            imageResId = R.drawable.pizza_z_grybamy_ta_trufelem_78,
-            description =
-            "Піца з грибами та трюфелем - це вишукана італійська піца, що поєднує в собі землистий смак грибів та розкішну есенцію трюфелів.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Тісто для піци (достатньо для однієї піци)\n" +
-                        "Томатний соус або пассата\n" +
-                        "200 г свіжих грибів, тонко нарізаних (наприклад, печериці або шампіньйони)\n" +
-                        "Трюфельний крем або трюфельна олія\n" +
-                        "Сир моцарела, подрібнений\n" +
-                        "Сир пармезан, натертий на тертці\n" +
-                        "Свіже листя чебрецю\n" +
-                        "Оливкова олія\n" +
-                        "Сіль і перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до найвищої температури (зазвичай близько 475-500°F або 245-260°C).\n" +
-                        "Розкачайте тісто для піци в круглу форму.\n" +
-                        "Намастіть тісто тонким шаром томатного соусу або пасти.\n" +
-                        "Рівномірно розподіліть нарізані гриби на соусі.\n" +
-                        "Збризнути гриби трюфельним кремом або олією.\n" +
-                        "Зверху посипати сиром моцарела і трохи пармезану.\n" +
-                        "Посолити, поперчити, додати свіжі листочки чебрецю.\n" +
-                        "Збризніть піцу оливковою олією.\n" +
-                        "Випікайте приблизно 10-12 хвилин, поки скоринка не стане золотистою, а сир не пузириться.\n" +
-                        "Наріжте і насолоджуйтеся вишуканою піцою з грибами та трюфелем - гармонійним поєднанням лісового та трюфельного ароматів.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 80,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Різотто по-міланськи",
-            imageResId = R.drawable.risotto_alla_milanese_50,
-            description =
-            "\"Різотто по-міланськи\" - вершкова італійська страва з рису з шафраном, що надає їй яскравого жовтого кольору. Не має особливих дієтичних обмежень. Це класична, заспокійлива страва, яка містить близько 300 калорій на порцію. Різотто по-міланськи - насичене та оксамитове різотто, відоме своїм золотистим відтінком, який досягається завдяки шафрановому настою. Це розкішна, заспокійлива італійська страва. Більшість рецептів розраховані на 4 персони.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 1/2 склянки рису Арборіо\n" +
-                        "4 склянки курячого або овочевого бульйону\n" +
-                        "1 невелика цибулина, дрібно нарізана\n" +
-                        "2 столові ложки вершкового масла\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "1/2 склянки сухого білого вина\n" +
-                        "1/4 чайної ложки шафранових ниток\n" +
-                        "1/2 склянки тертого пармезану\n" +
-                        "Сіль та перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Нагріваємо бульйон у каструлі та додаємо нитки шафрану, щоб рідина набула кольору та аромату.\n" +
-                        "В окремій сковороді розігріваємо вершкове масло та оливкову олію. Обсмажте дрібно нарізану цибулю до напівпрозорості.\n" +
-                        "Додаємо рис Арборіо і готуємо ще пару хвилин, поки він не стане напівпрозорим по краях.\n" +
-                        "Вливаємо біле вино і перемішуємо, поки воно повністю не вбереться.\n" +
-                        "Починайте додавати шафрановий бульйон по одному ополонику за раз, часто помішуючи і даючи рідині вбратися, перш ніж додавати більше.\n" +
-                        "Продовжуйте цей процес, поки рис не стане кремоподібним і не розвариться, але все ще буде злегка аль денте (зазвичай близько 18-20 хвилин).\n" +
-                        "Зніміть з вогню, додайте тертий пармезан, посоліть і поперчіть.\n" +
-                        "Подавайте вершкове різотто по-міланськи гарячим, прикрасивши додатково пармезаном за бажанням. Смачного!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 81,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Полента",
-            imageResId = R.drawable.polenta_51,
-            description =
-            "Полента - універсальна італійська страва з кукурудзяного борошна. Вона не містить глютену, що робить її придатною для тих, хто дотримується дієтичних обмежень. Поленту можна подавати вершковою або твердою, її калорійність залежить від способу приготування. Як правило, це близько 150 калорій на 100 г. Полента - це страва з кукурудзяного борошна, яка може бути рідкою або твердою, залежно від способу приготування. Це основний продукт північної італійської кухні, часто як гарнір або основа для різних начинок. Рецепт можна змінювати залежно від кількості порцій.",
+            recipeId = 57,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Khao Soi ",
+            imageResId = R.drawable.khao_soi_57,
+            description = "Khao Soi is a beloved Northern Thai dish that tantalizes the taste buds with its rich and creamy coconut curry broth, tender noodles, and your choice of protein. This flavorful soup boasts a harmonious blend of spicy, sweet, and savory flavors. Topped with crispy fried noodles, fresh herbs, and a squeeze of lime, Khao Soi is a delightful explosion of taste and texture, making it a must-try for lovers of Thai cuisine.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 склянка грубого кукурудзяного борошна\n" +
-                        "4 склянки води або бульйону\n" +
-                        "Сіль за смаком\n" +
-                        "Вершкове масло або оливкова олія (за бажанням)\n" +
-                        "Тертий сир (пармезан або інший) (за бажанням)",
+                "Ingredients: 8 oz (225g) egg noodles or rice noodles 1 tablespoon vegetable oil 2 tablespoons red curry paste 1 can (14 oz) coconut milk 1 cup chicken or beef broth 1 lb (450g) boneless chicken thighs or beef, thinly sliced 1 tablespoon soy sauce 1 tablespoon fish sauce 1 teaspoon sugar 1 cup bean sprouts Lime wedges, fresh cilantro, and crispy fried noodles for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Закип'ятіть воду або бульйон у великій каструлі та посоліть.\n" +
-                        "Поступово всипати кукурудзяне борошно в киплячу рідину, безперервно збиваючи, щоб уникнути утворення грудочок.\n" +
-                        "Зменшити вогонь до мінімуму і варити, часто помішуючи, поки полента не загусне (зазвичай близько 30 хвилин). За потреби додати ще рідини.\n" +
-                        "За бажанням додайте вершкове масло або оливкову олію та тертий сир для додаткового аромату та вершковості.\n" +
-                        "Коли полента стане густою та кремоподібною, зніміть її з вогню.\n" +
-                        "Ви можете подавати її гарячою і м'якою або перелити на сковороду, щоб вона охолола і застигла для подальшої нарізки та смаження на грилі.\n" +
-                        "Смакуйте поленту з різними начинками, такими як рагу, гриби або сир.",
+                "Cooking Process: Prepare Noodles: Cook the egg or rice noodles according to package instructions. Drain and set aside. Make the Curry Paste: In a large pot, heat the vegetable oil over medium-high heat. Add the red curry paste and stir-fry for 1-2 minutes until fragrant. Add Coconut Milk and Broth: Pour in the can of coconut milk and chicken or beef broth. Stir to combine. Bring the mixture to a gentle simmer. Cook Protein: Add the thinly sliced chicken thighs or beef to the pot. Let it simmer for about 10-15 minutes, or until the meat is fully cooked and tender. Season the Broth: Stir in soy sauce, fish sauce, and sugar. Adjust the seasoning to your taste. Serve: To serve, place a portion of cooked noodles in each bowl. Ladle the rich coconut curry broth over the noodles. Garnish: Top each bowl with bean sprouts, a squeeze of fresh lime juice, and fresh cilantro leaves. Finish with a handful of crispy fried noodles for texture. Enjoy: Serve hot and savor the complex and comforting flavors of Khao Soi, a beloved Northern Thai delicacy.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 58,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Kuay Tiew Nam Tok ",
+            imageResId = R.drawable.kuay_tiew_nam_tok__58,
+            description = "Kuay Tiew Nam Tok is a savory and aromatic Thai noodle soup that showcases tender slices of pork, a flavorful broth, and an assortment of herbs and spices. This dish offers a tantalizing balance of salty, spicy, and tangy flavors, making it a beloved comfort food in Thailand. Served with fresh herbs, crushed peanuts, and a dash of lime, Kuay Tiew Nam Tok is a hearty and satisfying culinary experience that captures the essence of Thai cuisine.",
+            ingredients = listOf(
+                "Ingredients: 8 oz (225g) rice noodles 1 tablespoon vegetable oil 1/2 lb (225g) pork tenderloin or pork loin, thinly sliced 3 cloves garlic, minced 2-3 fresh red chili peppers, thinly sliced (adjust to your spice preference) 4 cups pork or beef broth 2 tablespoons fish sauce 1 tablespoon soy sauce 1 teaspoon sugar Fresh Thai basil leaves, cilantro, bean sprouts, crushed peanuts, and lime wedges for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Noodles: Cook the rice noodles according to package instructions. Drain and set aside. Stir-Fry Pork: In a large pot, heat the vegetable oil over medium-high heat. Add minced garlic and sliced pork. Stir-fry until the pork is cooked through and slightly browned. Add Spices and Broth: Add the fresh red chili peppers and stir-fry for an additional 1-2 minutes. Pour in the pork or beef broth, fish sauce, soy sauce, and sugar. Stir to combine. Simmer: Let the soup simmer for about 10-15 minutes to allow the flavors to meld. Serve: To serve, place a portion of cooked rice noodles in each bowl. Ladle the Soup: Ladle the hot soup with pork over the noodles. Garnish: Top each bowl with fresh Thai basil leaves, cilantro, bean sprouts, and crushed peanuts. Finish with a squeeze of fresh lime juice. Enjoy: Serve hot and relish the delicious and aromatic flavors of Kuay Tiew Nam Tok, a classic Thai pork noodle soup.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 82,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Капоната",
-            imageResId = R.drawable.caponata_52,
-            description =
-            "Капоната - сицилійська страва, відома своїм кисло-солодким смаком. Вона підходить для різних дієтичних уподобань, в тому числі вегетаріанців і веганів. До складу цієї страви входять баклажани, помідори, цибуля та каперси, які створюють чудовий середземноморський смак. Зазвичай вона містить близько 150 калорій на 1 склянку порції.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 великі баклажани, нарізані кубиками\n" +
-                        "1 цибулина, дрібно нарізана\n" +
-                        "3 стебла селери, нарізані\n" +
-                        "1 банка (14 унцій) помідорів, нарізаних кубиками\n" +
-                        "1/4 склянки червоного винного оцту\n" +
-                        "1/4 склянки оливкової олії\n" +
-                        "3 ст.л. цукру\n" +
-                        "2 ст.л. каперсів\n" +
-                        "2 ст.л. подрібненого свіжого базиліка\n" +
-                        "Сіль та перець за смаком",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У великій сковороді розігріти оливкову олію на середньому вогні. Додати нарізані кубиками баклажани і обсмажувати, поки вони не стануть м'якими і золотистими, потім витягнути і відкласти в сторону.\n" +
-                        "Додайте ще оливкової олії, якщо потрібно, в ту ж сковорідку і обсмажте цибулю та селеру до м'якості.\n" +
-                        "Додайте в сковороду нарізані кубиками помідори, оцет і цукор. Готуйте близько 10 хвилин, щоб аромати змішалися.\n" +
-                        "Додайте пасеровані баклажани, каперси та нарізаний базилік. Готуйте ще 5 хвилин.\n" +
-                        "Посолити та поперчити капонату за смаком.\n" +
-                        "Зняти з вогню, дати охолонути до кімнатної температури і поставити в холодильник принаймні на кілька годин перед подачею. Капонату найкраще подавати холодною або кімнатної температури як гарнір чи закуску.\n" +
-                        "Насолоджуйтесь домашньою капонатою з її багатим смаком та універсальністю італійської кухні.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 83,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Перець печений",
-            imageResId = R.drawable.perec_pechenyi_83,
+            recipeId = 59,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Pad Woon Sen ",
+            imageResId = R.drawable.pad_woon_sen__59,
             description =
-            "Печений перець - класична італійська страва, яку можна подавати як закуску або гарнір. Зазвичай вона не пов'язана з певними дієтичними обмеженнями, що робить її універсальним вибором. Печений перець солодкий, димчастий та яскравий. Кожна порція містить приблизно 40-50 калорій.",
+            "Pad Woon Sen is a delectable Thai stir-fry dish that features translucent glass noodles, succulent shrimp or chicken, and a medley of colorful vegetables. This quick and savory meal is known for its light and satisfying flavors, with a hint of sweetness from oyster sauce. It's a delightful balance of textures and tastes, making it a beloved Thai classic perfect for any occasion.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 червоних болгарських перцю\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "Сіль і перець за смаком\n" +
-                        "За бажанням: часник, зелень або оцет для додаткового смаку",
+                "Ingredients: 8 oz (225g) glass noodles (bean thread noodles) 2 tablespoons vegetable oil 2 cloves garlic, minced 1/2 lb (225g) shrimp or diced chicken 1 cup mixed vegetables (e.g., bell peppers, carrots, snow peas), thinly sliced 2 tablespoons oyster sauce 1 tablespoon soy sauce 1 teaspoon sugar 1/4 teaspoon ground white pepper Sliced green onions and fresh cilantro leaves for garnish Lime wedges for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігріти духовку до 450°F (232°C).\n" +
-                        "Вимийте та висушіть перець. Викладіть його на деко.\n" +
-                        "Запікайте перець у духовці приблизно 30-40 хвилин, час від часу перевертаючи його, поки шкірка не обвуглиться і не покриється пухирями.\n" +
-                        "Вийміть перець з духовки і покладіть його в герметичний поліетиленовий пакет або закриту миску на пару на 1015 хвилин. Це полегшить зняття шкірки.\n" +
-                        "Після приготування на пару зняти шкірку, видалити насіння і нарізати перець соломкою.\n" +
-                        "Збризніть оливковою олією, посоліть, поперчіть та додайте будь-які інші інгредієнти за бажанням для додаткового смаку.\n" +
-                        "Подавайте смажений перець як гарнір, у салатах, бутербродах або на тарілках з пастою.",
+                "Cooking Process: Prepare Noodles: Place the glass noodles in a bowl of warm water and soak for about 10 minutes or until they become soft and pliable. Drain and set aside. Stir-Fry Aromatics: Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add minced garlic and stir-fry for 1-2 minutes until fragrant. Cook Protein: Add the shrimp or diced chicken to the wok. Stir-fry until they are cooked through and slightly browned. Add Vegetables: Add the thinly sliced mixed vegetables to the wok. Stir-fry for an additional 2-3 minutes until the vegetables are tender. Stir in Noodles and Sauce: Add the soaked and drained glass noodles to the wok. Toss to combine with the protein and vegetables. Drizzle oyster sauce and soy sauce over the noodles. Sprinkle sugar and ground white pepper. Stir-fry for a few more minutes until everything is well mixed and heated through. Garnish: Top the Pad Woon Sen with sliced green onions and fresh cilantro leaves for extra flavor and color. Serve: Divide Pad Woon Sen among serving plates. Serve hot with lime wedges on the side. Enjoy: Squeeze fresh lime juice over your Pad Woon Sen and savor the delightful flavors and textures of this Thai glass noodle stir-fry.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 60,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Pad Thai Goong ",
+            imageResId = R.drawable.pad_thai_goong__60,
+            description = "Pad Thai Goong is Thailand's iconic stir-fried noodle dish, celebrated for its perfect balance of sweet, salty, sour, and umami flavors. This dish features tender shrimp, rice noodles, and an array of ingredients, all tossed in a luscious tamarind-based sauce. Garnished with crushed peanuts, fresh herbs, and a lime wedge, Pad Thai Goong is a delightful medley of textures and tastes, capturing the essence of Thai cuisine in every bite. ",
+            ingredients = listOf(
+                "Ingredients: 8 oz (225g) rice noodles 1 tablespoon vegetable oil 8-10 large shrimp, peeled and deveined 2 cloves garlic, minced 2 eggs, lightly beaten 1 cup bean sprouts 2 green onions, thinly sliced 1/4 cup crushed roasted peanuts Lime wedges for garnish For the Pad Thai Sauce: 3 tablespoons tamarind paste 2 tablespoons fish sauce 1 tablespoon soy sauce 1 tablespoon sugar 1/2 teaspoon chili powder (adjust to your spice preference)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Noodles: Soak the rice noodles in warm water for about 20-30 minutes until they become soft. Drain and set aside. Make Pad Thai Sauce: In a small bowl, whisk together tamarind paste, fish sauce, soy sauce, sugar, and chili powder until well combined. Set aside. Stir-Fry Shrimp: Heat the vegetable oil in a large wok or frying pan over medium-high heat. Add the minced garlic and stir-fry for about 1-2 minutes until fragrant. Add the peeled and deveined shrimp and stir-fry until they turn pink and opaque. Remove them from the pan and set aside. Scramble Eggs: In the same pan, push the shrimp to one side and pour the beaten eggs into the other side. Scramble the eggs until they are partially cooked. Combine Noodles and Sauce: Add the soaked and drained rice noodles to the pan. Pour the Pad Thai sauce over the noodles. Toss everything together to coat the noodles evenly. Add Shrimp and Vegetables: Return the cooked shrimp to the pan. Add bean sprouts and sliced green onions. Toss and stir-fry for an additional 2-3 minutes until everything is heated through. Garnish: Sprinkle crushed peanuts over the Pad Thai and garnish with lime wedges. Serve: Divide Pad Thai Goong among serving plates. Enjoy: Squeeze fresh lime juice over your Pad Thai Goong and savor the perfect harmony of flavors and textures in this classic Thai shrimp pad Thai dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 84,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Смажені квіти кабачків",
-            imageResId = R.drawable.smazeni_kvity_kabachkiv_84,
-            description =
-            "\"Смажені квіти кабачків\", прекрасна італійська закуска, зазвичай подаються без конкретних обмежень у харчуванні. Ці ніжні квіти мають хрустку скоринку ззовні, ніжну середину і повні смаку. Кожна порція зазвичай містить приблизно 100-150 калорій.",
+            recipeId = 61,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Pad Thai Jay ",
+            imageResId = R.drawable.pad_thai_jay__61,
+            description = "Pad Thai Jay is a flavorful and satisfying vegetarian version of the classic Thai stir-fried noodle dish. This rendition features tender rice noodles, an assortment of vegetables, tofu or protein of choice, and a delectable tamarind-based sauce. It's a harmonious blend of sweet, salty, sour, and umami flavors, with the added freshness of herbs and the crunch of crushed peanuts. Pad Thai Jay is a beloved Thai street food, perfect for vegetarians and anyone seeking a delicious and balanced meal.",
+            ingredients = listOf(
+                "Ingredients: 8 oz (225g) rice noodles 2 tablespoons vegetable oil 8 oz (225g) firm tofu, diced into small cubes (or protein of choice) 2 cloves garlic, minced 2 eggs (optional) 1 cup bean sprouts 1 cup mixed vegetables (e.g., bell peppers, carrots, snow peas), thinly sliced 2 green onions, thinly sliced 1/4 cup crushed roasted peanuts Lime wedges for garnish For the Pad Thai Sauce: 3 tablespoons tamarind paste 2 tablespoons soy sauce 1 tablespoon sugar 1/2 teaspoon chili powder (adjust to your spice preference)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Noodles: Soak the rice noodles in warm water for about 20-30 minutes until they become soft. Drain and set aside. Make Pad Thai Sauce: In a small bowl, whisk together tamarind paste, soy sauce, sugar, and chili powder until well combined. Set aside. Stir-Fry Tofu (or Protein): Heat 1 tablespoon of vegetable oil in a large wok or frying pan over medium-high heat. Add the diced tofu (or your chosen protein) and stir-fry until it's browned and slightly crispy. Remove from the pan and set aside. Scramble Eggs (optional): If using eggs, add the remaining vegetable oil to the pan. Push the tofu (or protein) to one side and pour the beaten eggs into the other side. Scramble the eggs until they are partially cooked. Combine Noodles and Sauce: Add the soaked and drained rice noodles to the pan. Pour the Pad Thai sauce over the noodles. Toss everything together to coat the noodles evenly. Add Vegetables and Tofu: Return the cooked tofu (or protein) to the pan. Add bean sprouts, mixed vegetables, and sliced green onions. Toss and stir-fry for an additional 2-3 minutes until everything is heated through. Garnish: Sprinkle crushed peanuts over the Pad Thai and garnish with lime wedges. Serve: Divide Pad Thai Jay among serving plates. Enjoy: Squeeze fresh lime juice over your Vegetarian Pad Thai and savor the perfect balance of flavors and textures in this delightful Thai dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 62,
+            categoryOfFood = "Noodles and Rice",
+            dishTitle = "Kuay Tiew Reua",
+            imageResId = R.drawable.kuay_tiew_reua_62_500,
+            description = "Kuay Tiew Reua, also known as Thai Boat Noodle Soup, is a flavorsome and aromatic dish that has its origins in Thailand's floating markets. This robust and savory soup combines tender rice noodles with succulent meat, often pork or beef, and an assortment of aromatic herbs and spices. The broth is infused with a harmonious blend of flavors from Thai herbs, spices, and a hint of blood, traditionally used to thicken and enrich the soup. Served in small portions, Kuay Tiew Reua is a delightful and memorable culinary experience that captures the essence of Thai street food.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "12 квіток кабачків\n" +
-                        "1 склянка універсального борошна\n" +
-                        "1 склянка газованої води або пива\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Рослинна олія для смаження\n" +
-                        "За бажанням: сир моцарела, анчоуси або зелень для начинки",
+                "Ingredients: 8 oz (225g) thin rice noodles 1 tablespoon vegetable oil 1/2 lb (225g) pork or beef, thinly sliced 4 cups beef or pork broth 2 tablespoons fish sauce 1 tablespoon soy sauce 1 teaspoon sugar 1/2 teaspoon ground white pepper 1/2 teaspoon chili flakes (adjust to your spice preference) 2-3 cloves garlic, minced 1/4 cup chopped fresh cilantro 1/4 cup chopped fresh Thai basil leaves 1/4 cup chopped fresh scallions Lime wedges for garnish Optional: pork blood cubes (available at some Asian markets)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Обережно помийте квіти кабачків і видаліть пилюку зсередини.\n" +
-                        "За бажанням, наповніть кожну квітку невеликим шматочком моцарели, анчоусами або травами.\n" +
-                        "У мисці змішайте муку, газовану воду або пиво, сіль і перець до отримання гладкої суміші.\n" +
-                        "Розігрійте рослинну олію в глибокій сковороді або каструлі.\n" +
-                        "Обмацайте кожну квітку кабачка в тісто, рівномірно покриваючи його.\n" +
-                        "Смажте квіти в гарячій олії до золотистої коричневої скоринки і хрусткості, зазвичай близько 2-3 хвилин з кожного боку.\n" +
-                        "Вийміть їх шумовкою і відкладіть на рушники, щоб зняти зайву олію.\n" +
-                        "Подавайте смажені квіти кабачків гарячими, як чудову закуску або гарнір.\n" +
-                        "Це рецепт смажених квітів кабачків, які можна подавати гарячими як чудову закуску чи гарнір.",
+                "Cooking Process: Prepare Noodles: Cook the thin rice noodles according to package instructions. Drain and set aside. Make Soup Base: In a large pot, heat the vegetable oil over medium-high heat. Add minced garlic and stir-fry for 1-2 minutes until fragrant. Add Meat: Add the thinly sliced pork or beef to the pot. Stir-fry until it's cooked through and slightly browned. Season Broth: Pour in the beef or pork broth and bring it to a gentle simmer. Stir in fish sauce, soy sauce, sugar, ground white pepper, and chili flakes. Adjust seasoning to your taste. Assemble Bowls: To serve, divide the cooked rice noodles among serving bowls. Pour Broth: Ladle the hot broth with meat over the noodles. Garnish: Top each bowl with chopped fresh cilantro, Thai basil leaves, and scallions. Optionally, add pork blood cubes to the soup. Serve: Serve hot with lime wedges on the side. Enjoy: Squeeze fresh lime juice into your bowl and savor the robust and aromatic flavors of Kuay Tiew Reua, a classic Thai boat noodle soup.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 85,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Салат Фарро",
-            imageResId = R.drawable.farro_salad_55,
+            recipeId = 64,
+            categoryOfFood = "Salads",
+            dishTitle = "Pla Goong",
+            imageResId = R.drawable.pla_goong_64,
             description =
-            "Італійський салат фарро - це корисна та поживна страва, яка зазвичай не має особливих дієтичних обмежень. До складу цього салату входять жувальні зерна фарро, свіжі овочі та іноді сир. Це універсальний варіант гарніру або основної страви. Порція містить близько 250-300 калорій.",
-            ingredients = listOf(
-                "Інгредієнти (приблизно на 4 порції):\n" ,
-                        "1 склянка фарро\n" +
-                        "2 склянки води або бульйону\n" +
-                        "1 склянка помідорів черрі, розрізаних навпіл\n" +
-                        "1/2 склянки огірка, нарізаного кубиками\n" +
-                        "1/4 склянки червоної цибулі, дрібно нарізаної\n" +
-                        "1/4 склянки свіжого листя базиліка, подрібненого\n" +
-                        "1/4 склянки сиру фета (за бажанням)\n" +
-                        "Оливкова олія, лимонний сік, сіль та перець для заправки",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Промийте фарро під холодною водою. У каструлі поєднайте фарро та воду або бульйон. Доведіть до кипіння, а потім зменште вогонь і готуйте приблизно 20-25 хвилин, поки фарро не стане ніжним, але все ще жорстким. Злейте зайву рідину.\n" +
-                        "У великій мисці поєднайте готовий фарро, чері помідори, огірок, червону цибулю і базилік.\n" +
-                        "За бажанням, додайте сир фета для більш насиченого смаку.\n" +
-                        "Полийте оливковою олією і соком лимона, і приправте сіллю та перцем. Перемішайте.\n" +
-                        "Поставте в холодильник принаймні 30 хвилин перед подачею, щоб смаки поєдналися.\n" +
-                        "Подавайте італійський салат із фарро як освіжаючий гарнір або легку страву, ідеальну для теплих днів.\n" +
-                        "Це рецепт італійського салату із фарро, який можна подавати як освіжаючий гарнір чи легку страву, ідеальну для теплих днів.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 86,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Рапіні з часником та оливковою олією",
-            imageResId = R.drawable.rappini_salad_86,
-            description =
-            "Рапіні з часником та оливковою олією - класична італійська страва, яка зазвичай підходить для різних дієтичних уподобань. У цій страві ніжні рапіні пасеруються з часником та оливковою олією, створюючи ароматний і злегка гіркуватий гарнір або начинку. Порція містить приблизно 100-150 калорій.",
+            "Pla Goong is a zesty and refreshing Thai salad that showcases succulent shrimp as the star ingredient. This vibrant dish combines the flavors of spicy, tangy, and savory with a hint of sweetness. Tender poached shrimp are tossed with fresh herbs, chili peppers, shallots, and a lively dressing made from fish sauce, lime juice, and palm sugar. Pla Goong is a delightful explosion of tastes and textures, offering a perfect balance of heat and acidity, making it a popular appetizer or light meal in Thai cuisine.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "1 пучок рапіні (броколі рабе)\n" +
-                        "23 зубчики часнику, тонко нарізані\n" +
-                        "3 столові ложки оливкової олії\n" +
-                        "Сіль і пластівці червоного перцю (за бажанням)\n" +
-                        "Тертий сир Пекоріно Романо (за бажанням)",
+                "Ingredients: 1 lb (450g) large shrimp, peeled and deveined 1/2 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 fresh red chili peppers, thinly sliced (adjust to your spice preference) 2-3 shallots, thinly sliced 2 stalks of lemongrass, thinly sliced (optional) 1 tablespoon fish sauce 2 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1 teaspoon roasted chili paste (Nam Prik Pao) (optional) 1-2 cloves garlic, minced Lime wedges for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Помити рапіні та обрізати жорсткі кінці.\n" +
-                        "У великій каструлі довести до кипіння підсолену воду. Бланшувати рапіні приблизно 23 хвилини, поки вони не стануть м'якими, але не втратять яскравий зелений колір. Відцідити воду і відставити.\n" +
-                        "У великій сковороді розігріти оливкову олію на середньому вогні. Додайте нарізаний часник і пластівці червоного перцю за бажанням. Обсмажуйте, поки часник не стане ароматним, але не підрум'яниться.\n" +
-                        "Додати до сковороди бланшовані рапіні і смажити ще 23 хвилини, перевертаючи, щоб вони вкрилися часниковою олією.\n" +
-                        "Посолити за смаком і зняти з вогню.\n" +
-                        "За бажанням можна посипати тертим сиром Пекоріно Романо.\n" +
-                        "Подавати рапіні з часником та оливковою олією як гарнір або з пастою.",
+                "Cooking Process: Poach Shrimp: Bring a pot of water to a boil. Add the peeled and deveined shrimp and cook for 2-3 minutes until they turn pink and opaque. Drain and set aside to cool. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, roasted chili paste (if using), and minced garlic. Adjust flavors to your liking, balancing the sweet, salty, and sour. Assemble Salad: In a large mixing bowl, combine the poached shrimp, chopped cilantro, chopped mint, sliced chili peppers, sliced shallots, and lemongrass (if using). Toss with Dressing: Pour the dressing over the salad ingredients. Gently toss everything together to coat the shrimp and herbs with the dressing. Garnish: Garnish the Pla Goong with additional fresh herbs and lime wedges. Serve: Divide the Pla Goong among serving plates. Enjoy: Serve immediately and savor the vibrant and refreshing flavors of this Thai Spicy Shrimp Salad.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 87,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Полента на грилі",
-            imageResId = R.drawable.polenta_on_grill_87,
-            description =
-            "Полента на грилі - смачна італійська страва з кукурудзяного борошна. Зазвичай вона не містить глютену і підходить для вегетаріанської дієти. Порція поленти на грилі містить близько 150 калорій.",
+            recipeId = 65,
+            categoryOfFood = "Salads",
+            dishTitle = "Larb Gai",
+            imageResId = R.drawable.larb_gai_65,
+            description = "Larb Gai is a vibrant Thai salad known for its bold and zesty flavors. This dish features ground chicken, fresh herbs, and a spicy dressing made from lime juice, fish sauce, and chili peppers. Larb Gai strikes a harmonious balance between the savory, sour, spicy, and slightly sweet elements, resulting in a refreshing and satisfying meal. Served with lettuce leaves for wrapping, Larb Gai is a delightful explosion of taste and texture, making it a favorite in Thai cuisine.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "1 склянка поленти (кукурудзяного борошна)\n" +
-                        "4 склянки води\n" +
-                        "Сіль і перець за смаком\n" +
-                        "Оливкова олія для смаження",
+                "Ingredients: 1 lb (450g) ground chicken 2-3 shallots, thinly sliced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 1/2 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 scallions, thinly sliced 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1-2 tablespoons roasted rice powder (Khao Khua) (optional) Lettuce leaves for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У каструлі довести до кипіння 4 склянки води. Додайте дрібку солі.\n" +
-                        "Поступово всипати 1 склянку поленти, постійно помішуючи, щоб не було грудочок.\n" +
-                        "Зменшити вогонь до мінімуму і продовжувати помішувати приблизно 1520 хвилин, поки суміш не загусне і не почне відставати від стінок каструлі.\n" +
-                        "Вилити готову поленту на деко або тарілку і рівномірно розподілити до товщини приблизно 1/2 дюйма. Дати їй охолонути та застигнути щонайменше 30 хвилин.\n" +
-                        "Після того, як полента застигне, наріжте її бажаними формами (квадратиками або кружальцями).\n" +
-                        "Розігрійте гриль або сковороду-гриль на середньому вогні. Змастіть шматочки поленти оливковою олією.\n" +
-                        "Смажте поленту на грилі з кожного боку протягом 45 хвилин, або поки на ній не з'являться сліди від гриля і вона не стане золотистою.\n" +
-                        "Подавайте гарячою з улюбленими начинками, такими як овочі-гриль, томатний соус або сир.",
+                "Cooking Process: Cook Ground Chicken: Heat a skillet or frying pan over medium-high heat. Add the ground chicken and cook until it's no longer pink and has a slightly crispy texture, breaking it apart as it cooks. Remove from heat and set aside. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, and roasted rice powder (if using). Adjust flavors to your liking, balancing the sweet, salty, and sour. Assemble Salad: In a large mixing bowl, combine the cooked ground chicken, sliced shallots, sliced chili peppers, chopped cilantro, chopped mint, and sliced scallions. Toss with Dressing: Pour the dressing over the salad ingredients. Gently toss everything together to coat the chicken and herbs with the dressing. Serve: Transfer the Larb Gai to a serving plate. Enjoy: Serve with lettuce leaves for wrapping. To eat, spoon Larb Gai into a lettuce leaf, fold it, and enjoy the vibrant flavors of this Thai Chicken Larb Salad.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 88,
-            categoryOfFood = "Гарніри",
-            dishTitle = "Ризотто з абрикосами і гребінцями",
-            imageResId = R.drawable.risotto_with_apricots_and_scallops_90,
-            description =
-            "Ризотто з абрикосами і гребінцями - це чудовий кулінарний шедевр, який поєднує в собі ніжну смакову асоціацію ризотто зі солодкими і ароматними нотками абрикосів і соковитих камбали. Зазвичай ця страва починається з рису Арборіо або Карнаролі, який готується до смакової консистенції, поступово додавши гарячий бульйон і постійно помішуючи, щоб вивільнити його крохмалеві речовини.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        " 1 ст.л. вершкового масла\n" +
-                        "2 дрібно нарізані цибулини шалот \n" +
-                        "1 гілочка розмарину\n" +
-                        "300 г рису для різотто (наприклад, арборіо)\n" +
-                        "2 склянки білого вина\n" +
-                        "9 склянок гарячого курячого бульйону\n" +
-                        "80 г тертого пармезану \n" +
-                        "сіль і перець за смаком\n" +
-                        "400 г абрикосів, розрізаних на четвертинки\n" +
-                        " 2 ст.л. води \n" +
-                        "1 гілочка подрібненого розмарину\n" +
-                        "1 ч.л. пластівців чилі\n" +
-                        "4 ч.л. солі\n" +
-                        "1 ст.л. оливкової олії\n" +
-                        "12 гребінців \n" +
-                        "1 ч.л. солі",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Різотто: розтопити вершкове масло в каструлі. Нарізати цибулю-шалот і розмарин. Додайте рис і варіть, помішуючи, поки він не стане прозорим. Змочіть вином, дайте йому майже повністю випаруватися. Під час варіння вливаємо бульйон, часто помішуючи та стежачи за тим, щоб рис все ще був покритий рідиною. Тушкуємо на повільному вогні. 20 хвилин, поки рис не стане кремоподібним і не розвариться до стану аль денте. Додайте сир і вершкове масло, приправте\n" +
-                        "Абрикоси: змішайте абрикоси з водою, роменом і чилі в каструлі, накрийте кришкою і тушкуйте близько 3 хвилин, посоліть.\n" +
-                        "Гребінці: для приготування розігріти олію в антипригарній сковороді. " +
-                        "Додати гребінці, обсмажувати приблизно по 2 хвилини з кожного боку. Викласти різотто, розподілити гребінці та абрикоси."
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 90,
-            categoryOfFood = "Десерти",
-            dishTitle = "Тірамісу",
-            imageResId = R.drawable.tiramisu_58,
-            description =
-            "Тірамісу - це класичний італійський десерт, відомий своїми вершково-кавовими шарами. Зазвичай він містить кофеїн з кави та сирих яєць, тому не підходить для тих, хто має дієтичні обмеження, пов'язані з кофеїном або сирими яйцями. Одна порція тірамісу містить приблизно 300 калорій.",
-            ingredients = listOf(
-                "Інгредієнти (на 6 порцій):\n" ,
-                        "6 яєчних жовтків\n" +
-                        "3/4 склянки цукрового піску\n" +
-                        "1 склянка сиру маскарпоне\n" +
-                        "1 1/2 склянки жирних вершків\n" +
-                        "2 чашки звареного еспресо, охолодженого\n" +
-                        "1/4 склянки кавового лікеру (за бажанням)\n" +
-                        "1 упаковка \"дамських пальчиків\" (близько 24 штук)\n" +
-                        "Какао-порошок для посипання\n" +
-                        "Стружка чорного шоколаду для прикраси",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У жароміцній посудині збийте жовтки з 1/2 склянки цукру на пароварці до світло-кремового кольору.\n" +
-                        "Зніміть з вогню і додайте сир маскарпоне, перемішуючи до повного злиття.\n" +
-                        "В окремій мисці збити жирні вершки до утворення стійких піків.\n" +
-                        "Обережно додати збиті вершки до суміші з маскарпоне.\n" +
-                        "У неглибокій тарілці змішати заварений еспресо та кавовий лікер.\n" +
-                        "Швидко занурити кожну паличку в еспресо-суміш, щоб вона просочилася, але не розмокла.\n" +
-                        "Викладіть вмочені палички на блюдо для подачі шар за шаром.\n" +
-                        "Викласти на них половину суміші з маскарпоне.\n" +
-                        "Повторити з іншим шаром вмочених філе і рештою суміші маскарпоне.\n" +
-                        "Поставити в холодильник мінімум на 4 години або на ніч.\n" +
-                        "Перед подачею посипати верх какао-порошком і прикрасити стружкою чорного шоколаду.\n" +
-                        "Подавайте охолодженим і насолоджуйтеся соковитим тірамісу!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 91,
-            categoryOfFood = "Десерти",
-            dishTitle = "Каннолі",
-            imageResId = R.drawable.cannoli_59,
-            description =
-            "Каннолі - чудовий італійський десерт, відомий своїми хрусткими оболонками з тіста та вершковою начинкою з рикотти. Це ситне і поблажливе частування, тому воно може не підійти тим, хто дотримується дієти з обмеженнями на молочні продукти або цукор. Типовий каннолі містить близько 100-150 калорій на порцію.",
+            recipeId = 66,
+            categoryOfFood = "Salads",
+            dishTitle = "Som Tum Thai",
+            imageResId = R.drawable.som_tum_thai_66_500,
+            description = "Som Tum Thai is a zesty and refreshing Thai salad celebrated for its vibrant and harmonious flavors. This dish combines shredded green papaya with a spicy and tangy dressing made from lime juice, fish sauce, chili peppers, and palm sugar. The salad is enriched with a medley of ingredients like tomatoes, peanuts, and garlic. Som Tum Thai offers a perfect balance of sweet, salty, sour, and spicy, making it a beloved Thai street food and a delightful side dish or appetizer that awakens the palate.",
             ingredients = listOf(
-                "Інгредієнти (на 12 каннолі):\n" ,
-                        "2 склянки сиру рікотта\n" +
-                        "1/2 склянки цукрової пудри\n" +
-                        "1/2 чайної ложки ванільного екстракту\n" +
-                        "1/4 склянки міні-шоколадної стружки\n" +
-                        "12 формочок для каннолі (магазинних або домашніх)",
+                "Ingredients: 1 medium green papaya (about 2 cups), peeled and shredded 2-3 cloves garlic, minced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1 cup cherry tomatoes, halved 2-3 tablespoons roasted peanuts, coarsely chopped 2-3 tablespoons dried shrimp (optional) Fresh cilantro leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У мисці змішайте сир рікотта, цукрову пудру та ванільний екстракт до однорідної маси.\n" +
-                        "Акуратно додайте міні-шоколадні чіпси.\n" +
-                        "Наповніть кожну оболонку Каннолі сумішшю з рікотти за допомогою кондитерського мішка або ложки.\n" +
-                        "Притрусіть кінці цукровою пудрою або обваляйте в подрібнених фісташках чи шоколадній крихті для додаткового смаку та текстури.\n" +
-                        "Подавайте каннолі негайно, щоб насолодитися ідеальним поєднанням хрусткої та вершкової текстури",
+                "Cooking Process: Prepare Papaya: Peel and shred the green papaya using a julienne peeler or a grater. Place it in a large mixing bowl. Make Dressing: In a separate bowl, whisk together minced garlic, sliced chili peppers, fish sauce, lime juice, and palm sugar. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Toss Salad: Pour the dressing over the shredded green papaya. Toss everything together to coat the papaya with the dressing. Add Tomatoes and Peanuts: Gently fold in the halved cherry tomatoes and coarsely chopped roasted peanuts. Garnish: Optionally, sprinkle dried shrimp over the top for extra flavor and texture. Garnish with fresh cilantro leaves. Serve: Transfer the Som Tum Thai to a serving plate. Enjoy: Serve and enjoy the refreshing and bold flavors of this Thai Green Papaya Salad.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 92,
-            categoryOfFood = "Десерти",
-            dishTitle = "Панна-Котта",
-            imageResId = R.drawable.panna_cotta_60,
-            description =
-            "Панна-Котта - класичний італійський десерт, відомий своєю кремовою, заварною текстурою. Він, як правило, не підходить для тих, хто має дієтичні обмеження на молочні продукти. Типова порція ванільної панна-котти містить близько 250-300 калорій. Це простий, але елегантний десерт.",
+            recipeId = 67,
+            categoryOfFood = "Salads",
+            dishTitle = "Yum Talay",
+            imageResId = R.drawable.yum_talay_67_500,
+            description = "Yum Talay is a vibrant Thai salad that celebrates the bounties of the sea. This refreshing dish combines a medley of fresh seafood such as shrimp, squid, and mussels with an invigorating mix of herbs and spices. The salad is brought to life with a zesty dressing made from lime juice, fish sauce, chili peppers, and palm sugar. Yum Talay offers a tantalizing blend of sweet, sour, salty, and spicy flavors, enhanced by the addition of fresh herbs and the crunch of roasted peanuts. It's a delightful explosion of taste and texture, perfect for seafood enthusiasts.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "2 склянки жирних вершків\n" +
-                        "1/2 склянки цукрового піску\n" +
-                        "1 стручок ванілі або 2 чайні ложки ванільного екстракту\n" +
-                        "2 1/4 чайної ложки желатину\n" +
-                        "3 столові ложки холодної води",
+                "Ingredients: 8 oz (225g) shrimp, peeled and deveined 8 oz (225g) squid, cleaned and sliced into rings 8 oz (225g) mussels, cooked and shelled 1/2 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 shallots, thinly sliced 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1/4 cup roasted peanuts, coarsely chopped",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У каструлі змішайте жирні вершки та цукор. Якщо використовуєте ванільний стручок, вишкребіть насіння в суміш, якщо ні - додайте ванільний екстракт.\n" +
-                        "В окремій мисці залийте желатин холодною водою і залиште на кілька хвилин, щоб він набряк.\n" +
-                        "Нагрійте вершкову суміш на середньому вогні, поки вона не стане гарячою, але не киплячою.\n" +
-                        "Зніміть з вогню і перемішайте суміш з желатином, доки він не розчиниться.\n" +
-                        "Розлити суміш у сервірувальні склянки або креманки.\n" +
-                        "Поставте в холодильник мінімум на 4 години або до повного застигання.\n" +
-                        "Подавати панна-котту охолодженою, прикрасивши свіжими ягодами або поливаючи карамельним соусом.",
+                "Cooking Process: Cook Seafood: Bring a pot of water to a boil. Add the peeled and deveined shrimp and cook for 2-3 minutes until they turn pink and opaque. Drain and set aside. Similarly, cook the sliced squid in boiling water for 1-2 minutes until tender. Drain and set aside. Make Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, and sliced chili peppers. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Assemble Salad: In a large mixing bowl, combine the cooked seafood (shrimp, squid, and mussels), chopped cilantro, chopped mint, and sliced shallots. Toss with Dressing: Pour the dressing over the seafood and herb mixture. Gently toss everything together to coat the seafood with the dressing. Garnish: Sprinkle coarsely chopped roasted peanuts over the Yum Talay. Serve: Transfer the Thai Seafood Salad to a serving plate. Enjoy: Serve immediately and savor the vibrant and invigorating flavors of Yum Talay, a delicious seafood delight.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 93,
-            categoryOfFood = "Десерти",
-            dishTitle = "Джелато",
-            imageResId = R.drawable.dzellatto_93,
-            description =
-            "Джелато - це чудовий італійський заморожений десерт, схожий на морозиво, але більш вершковий і щільніший. Зазвичай він не підходить для тих, хто має обмеження на молочні продукти. Порція морозива містить близько 100-130 калорій, залежно від смаку.",
+            recipeId = 68,
+            categoryOfFood = "Salads",
+            dishTitle = "Yum Neua",
+            imageResId = R.drawable.yum_neua_68,
+            description = "Yum Neua is a bold and refreshing Thai salad that celebrates the flavors of grilled beef, fresh herbs, and a zesty dressing. Thin slices of tender beef are marinated and char-grilled to perfection, then tossed with herbs, chili peppers, and a dressing made from lime juice, fish sauce, and palm sugar. The salad boasts a harmonious blend of sweet, salty, sour, and spicy notes, enhanced by the fragrance of fresh herbs. Yum Neua is a favorite Thai dish that offers a delightful combination of flavors and textures, making it a mouthwatering and satisfying meal.",
             ingredients = listOf(
-                "Інгредієнти (на 4 порції):\n" ,
-                        "2 склянки незбираного молока\n" +
-                        "1 склянка жирних вершків\n" +
-                        "3/4 склянки цукрового піску\n" +
-                        "1 стручок ванілі або 1 чайна ложка ванільного екстракту\n" +
-                        "Ароматизатори, такі як фрукти, шоколад або горіхи (за бажанням)",
+                "Ingredients: 1 lb (450g) beef sirloin or flank steak 1/2 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 shallots, thinly sliced 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 2-3 cloves garlic, minced Vegetable oil for grilling Roasted rice powder (Khao Khua) for garnish (optional)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У каструлі змішайте молоко та вершки. Якщо ви використовуєте ванільний стручок, розділіть його та вишкребіть насіння в суміш, якщо ні - додайте ванільний екстракт.\n" +
-                        "Нагрійте суміш на середньому вогні, поки вона не стане гарячою, але не кипітиме.\n" +
-                        "Зніміть з вогню і дайте трохи охолонути.\n" +
-                        "В окремій мисці збиваємо цукор до повного розчинення.\n" +
-                        "Поступово додайте цукор до молочної суміші, доки суміш не стане однорідною.\n" +
-                        "Перекладіть суміш у мороженицю та збивайте відповідно до інструкцій виробника.\n" +
-                        "В останні кілька хвилин збивання додайте обрані вами ароматизатори.\n" +
-                        "Після цього перекладіть морозиво в герметичний контейнер і заморозьте на кілька годин до повного застигання.\n" +
-                        "Подавайте морозиво в креманках або конусах, прикрасивши свіжими фруктами або горіхами.",
+                "Cooking Process: Marinate and Grill Beef: In a bowl, combine minced garlic, fish sauce, lime juice, and palm sugar to make the marinade. Marinate the beef in the mixture for about 30 minutes. Preheat a grill or grill pan over high heat. Brush with vegetable oil. Grill the beef for 2-3 minutes per side for medium-rare, or adjust cooking time to your desired doneness. Let the beef rest for a few minutes, then thinly slice it against the grain. Prepare Dressing: In a separate bowl, whisk together fish sauce, lime juice, palm sugar, and sliced chili peppers. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Assemble Salad: In a large mixing bowl, combine the sliced beef, chopped cilantro, chopped mint, and sliced shallots. Toss with Dressing: Pour the dressing over the beef and herb mixture. Gently toss everything together to coat the beef with the dressing. Garnish: Optionally, sprinkle roasted rice powder over the Yum Neua for added texture and flavor. Serve: Transfer the Thai Beef Salad to a serving plate. Enjoy: Serve immediately and savor the bold and vibrant flavors of Yum Neua, a classic Thai beef salad.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 69,
+            categoryOfFood = "Salads",
+            dishTitle = "Nam Sod",
+            imageResId = R.drawable.nam_sod_69,
+            description = "Nam Sod is a flavorful Thai salad renowned for its vibrant and harmonious blend of textures and flavors. This dish features seasoned ground pork combined with an array of fresh ingredients, including ginger, peanuts, and lime juice. The dressing consists of fish sauce, chili peppers, and sugar, resulting in a delightful balance of sweet, salty, sour, and spicy notes. Nam Sod is typically served warm, making it a comforting and savory dish that captures the essence of Thai cuisine.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) ground pork 2-3 cloves garlic, minced 2-3 slices of fresh ginger, finely chopped 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 shallots, thinly sliced 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1/4 cup roasted peanuts, coarsely chopped Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Cook Ground Pork: In a skillet or frying pan over medium-high heat, cook the ground pork until it's no longer pink, breaking it apart as it cooks. Remove excess fat and liquid from the pan. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, minced garlic, and chopped ginger. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Assemble Salad: In a large mixing bowl, combine the cooked ground pork, sliced chili peppers, sliced shallots, and coarsely chopped roasted peanuts. Toss with Dressing: Pour the dressing over the pork mixture. Gently toss everything together to coat the pork and ingredients with the dressing. Garnish: Optionally, garnish with fresh cilantro leaves. Serve: Transfer the Nam Sod to a serving plate. Enjoy: Serve immediately while warm and relish the delightful blend of flavors and textures in this Thai Ground Pork Salad.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 94,
-            categoryOfFood = "Десерти",
-            dishTitle = "Цепполі",
-            imageResId = R.drawable.ceppolli_94,
-            description =
-            "Цепполі - традиційна італійська випічка, особливо популярна на День Святого Йосипа. Це смажені у фритюрі кульки з тіста, схожі на пончики, але з унікальною текстурою. Через процес обсмажування дзепполе не підходять для тих, хто дотримується суворої дієти. Десерт. Приблизно 150 калорій на порцію. Зепполі - легкі, повітряні, злегка хрусткі зовні. Зазвичай їх подають з цукровою пудрою та іноді з вишнею зверху, що робить їх солодкою насолодою.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 склянка води\n" +
-                        "1/2 склянки несолоного вершкового масла\n" +
-                        "1 склянка борошна грубого помелу\n" +
-                        "Щіпка солі\n" +
-                        "4 великих яйця\n" +
-                        "Рослинна олія для смаження\n" +
-                        "Цукрова пудра для посипання\n" +
-                        "Вишні мараськіно (за бажанням)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У каструлі змішати воду та вершкове масло. Довести до кипіння.\n" +
-                        "Одразу додати борошно та дрібку солі. Інтенсивно перемішуйте, поки суміш не утворить кулю.\n" +
-                        "Зніміть з вогню і дайте охолонути кілька хвилин.\n" +
-                        "Вбиваємо яйця по одному, поки тісто не стане однорідним.\n" +
-                        "Нагріти олію у фритюрниці або важкій каструлі до 375°F (190°C).\n" +
-                        "Викладати ложками тісто в гарячу олію. Смажити до золотистої скоринки, приблизно 4 хвилини.\n" +
-                        "Вийняти шумівкою і викласти на паперові рушники.\n" +
-                        "Притрусити цукровою пудрою і за бажанням прикрасити вишнями мараскіно.\n" +
-                        "Насолоджуйтесь домашнім цепполе, чудовими італійськими ласощами!",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 95,
-            categoryOfFood = "Десерти",
-            dishTitle = "Біскотті",
-            imageResId = R.drawable.biscotti_63,
-            description =
-            "Біскотті - традиційне італійське мигдальне печиво. Вони не підходять для людей з алергією на горіхи через мигдаль. Біскотті - це печиво, яке випікається двічі, завдяки чому воно має хрустку текстуру, ідеально підходить для вмочування в каву або вино. На одну порцію припадає близько 110 калорій. Десерт. Приблизно 110 калорій на порцію, біскотті - це печиво довгастої форми з чудовим хрустким смаком. Вони часто ароматизовані мигдалем і мають ледь вловиму солодкість. Біскотті зазвичай подають з кавою або десертним вином, а також можна вмочати, щоб пом'якшити їхню текстуру. Рецепт розрахований на отримання близько 20 біскотті.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 склянки борошна грубого помелу\n" +
-                        "1 1/2 чайної ложки розпушувача\n" +
-                        "1/4 чайної ложки солі\n" +
-                        "1/2 склянки несолоного вершкового масла кімнатної температури\n" +
-                        "1 склянка цукрового піску\n" +
-                        "2 великі яйця\n" +
-                        "1 чайна ложка ванільного екстракту\n" +
-                        "1 склянка цільного мигдалю",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 350°F (175°C).\n" +
-                        "У мисці збийте разом борошно, розпушувач і сіль.\n" +
-                        "В окремій мисці збийте вершкове масло з цукром до однорідної світлої маси.\n" +
-                        "Вбийте яйця по одному, а потім додайте ваніль.\n" +
-                        "Поступово додайте сухі інгредієнти та мигдаль.\n" +
-                        "Розділіть тісто навпіл і надайте кожній половині форми колоди довжиною приблизно 12 дюймів і шириною 2 дюйми.\n" +
-                        "Викладіть колоди на деко і випікайте 25-30 хвилин, або поки вони не стануть світло-коричневими.\n" +
-                        "Вийміть з духовки і дайте охолонути кілька хвилин. Потім наріжте колоди скибочками по 1/2 дюйма.\n" +
-                        "Покладіть скибочки на деко і випікайте ще 6-10 хвилин, або поки вони не стануть золотисто-коричневими і хрусткими.\n" +
-                        "Перед подачею дайте їм охолонути. Насолоджуйтесь домашнім біскотті!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 96,
-            categoryOfFood = "Десерти",
-            dishTitle = "Забайоне",
-            imageResId = R.drawable.zabaione_64,
-            description =
-            "Забайоне, також відомий як Забальоне, - це італійський заварний десерт з кремовою, пінистою текстурою. Його готують з яєчних жовтків, цукру та солодкого вина, найчастіше марсали. Не має особливих дієтичних обмежень, якщо тільки ви не боїтеся вживати сирі яйця. Десерт. Приблизно 220 калорій на порцію, Забайоне - це соковитий італійський десерт, відомий своєю насиченою, оксамитовою текстурою і солодким, насиченим вином смаком. Його часто подають як самостійний десерт або зі свіжими ягодами чи тортом. За рецептом зазвичай подається на 4 персони.",
+            recipeId = 70,
+            categoryOfFood = "Salads",
+            dishTitle = "Larb Moo",
+            imageResId = R.drawable.larb_moo_70,
+            description = "Larb Moo is a bold and aromatic Thai salad renowned for its robust flavors. This dish features minced pork, fragrant herbs, and a tangy dressing made from lime juice, fish sauce, and chili peppers. Larb Moo strikes a harmonious balance of sweet, salty, sour, and spicy elements, enriched by the addition of toasted rice powder for a delightful crunch. Served with lettuce leaves for wrapping, Larb Moo is a mouthwatering Thai specialty that offers a delightful explosion of taste and texture, making it a favorite among food enthusiasts. ",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 великих яєчних жовтки\n" +
-                        "1/4 склянки цукрового піску\n" +
-                        "1/2 склянки солодкого вина Марсала\n" +
-                        "Свіжі ягоди або інші начинки (за бажанням)",
+                "Ingredients: 1 lb (450g) ground pork 2-3 shallots, thinly sliced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 1/2 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 2-3 tablespoons toasted rice powder (Khao Khua) Lettuce leaves for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У жароміцній мисці збийте яєчні жовтки з цукром до однорідної маси.\n" +
-                        "Поставте миску над каструлею з киплячою водою (пароварка) і додайте вино \"Марсала\".\n" +
-                        "Безперервно збивайте приблизно 8-10 хвилин, поки суміш не стане густою, пінистою і не збільшиться в об'ємі втричі. Вона повинна бути нагрітою, але не кипіти.\n" +
-                        "Зніміть з вогню і продовжуйте збивати протягом хвилини, коли суміш трохи охолоне.\n" +
-                        "Подавайте теплим у десертних келихах, прикрасивши свіжими ягодами або будь-якими іншими топінгами за бажанням. Смачного вам домашнього забайоне!"
+                "Cooking Process: Cook Ground Pork: In a skillet or frying pan over medium-high heat, cook the ground pork until it's browned and cooked through, breaking it apart as it cooks. Remove excess fat and liquid from the pan. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, and sliced chili peppers. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Assemble Salad: In a large mixing bowl, combine the cooked ground pork, sliced shallots, chopped cilantro, and chopped mint. Toss with Dressing: Pour the dressing over the pork mixture. Gently toss everything together to coat the pork and ingredients with the dressing. Add Toasted Rice Powder: Sprinkle the toasted rice powder over the Larb Moo and mix it in. The toasted rice powder adds a delightful crunch to the dish. Serve: Transfer the Thai Pork Larb Salad to a serving plate. Enjoy: Serve with lettuce leaves for wrapping. To eat, spoon Larb Moo into a lettuce leaf, fold it, and savor the bold and aromatic flavors of this classic Thai salad.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 71,
+            categoryOfFood = "Salads",
+            dishTitle = "Yum Woon Sen",
+            imageResId = R.drawable.yum_woon_sen_71,
+            description = "Yum Woon Sen is a Thai salad known for its light and refreshing qualities. This dish features translucent glass noodles, often made from mung bean starch, combined with shrimp and an array of fresh ingredients. The dressing, made from lime juice, fish sauce, and chili peppers, imparts a harmonious blend of sweet, salty, sour, and spicy flavors. Yum Woon Sen is further enriched with the crunch of peanuts and the aroma of fresh herbs. This Thai salad is a delightful explosion of textures and tastes, offering a perfect balance for those seeking a light and flavorful dish.",
+            ingredients = listOf(
+                "Ingredients: 4 oz (115g) dried glass noodles 8-10 large shrimp, peeled and deveined 1/2 cup cherry tomatoes, halved 2-3 shallots, thinly sliced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1/4 cup roasted peanuts, coarsely chopped Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Glass Noodles: Soak the dried glass noodles in warm water for about 10-15 minutes until they become soft. Drain and set aside. Cook Shrimp: Bring a pot of water to a boil. Add the peeled and deveined shrimp and cook for 2-3 minutes until they turn pink and opaque. Drain and set aside. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, and sliced chili peppers. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Assemble Salad: In a large mixing bowl, combine the soaked glass noodles, halved cherry tomatoes, thinly sliced shallots, and cooked shrimp. Toss with Dressing: Pour the dressing over the salad ingredients. Gently toss everything together to coat the glass noodles, shrimp, and ingredients with the dressing. Garnish: Sprinkle coarsely chopped roasted peanuts over the Yum Woon Sen. Serve: Transfer the Thai Glass Noodle Salad to a serving plate. Enjoy: Garnish with fresh cilantro leaves and serve immediately, savoring the light and refreshing flavors and textures of Yum Woon Sen.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 97,
-            categoryOfFood = "Десерти",
-            dishTitle = "Амаретто Семіфреддо",
-            imageResId = R.drawable.amaretto_semifreddo_65,
+            recipeId = 72,
+            categoryOfFood = "Salads",
+            dishTitle = "Yum Mamuang",
+            imageResId = R.drawable.yum_mamuang_72_500,
             description =
-            "Амаретто Семіфреддо - чудовий італійський заморожений десерт зі смаком лікеру амаретто та мигдалю. Він насичений і вершковий, схожий на морозиво, але легший за текстурою. Особливих дієтичних обмежень для цього десерту немає. Десерт. Кількість калорій може змінюватися залежно від рецепту, але це приблизно 250-300 калорій на порцію. Амаретто Семіфреддо - це напівзаморожений десерт, який поєднує в собі горіховий смак амаретто та солодкість печива амаретто. Це чудові ласощі з кремовою текстурою, які ідеально підходять для солодкого завершення італійської трапези. Зазвичай рецепт розрахований на 6 осіб.",
+            "Yum Mamuang is a tantalizing Thai salad renowned for its vibrant flavors and textures. This dish celebrates the crisp and tartness of green mangoes, which are thinly sliced and combined with shrimp, herbs, and roasted peanuts. The dressing, made from fish sauce, lime juice, and chili peppers, creates a perfect balance of sweet, salty, sour, and spicy notes. Yum Mamuang is a refreshing explosion of taste and crunch, making it a popular Thai street food and a delightful side dish or appetizer for those seeking a bold and invigorating culinary experience.",
+            ingredients = listOf(
+                "Ingredients: 1 large green mango, peeled and thinly sliced 8-10 large shrimp, peeled and deveined 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 shallots, thinly sliced 1/4 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) 1/4 cup roasted peanuts, coarsely chopped",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Green Mango: Peel the green mango and thinly slice it. You can use a julienne peeler or a sharp knife. Cook Shrimp: Bring a pot of water to a boil. Add the peeled and deveined shrimp and cook for 2-3 minutes until they turn pink and opaque. Drain and set aside. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, palm sugar, and sliced chili peppers. Adjust flavors to your liking, balancing the sweet, salty, sour, and spicy. Assemble Salad: In a large mixing bowl, combine the sliced green mango, cooked shrimp, sliced shallots, chopped cilantro, and chopped mint. Toss with Dressing: Pour the dressing over the salad ingredients. Gently toss everything together to coat the green mango, shrimp, and ingredients with the dressing. Garnish: Sprinkle coarsely chopped roasted peanuts over the Yum Mamuang. Serve: Transfer the Thai Green Mango Salad to a serving plate. Enjoy: Serve immediately and savor the bold and invigorating flavors and textures of Yum Mamuang.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 73,
+            categoryOfFood = "Salads",
+            dishTitle = "Yum Pla Duk Foo",
+            imageResId = R.drawable.yum_pla_duk_foo_73_500,
+            description = "Yum Pla Duk Foo is a delectable Thai salad known for its unique combination of textures and flavors. It features crispy deep-fried catfish that are light and airy on the inside, complemented by a tangy and spicy dressing made from lime juice, fish sauce, and chili peppers. The salad also includes fresh herbs, vegetables, and crunchy shallots. Yum Pla Duk Foo offers a delightful contrast between the crispy catfish and the vibrant, zesty dressing, creating an explosion of taste and texture that's both refreshing and satisfying. ",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "3 великих яєчних жовтки\n" +
-                        "1/2 склянки цукрового піску\n" +
-                        "2 столові ложки лікеру амаретто\n" +
-                        "1 1/4 склянки жирних вершків\n" +
-                        "1/2 склянки подрібненого печива амаретті\n" +
-                        "Нарізаний мигдаль та додаткове печиво для прикраси (за бажанням)",
+                "Ingredients: 1 lb (450g) catfish fillets, cut into bite-sized pieces Vegetable oil for deep-frying 2-3 shallots, thinly sliced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 1/2 cup fresh cilantro leaves, chopped 1/4 cup fresh mint leaves, chopped 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar)",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У жароміцній мисці збийте яєчні жовтки з цукром. Поставити миску над каструлею з киплячою водою (пароварка) і збивати, поки суміш не загусне.\n" +
-                        "Зніміть з вогню і додайте лікер амаретто. Дати охолонути до кімнатної температури.\n" +
-                        "Збиваємо жирні вершки до утворення стійких піків.\n" +
-                        "Акуратно додати яєчну суміш до збитих вершків.\n" +
-                        "Додати подрібнене печиво амаретті.\n" +
-                        "Вилити суміш у форму для батона, застелену поліетиленовою плівкою.\n" +
-                        "Заморозити мінімум на 4 години або до повного застигання.\n" +
-                        "Подавати на шматочках семіфреддо, прикрасивши мигдалем і додатковим печивом амаретті, за бажанням.",
+                "Cooking Process: Deep-Fry Catfish: Heat vegetable oil in a deep fryer or a heavy-bottomed pot to 350°F (175°C). Carefully add the catfish pieces and fry until they turn golden brown and crispy, about 3-4 minutes. Remove the catfish from the oil and drain on paper towels. Prepare Dressing: In a bowl, whisk together fish sauce, lime juice, and palm sugar. Adjust flavors to your liking, balancing the sweet, salty, and sour. Assemble Salad: In a large mixing bowl, combine the deep-fried catfish pieces, thinly sliced shallots, and sliced chili peppers. Toss with Dressing: Pour the dressing over the catfish and ingredients. Gently toss everything together to coat the catfish with the dressing. Garnish: Sprinkle chopped cilantro and mint leaves over the Yum Pla Duk Foo. Serve: Transfer the Thai Crispy Catfish Salad to a serving plate. Enjoy: Serve immediately while the catfish is crispy, savoring the unique textures and zesty flavors of Yum Pla Duk Foo.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 98,
-            categoryOfFood = "Десерти",
-            dishTitle = "Аффогато",
-            imageResId = R.drawable.affogato_66,
-            description =
-            "Аффогато - класичний італійський десерт, який складається з кульки ванільного морозива або джелато, \"втопленого\" в чашці гарячого еспресо. Особливих дієтичних обмежень для цього десерту немає. Десерт. Приблизно 100-150 калорій на 1 порцію. Аффогато - це простий, але вишуканий десерт, в якому гарячий еспресо розтоплює холодне вершкове морозиво, створюючи чудове поєднання смаків і температур. Це швидкий і легкий десерт, який задовольнить ваші солодкі пристрасті. Зазвичай рецепт розрахований на одну порцію, але його можна помножити на кілька.",
+            recipeId = 75,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Pla Rad Prik",
+            imageResId = R.drawable.pla_rad_prik_75,
+            description = "Pla Rad Prik is a Thai seafood dish celebrated for its flavorful and spicy chili sauce. This dish features deep-fried whole fish, typically snapper or sea bass, smothered in a rich and aromatic chili sauce. The sauce is a harmonious blend of garlic, chili peppers, fish sauce, and sugar, creating a perfect balance of sweet, salty, and spicy flavors. Pla Rad Prik is a delicious explosion of taste and texture, with crispy fish complemented by the bold, fiery sauce. It's a popular Thai dish that showcases the bold and vibrant essence of Thai cuisine.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "1 кулька ванільного морозива або джелато\n" +
-                        "1 чашка гарячого еспресо\n" +
-                        "Додатково: шоколадна стружка, подрібнені горіхи або крапля лікеру, наприклад, амаретто (для варіацій)",
+                "Ingredients: 1 whole fish (snapper or sea bass), cleaned and scaled Vegetable oil for deep-frying 6-8 cloves garlic, minced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons fish sauce 1-2 teaspoons sugar Fresh cilantro leaves for garnish Sliced cucumber and lime wedges for serving",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Покладіть кульку ванільного морозива або желе в склянку або чашку для подачі.\n" +
-                        "Заваріть порцію гарячого еспресо за допомогою кавоварки для еспресо або кавоварки Мокка.\n" +
-                        "Полийте гарячий еспресо на морозиво.\n" +
-                        "За бажанням, прикрасьте шоколадними стружками, нарізаними горіхами або покапайте лікером, наприклад, Амаретто.\n" +
-                        "Подавайте негайно і насолоджуйтеся, доки морозиво тане в каві.",
+                "Cooking Process: Deep-Fry the Fish: Heat vegetable oil in a deep fryer or a heavy-bottomed pot to 350°F (175°C). Carefully add the whole fish to the hot oil and deep-fry until it's golden brown and crispy on both sides, about 8-10 minutes. Drain on paper towels. Prepare the Chili Sauce: In a separate pan, heat a small amount of oil over medium heat. Add minced garlic and sliced chili peppers. Sauté until fragrant and slightly softened. Stir in fish sauce and sugar. Cook for a minute or two until the sauce thickens slightly. Smother the Fish: Place the deep-fried fish on a serving platter. Pour the chili sauce over the fish, ensuring it's well-coated. Garnish: Garnish the Pla Rad Prik with fresh cilantro leaves. Serve: Serve the Thai Fried Fish with Chili Sauce hot, along with sliced cucumber and lime wedges. Enjoy: Savor the crispy fish and the bold flavors of the chili sauce in this delicious Thai seafood dish.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 76,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Pla Nueng Manao",
+            imageResId = R.drawable.pla_nueng_manao_76_500,
+            description = "Pla Nueng Manao is a Thai culinary masterpiece celebrated for its delicate flavors and elegant presentation. This dish showcases a whole fish, typically snapper or sea bass, delicately steamed to perfection. The fish is then dressed with a zesty and aromatic lime sauce made from lime juice, fish sauce, chili peppers, and herbs. Pla Nueng Manao is a harmonious marriage of sweet, salty, sour, and spicy elements, with the tender fish absorbing the vibrant flavors of the sauce. This Thai classic is not only delicious but also a feast for the senses, making it a popular choice for special occasions.",
+            ingredients = listOf(
+                "Ingredients: 1 whole fish (snapper or sea bass), cleaned and scaled 2-3 cloves garlic, minced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) Fresh cilantro leaves and sliced cucumber for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Steamer: Bring water to a boil in a large steamer or a pot with a steaming rack. Steam the Fish: Place the whole fish on a heatproof plate that fits inside the steamer. Steam the fish for about 15-20 minutes or until it's cooked through and flakes easily with a fork. The cooking time may vary depending on the size of the fish. Prepare the Lime Sauce: In a small pan, heat a small amount of oil over medium heat. Add minced garlic and sliced chili peppers. Sauté until fragrant. Stir in fish sauce, lime juice, and palm sugar. Cook for a minute or two until the sauce thickens slightly. Serve the Fish: Carefully remove the steamed fish from the steamer and place it on a serving platter. Pour the Sauce: Pour the prepared lime sauce over the steamed fish, ensuring it's well-coated. Garnish: Garnish the Pla Nueng Manao with fresh cilantro leaves. Serve: Serve the Thai Steamed Fish with Lime Sauce hot, along with sliced cucumber. Enjoy: Savor the delicate and vibrant flavors of this exquisite Thai dish, Pla Nueng Manao, a true culinary masterpiece.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 99,
-            categoryOfFood = "Десерти",
-            dishTitle = "Пиріг з абрикосами у фритюрі",
-            imageResId = R.drawable.pyrig_z_abrykodamy_u_frytiuri_99,
-            description =
-            "Пиріг з абрикосами у глазурі - це чудовий десерт, який поєднує в собі солодкість стиглих абрикосів з насиченим і злегка карамелізованим смаком глазурі, приготованої у глазурі. Основа цього пирога зазвичай складається з масляної та листкової скоринки тіста. Потім його наповнюють соковитою сумішшю свіжих абрикосів та мигдального крему, відомою як франжипан. Унікальний елемент фламбування полягає у підпалюванні лікеру (найчастіше абрикосового бренді або подібного) над пирогом безпосередньо перед подачею на стіл. Цей процес не лише додає десерту драматичного колориту, але й надає йому теплого, п'янкого аромату та смаку. В результаті виходить гарно підрум'янений, ароматний пиріг з ніжними абрикосами, які увібрали в себе чудову есенцію лікеру фламбед. Це чудове поєднання текстур і смаків, яке неодмінно вразить любителів десертів.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "300 г білої муки\n" +
-                        "1 чайна ложка солі\n" +
-                        "дріжджі в кубиках (приблизно 10 г), подрібнені\n" +
-                        "1½ дл води\n" +
-                        "½ дл оливкової олії\n" +
-                        "1 столова ложка меду\n" +
-                        "100 г сметани\n" +
-                        "100 г сиру з голубими жилками (наприклад, Горгонзола), нарізаний на кусочки\n" +
-                        "200 г нарізаних абрикосів\n" +
-                        "пучок зірочок тим'яну\n" +
-                        "50 г руколи\n" +
-                        "½ столової ложки рідкого меду\n" +
-                        "1-2 чайних ложки флер де сель (морська сіль)\n" +
-                        "трохи перцю",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Тісто: Змішати борошно, сіль і дріжджі. Додати воду, олію і мед, перемішати маленькою лопаткою до утворення м'якого тіста. м'яке тісто, \n" +
-                        "недовго вимісити, накрити кришкою і залишити приблизно на 10 хвилин.\n" +
-                        "Формування: розрізати тісто на 4 частини. На невеликій кількості борошна розкачати шматочки тіста до товщини приблизно 2 мм, щоб сформувати овальні форми, і викласти їх на два дека, застелених папером для випікання.\n" +
-                        "Тарт фламбе: змастити макарони сметаною зі сметаною. Прикрасити горгонзолою, абрикосами та чебрецем.\n" +
-                        "Час приготування: готувати приблизно 20 хвилин у попередньо розігрітій до 220°C духовці (з вентилятором). Вийняти з духовки, викласти на руколу, полити медом і приправити.\n" +
-                        "Варіант: замість горгонзоли використовувати горгонзолу, замість неї - маскарпоне або вершковий сир.",
-            )
-        ),
-
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 100,
-            categoryOfFood = "Десерти",
-            dishTitle = "Лимонний пиріг (Torta Al Limone)",
-            imageResId = R.drawable.lemon_cacke_torla_al_limone_73,
-            description =
-            "Лимонний торт, відомий італійською як Torta al Limone, - це вишуканий десерт, який демонструє яскравий та пікантний смак лимонів. Цей торт характеризується вологим і ніжним м'якушем, наповненим освіжаючим цитрусовим ароматом і пікантним смаком лимонів. Зазвичай його готують, додаючи лимонну цедру і сік у тісто, створюючи чудовий баланс між солодкістю і терпкістю.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "200 г білої пшеничної муки\n" +
-                        "50 г цукру\n" +
-                        "4 чайні ложки солі\n" +
-                        "80 г холодного вершкового масла, нарізаного на маленькі кубики\n" +
-                        "3 дл води\n" +
-                        "80 г вершкового масла\n" +
-                        "3 столові ложки кукурудзяного крохмалю\n" +
-                        "3 столові ложки холодної води\n" +
-                        "120 г цукру\n" +
-                        "4 свіжі жовтки яєць\n" +
-                        "3 органічні лимони, трохи тертої начінки та всі соки\n" +
-                        "1 органічний лимон, нарізаний на кружечки\n" +
-                        "Для пирога з діаметром приблизно 28 см, з підкладкою дна папером для випікання і змащеними бортами.",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Тісто: змішайте муку, цукор і сіль. Додайте вершкове масло, розітерте все руками до отримання однорідної крихкої маси. Додайте воду і швидко все разом перемішайте, щоб отримати м'яке тісто, не переробляючи його. Розгорніть тісто, накрийте і охолодьте приблизно 30 хвилин.\n" +
-                        "Для основи: розкатайте тісто між двома шарами паперу для випікання (приблизно 32 см у діаметрі) і помістіть його на форму для випікання, залишаючи нижній шар. Проколіть дно виделкою.\n" +
-                        "Приготування: Випікайте протягом приблизно 20 хвилин у нижній частині розігрітої до 200°C духовки. Вийміть пиріг з духовки, дайте йому охолонути, потім перенесіть на решітку і дайте охолонути.\n" +
-                        "Для начинки: в кастрюлі принесіть воду і вершкове масло до кипіння. Розчиніть кукурудзяний крохмаль у воді, додайте цукор і жовтки яєць, перемішайте. Додайте цю суміш до киплячої рідини, постійно помішуючи з використанням віничка. Постійно помішуючи, доведіть до кипіння і відставте. Додайте цедру і сік з лимона (приблизно 2 дл). Влити ще гарячу суміш на дно пирога і дайте охолонути. Накрийте пиріг і поставте в холодильник принаймні 3 години.\n" +
-                        "Прикраса: прикрасьте пиріг кружечками лимона.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 101,
-            categoryOfFood = "Хліб",
-            dishTitle = "Хліб фокачча",
-            imageResId = R.drawable.focaccia_bread_67,
-            description =
-            "Хліб фокачча - це італійська класика, відома своєю м'якою, жувальною текстурою та чудовим ароматом оливкової олії. Він універсальний і ідеально підходить для різних випадків. Як правило, немає особливих дієтичних обмежень, але ви можете адаптувати начинку до своїх уподобань. Фокачча - це плоский італійський хліб, випечений у духовці. Типова порція фокаччі містить близько 150-200 калорій. Фокачча - це пікантний, трав'яний хліб, який часто прикрашають розмарином, оливками або помідорами черрі, що робить його смачним і ароматним частуванням. Зазвичай цей рецепт розрахований на 6-8 осіб.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "4 склянки борошна грубого помелу\n" +
-                        "1 пачка (2 1/4 ч.л.) активних сухих дріжджів\n" +
-                        "1 1/2 склянки теплої води\n" +
-                        "2 ч. л. солі\n" +
-                        "1/4 склянки оливкової олії\n" +
-                        "Приправи на ваш вибір (розмарин, оливки, маслини, помідори черрі тощо)",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У мисці розчиніть дріжджі в теплій воді. Залишити на 5-10 хвилин до утворення піни.\n" +
-                        "У великій мисці змішати борошно і сіль. Влити дріжджову суміш та оливкову олію. Вимішуємо до утворення тіста.\n" +
-                        "Вимішувати тісто протягом 57 хвилин, поки воно не стане однорідним та еластичним.\n" +
-                        "Викласти тісто в змащену олією миску, накрити вологою тканиною і дати йому піднятися приблизно на 1 годину.\n" +
-                        "Розігріти духовку до 475°F (245°C).\n" +
-                        "Розкачайте тісто в прямокутник, перекладіть на деко і дайте йому відпочити 15 хвилин.\n" +
-                        "Зробіть пальцями заглиблення в тісті, збризніть оливковою олією та додайте обрану вами начинку.\n" +
-                        "Випікайте 15-20 хвилин до золотистої скоринки.\n" +
-                        "Дайте трохи охолонути, потім наріжте і подавайте до столу.\n" +
-                        "\n" +
-                        "Насолоджуйтесь домашнім хлібом фокачча!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 102,
-            categoryOfFood = "Хліб",
-            dishTitle = "Чіабатта",
-            imageResId = R.drawable.ciabatta_68,
-            description =
-            "Чіабатта - класичний італійський хліб, відомий своїм сільським виглядом і жувальною текстурою. Він підходить для більшості дієтичних уподобань, оскільки містить основні інгредієнти хліба. Одна порція зазвичай містить близько 150-200 калорій. Ідеально підходить для бутербродів або подається з оливковою олією та бальзамічним оцтом. Вкажіть частину приготування. На скільки осіб розрахований рецепт? Вкажіть, які інгредієнти потрібні та їх кількість. Зробіть покроковий опис процесу приготування. У рецепті на BBC Good Food не вказано кількість порцій, але зазвичай можна приготувати 1 велику буханку або кілька менших.",
+            recipeId = 77,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Goong Phat Prik",
+            imageResId = R.drawable.goong_phat_prik_77_500,
+            description = "Goong Phat Prik is a spicy and savory Thai seafood dish that showcases the succulence of shrimp. This quick and flavorful recipe features shrimp stir-fried with garlic, chili peppers, and a savory sauce. It's a delightful balance of sweet, salty, and spicy flavors, perfect for those who appreciate the bold tastes of Thai cuisine. Goong Phat Prik is a popular choice for a quick and delicious seafood meal that's sure to satisfy your craving for a spicy kick.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "500 г сильного білого хлібного борошна\n" +
-                        "10 г солі\n" +
-                        "7 г швидких дріжджів\n" +
-                        "2 ст.л. оливкової олії\n" +
-                        "300 мл води",
+                "Ingredients: 1 lb (450g) large shrimp, peeled and deveined 3-4 cloves garlic, minced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons vegetable oil 2 tablespoons oyster sauce 1 tablespoon fish sauce 1 teaspoon sugar Fresh cilantro leaves for garnish",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Змішайте борошно, сіль і дріжджі у великій мисці.\n" +
-                        "Додайте оливкову олію та воду, перемішайте, щоб утворилося м'яке тісто.\n" +
-                        "Вимішувати тісто на присипаній борошном поверхні близько 10 хвилин, поки воно не стане гладким та еластичним.\n" +
-                        "Покладіть тісто в змащену олією миску, накрийте і залиште на 12 годин підніматися, поки воно не збільшиться вдвічі.\n" +
-                        "Розігріти духовку до 220°C (вентилятор на 200°C).\n" +
-                        "Надайте тісту форму грубого прямокутника і викладіть на деко.\n" +
-                        "Випікайте 25-30 хвилин, доки хліб не стане золотисто-коричневим і не видасть порожнистого звуку при постукуванні по дну.\n" +
-                        "Охолодити на решітці перед тим, як нарізати і подавати до столу.",
+                "Cooking Process: Prepare Shrimp: Ensure the shrimp are peeled, deveined, and patted dry with paper towels. Make Sauce: In a small bowl, whisk together oyster sauce, fish sauce, and sugar. Set aside. Stir-Fry Shrimp: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and sliced chili peppers. Stir-fry for about 30 seconds until fragrant. Add Shrimp: Add the prepared shrimp to the hot pan. Stir-fry the shrimp for 2-3 minutes or until they turn pink and opaque. Add Sauce: Pour the sauce mixture over the stir-fried shrimp. Stir-fry for an additional 1-2 minutes, ensuring the shrimp are well-coated with the sauce. Garnish: Garnish the Goong Phat Prik with fresh cilantro leaves. Serve: Transfer the Thai Stir-Fried Shrimp with Chili Peppers to a serving plate. Enjoy: Serve immediately and relish the bold and spicy flavors of this delicious Thai shrimp dish.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 103,
-            categoryOfFood = "Хліб",
-            dishTitle = "Гріссіні",
-            imageResId = R.drawable.grissini_103,
-            description =
-            "Гріссіні - тонкі італійські хлібні палички, відомі своєю хрусткістю та простотою. Вони підходять для більшості дієтичних обмежень. В одній порції міститься приблизно 30-50 калорій. Грісіні універсальні, їх можна подавати як закуску, перекус або як доповнення до страв. За цим рецептом виходить близько 20 хлібних паличок.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 склянки борошна грубого помелу\n" +
-                        "1 чайна ложка солі\n" +
-                        "1/2 чайної ложки цукру\n" +
-                        "1 пачка активних сухих дріжджів (приблизно 2 1/4 чайної ложки)\n" +
-                        "2/3 склянки теплої води\n" +
-                        "2 столові ложки оливкової олії\n" +
-                        "За бажанням: кунжут, мак або інші добавки",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "У мисці змішайте теплу воду, цукор і дріжджі. Дати постояти близько 10 хвилин до утворення піни.\n" +
-                        "Додайте борошно, сіль та оливкову олію до дріжджової суміші. Перемішайте, щоб утворилося тісто.\n" +
-                        "Вимішувати тісто на присипаній борошном поверхні близько 5 хвилин до однорідності.\n" +
-                        "Розділіть тісто на 20 рівних частин.\n" +
-                        "Розкачайте кожну порцію в тонкий, схожий на олівець, пласт (приблизно 12 дюймів завдовжки) і викладіть на деко.\n" +
-                        "Збризніть водою і посипте додатковими начинками.\n" +
-                        "Випікайте при 400°F (200°C) 15-20 хвилин до золотистої скоринки.\n" +
-                        "Дайте їм охолонути і подавайте як чудову закуску або перекус.\n" +
-                        "Насолоджуйтесь домашніми гриссіні!",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 104,
-            categoryOfFood = "Хліб",
-            dishTitle = "Тараллі",
-            imageResId = R.drawable.taralli_70,
+            recipeId = 78,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Goong Phat Khing",
+            imageResId = R.drawable.goong_phat_khing_78_500,
+            description = "Goong Phat Khing is a delightful Thai dish that features succulent shrimp stir-fried with the aromatic flavors of fresh ginger and garlic. This dish offers a harmonious blend of sweet, savory, and slightly spicy notes. The star ingredient is the ginger, which imparts a warm and zesty kick to the tender shrimp. Goong Phat Khing is a quick and flavorful dish, perfect for those who appreciate the distinctive taste of ginger and the bold flavors of Thai cuisine.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) large shrimp, peeled and deveined 2-3 tablespoons vegetable oil 2-3 cloves garlic, minced 2-3 tablespoons fresh ginger, julienned 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons fish sauce 1-2 teaspoons sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Shrimp: Ensure the shrimp are peeled, deveined, and patted dry with paper towels. Stir-Fry Shrimp: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and sliced chili peppers. Stir-fry for about 30 seconds until fragrant. Add Shrimp and Ginger: Add the prepared shrimp and julienned ginger to the hot pan. Stir-fry the shrimp for 2-3 minutes or until they turn pink and opaque. Prepare Sauce: In a small bowl, combine fish sauce and sugar. Mix well to dissolve the sugar. Add Sauce: Pour the fish sauce and sugar mixture over the stir-fried shrimp and ginger. Stir-fry for an additional 1-2 minutes, ensuring the shrimp are well-coated with the sauce. Garnish: Garnish the Goong Phat Khing with fresh cilantro leaves. Serve: Transfer the Thai Stir-Fried Shrimp with Ginger to a serving plate. Enjoy: Serve immediately, savoring the aromatic ginger and savory flavors of this delicious Thai shrimp dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 79,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Pla Krapong Neung Manao",
+            imageResId = R.drawable.pla_krapong_neung_manao_79_500,
+            description = "Pla Krapong Neung Manao is a Thai culinary masterpiece renowned for its delicate flavors and elegant presentation. This dish showcases a whole snapper, delicately steamed to perfection, then dressed with a zesty lime sauce. The fish absorbs the vibrant flavors of the sauce, creating a harmonious blend of sweet, salty, sour, and slightly spicy notes. Pla Krapong Neung Manao is not only a delicious dish but also a feast for the senses, making it a popular choice for special occasions and those seeking a refined and flavorful Thai seafood experience.",
+            ingredients = listOf(
+                "Ingredients: 1 whole snapper (about 2-3 lbs), cleaned and scaled 2-3 cloves garlic, minced 2-3 fresh red or green chili peppers, thinly sliced (adjust to your spice preference) 2-3 tablespoons fish sauce 2-3 tablespoons lime juice 1-2 teaspoons palm sugar (or brown sugar) Fresh cilantro leaves and sliced cucumber for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Steamer: Bring water to a boil in a large steamer or a pot with a steaming rack. Score the Fish: Using a sharp knife, make 2-3 diagonal cuts on each side of the snapper. Steam the Fish: Place the whole snapper on a heatproof plate that fits inside the steamer. Steam the fish for about 15-20 minutes or until it's cooked through and flakes easily with a fork. The cooking time may vary depending on the size of the fish. Prepare the Lime Sauce: In a small pan, heat a small amount of oil over medium heat. Add minced garlic and sliced chili peppers. Sauté until fragrant and slightly softened. Stir in fish sauce, lime juice, and palm sugar. Cook for a minute or two until the sauce thickens slightly. Serve the Fish: Carefully remove the steamed snapper from the steamer and place it on a serving platter. Pour the Sauce: Pour the prepared lime sauce over the steamed snapper, ensuring it's well-coated. Garnish: Garnish Pla Krapong Neung Manao with fresh cilantro leaves. Serve: Serve the Thai Steamed Snapper with Lime Sauce hot, along with sliced cucumber. Enjoy: Savor the delicate and vibrant flavors of this exquisite Thai dish, Pla Krapong Neung Manao, a true culinary masterpiece.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 80,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Pla Tod Kamin",
+            imageResId = R.drawable.pla_tod_kamin_80,
+            description = "Pla Tod Kamin is a delectable Thai dish known for its aromatic and crispy exterior. It features fish fillets, often snapper or sea bass, marinated in a flavorful blend of turmeric and spices before being deep-fried to perfection. The result is tender and fragrant fish with a crispy, golden crust. Pla Tod Kamin offers a delightful contrast between the earthy, warm notes of turmeric and the delicate flavor of the fish. It's a beloved Thai dish that satisfies both the senses and the palate. ",
+            ingredients = listOf(
+                "Ingredients: 4 fish fillets (snapper or sea bass), about 6-8 oz each 1-2 teaspoons turmeric powder 1-2 teaspoons garlic powder 1-2 teaspoons salt Vegetable oil for deep-frying Fresh cilantro leaves and lime wedges for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Marinade: In a bowl, combine turmeric powder, garlic powder, and salt to create the marinade. Marinate the Fish: Pat the fish fillets dry with paper towels. Rub the turmeric marinade evenly on both sides of the fillets. Let the fish marinate for about 15-30 minutes to allow the flavors to penetrate. Heat the Oil: Heat vegetable oil in a deep fryer or a heavy-bottomed pot to 350°F (175°C). Deep-Fry the Fish: Carefully add the marinated fish fillets to the hot oil. Fry for about 4-5 minutes on each side or until they turn golden brown and crispy. Remove the fried fish fillets and drain them on paper towels. Garnish: Garnish Pla Tod Kamin with fresh cilantro leaves and serve with lime wedges. Serve: Transfer the Thai Turmeric Fried Fish to a serving platter. Enjoy: Serve hot and enjoy the aromatic and crispy delight of Pla Tod Kamin, a delightful Thai fish dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 81,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Goong Phat Phrik Pow",
+            imageResId = R.drawable.goong_phat_phrik_pow_81,
+            description = "Goong Phat Phrik Pow is a flavorful Thai dish that showcases succulent shrimp stir-fried with a spicy and aromatic chili paste. This dish boasts a perfect balance of sweet, salty, and spicy flavors. The star of the show is the chili paste (Phrik Pow), which infuses the shrimp with a bold and zesty kick. It's a delightful choice for those who appreciate the bold and spicy flavors of Thai cuisine. Goong Phat Phrik Pow is quick to prepare and promises a satisfying and fiery culinary experience.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) large shrimp, peeled and deveined 2-3 tablespoons vegetable oil 2-3 cloves garlic, minced 2-3 tablespoons Thai chili paste (Phrik Pow) 2-3 tablespoons fish sauce 1-2 teaspoons sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Shrimp: Ensure the shrimp are peeled, deveined, and patted dry with paper towels. Stir-Fry Shrimp: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add Shrimp: Add the prepared shrimp to the hot pan. Stir-fry the shrimp for 2-3 minutes or until they turn pink and opaque. Add Chili Paste: Add Thai chili paste (Phrik Pow) to the shrimp. Stir-fry for an additional 1-2 minutes to evenly coat the shrimp with the paste. Prepare Sauce: In a small bowl, combine fish sauce and sugar. Mix well to dissolve the sugar. Add Sauce: Pour the fish sauce and sugar mixture over the stir-fried shrimp and chili paste. Stir-fry for an additional 1-2 minutes, ensuring the shrimp are well-coated with the sauce. Garnish: Garnish Goong Phat Phrik Pow with fresh cilantro leaves. Serve: Transfer the Thai Stir-Fried Shrimp with Chili Paste to a serving plate. Enjoy: Serve immediately, savoring the bold and spicy flavors of this delicious Thai shrimp dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 82,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Pla Neung Si Ew",
+            imageResId = R.drawable.pla_neung_si_ew_82,
+            description = "Pla Neung Si Ew is a Thai culinary gem celebrated for its simplicity and rich umami flavors. This dish features a whole fish, typically snapper or sea bass, delicately steamed to perfection and served in a fragrant soy-based sauce. The fish absorbs the essence of the sauce, creating a harmonious blend of savory, slightly sweet, and aromatic notes. Pla Neung Si Ew is a showcase of Thai culinary finesse, offering a light yet deeply satisfying dining experience.",
+            ingredients = listOf(
+                "Ingredients: 1 whole snapper or sea bass (about 2-3 lbs), cleaned and scaled 2-3 cloves garlic, minced 2-3 slices of ginger 2-3 tablespoons light soy sauce 1-2 teaspoons sugar 1-2 teaspoons oyster sauce Fresh cilantro leaves and sliced green onions for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Steamer: Bring water to a boil in a large steamer or a pot with a steaming rack. Score the Fish: Using a sharp knife, make 2-3 diagonal cuts on each side of the fish. Steam the Fish: Place the whole fish on a heatproof plate that fits inside the steamer. Steam the fish for about 15-20 minutes or until it's cooked through and flakes easily with a fork. The cooking time may vary depending on the size of the fish. Prepare the Sauce: In a small pan, combine minced garlic, ginger slices, light soy sauce, sugar, and oyster sauce. Heat the sauce over low heat, stirring until the sugar dissolves and the flavors meld together. Serve the Fish: Carefully remove the steamed fish from the steamer and place it on a serving platter. Pour the Sauce: Pour the prepared sauce over the steamed fish, ensuring it's evenly coated. Garnish: Garnish Pla Neung Si Ew with fresh cilantro leaves and sliced green onions. Serve: Serve the Thai Steamed Fish in Soy Sauce hot, accompanied by steamed jasmine rice. Enjoy: Savor the delicate and flavorful essence of this Thai dish, Pla Neung Si Ew, a true testament to Thai culinary finesse.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 83,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Pad Cha Talay",
+            imageResId = R.drawable.pad_cha_talay_83_500,
+            description = "Pad Cha Talay is a fiery and aromatic Thai seafood stir-fry that awakens the taste buds with bold and spicy flavors. This dish combines a medley of fresh seafood, such as shrimp, squid, and mussels, with fragrant herbs and spices like kaffir lime leaves and bird's eye chili peppers. The result is a tantalizing blend of sweet, salty, sour, and intensely spicy notes. Pad Cha Talay is a beloved choice for those who crave the exhilarating heat of Thai cuisine, delivering a delicious kick that's both satisfying and unforgettable. ",
+            ingredients = listOf(
+                "Ingredients: 1/2 lb (225g) shrimp, peeled and deveined 1/2 lb (225g) squid, cleaned and sliced into rings 1/2 lb (225g) mussels, cleaned and debearded 2-3 tablespoons vegetable oil 2-3 cloves garlic, minced 2-3 bird's eye chili peppers, thinly sliced (adjust to your spice preference) 2-3 kaffir lime leaves, thinly sliced 2-3 slices of galangal (or ginger) 2-3 tablespoons fish sauce 1-2 teaspoons sugar Fresh Thai basil leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Seafood: Ensure the shrimp are peeled and deveined, the squid is cleaned and sliced, and the mussels are cleaned and debearded. Heat Oil: Heat vegetable oil in a wok or a large skillet over high heat. Stir-Fry Garlic and Chili Peppers: Add minced garlic and sliced bird's eye chili peppers to the hot oil. Stir-fry for about 30 seconds until fragrant. Add Seafood: Add shrimp, squid, and mussels to the wok. Stir-fry for 2-3 minutes until the seafood begins to cook and turn opaque. Add Kaffir Lime Leaves and Galangal: Toss in thinly sliced kaffir lime leaves and galangal slices. Stir-fry for another minute. Prepare Sauce: In a small bowl, mix fish sauce and sugar until well combined. Add Sauce: Pour the fish sauce and sugar mixture over the seafood and herbs. Stir-fry for an additional 1-2 minutes until the sauce coats the seafood evenly. Garnish: Garnish Pad Cha Talay with fresh Thai basil leaves. Serve: Transfer the Thai Spicy Seafood Stir-Fry to a serving plate. Enjoy: Serve hot with steamed jasmine rice, savoring the bold and spicy flavors of Pad Cha Talay.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 84,
+            categoryOfFood = "Seafood Dishes",
+            dishTitle = "Goong Phat Khao Poht",
+            imageResId = R.drawable.goong_phat_khao_poht_84_500,
             description =
-            "Тараллі - традиційні італійські крекери родом з регіону Апулія. Вони універсальні та підходять для різних дієтичних обмежень. Ці хрусткі закуски зазвичай смакують з вином або як закуски. Хоча кількість калорій варіюється, вони приблизно містять 40-60 калорій на порцію. За цим рецептом виходить приблизно 4050 тараллі.",
-            ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "2 склянки борошна грубого помелу\n" +
-                        "1/2 склянки білого вина (сухого)\n" +
-                        "1/2 склянки оливкової олії першого віджиму\n" +
-                        "1 чайна ложка солі\n" +
-                        "За бажанням: насіння фенхелю, чорний перець або інші приправи",
-            ),
-            instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Розігрійте духовку до 375°F (190°C).\n" +
-                        "У мисці змішайте борошно, сіль та інші приправи за бажанням.\n" +
-                        "Додайте біле вино та оливкову олію і перемішайте до утворення тіста.\n" +
-                        "Вимісити тісто до однорідності.\n" +
-                        "Розділіть тісто на невеликі шматочки і розкачайте кожен в мотузку, приблизно 5 дюймів завдовжки.\n" +
-                        "Сформуйте кожну мотузку у вигляді кільця, притиснувши кінці разом, щоб запечатати.\n" +
-                        "Викласти тараллі на деко.\n" +
-                        "Випікайте приблизно 25-30 хвилин або поки вони не стануть золотистими.\n" +
-                        "Дайте їм охолонути і насолоджуйтеся домашніми тараллі!\n" +
-                        "Ці тараллі стануть чудовим хрустким доповненням до ваших італійських закусок чи снеків.",
-            )
-        ),
-
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        RecipeModel(
-            id = 105,
-            categoryOfFood = "Коктейль",
-            dishTitle = "Лимончелло Спритц",
-            imageResId = R.drawable.limoncello_spritz_94,
+            "Goong Phat Khao Poht is a delightful Thai dish that combines succulent shrimp with a medley of mixed vegetables, creating a vibrant and nutritious stir-fry. This dish is known for its savory and slightly sweet flavors, derived from the combination of oyster sauce, soy sauce, and sugar. Goong Phat Khao Poht offers a perfect balance of protein and vegetables, making it a wholesome and satisfying choice for a quick and flavorful Thai meal.",
+            ingredients = listOf(
+                "Ingredients: 1 lb (450g) large shrimp, peeled and deveined 2-3 tablespoons vegetable oil 2-3 cloves garlic, minced 1 small onion, thinly sliced 1 bell pepper (any color), sliced 1 carrot, julienned 1/2 cup broccoli florets 2-3 tablespoons oyster sauce 1-2 tablespoons soy sauce 1-2 teaspoons sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Shrimp: Ensure the shrimp are peeled, deveined, and patted dry with paper towels. Stir-Fry Shrimp: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add Shrimp: Add the prepared shrimp to the hot pan. Stir-fry the shrimp for 2-3 minutes or until they turn pink and opaque. Remove them from the pan and set aside. Stir-Fry Vegetables: In the same pan, add a bit more oil if needed. Add sliced onion, bell pepper, carrot, and broccoli florets. Stir-fry the vegetables for 3-4 minutes until they begin to soften but remain crisp. Prepare Sauce: In a small bowl, whisk together oyster sauce, soy sauce, and sugar until well combined. Combine and Finish: Return the cooked shrimp to the pan with the stir-fried vegetables. Pour the sauce mixture over the shrimp and vegetables. Stir-fry for an additional 1-2 minutes, ensuring everything is coated in the sauce and heated through. Garnish: Garnish Goong Phat Khao Poht with fresh cilantro leaves. Serve: Transfer the Thai Stir-Fried Shrimp with Mixed Vegetables to a serving plate. Enjoy: Serve immediately and relish the savory and nutritious flavors of this delicious Thai dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 86,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Pad Pak Ruam Mit",
+            imageResId = R.drawable.pad_pak_ruam_mit_86_500,
+            description = "Pad Pak Ruam Mit is a vibrant and nutritious Thai stir-fry that celebrates an array of colorful and crisp vegetables. This dish is known for its simplicity and the emphasis on the natural flavors of the vegetables. With a savory and slightly sweet sauce, it offers a perfect balance of textures and tastes. Pad Pak Ruam Mit is not only delicious but also a healthy choice, making it a popular side dish or main course in Thai cuisine.",
+            ingredients = listOf(
+                "Ingredients: 2 cups mixed vegetables (broccoli, bell peppers, carrots, baby corn, snap peas, etc.), washed and sliced 2-3 cloves garlic, minced 2-3 tablespoons vegetable oil 2-3 tablespoons oyster sauce 1-2 teaspoons soy sauce 1-2 teaspoons sugar Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Vegetables: Wash and slice the mixed vegetables into bite-sized pieces. Stir-Fry Vegetables: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add Vegetables: Add the sliced mixed vegetables to the hot pan. Stir-fry the vegetables for 3-4 minutes until they become tender-crisp. Prepare Sauce: In a small bowl, combine oyster sauce, soy sauce, and sugar. Mix until well blended. Add Sauce: Pour the sauce mixture over the stir-fried vegetables. Stir-fry for an additional 1-2 minutes, ensuring the sauce coats the vegetables evenly. Garnish: Garnish Pad Pak Ruam Mit with fresh cilantro leaves. Serve: Transfer the Thai Mixed Vegetables Stir-Fry to a serving plate. Enjoy: Serve hot as a delightful side dish or a wholesome vegetarian main course, savoring the natural flavors and vibrant colors of this Thai culinary gem.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 87,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Kai Lan Phat Thai",
+            imageResId = R.drawable.kai_lan_phat_thai_87,
+            description = "Kai Lan Phat Thai is a delicious Thai stir-fry that showcases Chinese broccoli, also known as kai lan, sautéed in a savory oyster sauce. This dish is a harmonious marriage of flavors and textures, with the slightly bitter and tender kai lan perfectly complemented by the umami-rich oyster sauce. A dash of garlic adds depth, and a touch of sugar balances the flavors. Kai Lan Phat Thai is a quick and nutritious dish that can be served as a side or a vegetarian main course, bringing the rich flavors of Thai cuisine to your table.",
+            ingredients = listOf(
+                "Ingredients: 1 bunch Chinese broccoli (kai lan), washed and cut into bite-sized pieces 2-3 cloves garlic, minced 2-3 tablespoons vegetable oil 2-3 tablespoons oyster sauce 1-2 teaspoons sugar",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Chinese Broccoli: Wash the Chinese broccoli and cut it into bite-sized pieces, separating the stems from the leaves. Stir-Fry Garlic: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add Chinese Broccoli Stems: Add the stems of the Chinese broccoli to the hot pan. Stir-fry for 2-3 minutes until they begin to soften. Add Chinese Broccoli Leaves: Add the leaves of the Chinese broccoli to the pan. Stir-fry for an additional 1-2 minutes until they wilt and become tender. Prepare Sauce: In a small bowl, combine oyster sauce and sugar. Mix well until the sugar dissolves. Add Sauce: Pour the oyster sauce and sugar mixture over the stir-fried Chinese broccoli. Stir-fry for another 1-2 minutes, ensuring the sauce coats the vegetables evenly. Serve: Transfer the Thai Stir-Fried Chinese Broccoli with Oyster Sauce to a serving plate. Enjoy: Serve hot as a side dish or a vegetarian main course, relishing the simple yet satisfying flavors of this Thai delicacy.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 88,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Phak Boong Fai Daeng",
+            imageResId = R.drawable.phak_boong_fai_daeng_88_500,
+            description = "Phak Boong Fai Daeng is a delicious Thai stir-fry dish that features morning glory, a vibrant leafy green, cooked in a flavorful red curry paste. This dish is renowned for its bold and spicy flavors, as well as its tender-crisp texture. The red curry paste adds a delightful kick, while the morning glory provides a refreshing contrast. Phak Boong Fai Daeng is a popular street food in Thailand, cherished for its balance of sweet, salty, and spicy tastes. Whether served as a side or a vegetarian main course, it's a quick and flavorful way to experience the essence of Thai cuisine. ",
+            ingredients = listOf(
+                "Ingredients: 1 bunch morning glory (phak boong), washed and cut into 4-inch pieces 2-3 tablespoons vegetable oil 2-3 tablespoons red curry paste 2-3 cloves garlic, minced 1-2 teaspoons sugar 1-2 teaspoons fish sauce",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Morning Glory: Wash the morning glory and cut it into 4-inch pieces, discarding any tough stems. Stir-Fry Garlic: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add Red Curry Paste: Add red curry paste to the hot oil. Stir-fry for 1-2 minutes to release the aroma and flavors of the curry paste. Stir-Fry Morning Glory: Add the prepared morning glory to the pan. Stir-fry for 2-3 minutes until it begins to wilt and becomes tender-crisp. Season with Sugar and Fish Sauce: Sprinkle sugar and fish sauce over the stir-fried morning glory. Continue to stir-fry for an additional 1-2 minutes, ensuring the flavors meld together. Serve: Transfer the Thai Stir-Fried Morning Glory in Red Curry Paste to a serving plate. Enjoy: Serve hot as a side dish or a vegetarian main course, savoring the bold and aromatic flavors of this Thai street food classic.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 89,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Phad Phak Kana",
+            imageResId = R.drawable.phad_phak_kana_89,
+            description = "Phad Phak Kana is a classic Thai stir-fry dish that celebrates the vibrant flavors of Chinese broccoli, also known as kai lan. This dish features tender-crisp Chinese broccoli stalks and leaves, sautéed with garlic and a savory sauce. It offers a delightful balance of sweet, salty, and umami flavors, with a slightly bitter note from the broccoli. Phad Phak Kana is a quick and nutritious side dish or vegetarian main course, showcasing the simplicity and deliciousness of Thai cuisine. ",
+            ingredients = listOf(
+                "Ingredients: 1 bunch Chinese broccoli (kai lan), washed and cut into bite-sized pieces 2-3 cloves garlic, minced 2-3 tablespoons vegetable oil 1-2 tablespoons oyster sauce (substitute with vegetarian oyster sauce for a vegetarian version) 1-2 teaspoons soy sauce 1-2 teaspoons sugar",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Chinese Broccoli: Wash the Chinese broccoli and cut it into bite-sized pieces, separating the stems from the leaves. Stir-Fry Garlic: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add Chinese Broccoli Stems: Add the stems of the Chinese broccoli to the hot pan. Stir-fry for 2-3 minutes until they begin to soften. Add Chinese Broccoli Leaves: Add the leaves of the Chinese broccoli to the pan. Stir-fry for an additional 1-2 minutes until they wilt and become tender-crisp. Prepare Sauce: In a small bowl, combine oyster sauce (or vegetarian oyster sauce), soy sauce, and sugar. Mix well until the sugar dissolves. Add Sauce: Pour the sauce mixture over the stir-fried Chinese broccoli. Stir-fry for another 1-2 minutes, ensuring the sauce coats the vegetables evenly. Serve: Transfer the Thai Stir-Fried Chinese Broccoli (Phad Phak Kana) to a serving plate. Enjoy: Serve hot as a side dish or a vegetarian main course, appreciating the simple yet delightful flavors of this Thai culinary gem.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 90,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Pad Pak",
+            imageResId = R.drawable.pad_pak_90_500,
+            description = "Pad Pak is a simple yet flavorful Thai dish that highlights the natural taste and crunch of fresh vegetables. This stir-fry features a single type of vegetable, such as broccoli or bok choy, sautéed with garlic and a savory sauce. It offers a harmonious balance of sweet, salty, and umami flavors, with the garlic providing a delightful aromatic touch. Pad Pak can be enjoyed as a nutritious side dish or a vegetarian main course, showcasing the essence of Thai cuisine through its simplicity and deliciousness. ",
+            ingredients = listOf(
+                "Ingredients: 1 bunch of your chosen vegetable (e.g., broccoli, bok choy, morning glory), washed and cut into bite-sized pieces 2-3 cloves garlic, minced 2-3 tablespoons vegetable oil 1-2 tablespoons oyster sauce (substitute with vegetarian oyster sauce for a vegetarian version) 1-2 teaspoons soy sauce 1-2 teaspoons sugar",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Vegetable: Wash the chosen vegetable and cut it into bite-sized pieces, ensuring they are uniform in size. Stir-Fry Garlic: Heat vegetable oil in a wok or a large skillet over high heat. Add minced garlic and stir-fry for about 30 seconds until fragrant. Add the Vegetable: Add the prepared vegetable to the hot pan. Stir-fry for 2-3 minutes until it starts to become tender. Prepare the Sauce: In a small bowl, combine oyster sauce (or vegetarian oyster sauce), soy sauce, and sugar. Mix well until the sugar dissolves. Add the Sauce: Pour the sauce mixture over the stir-fried vegetable. Stir-fry for an additional 1-2 minutes, ensuring the sauce evenly coats the vegetables. Serve: Transfer the Thai Stir-Fried Vegetable (Pad Pak) to a serving plate. Enjoy: Serve hot as a side dish or a vegetarian main course, relishing the simplicity and delicious flavors of this Thai culinary classic.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 91,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Gang Keow Wan Pak",
+            imageResId = R.drawable.gang_keow_wan_pak_91_700,
             description =
-            "Лимончелло Спритц - це чудовий та освіжаючий італійський коктейль, який передає суть Амальфітанського узбережжя. Цей підбадьорливий напій готується шляхом поєднання лікеру Лімончелло, відомого своїм яскравим лимонним смаком, з газованою водою та іноді з додаванням просекко. Зазвичай його подають з льодом і прикрашають скибочками лимона та свіжим листям м'яти для додаткового аромату та естетичного вигляду.",
+            "Gang Keow Wan Pak is a delectable Thai green curry that brings a medley of fresh vegetables to life in a fragrant and creamy coconut milk-based sauce. This dish is renowned for its harmonious blend of flavors, combining the earthiness of Thai basil, the heat of green chilies, and the richness of coconut. It's a vegetarian or vegan masterpiece that tantalizes the taste buds with a symphony of sweet, salty, and spicy notes, making it a beloved Thai comfort food.",
+            ingredients = listOf(
+                "Ingredients: 2 cups mixed vegetables (bell peppers, bamboo shoots, baby corn, eggplant, etc.), chopped 1 can (14 oz) coconut milk 2-3 tablespoons green curry paste 2-3 kaffir lime leaves, torn 1-2 Thai bird's eye chilies, sliced (adjust for spice level) 1-2 tablespoons vegetable oil 1-2 teaspoons sugar 1-2 teaspoons soy sauce Fresh Thai basil leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Vegetables: Wash and chop the mixed vegetables into bite-sized pieces. Create the Curry Base: Heat vegetable oil in a pot over medium heat. Add green curry paste and stir-fry for 1-2 minutes until aromatic. Incorporate Coconut Milk: Pour in the coconut milk and stir to combine with the curry paste. Bring the mixture to a gentle simmer. Add the Vegetables: Add the chopped mixed vegetables to the simmering curry. Cook for 5-7 minutes or until the vegetables reach desired tenderness. Season the Curry: Season the curry with sugar and soy sauce, adjusting to your taste preferences. Stir well to evenly distribute the flavors. Introduce Aromatics: Tear the kaffir lime leaves and add them to the curry for a delightful citrus aroma. Optionally, include Thai bird's eye chilies for extra spiciness. Serve: Ladle the Thai Green Curry with Vegetables (Gang Keow Wan Pak) into serving bowls. Garnish and Enjoy: Garnish generously with fresh Thai basil leaves just before serving. Serve hot alongside steamed jasmine rice, savoring the exquisite Thai flavors.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 92,
+            categoryOfFood = "Vegetarian Dishes",
+            dishTitle = "Som Tum Thai Jay",
+            imageResId = R.drawable.som_tum_thai_jay_92_500,
+            description = "Som Tum Thai Jay is a delightful and refreshing Thai salad that caters to vegetarian preferences. This version of the classic Som Tum features green papaya, cherry tomatoes, and other vegetables in a zesty, sweet, and spicy dressing. It's a harmonious balance of flavors and textures, with the signature Thai combination of lime, fish sauce (or a vegetarian alternative), and chili heat. Som Tum Thai Jay is a perfect appetizer or side dish for those seeking a vegetarian or vegan taste of Thailand's culinary excellence.",
+            ingredients = listOf(
+                "Ingredients: 2 cups shredded green papaya 1 cup cherry tomatoes, halved 2-3 cloves garlic, minced 2-3 Thai bird's eye chilies, chopped (adjust for spice level) 2-3 tablespoons roasted peanuts, coarsely crushed 1-2 tablespoons palm sugar or brown sugar 1-2 tablespoons lime juice 1-2 tablespoons soy sauce (or vegetarian fish sauce) 1-2 tablespoons tamarind paste Fresh cilantro leaves for garnish",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare Papaya and Vegetables: Peel and shred the green papaya using a grater or a julienne peeler. Halve the cherry tomatoes. Set aside. Make the Dressing: In a mortar and pestle, pound minced garlic and chopped Thai bird's eye chilies to a paste. Add palm sugar and continue pounding until it dissolves. Stir in lime juice, soy sauce (or vegetarian fish sauce), and tamarind paste. Mix well. Combine Ingredients: In a large mixing bowl, combine the shredded green papaya and cherry tomatoes. Pour the dressing over the vegetables and toss to coat evenly. Adjust Seasonings: Taste the salad and adjust the sweetness, saltiness, and spiciness according to your preference by adding more sugar, soy sauce, or chilies. Serve: Transfer the Vegetarian Thai Green Papaya Salad (Som Tum Thai Jay) to serving plates. Garnish and Enjoy: Garnish with coarsely crushed roasted peanuts and fresh cilantro leaves. Serve immediately as a vibrant and flavorful appetizer or side dish.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        ///////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 94,
+            categoryOfFood = "Desserts",
+            dishTitle = "Luk Chup",
+            imageResId = R.drawable.luk_chup_94,
+            description = "Luk Chup is a delightful and visually stunning Thai dessert that resembles tiny fruits and vegetables. Made from sweet mung bean paste, sugar, and intricate detailing, these bite-sized confections are both delicious and artistic. Luk Chup is often served at special occasions and celebrations, showcasing the craftsmanship and creativity of Thai dessert makers. Each piece is a miniature work of art that offers a sweet and nutty flavor, making it a unique and cherished treat.",
+            ingredients = listOf(
+                "Ingredients: 1 cup split mung beans 1/2 cup sugar 1/2 cup coconut milk Assorted food coloring and edible paints for shaping Edible glaze for a shiny finish (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Mung Beans: Rinse the mung beans thoroughly and soak them in water for about 2 hours. Drain the beans and steam them until soft (approximately 20-30 minutes). Mash the steamed beans into a fine paste while they are still warm. Sweeten the Mung Bean Paste: In a non-stick pan, combine the mung bean paste, sugar, and coconut milk. Cook over low heat, stirring constantly until the mixture thickens and leaves the sides of the pan. Remove from heat and let it cool. Shape the Luk Chup: Divide the sweetened mung bean paste into small portions and color each portion with food coloring as desired. Shape the colored paste into miniature fruit and vegetable shapes using your hands or molds. Use edible paints to add intricate details and colors to the shapes. Optionally, brush the Luk Chup with edible glaze for a shiny finish. Serve: Arrange the Luk Chup on a serving platter or in decorative boxes. Enjoy these delightful, bite-sized works of edible art as a special treat or gift. Luk Chup is a labor of love, and its exquisite appearance adds to the joy of savoring these miniature masterpieces.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 95,
+            categoryOfFood = "Desserts",
+            dishTitle = "Tub Tim Grob",
+            imageResId = R.drawable.tub_tim_grob_95,
+            description = "Tub Tim Grob is a popular Thai dessert known for its vibrant colors and delightful flavors. It features crunchy water chestnut cubes coated in red and green tapioca pearls, served in sweetened coconut milk with a hint of pandan aroma. This dessert offers a harmonious contrast of textures and a perfect balance of sweetness. Tub Tim Grob is not only visually appealing but also a refreshing and satisfying way to end a Thai meal.",
+            ingredients = listOf(
+                "Ingredients: 1 cup canned water chestnuts, diced into small cubes 2 tablespoons red tapioca pearls (ruby pearls) 2 tablespoons green tapioca pearls (emerald pearls) 1 can (14 oz) coconut milk 1/2 cup palm sugar or brown sugar A few pandan leaves (optional) Crushed ice for serving",
+            ),
+            instructions = listOf(
+                "Cooking Process: Cook Tapioca Pearls: Rinse the red and green tapioca pearls separately and cook them in separate pots of boiling water until they turn translucent (usually 15-20 minutes). Drain and rinse them with cold water to prevent sticking. Sweeten the Coconut Milk: In a saucepan, combine the coconut milk and palm sugar (or brown sugar). If available, tie a few pandan leaves into a knot and add them to the mixture for fragrance. Heat the mixture over medium-low heat, stirring until the sugar dissolves. Do not let it boil. Remove the pandan leaves and let the sweetened coconut milk cool. Assemble Tub Tim Grob: In serving bowls or glasses, place a layer of crushed ice at the bottom. Add a generous spoonful of diced water chestnuts on top of the ice. Sprinkle a spoonful of red and green tapioca pearls over the water chestnuts. Pour the Coconut Milk: Carefully pour the sweetened coconut milk over the water chestnuts and tapioca pearls until the bowl or glass is filled. Serve: Tub Tim Grob is traditionally served cold. Serve immediately as a refreshing and visually appealing Thai dessert. Enjoy the delightful combination of textures and flavors in Tub Tim Grob, perfect for satisfying your sweet cravings on a hot day.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 96,
+            categoryOfFood = "Desserts",
+            dishTitle = "Ruam Mit",
+            imageResId = R.drawable.ruam_mit_96_500,
+            description = "Ruam Mit is a delightful Thai dessert that lives up to its name, which translates to mixed sweets. It's an assortment of bite-sized, colorful, and sweet treats, each offering a unique texture and flavor. These sweets often include jellies, beans, fruits, and other delightful ingredients, all soaked in a fragrant syrup. Ruam Mit is a popular street food dessert in Thailand, offering a variety of tastes and textures in a single serving, making it a beloved choice for those with a sweet tooth.",
+            ingredients = listOf(
+                "Ingredients: Assorted mixed sweets (jellies, beans, fruits, etc.) 1 cup palm sugar 2 cups water A few pandan leaves (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Syrup: In a saucepan, combine palm sugar and water. If available, tie a few pandan leaves into a knot and add them to the mixture for fragrance. Heat the mixture over medium-low heat, stirring until the palm sugar dissolves. Simmer for a few minutes to infuse the syrup with flavor. Remove the pandan leaves and let the syrup cool. Assemble Ruam Mit: Arrange a selection of your favorite mixed sweets in a serving bowl or dish. Pour the cooled palm sugar syrup over the mixed sweets, ensuring they are generously coated. Serve: Ruam Mit can be served at room temperature or chilled, depending on your preference. Enjoy the delightful variety of flavors and textures in this Thai dessert. Ruam Mit is a delightful way to experience the diverse range of Thai sweets in one serving, making it a sweet and satisfying treat for any occasion.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 97,
+            categoryOfFood = "Desserts",
+            dishTitle = "Kluay Buat Chi",
+            imageResId = R.drawable.kluay_buat_chi_97_500,
+            description = "Kluay Buat Chi is a classic Thai dessert that combines ripe bananas, creamy coconut milk, and fragrant palm sugar into a rich and sweet concoction. The bananas are simmered until tender, absorbing the luscious coconut and palm sugar syrup, resulting in a delightful dessert with a perfect blend of sweet and creamy flavors. This comforting Thai dessert is often enjoyed warm, showcasing the tropical charm of ripe bananas and the richness of coconut.",
+            ingredients = listOf(
+                "Ingredients: 4 ripe bananas, peeled and sliced into rounds 1 cup coconut milk 1/2 cup palm sugar or brown sugar A pinch of salt A few pandan leaves (optional) Sesame seeds for garnish (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Syrup: In a saucepan, combine the coconut milk, palm sugar (or brown sugar), and a pinch of salt. If available, tie a few pandan leaves into a knot and add them to the mixture for fragrance. Heat the mixture over medium-low heat, stirring until the sugar dissolves and the syrup thickens slightly. Remove the pandan leaves and set the syrup aside. Simmer the Bananas: In a separate pan, add the sliced bananas and the prepared coconut palm sugar syrup. Simmer the bananas in the syrup over low heat until they become tender and soak up the flavors (usually about 10-15 minutes). Stir occasionally to coat the bananas evenly with the syrup. Serve: Kluay Buat Chi is traditionally served warm. Optionally, garnish with sesame seeds before serving for added texture and flavor. Enjoy the comforting and tropical goodness of Kluay Buat Chi, a Thai dessert that celebrates the natural sweetness of ripe bananas and the richness of coconut.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 98,
+            categoryOfFood = "Desserts",
+            dishTitle = "Sang Kaya Fug Thong",
+            imageResId = R.drawable.sang_kaya_fug_thong_98,
+            description = "Sang Kaya Fug Thong is a unique Thai dessert that beautifully blends creamy custard with the natural sweetness of pumpkin. A rich custard mixture, made with coconut milk, eggs, and aromatic pandan, is poured into a hollowed-out pumpkin and then steamed until it sets. The result is a harmonious marriage of textures and flavors—velvety custard infused with the earthiness of pumpkin. This delightful dessert is often served in its own pumpkin bowl, making it both visually striking and wonderfully delicious.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "Лимонний лікер 20 мл.\n" +
-                        "Просекко 150 мл.\n" +
-                        "Газована мінеральна вода 50 мл.\n" +
-                        "Часточки лимонів 2 шт.\n" +
-                        "Гілочка розмарину 1 шт.\n" +
-                        "Лід 3-4 кубики.",
+                "Ingredients: 1 small pumpkin (about 2-3 pounds) 4 eggs 1 cup coconut milk 1/2 cup palm sugar or brown sugar 1 teaspoon pandan extract (or essence) A pinch of salt",
             ),
             instructions = listOf(
-                "Процес приготування:\n" +
-                        "1. Покласти кубики льоду в склянку. Додайте лимонний лікер, воду та просекко і злегка перемішайте.\n" +
-                        "2. Прикрасити часточками лимона та розмарину.",
+                "Cooking Process: Prepare the Pumpkin: Cut the top off the pumpkin to create a lid. Scoop out the seeds and fibrous strands from the pumpkin's interior to create a hollow  bowl"+
+                " Prepare the Custard Mixture: In a mixing bowl, whisk together the eggs, coconut milk, palm sugar (or brown sugar), pandan extract (or essence), and a pinch of salt until well combined. Fill the Pumpkin: Pour the custard mixture into the hollowed-out pumpkin, leaving a little space at the top (the custard will expand while cooking). Place the pumpkin lid back on top. Steam the Pumpkin: Place the filled pumpkin in a steamer, cover, and steam over medium heat for about 30-40 minutes or until the custard is set. To check for doneness, insert a toothpick into the custard; it should come out clean when done. Cool and Serve: Once done, carefully remove the pumpkin from the steamer and let it cool slightly. Sang Kaya Fug Thong can be served warm or at room temperature. Presentation: To serve, slice the pumpkin into wedges or scoop out spoonfuls of custard along with the softened pumpkin flesh. Enjoy the delightful contrast of silky custard and tender pumpkin in Sang Kaya Fug Thong, a beloved Thai dessert that marries creamy sweetness with the earthy notes of pumpkin.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         RecipeModel(
-            id = 106,
-            categoryOfFood = "Коктейль",
-            dishTitle = "Коктейль Пурпурний",
-            imageResId = R.drawable.coctail_purple_106_small,
+            recipeId = 99,
+            categoryOfFood = "Desserts",
+            dishTitle = "Tao Suan",
+            imageResId = R.drawable.tao_suan_99_500,
             description =
-            "Коктейль Пурпурний - це освіжаючий напій з яскравою червоною барвою, що поєднує в собі солодкість буряка та гостринку нотку імбиру. Завдяки мигдалевому напою, цей коктейль набуває ніжної текстури та кремовості. Ідеальний вибір для тих, хто шукає щось освіжаюче та нестандартне.",
+            "Tao Suan is a comforting and wholesome Thai dessert soup made from mung beans. This traditional sweet treat combines creamy mung bean puree with coconut milk and a fragrant pandan aroma. It's lightly sweetened, making it a soothing and not overly sugary dessert. Served warm, Tao Suan is a beloved Thai dessert enjoyed for its smooth texture and subtle flavors. It's often served with golden, crispy youtiao (Chinese fried dough sticks) for a delightful contrast in texture.",
+            ingredients = listOf(
+                "Ingredients: 1 cup split mung beans 6 cups water 1/2 cup palm sugar or brown sugar 1 can (14 oz) coconut milk 1-2 pandan leaves, tied into knots (optional) Youtiao (Chinese fried dough sticks) for garnish (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Mung Beans: Rinse the mung beans thoroughly and soak them in water for about 2 hours. Drain the beans and place them in a large pot with 6 cups of water. If available, add pandan leaves for fragrance. Bring the mixture to a boil, then reduce the heat and simmer until the mung beans are soft and cooked (usually 20-30 minutes). Sweeten and Blend the Mung Beans: Remove the pandan leaves, if used. Add palm sugar (or brown sugar) to the pot and stir until it dissolves. Using a hand blender or a food processor, blend the mung beans until you achieve a smooth puree. Prepare the Coconut Milk: In a separate saucepan, heat the coconut milk over medium-low heat until it's warm but not boiling. Serve Tao Suan: Ladle the mung bean puree into serving bowls. Pour warm coconut milk over the mung bean puree. Optionally, serve with crispy youtiao on the side for dipping or garnish. Enjoy Tao Suan as a comforting and slightly sweet Thai dessert that warms the heart and satisfies the taste buds.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 100,
+            categoryOfFood = "Desserts",
+            dishTitle = "Kanom Krok",
+            imageResId = R.drawable.kanom_krok_100,
+            description = "Kanom Krok is a beloved Thai street food dessert known for its delightful bite-sized pancakes with a crispy outer layer and a soft, sweet interior. Made from a simple batter of rice flour and coconut milk, they're cooked in a special cast-iron pan with small, round molds. The result is a heavenly blend of creamy coconut and a touch of sweetness. These mini pancakes are often enjoyed warm and are a favorite treat for both locals and visitors.",
+            ingredients = listOf(
+                "Ingredients: 1 cup rice flour 1 cup coconut milk 1/2 cup water 1/4 cup palm sugar or brown sugar A pinch of salt Vegetable oil for greasing the pan",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Batter: In a mixing bowl, combine rice flour, coconut milk, water, palm sugar (or brown sugar), and a pinch of salt. Whisk the ingredients until you have a smooth, lump-free batter. Preheat the Pan: Heat a Kanom Krok pan or an aebleskiver pan (a specialized cast-iron pan with small round molds) over medium heat. Grease the molds lightly with vegetable oil. Cook the Pancakes: Once the pan is hot, pour the batter into each mold, filling them about two-thirds full. Cover the pan and cook for about 5 minutes or until the edges start to turn golden brown. Flip and Continue Cooking: Carefully flip each pancake using a skewer or a fork. Cover the pan again and cook for an additional 5 minutes or until both sides are golden and crispy. Serve: Remove the Kanom Krok from the molds while they're still warm. Enjoy these bite-sized delights as they are or with a drizzle of extra coconut milk. Kanom Krok is best enjoyed fresh off the pan, offering a delightful contrast of textures and the irresistible flavor of coconut and sweetness in every bite.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 101,
+            categoryOfFood = "Desserts",
+            dishTitle = "Kluay Tod",
+            imageResId = R.drawable.kluay_tod_101,
+            description = "Kluay Tod is a popular Thai dessert that transforms ripe bananas into crispy, golden delights. The bananas are coated in a sweet and airy batter, resulting in a satisfying contrast of textures—crispy on the outside and tender on the inside. Often enjoyed as a street food snack or a sweet ending to a Thai meal, Kluay Tod offers a delightful balance of natural banana sweetness and a light, crunchy coating. It's a quick and easy treat that brings comfort and smiles to anyone who tastes it. ",
+            ingredients = listOf(
+                "Ingredients: 4 ripe bananas, peeled and sliced into rounds 1 cup all-purpose flour 1/4 cup rice flour 2 tablespoons sugar 1/2 teaspoon salt 1/2 cup water Vegetable oil for frying",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Batter: In a mixing bowl, combine all-purpose flour, rice flour, sugar, and salt. Gradually add water and whisk until you have a smooth and slightly thick batter. Heat the Oil: Heat vegetable oil in a deep frying pan or wok over medium-high heat. You'll need enough oil to submerge the banana slices. Coat the Bananas: Dip each banana slice into the batter, ensuring they are evenly coated. Fry the Bananas: Carefully place the battered banana slices into the hot oil. Fry in batches to avoid overcrowding. Fry until the Kluay Tod turns golden brown and crispy, usually for about 2-3 minutes per batch. Drain and Serve: Remove the fried bananas from the oil using a slotted spoon. Place them on a plate lined with paper towels to drain excess oil. Serve: Kluay Tod is best enjoyed warm, either on its own or with a scoop of vanilla ice cream for an extra indulgent treat. Savor the crispy goodness of Kluay Tod, a beloved Thai dessert that combines the sweetness of ripe bananas with a delightful fried coating—a perfect treat for any occasion.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 102,
+            categoryOfFood = "Desserts",
+            dishTitle = "Sa Koo",
+            imageResId = R.drawable.sa_koo_102,
+            description = "Sa Koo is a luscious Thai dessert featuring chewy and translucent tapioca pearls soaked in sweet and creamy coconut cream. This treat offers a pleasing contrast of textures—the tapioca pearls are soft and slightly chewy, while the coconut cream provides a rich and velvety sweetness. Often topped with sweet corn or taro, Sa Koo is a comforting and visually appealing dessert that satisfies both the palate and the senses.",
+            ingredients = listOf(
+                "Ingredients: 1 cup small tapioca pearls 2 cups water 1 can (14 oz) coconut milk 1/2 cup palm sugar or brown sugar A pinch of salt Sweet corn kernels or taro chunks for garnish (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Tapioca Pearls: Rinse the tapioca pearls in cold water until the water runs clear. In a saucepan, add 2 cups of water and bring it to a boil. Add the rinsed tapioca pearls to the boiling water and cook for about 10-15 minutes or until they turn translucent and are tender. Drain and rinse the cooked tapioca pearls under cold water. Prepare the Coconut Cream: In another saucepan, combine the coconut milk, palm sugar (or brown sugar), and a pinch of salt. Heat the mixture over medium-low heat, stirring until the sugar dissolves and the coconut cream is warm. Assemble Sa Koo: Divide the cooked tapioca pearls into serving bowls. Pour the warm coconut cream over the tapioca pearls. Optionally, top with sweet corn kernels or taro chunks for added flavor and texture. Serve: Sa Koo is best enjoyed warm, but it can also be served at room temperature or chilled. Indulge in the creamy goodness of Sa Koo, a Thai dessert that combines the delightful chewiness of tapioca pearls with the luxurious sweetness of coconut cream—a delightful treat for any occasion.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        RecipeModel(
+            recipeId = 103,
+            categoryOfFood = "Desserts",
+            dishTitle = "Thai Coconut Pancakes",
+            imageResId = R.drawable.thai_coconut_pancakes_103,
+            description = "Thai Coconut Pancakes, known as Khanom Krok, are a delightful street food dessert that captures the essence of Thai flavors. These bite-sized pancakes are made from a batter of rice flour, coconut milk, and palm sugar, resulting in a crispy shell with a soft, sweet, and aromatic center. Cooked in a special griddle pan with small, round molds, Khanom Krok are a visual treat and a beloved snack, offering a perfect balance of coconut richness and subtle sweetness.",
             ingredients = listOf(
-                "Інгредієнти:\n" ,
-                        "3 столові ложки імбирного сиропу\n" +
-                        "4 склянки мигдалевого напою\n" +
-                        "1 склянка бурякового соку",
+                "Ingredients: 1 cup rice flour 1 cup coconut milk 1/2 cup palm sugar or brown sugar 1/4 teaspoon salt Vegetable oil for greasing the pan",
             ),
             instructions = listOf(
-                "Процес приготування:\n" ,
-                        "Енергійно змішайте три інгредієнти. Прикрасити мусом з мигдалевого напою та свіжою м'ятою",
+                "Cooking Process: Prepare the Batter: In a mixing bowl, whisk together rice flour, coconut milk, palm sugar (or brown sugar), and salt until you have a smooth, lump-free batter. Preheat the Pan: Heat a Khanom Krok pan (a specialized cast-iron griddle pan with small round molds) over medium-low heat. Lightly grease each mold with vegetable oil. Cook the Pancakes: Once the pan is hot, pour the batter into each mold, filling them about two-thirds full. Cover the pan and cook for about 3-5 minutes or until the edges turn crispy and golden brown. Flip and Continue Cooking: Carefully flip each pancake using a skewer or a fork. Cover the pan again and cook for an additional 3-5 minutes until both sides are golden brown and crispy. Serve: Remove the Thai Coconut Pancakes from the molds while they're still warm. Enjoy these bite-sized delights immediately. Khanom Krok are best enjoyed fresh off the pan, offering a delightful contrast of textures and the irresistible flavor of coconut and sweetness in every bite—a perfect Thai dessert to satisfy your cravings.",
             )
         ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 104,
+            categoryOfFood = "Desserts",
+            dishTitle = "Black Sticky Rice Pudding",
+            imageResId = R.drawable.black_sticky_rice_pudding_104_500,
+            description = "Black Sticky Rice Pudding, known as Khao Niew Dum, is a classic Thai dessert cherished for its rich and indulgent flavors. Made from glutinous black rice, this pudding offers a deep, nutty aroma and a natural sweetness that pairs perfectly with creamy coconut milk and a hint of palm sugar. This comforting dessert is a delightful blend of chewy, textured rice grains immersed in a thick, sweet, and aromatic coconut sauce, making it a beloved Thai treat.",
+            ingredients = listOf(
+                "Ingredients: 1 cup black glutinous rice 2 cups water 1 can (14 oz) coconut milk 1/2 cup palm sugar A pinch of salt Sliced mango or seasonal fruit for garnish (optional)",
+            ),
+            instructions = listOf(
+                "Cooking Process: Prepare the Rice: Rinse the black glutinous rice under cold water until the water runs clear. In a saucepan, add 2 cups of water and the rinsed rice. Bring to a boil, then reduce the heat to low, cover, and simmer for about 30-40 minutes or until the rice is tender and most of the water is absorbed. Prepare the Coconut Sauce: In another saucepan, combine the coconut milk, palm sugar, and a pinch of salt. Heat the mixture over medium-low heat, stirring until the sugar dissolves and the sauce thickens slightly. Combine Rice and Sauce: Once the rice is cooked, pour the coconut sauce over the rice. Stir to combine, allowing the rice to absorb the sweet coconut sauce. Serve: Black Sticky Rice Pudding can be served warm or chilled. Garnish with sliced mango or seasonal fruit if desired. Indulge in the luxurious flavors of Black Sticky Rice Pudding, a traditional Thai dessert that combines the nuttiness of black glutinous rice with the richness of coconut milk—a sweet and satisfying treat for any occasion.",
+            )
+        ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        RecipeModel(
+            recipeId = 105,
+            categoryOfFood = "Desserts",
+            dishTitle = "Khanom Chan",
+            imageResId = R.drawable.khanom_chan_105_500,
+            description =
+        "Khanom Chan is an exquisite Thai dessert known for its intricate layers and vibrant colors. This traditional treat boasts a combination of textures and flavors, with each layer offering a different taste sensation. Made from rice flour, coconut milk, and aromatic pandan leaves, Khanom Chan is both visually stunning and incredibly delicious. The dessert's intricate layering represents the artistry of Thai cuisine, making it a favorite for special occasions and celebrations. ",
+        ingredients = listOf(
+            "Ingredients: 1 cup rice flour 1 1/2 cups coconut milk 1 cup sugar 1/4 teaspoon salt Pandan leaves extract (green) for color and flavor Butterfly pea flower extract (blue) for color and flavor Water Banana leaves for lining the mold",
+        ),
+        instructions = listOf(
+            "Cooking Process: Prepare the Batter: In a mixing bowl, combine rice flour, coconut milk, sugar, and salt. Divide the batter into three equal parts. Create the Layers: For the first layer, mix one part of the batter with pandan leaves extract to achieve a vibrant green color and a subtle pandan aroma. For the second layer, mix another part of the batter with butterfly pea flower extract to create a beautiful blue hue. Leave the third part of the batter as is for the white layer. Steam the Layers: Line a square or rectangular mold with banana leaves. Steam the layers one by one, starting with the green layer. Pour a thin layer into the mold and steam until it sets (about 5 minutes). Repeat the process with the blue and white layers, allowing each layer to cool and set before adding the next. Assemble and Slice: Once all the layers are steamed and set, carefully remove the Khanom Chan from the mold. Slice it into small, bite-sized pieces or into decorative shapes. Serve: Khanom Chan is best enjoyed as a delightful snack or dessert, showcasing its striking colors and harmonious flavors. Experience the elegance and artistry of Khanom Chan, a stunning Thai dessert that combines vibrant layers and unique flavors, making it a delightful treat for special occasions and celebrations.",
         )
+    ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    RecipeModel(
+    recipeId = 106,
+    categoryOfFood = "Desserts",
+    dishTitle = "Khanom Tuay",
+    imageResId = R.drawable.khanom_tuay_106,
+    description = "Khanom Tuay is a delightful Thai dessert known for its silky, smooth texture and sweet, coconut flavor. These bite-sized treats consist of two distinct layers—a creamy, coconut milk custard on the bottom and a jelly-like, pandan-flavored layer on top. Often served in small, charming cups, Khanom Tuay is a visually appealing and beloved Thai dessert that captures the essence of Thai culinary traditions. Its subtle sweetness and fragrant pandan aroma make it a favorite treat for both locals and visitors.",
+    ingredients = listOf(
+    "Ingredients: 1 cup rice flour 2 cups coconut milk 1 1/2 cups sugar 1/4 teaspoon salt Pandan leaves extract (green) for color and flavor",
+    ),
+    instructions = listOf(
+    "Cooking Process: Prepare the Batter: In a mixing bowl, whisk together rice flour, coconut milk, sugar, and salt until well combined. Divide the batter into two equal parts. Create the Layers: For the bottom layer, add pandan leaves extract to one part of the batter to achieve a vibrant green color and a subtle pandan aroma. This will be the top layer of the dessert. Leave the other part of the batter as is for the creamy bottom layer. Steam the Layers: Line small cups or molds with banana leaves for added aroma and traditional presentation. Pour the plain (white) batter into the cups, filling them about halfway. Steam for about 10-15 minutes or until the custard layer is set. Once the custard layer is set, carefully pour the pandan (green) batter on top of the custard layer in each cup. Steam again for another 10-15 minutes or until the pandan layer is set. Cool and Serve: Allow Khanom Tuay to cool to room temperature or chill them in the refrigerator. Once cooled, gently remove them from the cups or molds. Serve: Khanom Tuay can be enjoyed as a delightful and visually appealing Thai dessert, often served in small individual portions. Savor the delightful layers and flavors of Khanom Tuay, a classic Thai dessert that combines the richness of coconut milk with the fragrant touch of pandan, creating a harmonious and irresistible treat.",
+    )
+    ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    RecipeModel(
+    recipeId = 107,
+    categoryOfFood = "Desserts",
+    dishTitle = "Tako",
+    imageResId = R.drawable.tako_107_500,
+    description = "Tako is a delightful Thai dessert known for its unique texture and captivating flavor. This sweet treat combines chewy tapioca pearls with a creamy, fragrant coconut custard. Often molded into colorful and charming shapes, Tako is visually appealing and a favorite at Thai celebrations. The creamy coconut layer pairs harmoniously with the soft tapioca pearls, offering a sweet and satisfying dessert experience.",
+    ingredients = listOf(
+    "Ingredients: 1 cup small tapioca pearls 2 cups water 1 can (14 oz) coconut milk 1/2 cup sugar 1/4 teaspoon salt Pandan leaves extract (green) for color and flavor Butterfly pea flower extract (blue) for color and flavor Banana leaves or silicone molds for shaping",
+    ),
+    instructions = listOf(
+    "Cooking Process: Prepare the Tapioca Pearls: Rinse the tapioca pearls in cold water until the water runs clear. In a saucepan, add 2 cups of water and bring it to a boil. Add the rinsed tapioca pearls to the boiling water and cook for about 10-15 minutes or until they turn translucent and are tender. Drain and rinse the cooked tapioca pearls under cold water. Prepare the Coconut Custard: In a separate saucepan, combine the coconut milk, sugar, and salt. Heat the mixture over medium-low heat, stirring until the sugar dissolves and the coconut custard is warm. Create the Layers: Divide the cooked tapioca pearls into three equal parts. Mix one part with pandan leaves extract for the green layer and another part with butterfly pea flower extract for the blue layer. Leave the third part white for the top layer. Assemble and Mold: Line silicone molds or small cups with banana leaves for added aroma and traditional presentation. Start by adding a layer of green tapioca pearls to the bottom of each mold. Pour the coconut custard layer on top, filling the molds halfway. Add a layer of blue tapioca pearls on top of the custard. Finally, pour the white tapioca layer over the blue layer. Chill and Serve: Allow Tako to cool and set in the refrigerator for a few hours or until firm. Once set, gently remove them from the molds. Serve: Tako can be served as visually appealing and flavorful individual portions, often garnished with a touch of coconut cream. Enjoy the delightful layers and flavors of Tako, a Thai dessert that combines the creamy richness of coconut custard with the fun texture of tapioca pearls—a charming treat for special occasions and celebrations.",
+    )
+    ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    RecipeModel(
+    recipeId = 108,
+    categoryOfFood = "Desserts",
+    dishTitle = "Khao Tom Mat",
+    imageResId = R.drawable.khao_tom_mat_108_ed,
+    description = "Khao Tom Mat is a comforting and sweet Thai dessert that showcases the natural sweetness of ripe bananas and the delightful texture of sticky rice. This dish features tender, fragrant glutinous rice parcels filled with a delectable mixture of sweetened banana and grated coconut. Wrapped in banana leaves and steamed to perfection, Khao Tom Mat is a charming and flavorful treat often enjoyed during festivals and special occasions in Thailand.",
+    ingredients = listOf(
+    "Ingredients: 2 ripe bananas (such as Thai bananas or ladyfinger bananas) 1 1/2 cups glutinous rice 1/2 cup coconut milk 1/4 cup sugar 1/4 teaspoon salt Banana leaves for wrapping Cooking twine or toothpicks for securing the parcels",
+    ),
+    instructions = listOf(
+    "Cooking Process: Prepare the Rice: Rinse the glutinous rice under cold water until the water runs clear. Soak the rice in enough water to cover it for at least 4 hours or overnight. Prepare the Banana Filling: Peel and slice the ripe bananas into small pieces. In a bowl, combine the banana pieces with sugar and grated coconut. Mix well and set aside. Assemble the Parcels: Cut the banana leaves into square pieces (about 6x6 inches) and briefly pass them over an open flame to soften them. Place a spoonful of soaked glutinous rice onto a banana leaf square. Add a portion of the banana-coconut mixture on top of the rice. Fold the banana leaf into a rectangle, securing the edges with toothpicks or cooking twine. Steam the Parcels: Arrange the wrapped parcels in a steamer and steam for about 30-40 minutes or until the glutinous rice is tender. Serve: Khao Tom Mat can be served warm or at room temperature. Remove the banana leaves before eating and enjoy the sweet and aromatic flavors. Savor the comforting and sweet delights of Khao Tom Mat, a Thai dessert that brings together the richness of sticky rice, the sweetness of bananas, and the fragrance of coconut—a delightful treat for special occasions and everyday indulgence.",
+    )
+    ),
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+    )
 }
+
+
+
+
+
+

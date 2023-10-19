@@ -37,7 +37,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun ItalianFoodTheme(
+fun ThaiFoodTheme(
     darkTheme: Boolean = false,
         //isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
